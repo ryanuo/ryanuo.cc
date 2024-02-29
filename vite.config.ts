@@ -3,6 +3,10 @@ import fs from "fs-extra";
 import matter from "gray-matter";
 import { resolve } from "node:path";
 import UnoCSS from "unocss/vite";
+import AutoImport from "unplugin-auto-import/vite";
+import IconsResolver from "unplugin-icons/resolver";
+import Components from "unplugin-vue-components/vite";
+import Markdown from "unplugin-vue-markdown/vite";
 import { defineConfig } from "vite";
 import Pages from "vite-plugin-pages";
 
@@ -34,6 +38,23 @@ export default defineConfig({
 
         return route;
       },
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router", "@vueuse/core"],
+      dts: "typings/auto-imports.d.ts",
+    }),
+    Markdown({
+      wrapperComponent: "WrapPost",
+    }),
+    Components({
+      extensions: ["vue", "md"],
+      dts: "typings/components.d.ts",
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      resolvers: [
+        IconsResolver({
+          componentPrefix: "",
+        }),
+      ],
     }),
   ],
   optimizeDeps: {

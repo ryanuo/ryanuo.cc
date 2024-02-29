@@ -13,13 +13,17 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vite/client", "vite-plugin-pages/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "typings/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
