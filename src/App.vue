@@ -1,8 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <RouterView />
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <main class="px-7 py-10 of-x-hidden">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped></style>
