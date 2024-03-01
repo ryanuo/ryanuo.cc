@@ -46,6 +46,12 @@ export default defineConfig({
     }),
     Markdown({
       wrapperComponent: "WrapPost",
+      wrapperClasses: (id, code) => {
+        console.log(code);
+        return code.includes("@layout-full-width")
+          ? ""
+          : "prose m-auto slide-enter-content";
+      },
     }),
     Components({
       extensions: ["vue", "md"],
