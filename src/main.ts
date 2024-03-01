@@ -1,8 +1,11 @@
 import autoRoutes from "pages-generated";
-import "virtual:uno.css";
 import { ViteSSG } from "vite-ssg";
+
+import "@unocss/reset/tailwind.css";
+import "uno.css";
+import "./style/style.css";
+
 import App from "./App.vue";
-import "./style.css";
 
 const routes = autoRoutes.map((i) => {
   return {

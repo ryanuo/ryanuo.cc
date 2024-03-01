@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
+import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
 import Markdown from "unplugin-vue-markdown/vite";
 import { defineConfig } from "vite";
@@ -55,6 +56,10 @@ export default defineConfig({
           componentPrefix: "",
         }),
       ],
+    }),
+    Icons({
+      defaultClass: "inline",
+      defaultStyle: "vertical-align: sub;",
     }),
   ],
   optimizeDeps: {
