@@ -9,6 +9,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/navs",
+      "destination": "/navs.html"
+    },
+    {
       "source": "/posts",
       "destination": "/posts.html"
     },
