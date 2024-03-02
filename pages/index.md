@@ -1,9 +1,8 @@
 ---
 title: Ryan Co
-description: Anthony Fu's Portfolio
-image: https://antfu.me/og.png
+description: Ryan Co's Introduce
 plum: true
 ---
 
 
-My Website: ryanco.me
+Hey, I am Ryan Co

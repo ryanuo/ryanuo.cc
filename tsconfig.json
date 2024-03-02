@@ -24,6 +24,5 @@
     },
     "types": ["vite/client", "vite-plugin-pages/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "typings/*.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "typings/*.d.ts"]
 }

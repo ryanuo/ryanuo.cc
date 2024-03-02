@@ -1,6 +1,8 @@
 import Vue from "@vitejs/plugin-vue";
 import fs from "fs-extra";
 import matter from "gray-matter";
+import LinkAttributes from "markdown-it-link-attributes";
+import TOC from "markdown-it-table-of-contents";
 import { resolve } from "node:path";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -10,6 +12,8 @@ import Components from "unplugin-vue-components/vite";
 import Markdown from "unplugin-vue-markdown/vite";
 import { defineConfig } from "vite";
 import Pages from "vite-plugin-pages";
+
+import { slugify } from "./script/slugify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -51,6 +55,26 @@ export default defineConfig({
         return code.includes("@layout-full-width")
           ? ""
           : "prose m-auto slide-enter-content";
+      },
+      headEnabled: true,
+      exportFrontmatter: false,
+      exposeFrontmatter: false,
+      exposeExcerpt: false,
+      async markdownItSetup(md) {
+        md.use(LinkAttributes, {
+          matcher: (link: string) => /^https?:\/\//.test(link),
+          attrs: {
+            target: "_blank",
+            rel: "noopener",
+          },
+        });
+
+        md.use(TOC, {
+          includeLevel: [1, 2, 3, 4],
+          slugify,
+          containerHeaderHtml:
+            '<div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>',
+        });
       },
     }),
     Components({
