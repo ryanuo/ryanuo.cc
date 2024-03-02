@@ -183,3 +183,8 @@ button:focus-visible {
     --enter-stage: 20 !important;
   }
 }
+
+/* 文字选中颜色 */
+::selection {
+  background: #8884;
+}

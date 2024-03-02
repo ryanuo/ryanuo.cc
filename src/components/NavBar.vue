@@ -41,6 +41,10 @@ const { y: scroll } = useWindowScroll();
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
+        <RouterLink to="/navs" title="Navs">
+          <span class="lt-md:hidden">Navs</span>
+          <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
+        </RouterLink>
         <a href="https://m.ziliao88.top/" target="_blank" title="Blog">
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line md:hidden />
