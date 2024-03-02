@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "cross-env NODE_ENV=production vite-ssg build ",
     "preview": "vite preview"
   },
   "dependencies": {
