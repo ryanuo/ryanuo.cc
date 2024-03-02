@@ -9,6 +9,7 @@ import "./style/prose.css";
 import "./style/style.css";
 
 import App from "./App.vue";
+
 NProgress.configure({ showSpinner: false });
 const routes = autoRoutes.map((i) => {
   return {

@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "cross-env NODE_ENV=production vite-ssg build ",
+    "vercel:build": "pnpm run build && pnpm run vercel:route",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
+    "vercel:route": "esno script/vercel.ts",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,6 +18,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "esno": "^4.0.0",
     "@iconify/json": "^2.2.188",
     "@types/fs-extra": "^11.0.4",
     "@types/markdown-it-link-attributes": "^3.0.4",
