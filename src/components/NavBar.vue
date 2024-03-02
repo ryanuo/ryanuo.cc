@@ -41,14 +41,14 @@ const { y: scroll } = useWindowScroll();
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/posts" title="Blog">
+        <a href="https://m.ziliao88.top/" target="_blank" title="Blog">
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line md:hidden />
-        </RouterLink>
-        <!-- <RouterLink to="/projects" title="Projects">
+        </a>
+        <RouterLink to="/projects" title="Projects">
           <span class="lt-md:hidden">Projects</span>
           <div i-ri-lightbulb-line class="md:hidden" />
-        </RouterLink> -->
+        </RouterLink>
         <RouterLink to="/demos" title="Demos">
           <span class="lt-md:hidden">Demos</span>
           <div i-ri-screenshot-line class="md:hidden" />

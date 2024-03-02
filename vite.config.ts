@@ -13,6 +13,8 @@ import Markdown from "unplugin-vue-markdown/vite";
 import { defineConfig } from "vite";
 import Pages from "vite-plugin-pages";
 
+import { calculateWorkYears } from "./script/format";
+import MdItReplace from "./script/markdown-it-replace";
 import { slugify } from "./script/slugify";
 
 // https://vitejs.dev/config/
@@ -73,6 +75,17 @@ export default defineConfig({
           slugify,
           containerHeaderHtml:
             '<div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>',
+        });
+
+        md.use(MdItReplace, "foo_replace", "text", (tokens, formter, idx) => {
+          if (formter.id === "ryanco") {
+            if (tokens[idx].content.indexOf("[workyears]") !== -1) {
+              tokens[idx].content = tokens[idx].content.replace(
+                "[workyears]",
+                calculateWorkYears(2022, 8)
+              );
+            }
+          }
         });
       },
     }),
