@@ -7,7 +7,7 @@
     "dev": "vite",
     "vercel:build": "pnpm run build && pnpm run vercel:route",
     "build": "cross-env NODE_ENV=production vite-ssg build",
-    "vercel:route": "esno script/vercel.ts",
+    "vercel:route": "esno scripts/vercel.ts",
     "preview": "vite preview"
   },
   "dependencies": {

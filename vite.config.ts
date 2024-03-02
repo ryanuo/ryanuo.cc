@@ -13,9 +13,9 @@ import Markdown from "unplugin-vue-markdown/vite";
 import { defineConfig } from "vite";
 import Pages from "vite-plugin-pages";
 
-import { calculateWorkYears } from "./script/format";
-import MdItReplace from "./script/markdown-it-replace";
-import { slugify } from "./script/slugify";
+import { calculateWorkYears } from "./scripts/format";
+import MdItReplace from "./scripts/markdown-it-replace";
+import { slugify } from "./scripts/slugify";
 
 // https://vitejs.dev/config/
 export default defineConfig({

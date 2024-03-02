@@ -5,9 +5,9 @@ import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@unocss/reset/tailwind.css";
 import "uno.css";
-import "./style/markdown.css";
-import "./style/prose.css";
-import "./style/style.css";
+import "./styles/markdown.css";
+import "./styles/prose.css";
+import "./styles/style.css";
 
 import App from "./App.vue";
 
