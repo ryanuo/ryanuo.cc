@@ -47,5 +47,3 @@ export const createApp = ViteSSG(
     }
   }
 );
-
-console.log(routes, "routes");

@@ -42,7 +42,7 @@ function generateVercelConfig() {
   };
 
   fs.writeFileSync(
-    path.join(rootPath, "vercel.json"),
+    path.join(rootPath, "./vercel.json"),
     JSON.stringify(config, null, 2)
   );
   console.log("vercel.json has been generated successfully.");
