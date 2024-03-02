@@ -1,6 +1,7 @@
 import NProgress from "nprogress";
 import autoRoutes from "pages-generated";
 import { ViteSSG, ViteSSGContext } from "vite-ssg";
+import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@unocss/reset/tailwind.css";
 import "uno.css";
@@ -25,6 +26,18 @@ export const createApp = ViteSSG(
   },
   ({ router, isClient }: ViteSSGContext) => {
     if (isClient) {
+      const html = document.querySelector("html")!;
+      setupRouterScroller(router, {
+        selectors: {
+          html(ctx: any) {
+            // only do the sliding transition when the scroll position is not 0
+            if (ctx.savedPosition?.top) html.classList.add("no-sliding");
+            else html.classList.remove("no-sliding");
+            return true;
+          },
+        },
+        behavior: "auto",
+      });
       router.beforeEach(() => {
         NProgress.start();
       });
