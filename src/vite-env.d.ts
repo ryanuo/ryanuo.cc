@@ -7,4 +7,4 @@ declare module "pages-generated" {
   export default routes;
 }
 
-declare module "vite-ssg";
+// declare module "vite-ssg";

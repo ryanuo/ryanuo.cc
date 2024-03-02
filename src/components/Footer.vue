@@ -7,7 +7,10 @@
         style="color: inherit"
         >CC BY-NC-SA 4.0</a
       >
-      2019-PRESENT © Ryan Co</span
+      2021-PRESENT © Ryan Co
+      <a target="_blank" href="https://github.com/antfu" style="color: inherit"
+        >(Template)</a
+      ></span
     >
     <div class="flex-auto" />
   </div>
