@@ -11,7 +11,12 @@ defineProps({
   <ClientOnly v-if="frontmatter.plum">
     <Plum />
   </ClientOnly>
-  <div v-if="frontmatter.title" class="prose" m-auto mb-8>
+  <div
+    v-if="frontmatter.title && !frontmatter.isHidenTitle"
+    class="prose"
+    m-auto
+    mb-8
+  >
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>

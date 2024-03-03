@@ -3,6 +3,7 @@ title: Navs - Ryan Co
 display: Front Navigation
 description: Front-end navigation includes commonly used front-end third-party websites, front-end knowledge, and front-end related content.
 plum: true
+isHidenTitle: true
 projects:
   Common Tools:
     - name: 'Can I Use'
