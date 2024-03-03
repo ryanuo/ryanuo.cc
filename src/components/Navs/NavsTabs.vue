@@ -14,7 +14,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="prose m-auto mb-5 select-none animate-none! op100!">
+  <div class="tabs max-w-300 m-auto mb-5 select-none animate-none! op100!">
     <div mb-0 flex="~ col gap-1 sm:row sm:gap-3 wrap" text-3xl>
       <RouterLink
         to="/navs"
@@ -38,8 +38,14 @@ const route = useRoute();
         Tools
       </RouterLink>
     </div>
-    <div class="my-4 p1 rounded-lg text-gray-300! bg-gray-100 dark:bg-zinc-900">
+    <div class="my-4 p1 rounded-lg text-gray-500!" style="font-size: 14px">
       - {{ description }}
     </div>
   </div>
 </template>
+
+<style>
+.tabs a {
+  text-decoration: none;
+}
+</style>
