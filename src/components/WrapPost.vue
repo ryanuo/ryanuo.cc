@@ -12,7 +12,9 @@ defineProps({
     <Plum />
   </ClientOnly>
   <div v-if="frontmatter.title" class="prose" m-auto mb-8>
-    <h1 class="mb-0 slide-enter-50">{{ frontmatter.title }}</h1>
+    <h1 class="mb-0 slide-enter-50">
+      {{ frontmatter.display ?? frontmatter.title }}
+    </h1>
   </div>
   <article>
     <slot />

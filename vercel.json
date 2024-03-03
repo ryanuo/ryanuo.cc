@@ -9,6 +9,14 @@
       "destination": "/index.html"
     },
     {
+      "source": "/navs/libraries",
+      "destination": "/navs/libraries.html"
+    },
+    {
+      "source": "/navs/tools",
+      "destination": "/navs/tools.html"
+    },
+    {
       "source": "/navs",
       "destination": "/navs.html"
     },
