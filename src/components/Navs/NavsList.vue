@@ -74,4 +74,16 @@ const handleNav = (obj: Project) => {
       </ul>
     </div>
   </div>
+  <div>
+    <div class="table-of-contents">
+      <div class="table-of-contents-anchor">
+        <div class="i-ri-menu-2-fill" />
+      </div>
+      <ul>
+        <li v-for="key of Object.keys(pros)" :key="key">
+          <a :href="`#${slug(key)}`">{{ key }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>

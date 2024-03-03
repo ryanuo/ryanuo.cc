@@ -58,6 +58,9 @@ devDependencies:
   '@unocss/reset':
     specifier: ^0.58.5
     version: 0.58.5
+  '@unocss/transformer-directives':
+    specifier: ^0.58.5
+    version: 0.58.5
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.1.4)(vue@3.4.20)

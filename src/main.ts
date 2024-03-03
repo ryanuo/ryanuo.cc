@@ -4,10 +4,11 @@ import { ViteSSG, ViteSSGContext } from "vite-ssg";
 import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@unocss/reset/tailwind.css";
-import "uno.css";
+import "./styles/style.css";
 import "./styles/markdown.css";
 import "./styles/prose.css";
-import "./styles/style.css";
+
+import "uno.css";
 
 import App from "./App.vue";
 
