@@ -14,8 +14,12 @@ function slug(name: string) {
 }
 
 const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
+  console.log(usedNavs.value);
+  if (!usedNavs.value.length) {
+    return props.projects;
+  }
   return {
-    "Recently Used": usedNavs ? usedNavs.value : [],
+    "Recently Used": usedNavs.value,
     ...props.projects,
   };
 });
