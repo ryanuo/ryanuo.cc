@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { omit } from "lodash-es";
 interface Project {
   desc: string;
   name: string;
   link: string;
   icon: string;
   image: string;
+  tags: string[];
 }
 const props = defineProps<{ projects: Record<string, any[]> }>();
 const usedNavs = useStorage<Project[]>("used-navs", []);
@@ -25,8 +27,25 @@ const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
 });
 
 const handleNav = (obj: Project) => {
-  if (usedNavs.value.findIndex((v) => slug(v.name) === slug(obj.name)) === -1) {
-    usedNavs.value.push(obj);
+  const newObj = omit(obj, ["desc"]);
+  // 查找 obj 在 usedNavs 中的索引
+  const index = usedNavs.value.findIndex(
+    (v) => slug(v.name) === slug(newObj.name)
+  );
+
+  if (index !== -1) {
+    // 如果 obj 已存在，先移除它
+    usedNavs.value.splice(index, 1);
+    // 然后将它添加到数组的开头
+    usedNavs.value.unshift(newObj);
+  } else {
+    // 如果 obj 不存在于数组中
+    if (usedNavs.value.length === 4) {
+      // 如果数组已满（有4个元素），则移除最后一个元素
+      usedNavs.value.pop();
+    }
+    // 将新的 obj 添加到数组的开头
+    usedNavs.value.unshift(newObj);
   }
 };
 </script>
@@ -43,7 +62,7 @@ const handleNav = (obj: Project) => {
       <h4 :id="slug(key)" class="text-2xl font-bold mb-5">
         {{ key }}
       </h4>
-      <ul class="list-disc list-inside flex flex-wrap flex-justify-between">
+      <ul class="list-disc list-inside flex flex-wrap gap-x-4">
         <li
           v-for="project in pros[key]"
           :key="project.name"
