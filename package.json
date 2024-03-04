@@ -9,7 +9,8 @@
     "build": "cross-env NODE_ENV=production vite-ssg build && pnpm run rss",
     "vercel:route": "esno scripts/vercel.ts",
     "rss": "esno scripts/rss.ts",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "get-ico": "python scripts/ico-get.py"
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
