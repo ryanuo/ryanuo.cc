@@ -73,17 +73,38 @@ const handleNav = (obj: Project) => {
         </li>
       </ul>
     </div>
-  </div>
-  <div>
-    <div class="table-of-contents">
-      <div class="table-of-contents-anchor">
-        <div class="i-ri-menu-2-fill" />
+    <div>
+      <div class="table-of-contents">
+        <div class="table-of-contents-anchor">
+          <div class="i-ri-menu-2-fill" />
+        </div>
+        <ul>
+          <li v-for="key of Object.keys(pros)" :key="key">
+            <a :href="`#${slug(key)}`">{{ key }}</a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li v-for="key of Object.keys(pros)" :key="key">
-          <a :href="`#${slug(key)}`">{{ key }}</a>
-        </li>
-      </ul>
+      <hr />
+      <div>
+        If you have any additional navigation sites to add, please raise an
+        <a
+          class="border-b border-slate-300"
+          href="https://github.com/rr210/harry.me/issues/new?assignees=&labels=add-sites&projects=&template=%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9-add-sites.md&title=Add+Sites"
+          target="_blank"
+        >
+          <i i-codicon-issues align-mid text-xs></i>issue.</a
+        >
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+hr {
+  border-color: rgba(125, 125, 125, 0.3);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 50px;
+  margin: 2em auto;
+}
+</style>

@@ -21,6 +21,7 @@ defineProps<{ project: Project }>();
   >
     <div class="w-full flex relative">
       <div
+        v-if="project.image ?? project.icon"
         class="flex justify-center items-center bg-gray-200 dark:bg-zinc-700 rounded-md w-10 h-10"
       >
         <span v-if="project.icon" :class="`${project.icon} flex-1`" />
