@@ -9,7 +9,9 @@ const __dirname = path.dirname(__filename);
 
 const rootPath = path.resolve(__dirname, "../"); // 获取根目录的绝对路径
 const distPath = path.join(rootPath, "dist"); // 'dist'目录的路径
-let rewrites: { source: string; destination: string }[] = []; // 存储重写规则的数组
+let rewrites: { source: string; destination: string }[] = [
+  { source: "/(.*)", destination: "/index.html" },
+]; // 存储重写规则的数组
 
 // 递归遍历'dist'目录
 function readHtmlFiles(dir) {
@@ -39,10 +41,6 @@ function generateVercelConfig() {
 
   const config = {
     rewrites,
-    routes: [
-      { handle: "filesystem" },
-      { src: "/(.*)", status: 404, dest: "/404.html" },
-    ],
   };
 
   fs.writeFileSync(
