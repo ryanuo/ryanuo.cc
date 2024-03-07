@@ -1,63 +1,63 @@
 {
   "rewrites": [
     {
-      "source": "/404(?:/|$)",
+      "source": "/404",
       "destination": "/404.html"
     },
     {
-      "source": "/demos(?:/|$)",
+      "source": "/demos",
       "destination": "/demos.html"
     },
     {
-      "source": "/index(?:/|$)",
+      "source": "/index",
       "destination": "/index.html"
     },
     {
-      "source": "/navs/libraries(?:/|$)",
+      "source": "/navs/libraries",
       "destination": "/navs/libraries.html"
     },
     {
-      "source": "/navs/tools(?:/|$)",
+      "source": "/navs/tools",
       "destination": "/navs/tools.html"
     },
     {
-      "source": "/navs(?:/|$)",
+      "source": "/navs",
       "destination": "/navs.html"
     },
     {
-      "source": "/posts(?:/|$)",
+      "source": "/posts",
       "destination": "/posts.html"
     },
     {
-      "source": "/projects(?:/|$)",
+      "source": "/projects",
       "destination": "/projects.html"
     },
     {
-      "source": "/zh/demos(?:/|$)",
+      "source": "/zh/demos",
       "destination": "/zh/demos.html"
     },
     {
-      "source": "/zh/navs/libraries(?:/|$)",
+      "source": "/zh/navs/libraries",
       "destination": "/zh/navs/libraries.html"
     },
     {
-      "source": "/zh/navs/tools(?:/|$)",
+      "source": "/zh/navs/tools",
       "destination": "/zh/navs/tools.html"
     },
     {
-      "source": "/zh/navs(?:/|$)",
+      "source": "/zh/navs",
       "destination": "/zh/navs.html"
     },
     {
-      "source": "/zh/posts(?:/|$)",
+      "source": "/zh/posts",
       "destination": "/zh/posts.html"
     },
     {
-      "source": "/zh/projects(?:/|$)",
+      "source": "/zh/projects",
       "destination": "/zh/projects.html"
     },
     {
-      "source": "/zh(?:/|$)",
+      "source": "/zh",
       "destination": "/zh.html"
     }
   ],

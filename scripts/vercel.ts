@@ -27,7 +27,7 @@ function readHtmlFiles(dir) {
       const relativePath = path
         .relative(distPath, filePath)
         .replace(/\\/g, "/");
-      const source = `/${relativePath.replace(/\.html$/, "")}(?:\/|$)`; // 使用(?:\/|$)来匹配末尾斜杠或行尾
+      const source = `/${relativePath.replace(/\.html$/, "")}`;
       rewrites.push({ source: source, destination: `/${relativePath}` });
     }
   });
