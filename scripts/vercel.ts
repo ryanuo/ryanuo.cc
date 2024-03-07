@@ -27,7 +27,7 @@ function readHtmlFiles(dir) {
       const relativePath = path
         .relative(distPath, filePath)
         .replace(/\\/g, "/");
-      const source = `/${relativePath.replace(/\.html$/, "")}(?:\\/|$)`; // 使用(?:\/|$)来匹配末尾斜杠或行尾
+      const source = `/${relativePath.replace(/\.html$/, "")}(?:\/|$)`; // 使用(?:\/|$)来匹配末尾斜杠或行尾
       rewrites.push({ source: source, destination: `/${relativePath}` });
     }
   });
@@ -39,6 +39,10 @@ function generateVercelConfig() {
 
   const config = {
     rewrites,
+    routes: [
+      { handle: "filesystem" },
+      { src: "/(.*)", status: 404, dest: "/404.html" },
+    ],
   };
 
   fs.writeFileSync(
