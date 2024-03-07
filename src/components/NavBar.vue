@@ -1,10 +1,32 @@
 <script setup lang="ts">
+import { langIconMap } from "@/i18n";
+import { useI18n } from "vue-i18n";
+const lange = useStorage("lang", "en-US");
+
+const { locale } = useI18n(); // 获取当前语言
+const langIcon = computed(() => {
+  return langIconMap[locale.value];
+});
+
 function toTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
+
+const handleLangChange = () => {
+  let lang;
+  if (locale.value === "zh-CN") {
+    lang = "en-US";
+  } else {
+    lang = "zh-CN";
+  }
+  locale.value = lang;
+  lange.value = lang;
+  // // 强制刷新页面
+  window.location.reload();
+};
 
 const { y: scroll } = useWindowScroll();
 </script>
@@ -41,20 +63,24 @@ const { y: scroll } = useWindowScroll();
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/navs" title="Navs">
-          <span class="lt-md:hidden">Navs</span>
+        <RouterLink to="/navs" :title="$t('nav.navs', 'Navs')">
+          <span class="lt-md:hidden">{{ $t("nav.navs", "Navs") }}</span>
           <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
         </RouterLink>
-        <a href="https://m.ziliao88.top/" target="_blank" title="Blog">
-          <span class="lt-md:hidden">Blog</span>
+        <a
+          href="https://m.ziliao88.top/"
+          target="_blank"
+          :title="$t('nav.Blog', 'Blog')"
+        >
+          <span class="lt-md:hidden">{{ $t("nav.Blog", "Blog") }}</span>
           <div i-ri-article-line md:hidden />
         </a>
-        <RouterLink to="/projects" title="Projects">
-          <span class="lt-md:hidden">Projects</span>
+        <RouterLink to="/projects" :title="$t('nav.Projects', 'Projects')">
+          <span class="lt-md:hidden">{{ $t("nav.Projects", "Projects") }}</span>
           <div i-ri-lightbulb-line class="md:hidden" />
         </RouterLink>
-        <RouterLink to="/demos" title="Demos">
-          <span class="lt-md:hidden">Demos</span>
+        <RouterLink to="/demos" :title="$t('nav.Demos', 'Demos')">
+          <span class="lt-md:hidden">{{ $t("nav.Demos", "Demos") }}</span>
           <div i-ri-screenshot-line class="md:hidden" />
         </RouterLink>
         <a
@@ -78,6 +104,9 @@ const { y: scroll } = useWindowScroll();
             i-la-rss-square
             style="font-size: 1.25rem; margin: 0 -0.125rem"
           />
+        </a>
+        <a class="flex items-center" href="javascript:void(0)">
+          <div @click="handleLangChange" :class="langIcon"></div>
         </a>
         <ToggleTheme />
       </div>

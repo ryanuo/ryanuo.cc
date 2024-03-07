@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
+const { locale } = useI18n();
+const alia = computed(() => (locale.value === "zh-CN" ? "/zh" : ""));
 defineProps({
   description: {
     type: String,
@@ -19,23 +22,27 @@ const route = useRoute();
       <RouterLink
         to="/navs"
         class="!border-none"
-        :class="route.path === '/navs' ? activeStyle : inactiveStyle"
+        :class="route.path === `${alia}/navs` ? activeStyle : inactiveStyle"
       >
-        Navs
+        {{ $t("tabs.navs", "Navs") }}
       </RouterLink>
       <RouterLink
         to="/navs/libraries"
         class="!border-none"
-        :class="route.path === '/navs/libraries' ? activeStyle : inactiveStyle"
+        :class="
+          route.path === `${alia}/navs/libraries` ? activeStyle : inactiveStyle
+        "
       >
-        Libraries
+        {{ $t("tabs.libraries", "Libraries") }}
       </RouterLink>
       <RouterLink
         to="/navs/tools"
         class="!border-none"
-        :class="route.path === '/navs/tools' ? activeStyle : inactiveStyle"
+        :class="
+          route.path === `${alia}/navs/tools` ? activeStyle : inactiveStyle
+        "
       >
-        Tools
+        {{ $t("tabs.tools", "Tools") }}
       </RouterLink>
     </div>
     <div class="my-4 p1 rounded-lg text-gray-500!" style="font-size: 14px">

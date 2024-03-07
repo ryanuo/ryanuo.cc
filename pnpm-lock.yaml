@@ -20,6 +20,9 @@ dependencies:
   vue:
     specifier: ^3.4.19
     version: 3.4.20(typescript@5.3.3)
+  vue-i18n:
+    specifier: ^9.9.0
+    version: 9.9.0(vue@3.4.20)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.0(vue@3.4.20)
@@ -697,6 +700,27 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@intlify/core-base@9.9.0:
+    resolution: {integrity: sha512-C7UXPymDIOlMGSNjAhNLtKgzITc/8BjINK5gNKXg8GiWCTwL6n3MWr55czksxn8RM5wTMz0qcLOFT+adtaVQaA==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/message-compiler': 9.9.0
+      '@intlify/shared': 9.9.0
+    dev: false
+
+  /@intlify/message-compiler@9.9.0:
+    resolution: {integrity: sha512-yDU/jdUm9KuhEzYfS+wuyja209yXgdl1XFhMlKtXEgSFTxz4COZQCRXXbbH8JrAjMsaJ7bdoPSLsKlY6mXG2iA==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/shared': 9.9.0
+      source-map-js: 1.0.2
+    dev: false
+
+  /@intlify/shared@9.9.0:
+    resolution: {integrity: sha512-1ECUyAHRrzOJbOizyGufYP2yukqGrWXtkmTu4PcswVnWbkcjzk3YQGmJ0bLkM7JZ0ZYAaohLGdYvBYnTOGYJ9g==}
+    engines: {node: '>= 16'}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.4:
     resolution: {integrity: sha512-Oud2QPM5dHviZNn4y/WhhYKSXksv+1xLEIsNrAbGcFzUN3ubqWRFT5gwPchNc5NuzILOU4tPBDTZ4VwhL8Y7cw==}
@@ -3397,6 +3421,18 @@ packages:
         optional: true
     dependencies:
       vue: 3.4.20(typescript@5.3.3)
+
+  /vue-i18n@9.9.0(vue@3.4.20):
+    resolution: {integrity: sha512-xQ5SxszUAqK5n84N+uUyHH/PiQl9xZ24FOxyAaNonmOQgXeN+rD9z/6DStOpOxNFQn4Cgcquot05gZc+CdOujA==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@intlify/core-base': 9.9.0
+      '@intlify/shared': 9.9.0
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.20(typescript@5.3.3)
+    dev: false
 
   /vue-router-better-scroller@0.0.0(vue-router@4.3.0)(vue@3.4.20):
     resolution: {integrity: sha512-E+ovMBUOgr0TU6rYnc5X8h7rlu+QUkK2AMBXt2S6yMrAlW86cq6k5OExM4WnL4vfHbmJEtf+SbAtZ3H3bxYoBQ==}

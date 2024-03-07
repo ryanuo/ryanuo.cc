@@ -193,3 +193,33 @@ button:focus-visible {
 ::selection {
   background: #8884;
 }
+
+
+.i-icon-park-outline-english {
+  --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 48 48' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Crect width='36' height='36' x='6' y='6' rx='3'/%3E%3Cpath d='M13 31V17h8m-8 7h7.5M13 31h7.5m5.5 0V19m0 12v-6.5a4.5 4.5 0 0 1 4.5-4.5v0a4.5 4.5 0 0 1 4.5 4.5V31'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask: var(--un-icon) no-repeat;
+  mask: var(--un-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: currentColor;
+  color: inherit;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  margin-top: .2em;
+}
+
+
+.i-icon-park-outline-chinese {
+  --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 48 48' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-width='4'%3E%3Crect width='36' height='36' x='6' y='6' stroke-linejoin='round' rx='3'/%3E%3Cpath stroke-linejoin='round' d='M14 18h20v10H14z'/%3E%3Cpath d='M24 14v21'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask: var(--un-icon) no-repeat;
+  mask: var(--un-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: currentColor;
+  color: inherit;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  margin-top: .2em;
+}

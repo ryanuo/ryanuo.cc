@@ -4,13 +4,14 @@ import { ViteSSG, ViteSSGContext } from "vite-ssg";
 import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@unocss/reset/tailwind.css";
-import "./styles/style.css";
 import "./styles/markdown.css";
 import "./styles/prose.css";
+import "./styles/style.css";
 
 import "uno.css";
 
 import App from "./App.vue";
+import i18n, { handleLanguageSwitch } from "./i18n";
 
 NProgress.configure({ showSpinner: false });
 const routes = autoRoutes.map((i) => {
@@ -25,7 +26,8 @@ export const createApp = ViteSSG(
   {
     routes,
   },
-  ({ router, isClient }: ViteSSGContext) => {
+  ({ router, isClient, app }: ViteSSGContext) => {
+    app.use(i18n);
     if (isClient) {
       const html = document.querySelector("html")!;
       setupRouterScroller(router, {
@@ -39,7 +41,8 @@ export const createApp = ViteSSG(
         },
         behavior: "auto",
       });
-      router.beforeEach(() => {
+      router.beforeEach((to: any, from: any, next: any) => {
+        handleLanguageSwitch(to, from, next);
         NProgress.start();
       });
       router.afterEach(() => {
