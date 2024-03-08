@@ -9,7 +9,7 @@
       >
       2021-PRESENT © Ryan Co
       <a target="_blank" href="https://github.com/antfu" style="color: inherit"
-        >(Template)</a
+        >(source)</a
       ></span
     >
     <div class="flex-auto" />
