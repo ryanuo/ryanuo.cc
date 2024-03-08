@@ -18,7 +18,7 @@ const route = useRoute();
 
 <template>
   <div class="tabs max-w-300 m-auto mb-5 select-none animate-none! op100!">
-    <div mb-0 flex="~ col gap-1 sm:row sm:gap-3 wrap" text-3xl>
+    <div mb-0 flex="~ gap-1 sm:row gap-2 sm:gap-3 wrap" text-3xl>
       <RouterLink
         to="/navs"
         class="!border-none"

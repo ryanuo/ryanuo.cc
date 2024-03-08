@@ -68,7 +68,7 @@ const handleNav = (obj: Project) => {
         <li
           v-for="project in pros[key]"
           :key="project.name"
-          class="mb-2 list-none w-68"
+          class="mb-2 list-none w-42 md:w-68"
           @click="() => handleNav(project)"
         >
           <NavItem :project="project" />

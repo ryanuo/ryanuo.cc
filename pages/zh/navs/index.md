@@ -18,7 +18,7 @@ projects:
       link: 'https://tool.lu/'
       desc: '在线工具库。'
       image: 'https://tool.lu/favicon.ico'
-    - name: 'Npm.devtool.tech'
+    - name: 'Npm Devtool'
       link: 'https://npm.devtool.tech/'
       desc: 'npm包引用到cdn在线。'
       image: 'https://npm.devtool.tech/logo.svg'

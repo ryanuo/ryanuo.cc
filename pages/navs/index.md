@@ -18,7 +18,7 @@ projects:
       link: 'https://tool.lu/'
       desc: 'Online Tool Library.'
       image: 'https://tool.lu/favicon.ico'
-    - name: 'Npm.devtool.tech'
+    - name: 'Npm Devtool'
       link: 'https://npm.devtool.tech/'
       desc: 'the npm package refers to the cdn online'
       image: 'https://npm.devtool.tech/logo.svg'
