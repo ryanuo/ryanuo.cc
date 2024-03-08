@@ -1,173 +1,174 @@
 ---
-title: Navs - Ryan Co
-display: Front Navigation
-description: Front-end navigation includes commonly used front-end third-party websites, front-end knowledge, and front-end related content.
+title: 导航 - Ryan Co
+display: 前端导航
+description: 前端导航包括常用的前端第三方网站、前端知识以及与前端相关的内容。
 plum: true
 isHidenTitle: true
 projects:
-  Common Tools:
+  常用工具:
     - name: 'Can I Use'
       link: 'https://caniuse.com/'
-      desc: 'provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.'
+      desc: '提供最新的浏览器支持表格，用于支持桌面和移动网络浏览器上的前端网络技术。'
       image: 'https://caniuse.com/img/favicon-128.png'
     - name: 'Carbon'
       link: 'https://carbon.now.sh/'
-      desc: 'Code generation image.'
+      desc: '代码生成图像。'
       image: 'https://carbon.now.sh/favicon.ico'
     - name: 'Tool.lu'
       link: 'https://tool.lu/'
-      desc: 'Online Tool Library.'
+      desc: '在线工具库。'
       image: 'https://tool.lu/favicon.ico'
     - name: 'Npm.devtool.tech'
       link: 'https://npm.devtool.tech/'
-      desc: 'the npm package refers to the cdn online'
+      desc: 'npm包引用到cdn在线。'
       image: 'https://npm.devtool.tech/logo.svg'
     - name: 'JSON Tool'
       link: 'https://www.json.cn/'
-      desc: 'Provides services such as JSON parsing, validation, formatting, compression, editors, and the conversion between JSON and XML.'
-      image: 'https://www.json.cn/r/img/favicon/favicon.ico'
+      desc: '提供JSON解析、验证、格式化、压缩、编辑器以及JSON与XML之间转换的服务。'
+      image: 'https://www.json.cn/r/img/favicon/favicon.ico' 
+
     
-  AI Navigation:
+  AI导航:
     - name: 'Chatgpt of mirror'
       link: 'https://github.com/xx025/carrot'
       image: '/icons/chatgpt.png'
-      tags: ['Free']
+      tags: ['免费']
     - name: 'Chatgpt'
       link: 'https://chat.openai.com/chat'
       image: '/icons/chatgpt.png'
-      tags: ['Official']
-    - name: 'Tongyi Qianwen'
+      tags: ['官方']
+    - name: '通义千问'
       link: 'https://tongyi.aliyun.com/qianwen/'
       image: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png'
 
-  React Ecosystem:
+  React生态:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'
       image: 'https://zh-hans.reactjs.org/favicon.ico'
-      desc: React Chinese Translation Document.
-      tags: ['Chinese Translation']
+      desc: 'React 中文翻译文档。'
+      tags: ['翻译']
     - name: 'React Router'
       link: 'https://reactrouter.com'
       image: 'https://reactrouter.com/favicon-light.png'
-      desc: Navigation routing solution for React apps.
+      desc: 'React 应用的导航路由解决方案。'
     - name: 'Next.js'
       link: 'https://nextjs.org'
       image: 'https://nextjs.org/favicon.ico'
-      desc: Next.js by Vercel is the full-stack React framework for the web.
+      desc: 'Vercel 出品的全栈 React 框架，用于 Web 开发。'
     - name: 'UmiJS'
       link: 'https://umijs.org'
       image: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg'
-      desc: Extensible, router-driven front-end framework with rich plugins.
+      desc: '可扩展、基于路由的前端框架，拥有丰富的插件。'
     - name: 'Ant Design'
       link: 'https://ant-design.antgroup.com'
       image: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png'
-      desc: The world's second most popular React UI framework.
-      tags: ['PC']
+      desc: '全球第二受欢迎的 React UI 框架。'
+      tags: ['电脑']
     - name: 'Ant Design Mobile'
       link: 'http://ant-design-mobile.antgroup.com'
       image: 'https://gw.alipayobjects.com/zos/bmw-prod/69a27fcc-ce52-4f27-83f1-c44541e9b65d.svg'
-      desc: 'Essential UI blocks for building mobile web apps.'
-      tags: ['Mobile']
+      desc: '构建移动网络应用的基础 UI 组件。'
+      tags: ['手机']
     - name: 'Mantine'
       link: 'https://mantine.dev'
       image: 'https://mantine.dev/favicon.svg'
-      desc: Modern React component library and hooks collection.
-      tags: ['Components']
+      desc: 现代 React 组件库和钩子集合。
+      tags: ['组件']
     - name: 'zustand'
       link: 'https://docs.pmnd.rs/zustand/getting-started/introduction'
       image: 'https://zustand-demo.pmnd.rs/favicon.ico'
-      desc: 'Minimal and flexible state management library.'
+      desc: 最小且灵活的状态管理库。
     - name: 'Valtio'
       link: 'https://valtio.pmnd.rs'
       image: 'https://valtio.pmnd.rs/favicon.ico'
-      desc: 'makes proxy-state simple for React and Vanilla'
+      desc: '使代理状态对 React 和 Vanilla 简单化。'
     - name: 'Jotai'
       link: 'https://jotai.jscn.org'
       image: 'https://jotai.jscn.org/favicon.svg'
-      desc: 'Primitive And Flexible State Management For React'
+      desc: 'React 的原始且灵活的状态管理。'
     - name: 'Redux'
       link: 'https://cn.redux.js.org'
       image: 'https://cn.redux.js.org/img/favicon/favicon.ico'
-      desc: 'Predictable state container for JavaScript apps.'
+      desc: 'JavaScript 应用的可预测状态容器。'
     - name: 'MobX'
       link: 'https://zh.mobx.js.org'
       image: 'https://zh.mobx.js.org/assets/mobx.png'
-      desc: 'Reactive state management library.'
+      desc: '响应式状态管理库。'
     - name: 'ahooks'
       link: 'https://ahooks.js.org'
       image: 'https://ahooks.js.org/simple-logo.svg'
-      desc: 'Collection of efficient React Hooks.'
+      desc: '高效的 React Hooks 集合。'
 
-  Vue Ecosystem:
+  Vue生态:
     - name: 'Vue3'
       link: 'https://cn.vuejs.org'
       image: 'https://cn.vuejs.org/logo.svg'
-      desc: 'vue js a progressive java script framework'
+      desc: 'Vue.js 是一个渐进式 JavaScript 框架。'
     - name: 'Vue2'
       link: 'https://v2.cn.vuejs.org/'
       image: 'https://cn.vuejs.org/logo.svg'
-      desc: 'vue js a progressive java script framework'
-      tags: ['UnMaintained']
+      desc: 'Vue.js 是一个渐进式 JavaScript 框架。'
+      tags: ['弃用']
     - name: 'Vue Router'
       link: 'https://router.vuejs.org'
       image: 'https://router.vuejs.org/logo.svg'
-      desc: 'The official Router for Vue.js'
+      desc: 'Vue.js 的官方路由管理器'
     - name: 'Pinia'
       link: 'https://pinia.vuejs.org'
       image: 'https://pinia.vuejs.org/logo.svg'
-      desc: 'Intuitive, type safe, light and flexible Store for Vue'
+      desc: '直观、类型安全、轻量且灵活的 Vue 存储管理库'
     - name: 'Nuxt.js'
       link: 'https://nuxt.com'
       image: 'https://nuxt.com/icon.png'
-      desc: 'Nuxt is an open source framework that makes web development intuitive and powerful. '
+      desc: 'Nuxt 是一个开源框架，让web开发变得直观且强大'
     - name: 'VueUse'
       link: 'https://vueuse.org'
       image: 'https://vueuse.org/favicon.ico'
-      desc: 'Collection of essential Vue Composition Utilities'
+      desc: 'Vue 组合式API实用工具集合'
     - name: 'Element Plus'
       link: 'https://element-plus.org'
       image: 'https://element-plus.org/images/element-plus-logo-small.svg'
-      desc: 'A Vue 3 based component library for designers and developers'
+      desc: '基于 Vue 3 构建的设计师和开发者适用的组件库'
     - name: 'Ant Design Vue'
       link: 'https://antdv.com'
       image: 'https://aliyuncdn.antdv.com/favicon.ico'
-      desc: 'An enterprise-class UI components based on Ant Design and Vue'
+      desc: '基于 Ant Design 和 Vue 的企业级 UI 组件库'
     - name: 'Vant'
       link: 'https://vant-ui.github.io'
       image: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png'
-      desc: 'Mobile UI Components built on Vue'
+      desc: '基于 Vue 构建的移动端 UI 组件库'
 
-  CSS Related:
+  CSS 相关:
     - name: 'UnoCSS'
       link: 'https://unocss.dev'
       image: 'https://unocss.dev/favicon.svg'
-      desc: 'The instant on-demand Atomic CSS engine'
+      desc: '即时按需的原子化 CSS 引擎'
     - name: 'Tailwind CSS'
       link: 'https://www.tailwindcss.cn'
       image: 'https://www.tailwindcss.cn/favicons/favicon-32x32.png?v=3'
-      desc: 'Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.'
-    - name: You-need-to-know-css
+      desc: 'Tailwind CSS 是一款以实用工具为主的 CSS 框架，无需离开 HTML 即可快速构建现代网站'
+    - name: 'You-need-to-know-css'
       link: 'https://lhammer.cn'
       image: 'https://lhammer.cn/css/images/favicon.ico'
-      desc: You-need-to-know-css
+      desc: '你需要了解的 CSS 知识汇总'
 
-  Icon library:
+  图标库:
     - name: 'Icônes'
       link: 'https://icones.js.org/'
       image: 'https://icones.js.org/favicon.svg'
-      desc: 'Icon design tool'
+      desc: '提供图标设计服务'
     - name: 'Iconify Design'
       link: 'https://iconify.design/'
       image: 'https://iconify.design/favicon.ico'
-      desc: 'All popular icon sets, one framework'
+      desc: '整合了所有流行图标的集合，只需一个框架'
     - name: 'WebFX'
       link: 'https://www.webfx.com/tools/emoji-cheat-sheet/'
       image: 'https://www.webfx.com/wp-content/uploads/2021/10/favicon.png'
-      desc: 'WebFX is the #1 digital marketing agency delivering over $6B in revenue for our clients. Get a free proposal and explore our digital marketing services.'
+      desc: 'WebFX是顶级数字营销机构，已为客户创造了超过60亿美元收入，可获取免费提案并探索我们多样化的数字营销服务'
     - name: 'Yesicon'
       link: 'https://yesicon.app/'
       image: 'https://yesicon.app/favicon-16x16.png'
-      desc: '168 icon sets with 210k+ icons, search across icon sets in multiple languages'
+      desc: '拥有168个图标集和超过21万个图标，支持多种语言跨图标集搜索'
 
 
 ---

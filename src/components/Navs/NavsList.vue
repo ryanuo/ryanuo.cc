@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { omit } from "lodash-es";
+import { useI18n } from "vue-i18n";
 interface Project {
   desc: string;
   name: string;
@@ -10,6 +11,7 @@ interface Project {
 }
 const props = defineProps<{ projects: Record<string, any[]> }>();
 const usedNavs = useStorage<Project[]>("used-navs", []);
+const { t } = useI18n();
 
 function slug(name: string) {
   return name.toLowerCase().replace(/[\s\\\/]+/g, "-");
@@ -20,7 +22,7 @@ const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
     return props.projects;
   } else {
     return {
-      "Recently Used": usedNavs.value,
+      [`${t("tabs.used", "Recently Used")}`]: usedNavs.value,
       ...props.projects,
     };
   }
@@ -86,7 +88,12 @@ const handleNav = (obj: Project) => {
       </div>
       <hr />
       <div>
-        If you have any additional navigation sites to add, please raise an
+        {{
+          $t(
+            "tabs.issues",
+            "If you have any additional navigation sites to add, please raise an"
+          )
+        }}
         <a
           class="border-b border-slate-300"
           href="https://github.com/rr210/harry.me/issues/new?assignees=&labels=add-sites&projects=&template=%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9-add-sites.md&title=Add+Sites"
