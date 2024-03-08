@@ -16,7 +16,7 @@ export const langIconMap: Record<string, string> = {
   "zh-CN": "i-icon-park-outline-chinese",
   "en-US": "i-icon-park-outline-english",
 };
-export function handleLanguageSwitch(to: any, from: any, next: any): void {
+export function handleLanguageSwitch(to: any, next: any): void {
   if (!lang.value || typeof lang.value !== "string") {
     console.error("Invalid language value");
     next();

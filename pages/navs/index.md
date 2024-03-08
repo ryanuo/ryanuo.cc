@@ -150,6 +150,10 @@ projects:
       link: 'https://lhammer.cn'
       image: 'https://lhammer.cn/css/images/favicon.ico'
       desc: You-need-to-know-css
+    - name: 'css_tricks'
+      link: 'https://qishaoxuan.github.io/css_tricks/'
+      image: 'https://qishaoxuan.github.io/css_tricks/images/favicon.png'
+      desc: 'A Summary Of Common Css Styling Tips'
 
   Icon library:
     - name: 'Icônes'

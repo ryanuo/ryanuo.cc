@@ -151,6 +151,10 @@ projects:
       link: 'https://lhammer.cn'
       image: 'https://lhammer.cn/css/images/favicon.ico'
       desc: '你需要了解的 CSS 知识汇总'
+    - name: 'CSS tricks'
+      link: 'https://qishaoxuan.github.io/css_tricks/'
+      image: 'https://qishaoxuan.github.io/css_tricks/images/favicon.png'
+      desc: '常见的css样式技巧汇总'
 
   图标库:
     - name: 'Icônes'

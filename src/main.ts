@@ -42,7 +42,7 @@ export const createApp = ViteSSG(
         behavior: "auto",
       });
       router.beforeEach((to: any, from: any, next: any) => {
-        handleLanguageSwitch(to, from, next);
+        handleLanguageSwitch(to, next);
         NProgress.start();
       });
       router.afterEach(() => {

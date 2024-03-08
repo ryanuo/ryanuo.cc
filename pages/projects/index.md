@@ -5,7 +5,23 @@ description: List of projects, accumulation of work experience, sharing of front
 plum: true
 ---
 
+<Company
+title="Digital Engine"
+link="https://www.digital-engine.com/"
+imageSrc="https://gw.alipayobjects.com/os/q/cms/images/liimnli4/de983eb5-3913-4689-b445-82728a5bfbe6_w216_h178.png"
+timeRange="Aug 2022 - Present" />
+
+
 As a principal front-end developer for a core module in a settlement product project at XX, I have been deeply involved in multiple critical areas of development and optimization, including configuration of settlement rules, automated testing, business migration, and data visualization. My role extended beyond technical implementation to encompass end-to-end management from conceptualization to deployment.
+
+#### Tech Stack
+
+<TechStack :techStack='[
+  {icon:"i-ion-logo-react",name:"React"},
+  {icon:"i-ph-file-ts-light",name:"TypeScript"},
+  {icon:"i-material-symbols-light-humidity-mid",name:"Umi"},
+  {icon:"i-devicon-plain-playwright",name:"Playwright"},
+]'/>
 
 #### Key Responsibilities
 
