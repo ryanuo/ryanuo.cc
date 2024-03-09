@@ -40,6 +40,10 @@ projects:
     - name: '通义千问'
       link: 'https://tongyi.aliyun.com/qianwen/'
       image: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png'
+    - name: 'AI工具集'
+      link: 'https://ai-bot.cn/'
+      image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
+      desc: '700+ AI工具集合官网，国内外AI工具集导航大全'
 
   React生态:
     - name: 'React'
