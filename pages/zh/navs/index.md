@@ -13,7 +13,7 @@ projects:
     - name: 'Carbon'
       link: 'https://carbon.now.sh/'
       desc: '代码生成图像。'
-      image: 'https://carbon.now.sh/favicon.ico'
+      icon: i-tabler-brand-carbon
     - name: 'Tool.lu'
       link: 'https://tool.lu/'
       desc: '在线工具库。'
@@ -43,11 +43,11 @@ projects:
     - name: 'AI工具集'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
-      
+
   React生态:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'
-      image: 'https://zh-hans.reactjs.org/favicon.ico'
+      icon: 'i-teenyicons-react-solid'
       desc: 'React 中文翻译文档。'
       tags: ['翻译']
     - name: 'React Router'
@@ -56,7 +56,7 @@ projects:
       desc: 'React 应用的导航路由解决方案。'
     - name: 'Next.js'
       link: 'https://nextjs.org'
-      image: 'https://nextjs.org/favicon.ico'
+      icon: i-cib-next-js
       desc: 'Vercel 出品的全栈 React 框架，用于 Web 开发。'
     - name: 'UmiJS'
       link: 'https://umijs.org'
@@ -83,7 +83,7 @@ projects:
       desc: 最小且灵活的状态管理库。
     - name: 'Valtio'
       link: 'https://valtio.pmnd.rs'
-      image: 'https://valtio.pmnd.rs/favicon.ico'
+      icon: i-mdi-alpha-v-box-outline
       desc: '使代理状态对 React 和 Vanilla 简单化。'
     - name: 'Jotai'
       link: 'https://jotai.jscn.org'
@@ -177,7 +177,29 @@ projects:
       image: 'https://yesicon.app/favicon-16x16.png'
       desc: '拥有168个图标集和超过21万个图标，支持多种语言跨图标集搜索'
 
-
+  网站部署:
+    - name: 'Netlify App'
+      link: 'https://app.netlify.com/'
+      icon: 'i-devicon-plain-netlify-wordmark'
+      desc: '快速构建优质网络体验的起点'
+      tags: ['推荐']
+    - name: 'GitHub Pages'
+      link: 'https://docs.github.com/zh/pages/getting-started-with-github-pages'
+      icon: 'i-icomoon-free-github'
+      desc: 'GitHub Pages 是一个静态站点托管服务'
+    - name: 'Vercel'
+      link: 'https://vercel.com/dashboard'
+      icon: i-akar-icons-vercel-fill
+      desc: 'Vercel 前端云为开发者提供框架、工作流程及基础设施，助力构建更快、更个性化的 Web 应用'
+    - name: 'Heroku'
+      link: 'https://www.heroku.com/'
+      image: 'https://www.herokucdn.com/favicon.ico'
+      desc: 'Heroku 是一个平台即服务（PaaS），允许开发人员在云端构建、运行和管理应用程序'
+    - name: 'Serverless'
+      link: 'https://cloud.tencent.com/product/sls'
+      image: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234'
+      desc: '基于无服务器架构'
+      tags: ['收费']
 ---
 <!-- @layout-full-width -->
 

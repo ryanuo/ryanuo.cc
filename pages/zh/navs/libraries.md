@@ -70,7 +70,7 @@ projects:
   事件处理:
     - name: 'hotkeys-js'
       link: 'https://wangchujiang.com/hotkeys-js/'
-      image: 'https://wangchujiang.com/favicon.ico'
+      icon: i-codicon-record-keys
       desc: '一个用于捕获键盘输入的健壮的 Javascript 库'
 #   Image Processing:
 #   File Processing:

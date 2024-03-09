@@ -13,7 +13,7 @@ projects:
     - name: 'Carbon'
       link: 'https://carbon.now.sh/'
       desc: 'Code generation image.'
-      image: 'https://carbon.now.sh/favicon.ico'
+      icon: i-tabler-brand-carbon
     - name: 'Tool.lu'
       link: 'https://tool.lu/'
       desc: 'Online Tool Library.'
@@ -42,11 +42,12 @@ projects:
     - name: 'AI Toolset'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
+      tags: ['Many']
 
   React Ecosystem:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'
-      image: 'https://zh-hans.reactjs.org/favicon.ico'
+      icon: 'i-teenyicons-react-solid'
       desc: React Chinese Translation Document.
       tags: ['Chinese Translation']
     - name: 'React Router'
@@ -55,7 +56,7 @@ projects:
       desc: Navigation routing solution for React apps.
     - name: 'Next.js'
       link: 'https://nextjs.org'
-      image: 'https://nextjs.org/favicon.ico'
+      icon: i-cib-next-js
       desc: Next.js by Vercel is the full-stack React framework for the web.
     - name: 'UmiJS'
       link: 'https://umijs.org'
@@ -82,7 +83,7 @@ projects:
       desc: 'Minimal and flexible state management library.'
     - name: 'Valtio'
       link: 'https://valtio.pmnd.rs'
-      image: 'https://valtio.pmnd.rs/favicon.ico'
+      icon: i-mdi-alpha-v-box-outline
       desc: 'makes proxy-state simple for React and Vanilla'
     - name: 'Jotai'
       link: 'https://jotai.jscn.org'
@@ -175,8 +176,31 @@ projects:
       link: 'https://yesicon.app/'
       image: 'https://yesicon.app/favicon-16x16.png'
       desc: '168 icon sets with 210k+ icons, search across icon sets in multiple languages'
-
-
+  
+  Web Build:
+    - name: 'Netlify App'
+      link: 'https://app.netlify.com/'
+      icon: 'i-devicon-plain-netlify-wordmark'
+      desc: 'Start building the best web experiences in record time'
+      tags: ['Recommend']
+    - name: 'GitHub Pages'
+      link: 'https://docs.github.com/zh/pages/getting-started-with-github-pages'
+      icon: 'i-icomoon-free-github'
+      desc: 'GitHub Pages is a static site hosting service'
+    - name: 'Vercel'
+      link: 'https://vercel.com/dashboard'
+      icon: i-akar-icons-vercel-fill
+      desc:  Vercel Frontend Cloud gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+    - name: 'Heroku'
+      link: 'https://www.heroku.com/'
+      image: 'https://www.herokucdn.com/favicon.ico'
+      desc: 'Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.'   
+    - name: 'Serverless'
+      link: 'https://cloud.tencent.com/product/sls'
+      image: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234'
+      desc: 'Based On The Serverless Framework'
+      tags: ['Collect fees']
+  
 ---
 <!-- @layout-full-width -->
 

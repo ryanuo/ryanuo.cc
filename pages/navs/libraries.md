@@ -70,7 +70,7 @@ projects:
   Event Handling:
     - name: 'hotkeys-js'
       link: 'https://wangchujiang.com/hotkeys-js/'
-      image: 'https://avatars0.githubusercontent.com/u/1680273?s=460&u=4471b74deb9973096418a93960c664c5ea3bd159&v=4'
+      icon: i-codicon-record-keys
       desc: 'A robust JavaScript library for capturing keyboard inputs'
 #   Image Processing:
 #   File Processing:
