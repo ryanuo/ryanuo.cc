@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "vercel:build": "pnpm run build && pnpm run vercel:route",
-    "build": "cross-env NODE_ENV=production vite-ssg build && pnpm run rss",
+    "build": "pnpm i cross-env && cross-env NODE_ENV=production vite-ssg build && pnpm run rss",
     "vercel:route": "esno scripts/vercel.ts",
     "rss": "esno scripts/rss.ts",
     "preview": "vite preview",

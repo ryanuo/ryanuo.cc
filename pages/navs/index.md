@@ -42,7 +42,6 @@ projects:
     - name: 'AI Toolset'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
-      desc: '700 Ai Tool Collection Official Website Domestic And Foreign Ai Tool Set Navigation Encyclopedia.'
 
   React Ecosystem:
     - name: 'React'

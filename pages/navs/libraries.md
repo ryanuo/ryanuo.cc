@@ -16,12 +16,17 @@ projects:
       desc: 'Functional programming utility library'
     - name: 'qs'
       link: 'https://github.com/ljharb/qs'
+      icon: 'i-carbon-url'
       desc: 'A querystring parser that supports nesting and arrays, with an API familiar to users of the node.js url module.'
     - name: 'ahooks'
       link: 'https://ahooks.js.org'
       image: 'https://ahooks.js.org/simple-logo.svg'
       desc: 'React Hooks for URL State Management.'
       tags: ['react']
+    - name: 'VueUse'
+      link: 'https://vueuse.org/'
+      image: 'https://vueuse.org/favicon.ico'
+      desc: 'Collection of essential Vue Composition Utilities'
 
   Time Processing:
     - name: 'Moment.js'
@@ -35,8 +40,38 @@ projects:
 
   Accuracy Processing:
     - name: 'bignumber.js'
-#   Rolling Processing:
-#   Event Processing:
+      link: 'https://mikemcl.github.io/bignumber.js/'
+    - name: 'Big.js'
+      link: 'https://mikemcl.github.io/big.js/'
+
+  Scroll Handling:
+    - name: 'better-scroll'
+      link: https://better-scroll.github.io/docs/zh-CN/
+      image: https://better-scroll.github.io/docs/assets/bs.ico
+      desc: 'A scroll handling library based on native scroll events'
+    - name: 'Smooth Scrollbar'
+      link: https://github.com/Grsmto/smoothscroll
+      icon: i-material-symbols-pan-tool-outline-rounded
+      desc: 'Customize scrollbars in modern browsers to provide a smooth scrolling experience.'
+    - name: 'react-scroll'
+      link: https://github.com/fisshy/react-scroll
+      icon: i-material-symbols-light-pan-zoom-rounded
+      desc: 'A lightweight library for enhancing scrolling functionality in React applications'
+    - name: 'React Scroll Parallax'
+      link: 'https://react-scroll-parallax.damnthat.tv/docs/intro'
+      image: 'https://react-scroll-parallax.damnthat.tv/img/favicon.ico'
+      desc: 'React scroll parallax effect library'
+      tags: ['React']
+    - name: 'Lenis'
+      link: 'https://lenis.darkroom.engineering/'
+      image: 'https://lenis.darkroom.engineering/favicon-32x32.png'
+      desc: 'Smooth scroll library'
+
+  Event Handling:
+    - name: 'hotkeys-js'
+      link: 'https://wangchujiang.com/hotkeys-js/'
+      image: 'https://avatars0.githubusercontent.com/u/1680273?s=460&u=4471b74deb9973096418a93960c664c5ea3bd159&v=4'
+      desc: 'A robust JavaScript library for capturing keyboard inputs'
 #   Image Processing:
 #   File Processing:
 #   Markdown Parser:

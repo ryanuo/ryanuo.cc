@@ -43,8 +43,7 @@ projects:
     - name: 'AI工具集'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
-      desc: '700+ AI工具集合官网，国内外AI工具集导航大全'
-
+      
   React生态:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'
