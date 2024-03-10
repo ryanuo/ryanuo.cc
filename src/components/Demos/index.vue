@@ -4,16 +4,16 @@ import { DemosTypes } from "./type";
 defineProps<{ demos: DemosTypes[] }>();
 
 // 当前主题
-const currentTheme = ref("");
+const currentTheme = ref("t1");
 
-const getRadomTheme = () => {
-  const themes = ["t1", "t2", "t3", "t4", "t5", "t6"];
-  const randomIndex = Math.floor(Math.random() * themes.length);
-  currentTheme.value = themes[randomIndex];
-};
+// const getRadomTheme = () => {
+//   const themes = ["t1", "t2", "t3", "t4", "t5", "t6"];
+//   const randomIndex = Math.floor(Math.random() * themes.length);
+//   currentTheme.value = themes[randomIndex];
+// };
 
 watchEffect(() => {
-  getRadomTheme();
+  // getRadomTheme();
 });
 </script>
 <template>
