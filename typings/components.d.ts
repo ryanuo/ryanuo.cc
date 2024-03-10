@@ -8,6 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Company: typeof import('./../src/components/Projects/Company.vue')['default']
+    copy: (typeof import("./../src/components/Demos/T1Card copy.vue"))["default"]
+    Demos: typeof import('./../src/components/Demos/index.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
     Logo: typeof import('./../src/components/Logo.vue')['default']
     NavBar: typeof import('./../src/components/NavBar.vue')['default']
@@ -17,6 +19,12 @@ declare module 'vue' {
     Plum: typeof import('./../src/components/Plum.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    T1Card: typeof import('./../src/components/Demos/T1Card.vue')['default']
+    T2Card: typeof import('./../src/components/Demos/T2Card.vue')['default']
+    T3Card: typeof import('./../src/components/Demos/T3Card.vue')['default']
+    T4Card: typeof import('./../src/components/Demos/T4Card.vue')['default']
+    T5Card: typeof import('./../src/components/Demos/T5Card.vue')['default']
+    T6Card: typeof import('./../src/components/Demos/T6Card.vue')['default']
     TechStack: typeof import('./../src/components/Projects/TechStack.vue')['default']
     ToggleTheme: typeof import('./../src/components/ToggleTheme.vue')['default']
     WrapPost: typeof import('./../src/components/WrapPost.vue')['default']
