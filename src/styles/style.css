@@ -5,6 +5,7 @@
   --c-scrollbar: #eee;
   --c-scrollbar-hover: #bbb;
   --c-hover-color: #000;
+  --c-demo-card-bg: #fffdfd;
 }
 
 html {
@@ -18,6 +19,8 @@ html.dark {
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;
   --c-hover-color: #fff;
+  --c-demo-card-bg: #050303;
+
 }
 
 a:hover {

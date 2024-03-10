@@ -13,6 +13,7 @@ console.log(props.demos);
       :key="demo.name"
     >
       <iframe
+        v-if="demo.video"
         width="100%"
         height="400px"
         :src="demo.video"
@@ -21,30 +22,50 @@ console.log(props.demos);
         frameborder="no"
         framespacing="0"
       />
+      <img v-if="!demo.video && demo.img" :src="demo.img" />
 
       <div class="card__content">
-        <p class="card__title">{{ demo.name }}</p>
+        <p class="card__title">
+          {{ demo.name }} <i class="i-ri-fullscreen-exit-fill full-w" />
+        </p>
         <p class="card__description">
           {{ demo.desc }}
         </p>
+        <div class="text-right position-absolute bottom-2 right-2">
+          <TechStack :techStack="demo.tags" uno="justify-end" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+.full-w {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 14px;
+}
+
+.full-w:hover {
+  /* 放大 */
+  transform: scale(1.2);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .card_t1 {
   position: relative;
   height: 200px;
-  background-color: #f2f2f2;
+  background-color: var(--c-demo-card-bg);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
+  box-shadow: 0 0 0 1px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
+  border: 0.1px solid #dadada;
 }
 
 .card_t1 iframe {
@@ -54,6 +75,7 @@ console.log(props.demos);
 .card_t1:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  border: none;
 }
 
 .card__content {
@@ -64,7 +86,7 @@ console.log(props.demos);
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: var(--c-demo-card-bg);
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -72,13 +94,14 @@ console.log(props.demos);
 
 .card_t1:hover .card__content {
   transform: rotateX(0deg);
+  box-shadow: 0 0px 10px 0.2px #999999c2;
 }
 
 .card__title {
   margin: 0;
   font-size: 24px;
-  color: #333;
   font-weight: 700;
+  position: relative;
 }
 
 .card_t1:hover iframe {

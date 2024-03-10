@@ -1,9 +1,12 @@
 <script setup lang="ts">
-defineProps<{ techStack: { icon: string; name: string }[] }>();
+defineProps<{
+  techStack: { icon?: string; name: string }[] | string[];
+  uno?: string;
+}>();
 </script>
 
 <template>
-  <div class="flex gap-2">
+  <div :class="`flex gap-2 ${uno}`">
     <div
       v-for="(tech, index) in techStack"
       :key="index"
@@ -21,9 +24,12 @@ defineProps<{ techStack: { icon: string; name: string }[] }>();
         border-gray-200
         border-dashed
       >
-        <i :class="tech.icon"></i>
+        <i
+          :class="typeof tech !== 'string' && tech.icon"
+          v-if="typeof tech !== 'string' && tech.icon"
+        />
         <span class="text-gray-500 dark:text-gray-300 align-middle">{{
-          tech.name
+          typeof tech === "string" ? tech : tech.name
         }}</span>
       </div>
     </div>
