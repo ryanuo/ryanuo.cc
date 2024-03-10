@@ -1,38 +1,45 @@
 <script setup lang="ts">
 import { DemosTypes } from "./type";
 
-const props = defineProps<{ demos: DemosTypes[] }>();
+const props = defineProps<{ demos: Record<number, DemosTypes[]> }>();
 console.log(props.demos);
 </script>
 
 <template>
-  <div flex="~ wrap gap-4 justify-between">
-    <div
-      class="card_t1 w-full md:w-8/17"
-      v-for="demo in demos"
-      :key="demo.name"
-    >
-      <iframe
-        v-if="demo.video"
-        width="100%"
-        height="400px"
-        :src="demo.video"
-        scrolling="no"
-        border="0"
-        frameborder="no"
-        framespacing="0"
-      />
-      <img v-if="!demo.video && demo.img" :src="demo.img" />
+  <div
+    v-for="index in Object.keys(props.demos)?.sort(
+      (a, b) => Number(b) - Number(a)
+    )"
+  >
+    <h2>{{ index }}</h2>
+    <div flex="~ wrap gap-4 justify-between">
+      <div
+        class="card_t1 w-full md:w-8/17"
+        v-for="demo in props.demos[Number(index)]"
+        :key="demo.name"
+      >
+        <iframe
+          v-if="demo.video"
+          width="100%"
+          height="400px"
+          :src="demo.video"
+          scrolling="no"
+          border="0"
+          frameborder="no"
+          framespacing="0"
+        />
+        <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1" />
 
-      <div class="card__content">
-        <p class="card__title">
-          {{ demo.name }} <i class="i-ri-fullscreen-exit-fill full-w" />
-        </p>
-        <p class="card__description">
-          {{ demo.desc }}
-        </p>
-        <div class="text-right position-absolute bottom-2 right-2">
-          <TechStack :techStack="demo.tags" uno="justify-end" />
+        <div class="card__content">
+          <p class="card__title">
+            {{ demo.name }} <i class="i-ri-fullscreen-exit-fill full-w" />
+          </p>
+          <p class="card__description line-clamp-3">
+            {{ demo.desc }}
+          </p>
+          <div class="text-right position-absolute bottom-2 right-2">
+            <TechStack :techStack="demo.tags" uno="justify-end" />
+          </div>
         </div>
       </div>
     </div>
@@ -85,6 +92,7 @@ console.log(props.demos);
   width: 100%;
   height: 100%;
   padding: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   background-color: var(--c-demo-card-bg);
   transform: rotateX(-90deg);
