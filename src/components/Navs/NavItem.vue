@@ -15,7 +15,7 @@ defineProps<{ project: Project }>();
   <a
     :href="project.link"
     target="_blank"
-    class="flex flex-col bg-gray-100 rounded-md text-gray-400 p2 h-full"
+    class="flex flex-col bg-gray-100 rounded-md text-gray-400 p2 h-full nav_a_wrap"
     hover="bg-white border border-gray-800! shadow-md"
     dark="bg-zinc-900 hover:bg-black hover:border-slate-800!"
   >
@@ -25,7 +25,7 @@ defineProps<{ project: Project }>();
         class="flex justify-center items-center bg-gray-200 dark:bg-zinc-700 rounded-md w-10 h-10"
       >
         <span v-if="project.icon" :class="`${project.icon} flex-1`" />
-        <div v-if="project.image" class="w-6 grayscale">
+        <div v-if="project.image" class="w-6 grayscale image-icon">
           <img class="rounded-lg" :src="project.image" />
         </div>
       </div>
@@ -56,5 +56,9 @@ defineProps<{ project: Project }>();
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.nav_a_wrap:hover .image-icon {
+  --uno: grayscale-0;
 }
 </style>

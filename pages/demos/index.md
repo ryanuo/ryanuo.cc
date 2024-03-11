@@ -5,23 +5,25 @@ plum: true
 display: Demos
 demos:
   2024:
-    - name: 'Demos2'
-      link: '/demos'
-      video: './demos.mp4'
-      desc: 'Demos'
-      img: './demos.png'
-      readme: './demos.md'
-      tags: ['demos']
-      icon: 'demos'
+    - name: 'My Website'
+      link: 'https://github.com/rr210/harry.me'
+      desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display.'
+      img: '/demos/page-dark.png'
+      readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
+      tags: ['Vue3','Markdown','UnoCSS']
   2023:
-    - name: 'Demos2'
-      link: '/demos'
-      video: './demos.mp4'
-      desc: 'Demos'
-      img: './demos.png'
-      readme: './demos.md'
-      tags: ['demos']
-      icon: 'demos'
+    - name: 'tv-data-ana'
+      link: 'https://github.com/rr210/tv-data-ana'
+      desc: 'TV series data analysis and visualization system (Douban), including many visual analysis and integrated AI intelligent analysis.'
+      img: '/demos/tv.gif'
+      readme: 'https://github.com/rr210/tv-data-ana/blob/master/README.md'
+      tags: ['React','Django','Playwright','Echarts']
+    - name: 'cat-data-ana'
+      link: 'https://github.com/rr210/cat-data-ana'
+      desc: 'Visualization analysis of cat data on the Pet Cat Network and integrated AI intelligent analysis.'
+      img: '/demos/cat.gif'
+      readme: 'https://github.com/rr210/cat-data-ana/blob/master/README.md'
+      tags: ['React','FastAPI','Echarts']
   2022:
     - name: 'Blazeb2'
       link: 'https://github.com/rr210/blazeB2'
@@ -55,6 +57,11 @@ demos:
       icon: 'demos'
 
   2021:
+    - name: 'Assessment Form'
+      desc: 'the whole school teacher evaluation form development deployment of internal and external services using vue2 0 development'
+      img: '/demos/teacher.png'
+      tags: ['Vue2', 'Element UI','Private']
+      link: https://github.com/rr210/web_teacher
     - name: 'Shop Background'
       link: https://github.com/rr210/vue2-shop
       desc: 'The frontend is built using the Vue CLI scaffolding tool, and Element UI library is utilized to enhance and structure the project.'

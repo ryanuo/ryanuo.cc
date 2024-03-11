@@ -102,7 +102,7 @@ console.log(props.demos);
 
 .card_t1:hover .card__content {
   transform: rotateX(0deg);
-  box-shadow: 0 0px 10px 0.2px #999999c2;
+  box-shadow: 0 0px 1px 0.5px #cccbcbc2;
 }
 
 .card__title {

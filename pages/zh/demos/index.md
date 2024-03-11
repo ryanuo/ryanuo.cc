@@ -5,36 +5,26 @@ plum: true
 display: 演示
 demos:
   2024:
-    - name: 'Demos2'
-      link: '/demos'
-      video: './demos.mp4'
-      desc: 'Demos'
-      img: './demos.png'
-      readme: './demos.md'
-      tags: ['demos']
-      icon: 'demos'
+    - name: '个人主页'
+      link: 'https://github.com/rr210/harry.me'
+      desc: '我的个人网站包括个人简介、各种第三方平台链接、前端通用知识整理、博客文章、项目介绍以及演示展示。'
+      img: '/demos/page-dark.png'
+      readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
+      tags: ['Vue3','Markdown','UnoCSS']
   2023:
-    - name: 'Demos2'
-      link: '/demos'
-      video: './demos.mp4'
-      desc: 'Demos'
-      img: './demos.png'
-      readme: './demos.md'
-      tags: ['demos']
-      icon: 'demos'
+    - name: 'tv-data-ana'
+      link: 'https://github.com/rr210/tv-data-ana'
+      desc: '电视剧数据分析与可视化系统（基于豆瓣），包含多种可视化分析和集成的AI智能分析功能。'
+      img: '/demos/tv.gif'
+      readme: 'https://github.com/rr210/tv-data-ana/blob/master/README.md'
+      tags: ['React','Django','Playwright','Echarts']
+    - name: 'cat-data-ana'
+      link: 'https://github.com/rr210/cat-data-ana'
+      desc: '宠物猫网络中猫咪数据的可视化分析，集成了AI智能分析功能。'
+      img: '/demos/cat.gif'
+      readme: 'https://github.com/rr210/cat-data-ana/blob/master/README.md'
+      tags: ['React','FastAPI','Echarts']
 
-# - desc: '📷 一款基于backBlazeb2 API和Cloudflare CDN加速的图床工具。'
-# - desc: 'GitHub开源项目提交次数的三维可视化图表'
-# - desc: '一个使用Flask框架开发的深度学习中药害虫识别系统'
-# - desc: '一款个人博客微信小程序，通过配置Hexo插件生成JSON数据接口，适用于基于Hexo的各种主题版本'
-# - desc: '一个基于hexo-generator-restful生成Hexo API接口的npm包'
-
-# 2021:
-# - desc: '该项目前端采用Vue CLI脚手架构建，并运用Element UI库来提升和组织项目结构。'
-# - desc: '基于ECharts实现的文章重复度降低助手，可实时查看文章降重情况。'
-# - desc: '该电商可视化平台以ECharts和Vue为基础构建，后端采用Koa.js开发。'
-# - desc: '简历模板'
-# - desc: '包含微博热搜榜（参数wb）、百度热搜榜（参数bd）、360热点榜（参数360）及CSDN热榜接口（下方查看），并计划加入其他热搜功能。'
   2022:
     - name: 'Blazeb2'
       link: 'https://github.com/rr210/blazeB2'
@@ -69,6 +59,11 @@ demos:
 
 
   2021:
+    - name: '教师评测表单'
+      desc: '全校老师评测表单开发，部署内外服务，采用Vue2.0开发'
+      img: '/demos/teacher.png'
+      tags: ['Vue2', 'Element UI','私密']
+      link: https://github.com/rr210/web_teacher
     - name: 商城后台
       link: https://github.com/rr210/vue2-shop
       desc: '该项目前端采用Vue CLI脚手架构建，并运用Element UI库来提升和组织项目结构。'
