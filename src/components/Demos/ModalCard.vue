@@ -20,7 +20,7 @@ defineProps<{
     :reserve-scroll-bar-gap="options.reserveScrollBarGap"
     :swipe-to-close="options.swipeToClose"
     class="flex justify-center items-center"
-    content-class="max-w-90 md:max-w-5/6 md:max-h-5/6 mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
+    content-class="max-w-90 md:max-w-5/6 md:max-h-5/6 md:min-w-4/5 mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
   >
     <h1 class="text-xl flex justify-between border-b pb-2">
       {{ options.content.name }}
