@@ -72,6 +72,16 @@ projects:
       link: 'https://wangchujiang.com/hotkeys-js/'
       icon: i-codicon-record-keys
       desc: 'A robust JavaScript library for capturing keyboard inputs'
+  
+  Individual Components:
+    - name: 'Vue Final Modal'
+      link: 'https://vue-final-modal.org/'
+      image: 'https://vue-final-modal.org/favicon.ico'
+      desc: 'Vue Final Modal is the most powerful yet most light-weight modal library for Vue 3'
+    - name: 'Floating Vue'
+      link: 'https://floating-vue.starpad.dev/'
+      image: 'https://floating-vue.starpad.dev/favicon.png'
+      desc: 'Tooltips & dropdowns made easy'
 #   Image Processing:
 #   File Processing:
 #   Markdown Parser:

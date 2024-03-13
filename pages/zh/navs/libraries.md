@@ -72,6 +72,16 @@ projects:
       link: 'https://wangchujiang.com/hotkeys-js/'
       icon: i-codicon-record-keys
       desc: '一个用于捕获键盘输入的健壮的 Javascript 库'
+
+  单一组件:
+    - name: 'Vue Final Modal'
+      link: 'https://vue-final-modal.org/'
+      image: 'https://vue-final-modal.org/favicon.ico'
+      desc: 'Vue Final Modal 是一款适用于 Vue 3 的功能强大且体积小巧的模态对话框组件库'
+    - name: 'Floating Vue'
+      link: 'https://floating-vue.starpad.dev/'
+      image: 'https://floating-vue.starpad.dev/favicon.png'
+      desc: '轻松实现工具提示与下拉菜单'      
 #   Image Processing:
 #   File Processing:
 #   Markdown Parser:
