@@ -20,7 +20,7 @@ defineProps<{
     :reserve-scroll-bar-gap="options.reserveScrollBarGap"
     :swipe-to-close="options.swipeToClose"
     class="flex justify-center items-center"
-    content-class="w-90 md:max-w-2xl md:min-w-xl mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
+    content-class="max-w-90 md:max-w-5/6 md:max-h-5/6 mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
   >
     <h1 class="text-xl flex justify-between border-b pb-2">
       {{ options.content.name }}
@@ -32,24 +32,29 @@ defineProps<{
         />
         <a
           v-if="options.content.readme"
-          class="i-fluent-more-48-filled ml-1"
+          class="i-fluent-more-48-filled m-1"
           :href="options.content.readme"
           target="_blank"
+        />
+        <span
+          class="i-material-symbols-close-small-outline cursor-pointer hover:scale-120"
+          @click="options.modelValue = false"
         />
       </div>
     </h1>
     <p>
       {{ options.content.desc }}
     </p>
-    <div>
+    <div class="flex justify-center items-center">
       <img
+        class="w-full md:h-160 rounded"
         :src="options.content.img"
         v-if="options.content.img && !options.content.video"
       />
       <iframe
         :src="options.content.video"
         v-if="options.content.video"
-        class="w-full h-80"
+        class="w-full h-80 md:h-160"
       />
     </div>
   </VueFinalModal>
