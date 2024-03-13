@@ -3,6 +3,23 @@ import { DemosTypes } from "./type";
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>();
 console.log(props.demos);
+const getInitialValues = () => ({
+  teleportTo: "body",
+  displayDirective: "if",
+  hideOverlay: false,
+  overlayTransition: "vfm-slide-down",
+  contentTransition: "vfm-fade",
+  clickToClose: true,
+  escToClose: true,
+  background: "non-interactive",
+  lockScroll: true,
+  reserveScrollBarGap: true,
+  swipeToClose: "none",
+  modelValue: false,
+  content: {},
+});
+
+const options = ref(getInitialValues()) as any;
 </script>
 
 <template>
@@ -32,7 +49,16 @@ console.log(props.demos);
 
         <div class="card__content">
           <p class="card__title">
-            {{ demo.name }} <i class="i-ri-fullscreen-exit-fill full-w" />
+            {{ demo.name }}
+            <i
+              class="i-ri-fullscreen-exit-fill full-w"
+              @click="
+                () => {
+                  options.modelValue = true;
+                  options.content = demo;
+                }
+              "
+            />
           </p>
           <p class="card__description line-clamp-3">
             {{ demo.desc }}
@@ -44,6 +70,7 @@ console.log(props.demos);
       </div>
     </div>
   </div>
+  <ModalCard :options="options" />
 </template>
 <style scoped>
 .full-w {

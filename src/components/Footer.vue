@@ -8,7 +8,11 @@
         >CC BY-NC-SA 4.0</a
       >
       2021-PRESENT © Ryan Co
-      <a target="_blank" href="https://github.com/antfu" style="color: inherit"
+      <a
+        class="hidden md:block"
+        target="_blank"
+        href="https://github.com/antfu"
+        style="color: inherit"
         >(source)</a
       ></span
     >
