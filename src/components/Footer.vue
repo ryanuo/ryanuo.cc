@@ -9,7 +9,7 @@
       >
       2021-PRESENT © Ryan Co
       <a
-        class="hidden md:block"
+        class="hidden md:inline-block"
         target="_blank"
         href="https://github.com/antfu"
         style="color: inherit"
