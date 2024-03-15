@@ -15,7 +15,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         // sans: "Baloo Thambi 2",
-        sans: ["Inter:400,600,800", "HarmonyOS_Regular"],
+        sans: ["Inter:400,600,800", "HarmonyOS_Regular", "Pacifico"],
         mono: "DM Mono:400,600",
       },
     }),

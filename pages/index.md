@@ -3,6 +3,8 @@ title: Ryan Co
 description: Ryan Co's Introduce
 plum: true
 id: ryanco
+titleStyle: 
+  fontFamily: 'Pacifico'
 ---
 
 

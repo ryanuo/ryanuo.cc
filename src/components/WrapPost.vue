@@ -17,7 +17,7 @@ defineProps({
     m-auto
     mb-8
   >
-    <h1 class="mb-0 slide-enter-50">
+    <h1 class="mb-0 slide-enter-50" :style="frontmatter.titleStyle">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
   </div>
