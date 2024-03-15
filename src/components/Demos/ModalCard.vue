@@ -47,14 +47,14 @@ defineProps<{
     </p>
     <div class="flex justify-center items-center">
       <img
-        class="w-full md:h-160 rounded"
+        class="w-full md:h-160 rounded at-lg:h-70vh"
         :src="options.content.img"
         v-if="options.content.img && !options.content.video"
       />
       <iframe
         :src="options.content.video"
         v-if="options.content.video"
-        class="w-full h-80 md:h-160"
+        class="w-full h-80 md:h-160 at-lg:h-70vh"
       />
     </div>
   </VueFinalModal>

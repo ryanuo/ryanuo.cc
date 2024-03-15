@@ -53,7 +53,7 @@ const handleNav = (obj: Project) => {
 </script>
 
 <template>
-  <div class="max-w-300 mx-auto">
+  <div class="max-w-300 at-lg:max-w-212 mx-auto">
     <div
       v-for="(key, cidx) in Object.keys(pros)"
       :key="slug(key)"
