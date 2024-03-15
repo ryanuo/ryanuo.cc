@@ -13,6 +13,11 @@ const props = defineProps<{ projects: Record<string, any[]> }>();
 const usedNavs = useStorage<Project[]>("used-navs", []);
 const { t } = useI18n();
 
+const el = ref<HTMLElement | null>(null);
+const { style } = useDraggable(el, {
+  initialValue: { x: 18, y: 64 },
+});
+
 function slug(name: string) {
   return name.toLowerCase().replace(/[\s\\\/]+/g, "-");
 }
@@ -76,9 +81,14 @@ const handleNav = (obj: Project) => {
       </ul>
     </div>
     <div>
-      <div class="table-of-contents">
+      <div
+        class="table-of-contents"
+        ref="el"
+        :style="style"
+        style="position: fixed"
+      >
         <div class="table-of-contents-anchor">
-          <div class="i-ri-menu-2-fill" />
+          <div class="i-ri-menu-2-fill cursor-move" />
         </div>
         <ul>
           <li v-for="key of Object.keys(pros)" :key="key">
