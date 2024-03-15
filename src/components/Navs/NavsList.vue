@@ -14,8 +14,15 @@ const usedNavs = useStorage<Project[]>("used-navs", []);
 const { t } = useI18n();
 
 const el = ref<HTMLElement | null>(null);
-const { style } = useDraggable(el, {
-  initialValue: { x: 18, y: 64 },
+// 使用 useStorage 保存坐标位置
+const tocPosition = useStorage("draggablePosition", { x: 18, y: 130 });
+const { style, x, y } = useDraggable(el, {
+  initialValue: { x: tocPosition.value.x, y: tocPosition.value.y },
+});
+
+watch([x, y], ([newX, newY]) => {
+  tocPosition.value.x = newX;
+  tocPosition.value.y = newY;
 });
 
 function slug(name: string) {
