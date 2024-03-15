@@ -14,7 +14,7 @@ Currently, I work in [Zhengzhou](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9) as a
 
 Used technologies include React, Vue, TypeScript, and Playwright, and I am familiar with a variety of component libraries. In my work, I have participated in the development of multiple complex business finance back-office projects, for more details, please click to [view](/projects). Additionally, I have developed multiple personal projects. If you are interested, please click to [explore](/demos).
 <!-- MdItReplace workyears dynamically calculate the number of years of service -->
-Over the past [workyears] years, besides completing my daily work, I have also been using my free time to continuously learn and understand the latest front-end technologies and trends. And I have organized some commonly used tools and frontend libraries that I have used before, please click to take a [look](/navs).
+Over the past <WordYear/> years, besides completing my daily work, I have also been using my free time to continuously learn and understand the latest front-end technologies and trends. And I have organized some commonly used tools and frontend libraries that I have used before, please click to take a [look](/navs).
 
 Should you have an interest in front-end development, technology-related topics, or wish to discuss anything else, do not hesitate to reach out to me. We can share insights and foster mutual growth and advancement together.
 
