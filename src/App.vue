@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const route = useRoute();
+onBeforeMount(() => {
+  import("./lang-modal.ts" as any);
+});
 </script>
 
 <template>

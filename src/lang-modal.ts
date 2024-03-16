@@ -1,6 +1,6 @@
 (function createMirrorModal() {
   // 检查本地缓存中是否已经存储了语言设置并且不等于zh-CN
-  const storedLang = localStorage.getItem("lang");
+  const storedLang = window.localStorage.getItem("lang");
   if (
     (navigator.languages.includes("zh") ||
       navigator.languages.includes("zh-CN")) &&
