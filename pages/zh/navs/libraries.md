@@ -10,9 +10,9 @@ projects:
       link: 'https://www.lodashjs.com'
       image: 'https://www.lodashjs.com/img/favicon.ico'
       desc: 'Lodash 是一个一致性、模块化且高性能的 JavaScript 工具库'
-    - name: 'Ramda 文档'
+    - name: 'Ramda'
       link: 'https://ramdajs.com'
-      image: 'https://ramdajs.com/favicon.ico'
+      icon: i-logos-ramda
       desc: '函数式编程实用工具库'
     - name: 'qs'
       link: 'https://github.com/ljharb/qs'
@@ -81,19 +81,179 @@ projects:
     - name: 'Floating Vue'
       link: 'https://floating-vue.starpad.dev/'
       image: 'https://floating-vue.starpad.dev/favicon.png'
-      desc: '轻松实现工具提示与下拉菜单'      
-#   Image Processing:
-#   File Processing:
-#   Markdown Parser:
-#   Code Highlight:
-#   Form Processing:
-#   Drag And Drop:
-#   User Experience:
-#   Comment System:
-#   Compile Build Package:
-#   Automation Tools:
-#   lint:
-#   CLI:
+      desc: '轻松实现工具提示与下拉菜单'
+
+  图片处理:
+    - name: 'Medium Zoom'
+      link: 'https://medium-zoom.francoischalifour.com/'
+      image: 'https://medium-zoom.francoischalifour.com/favicon.e36d4567.ico'
+      desc: 一个类似 Medium 风格的 JavaScript 图片缩放库
+    - name: 'react-image-crop'
+      link: 'https://pqina.nl/pintura/'
+      image: 'https://pqina.nl/pintura/favicon-32x32.png'
+      desc: 一个强大的 JavaScript 图片编辑器，可与各种技术栈集成
+    - name: 'html2canvas'
+      link: 'https://github.com/niklasvh/html2canvas'
+      icon: i-streamline-interface-page-controller-fit-screen-fit-screen-adjust-display-artboard-frame-corner
+      desc: 使用 JavaScript 进行网页截图
+    - name: 'html-to-image'
+      link: 'https://github.com/bubkoo/html-to-image?tab=readme-ov-file#toPng'
+      icon: i-material-symbols-screenshot-region-rounded
+      desc: 通过 HTML5 canvas 和 SVG 将 DOM 节点生成为图像
+    - name: 'satori'
+      link: 'https://github.com/vercel/satori'
+      icon: i-tabler-brand-vercel
+      desc: 用于将 HTML 和 CSS 转换为 SVG 的智能库
+    - name: 'node-qrcode'
+      link: 'https://github.com/soldair/node-qrcode'
+      icon: i-tabler-qrcode
+      desc: 适用于 Node.js 的二维码生成器
+    - name: qrcode.react
+      link: https://github.com/zpao/qrcode.react
+      desc: 适用于 React 的 QRCode 组件
+      icon: i-f7-qrcode
+      tags: ['React']
+    - name: 'qrcode-terminal'
+      link: https://github.com/gtanner/qrcode-terminal
+      icon: i-bi-terminal-fill
+      desc: 在终端中生成二维码
+    - name: compressorjs
+      link: https://github.com/fengyuanchen/compressorjs
+      icon: i-material-symbols-compress
+      desc: 用于压缩图片的 JavaScript 库
+    - name: 'imagemin'
+      link: https://github.com/imagemin/imagemin
+      desc: 无缝地压缩图片
+      tags: ['未维护']
+      icon: i-ph-image-square-light
+
+  文件处理:
+    - name: FileSaver
+      link: https://github.com/eligrey/FileSaver.js
+      icon: i-material-symbols-file-download
+      desc: '一个用于在浏览器中保存文件的 JavaScript 库'
+    - name: StreamSaver.js
+      link: https://github.com/jimmywarting/StreamSaver.js
+      icon: i-ic-sharp-stream
+      desc:  StreamSaver能够直接将流异步写入文件系统
+    - name: sheetjs
+      link: https://github.com/SheetJS/sheetjs
+      icon: i-file-icons-microsoft-excel
+      desc: SheetJS 电子表格数据工具包
+    - name: node-fs-extra
+      link: https://github.com/jprichardson/node-fs-extra
+      icon: i-material-symbols-folder
+      desc: '一个 Node.js 的扩展，它为 fs 模块添加了额外的功能'
+      tags: ['Node']
+    - name: rimraf
+      link: https://github.com/isaacs/rimraf
+      icon: i-material-symbols-delete-sweep
+      desc: '一个用于删除文件的 Node.js 库'
+      tags: ['Node']
+    - name: node-glob
+      link: https://github.com/isaacs/node-glob
+      icon: i-material-symbols-find-in-page-outline-sharp
+      desc: '一个用于匹配文件路径的 Node.js 库'
+      tags: ['Node']
+    - name: 'node-globby'
+      link: https://github.com/sindresorhus/globby
+      icon: i-material-symbols-folder-outline
+      desc: Promise API\多种模式\否定模式\扩展目录
+      tags: ['Node']
+    - name: 'copy'
+      link: https://github.com/sindresorhus/cpy
+      icon: i-ion-copy-outline
+      desc: '一个用于复制文件的 Node.js 库'
+      tags: ['Node']
+
+  Markdown 解析器:
+    - name: 'markdown-it'
+      link: https://github.com/markdown-it/markdown-it
+      icon: i-material-symbols-markdown
+      desc: '一个快速、可扩展且功能强大的 Markdown 解析器'
+    - name: mermaid
+      link: https://github.com/mermaid-js/mermaid
+      icon: i-solar-diagram-up-bold-duotone
+      desc: 通过类似于markdown的文本生成流程图或序列图等图表
+    - name: slidev
+      link: https://github.com/slidevjs/slidev
+      icon: i-teenyicons-ppt-outline
+      desc: 一个基于 Vue 的基于 Markdown 的演示文稿生成器
+      tags: ['Vue']
+    - name: mdx-deck
+      link: https://github.com/jxnblk/mdx-deck
+      icon: i-bi-filetype-mdx
+      desc: 一个基于 React 的基于 Markdown 的演示文稿生成器
+      tags: ['React']
+    - name: react-markdown
+      link: https://github.com/remarkjs/react-markdown
+      icon: i-material-symbols-light-markdown-paste-rounded
+      desc: 适用于React的Markdown组件
+      tags: ['React']
+
+  代码高亮:
+    - name: prismjs
+      link: https://github.com/PrismJS/prism
+      icon: i-material-symbols-code
+      desc: '一个轻量、可扩展的语法高亮库'
+    - name: 'highlight.js'
+      link: https://github.com/highlightjs/highlight.js
+      icon: i-material-symbols-code
+      desc: JavaScript 语法高亮器，具备自动识别语言功能且无任何依赖项。
+    - name: react-highlighter
+      link: https://github.com/react-syntax-highlighter/react-syntax-highlighter
+      icon: i-material-symbols-code
+      desc: 通过内联样式使用 Prismjs 或 Highlightjs AST 为 react 提供语法高亮组件。
+      tags: ['React']
+  
+  轮播:
+    - name: 'swiper'
+      link: https://github.com/nolimits4web/swiper
+      icon: i-material-symbols-image
+      desc: '一个强大的基于 JavaScript 的滑动/滚动插件'
+
+  表单处理:
+    - name: formik
+      link: https://github.com/jaredpalmer/formik
+      icon: i-mdi-form-dropdown
+      desc: '一个用于处理表单的 React 库'
+    - name: 'react-hook-form'
+      link: https://github.com/react-hook-form/react-hook-form
+      icon: i-mdi-form-dropdown
+      desc: 用于表单状态管理和验证的 React Hooks （Web + React Native）
+    - name: formily
+      link: https://github.com/alibaba/formily
+      icon: i-mdi-form-dropdown
+      desc: '一个强大的表单处理库'
+  
+  表格:
+    - name: 'ag-grid'
+      link: https://github.com/ag-grid/ag-grid
+      icon: i-mdi-table
+      desc: 用于构建企业应用程序的最佳 JavaScript 数据表。支持 React / Angular / Vue / Plain JavaScript。
+
+  拖拽:
+    - name: Sortable
+      link: https://github.com/SortableJS/Sortable
+      icon: i-mdi-drag-horizontal
+      desc: 适用于现代浏览器和触摸设备的可重新排序的拖放列表。不需要 jQuery 或框架。
+    - name: dnd-kit
+      link: https://github.com/clauderic/dnd-kit
+      icon: i-ant-design-drag-outlined
+      desc: 现代、轻量级、高性能、可访问和可扩展的 React 拖放工具包。
+      tags: ['React']
+    - name: vue-draggable-plus
+      link: https://github.com/Alfred-Skyblue/vue-draggable-plus
+      icon: i-fluent-drag-24-regular
+      desc: 支持 Vue 3 和 Vue 2 的通用拖放组件
+      tags: ['Vue']
+#   拖放功能:
+#   用户体验优化:
+#   评论系统:
+#   编译构建打包:
+#   自动化工具集:
+#   代码风格检查（linting）:
+#   命令行界面（CLI）: 
 ---
 <!-- @layout-full-width -->
 
