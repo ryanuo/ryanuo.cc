@@ -86,6 +86,11 @@ button:focus-visible {
   background: #fff;
 }
 
+#nprogress .peg {
+  background: #888;
+  box-shadow: 0 0 10px #888, 0 0 5px #888;
+}
+
 @keyframes slide-enter {
   0% {
     transform: translateY(10px);
