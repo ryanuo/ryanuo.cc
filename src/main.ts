@@ -13,6 +13,7 @@ import "uno.css";
 
 import App from "./App.vue";
 import i18n, { handleLanguageSwitch } from "./i18n";
+import "./lang-modal.ts";
 
 NProgress.configure({ showSpinner: false });
 const routes = autoRoutes.map((i) => {
