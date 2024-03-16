@@ -246,8 +246,67 @@ projects:
       desc: Universal draggable component supporting Vue 3 and Vue 2.
       tags: ['Vue']
 
-#   User Experience:
-#   Comment System:
+  User Experience:
+    - name: react-joyride
+      link: https://github.com/gilbarbara/react-joyride
+      icon: i-ph-arrows-in-cardinal-fill
+      desc: Create guided tours in your application
+      tags: ['React']
+    - name: vue-tour
+      link: https://github.com/pulsardev/vue-tour
+      icon: i-mdi-led-outline
+      desc: Create tutorials for Vue applications
+      tags: ['Vue']
+    - name: shepherd
+      link: https://github.com/shepherd-pro/shepherd
+      icon: i-mdi-lightbulb-on-outline
+      desc: A simple and easy-to-use library for user guidance
+    - name: intro.js
+      link: https://github.com/usablica/intro.js
+      icon: i-material-symbols-arrows-more-down
+      desc: A lightweight and user-friendly library for onboarding tours
+    - name: driver.js
+      link: https://github.com/kamranahmedse/driver.js
+      icon: i-ph-arrows-out-line-horizontal-thin
+      desc: A lightweight and dependency-free JavaScript engine to focus user's attention on the whole page
+    - name: clipboard.js
+      link: https://github.com/zenorocha/clipboard.js
+      icon: i-mynaui-copy
+      desc: A simple and extensible JavaScript library for copying to the clipboard
+    - name: copy-to-clipboard
+      link: https://github.com/sudodoki/copy-to-clipboard
+      icon: i-mdi-clipboard-outline
+      desc: A simple and extensible JavaScript library for copying to the clipboard
+    - name: screenfull
+      link: https://github.com/sindresorhus/screenfull
+      icon: i-material-symbols-screen-search-desktop-outline
+      desc: A simple wrapper for the cross-browser JavaScript full-screen API
+    - name: nprogress
+      link: https://github.com/rstacruz/nprogress
+      icon: i-mingcute-loading-3-fill
+      desc: A simple progress bar for displaying progress at the top of the page.
+
+  Comment Systems:
+    - name: 'valine'
+      link: https://github.com/xCss/Valine
+      icon: i-mdi-comment-text-multiple-outline
+      desc: A fast, simple, and powerful comment system.
+    - name: giscus
+      link: https://github.com/giscus/giscus
+      desc: A comment system powered by GitHub Discussions.
+      icon: i-iconamoon-comment-dots-thin
+    - name: gitalk
+      link: https://github.com/gitalk/gitalk
+      desc: Gitalk is a modern comment component based on Github Issue and Preact.
+      icon: i-mdi-comment-text-multiple-outline
+    - name: waline
+      link: https://github.com/walinejs/waline
+      desc: Simple and secure comment system.
+      icon: i-uil-comment-info
+    - name: twikoo
+      link: https://github.com/twikoojs/twikoo
+      desc: A concise, secure, and free static website comment system.
+      icon: i-mdi-comment-quote-outline
 #   Compile Build Package:
 #   Automation Tools:
 #   lint:

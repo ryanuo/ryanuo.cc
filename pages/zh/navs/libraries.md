@@ -247,9 +247,68 @@ projects:
       icon: i-fluent-drag-24-regular
       desc: 支持 Vue 3 和 Vue 2 的通用拖放组件
       tags: ['Vue']
-#   拖放功能:
-#   用户体验优化:
-#   评论系统:
+
+  用户体验:
+    - name: react-joyride
+      link: https://github.com/gilbarbara/react-joyride
+      icon: i-ph-arrows-in-cardinal-fill
+      desc: 在应用中创建导览
+      tags: ['React']
+    - name: vue-tour
+      link: https://github.com/pulsardev/vue-tour
+      icon: i-mdi-led-outline
+      desc: 为 Vue 应用程序创建教程
+      tags: ['Vue']
+    - name: shepherd
+      link: https://github.com/shepherd-pro/shepherd
+      icon: i-mdi-lightbulb-on-outline
+      desc: 一个简单易用的用户引导库
+    - name: intro.js
+      link: https://github.com/usablica/intro.js
+      icon: i-material-symbols-arrows-more-down
+      desc: 轻量级、用户友好的入职旅游库
+    - name: driver.js
+      link: https://github.com/kamranahmedse/driver.js
+      icon: i-ph-arrows-out-line-horizontal-thin
+      desc: 一个轻量级、无依赖性的普通 JavaScript 引擎，可将用户的注意力集中在整个页面上
+    - name: clipboard.js
+      link: https://github.com/zenorocha/clipboard.js
+      icon: i-mynaui-copy
+      desc: 一个简单、可扩展的 JavaScript 复制到剪贴板库
+    - name: copy-to-clipboard
+      link: https://github.com/sudodoki/copy-to-clipboard
+      icon: i-mdi-clipboard-outline
+      desc: 一个简单、可扩展的 JavaScript 复制到剪贴板库
+    - name: screenfull
+      link: https://github.com/sindresorhus/screenfull
+      icon: i-material-symbols-screen-search-desktop-outline
+      desc: 用于跨浏览器使用 JavaScript 全屏 API 的简单包装器
+    - name: nprogress
+      link: https://github.com/rstacruz/nprogress
+      icon: i-mingcute-loading-3-fill
+      desc: 一个简单的进度条，用于在页面顶部显示进度。
+
+  评论系统:
+    - name: 'valine'
+      link: https://github.com/xCss/Valine
+      icon: i-mdi-comment-text-multiple-outline
+      desc: 一个快速、简单和强大的评论系统。
+    - name: giscus
+      link: https://github.com/giscus/giscus
+      desc: 由 GitHub Discussions 提供支持的评论系统。
+      icon: i-iconamoon-comment-dots-thin
+    - name: gitalk
+      link: https://github.com/gitalk/gitalk
+      desc: Gitalk 是一个基于 Github Issue 和 Preact 的现代评论组件。
+      icon: i-mdi-comment-text-multiple-outline
+    - name: waline
+      link: https://github.com/walinejs/waline
+      desc: 简单、安全的评论系统
+      icon: i-uil-comment-info
+    - name: twikoo
+      link: https://github.com/twikoojs/twikoo
+      desc: 一个简洁、安全、免费的静态网站评论系统
+      icon: i-mdi-comment-quote-outline
 #   编译构建打包:
 #   自动化工具集:
 #   代码风格检查（linting）:
