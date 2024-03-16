@@ -142,6 +142,17 @@
       width: 370px;
     }
   }
+  .mirror-modal-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
+  .mirror-modal-close:hover{
+    transform: scale(1.2);
+  }
     `;
     document.head.append(style);
 
@@ -151,6 +162,17 @@
     const dialog = document.createElement("div");
     dialog.className = "mirror-modal-dialog";
     modal.append(dialog);
+    const img = document.createElement("img");
+    img.classList.add("i-ant-design-close-outlined");
+    img.src =
+      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjY2NjY2NjIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03OTkuODU1IDE2Ni4zMTJjLjAyMy4wMDcuMDQzLjAxOC4wODQuMDU5bDU3LjY5IDU3LjY5Yy4wNDEuMDQxLjA1Mi4wNi4wNTkuMDg0YS4xMTguMTE4IDAgMCAxIDAgLjA2OWMtLjAwNy4wMjMtLjAxOC4wNDItLjA1OS4wODNMNTY5LjkyNiA1MTJsMjg3LjcwMyAyODcuNzAzYy4wNDEuMDQuMDUyLjA2LjA1OS4wODNhLjExOC4xMTggMCAwIDEgMCAuMDdjLS4wMDcuMDIyLS4wMTguMDQyLS4wNTkuMDgzbC01Ny42OSA1Ny42OWMtLjA0MS4wNDEtLjA2LjA1Mi0uMDg0LjA1OWEuMTE4LjExOCAwIDAgMS0uMDY5IDBjLS4wMjMtLjAwNy0uMDQyLS4wMTgtLjA4My0uMDU5TDUxMiA1NjkuOTI2TDIyNC4yOTcgODU3LjYyOWMtLjA0LjA0MS0uMDYuMDUyLS4wODMuMDU5YS4xMTguMTE4IDAgMCAxLS4wNyAwYy0uMDIyLS4wMDctLjA0Mi0uMDE4LS4wODMtLjA1OWwtNTcuNjktNTcuNjljLS4wNDEtLjA0MS0uMDUyLS4wNi0uMDU5LS4wODRhLjExOC4xMTggMCAwIDEgMC0uMDY5Yy4wMDctLjAyMy4wMTgtLjA0Mi4wNTktLjA4M0w0NTQuMDczIDUxMkwxNjYuMzcxIDIyNC4yOTdjLS4wNDEtLjA0LS4wNTItLjA2LS4wNTktLjA4M2EuMTE4LjExOCAwIDAgMSAwLS4wN2MuMDA3LS4wMjIuMDE4LS4wNDIuMDU5LS4wODNsNTcuNjktNTcuNjljLjA0MS0uMDQxLjA2LS4wNTIuMDg0LS4wNTlhLjExOC4xMTggMCAwIDEgLjA2OSAwYy4wMjMuMDA3LjA0Mi4wMTguMDgzLjA1OUw1MTIgNDU0LjA3M2wyODcuNzAzLTI4Ny43MDJjLjA0LS4wNDEuMDYtLjA1Mi4wODMtLjA1OWEuMTE4LjExOCAwIDAgMSAuMDcgMFoiLz48L3N2Zz4=";
+    dialog.append(img);
+    img.classList.add("mirror-modal-close");
+    img.addEventListener("click", () => {
+      document.body.removeChild(modal);
+      document.head.removeChild(style);
+      document.body.style.overflow = "";
+    });
 
     const title = document.createElement("div");
     title.className = "mirror-modal-title";
