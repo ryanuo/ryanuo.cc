@@ -6,6 +6,11 @@ plum: true
 isHidenTitle: true
 projects:
   常用工具:
+    - name: Web Tools
+      link: https://wangchujiang.com/tools/#/
+      desc: 许多有用的Web在线工具，适用于Web开发人员和程序员
+      icon: i-material-symbols-tools-wrench-outline
+      tags: ['推荐']
     - name: 'Can I Use'
       link: 'https://caniuse.com/'
       desc: '提供最新的浏览器支持表格，用于支持桌面和移动网络浏览器上的前端网络技术。'

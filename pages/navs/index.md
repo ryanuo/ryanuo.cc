@@ -6,6 +6,11 @@ plum: true
 isHidenTitle: true
 projects:
   Common Tools:
+    - name: Web Tools
+      link: https://wangchujiang.com/tools/#/
+      desc: Many many useful Web Online Tools For Web Developers & Programmers
+      icon: i-material-symbols-tools-wrench-outline
+      tags: ['Recommend']
     - name: 'Can I Use'
       link: 'https://caniuse.com/'
       desc: 'provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.'
