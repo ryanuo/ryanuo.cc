@@ -8,7 +8,24 @@ interface Project {
   tags: string[];
 }
 
-defineProps<{ project: Project }>();
+const props = defineProps<{
+  project: Project;
+}>();
+const errorImage =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNjY2NjY2MiIGQ9Ik0yMiAyMC43TDMuMyAyTDIgMy4zbDEgMVYxOWMwIDEuMS45IDIgMiAyaDE0LjdsMSAxek01IDE5VjYuM2w3LjYgNy42bC0xLjUgMS45TDkgMTMuMUw2IDE3aDkuN2wyIDJ6TTguOCA1bC0yLTJIMTljMS4xIDAgMiAuOSAyIDJ2MTIuMmwtMi0yVjV6Ii8+PC9zdmc+";
+const loadingImage =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NjY2NjYyIgc3Ryb2tlLWRhc2hhcnJheT0iMTUiIHN0cm9rZS1kYXNob2Zmc2V0PSIxNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xMiAzQzE2Ljk3MDYgMyAyMSA3LjAyOTQ0IDIxIDEyIj48YW5pbWF0ZSBmaWxsPSJmcmVlemUiIGF0dHJpYnV0ZU5hbWU9InN0cm9rZS1kYXNob2Zmc2V0IiBkdXI9IjAuM3MiIHZhbHVlcz0iMTU7MCIvPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgZHVyPSIxLjVzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgdHlwZT0icm90YXRlIiB2YWx1ZXM9IjAgMTIgMTI7MzYwIDEyIDEyIi8+PC9wYXRoPjwvc3ZnPg==";
+const imageLoaded = ref(false);
+const project = ref(props.project);
+
+const handleImageLoad = () => {
+  imageLoaded.value = true;
+};
+
+const handleImageError = () => {
+  imageLoaded.value = true; // 加载失败也表示图片加载完成
+  project.value.image = errorImage; // 加载失败时显示的默认图片
+};
 </script>
 <template>
   <!-- 点击跳转外链 -->
@@ -26,7 +43,14 @@ defineProps<{ project: Project }>();
       >
         <span v-if="project.icon" :class="`${project.icon} flex-1`" />
         <div v-if="project.image" class="w-6 grayscale image-icon">
-          <img class="rounded-lg" :src="project.image" />
+          <img class="rounded-lg" :src="loadingImage" v-if="!imageLoaded" />
+          <img
+            class="rounded-lg"
+            :src="project.image"
+            @load="handleImageLoad"
+            @error="handleImageError"
+            v-show="imageLoaded"
+          />
         </div>
       </div>
       <div flex items-center overflow-hidden>
