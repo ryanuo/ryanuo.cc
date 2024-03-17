@@ -29,13 +29,15 @@ defineProps<{ project: Project }>();
           <img class="rounded-lg" :src="project.image" />
         </div>
       </div>
-      <span class="text-base font-medium flex items-center pl-2">
-        {{ project.name }}
-      </span>
+      <div flex items-center overflow-hidden>
+        <div class="text-base font-size-3.8 pl-2 text-ellipsis line-clamp-1">
+          {{ project.name }}
+        </div>
+      </div>
       <div
         v-for="tag in project.tags"
         :key="tag"
-        class="absolute right-1 bg-gray-200 dark:bg-gray-800 rounded-lg px-1"
+        class="absolute hidden md:inline-flex md:right-1 bg-gray-200 dark:bg-gray-800 rounded-lg px-1"
         style="font-size: 13px"
       >
         {{ tag }}
