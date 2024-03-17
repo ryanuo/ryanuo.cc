@@ -309,7 +309,52 @@ projects:
       link: https://github.com/twikoojs/twikoo
       desc: 一个简洁、安全、免费的静态网站评论系统
       icon: i-mdi-comment-quote-outline
-#   编译构建打包:
+
+  编译构建打包:
+    - name: esno
+      link: https://github.com/antfu/esno
+      icon: i-arcticons-esp
+      desc: Node.js运行时增强了 esbuild，用于加载 TypeScript 和 ESM
+    - name: vite
+      link: https://github.com/vitejs/vite
+      icon: i-file-icons-vite
+      desc: 一个现代的前端构建工具，专注于开发速度和开发体验。
+    - name: rollup
+      link: https://github.com/rollup/rollup
+      icon: i-teenyicons-rollupjs-outline
+      desc: 下一代 ES 模块捆绑器
+    - name: turbo
+      link: https://github.com/vercel/turbo
+      icon: i-simple-icons-turborepo
+      desc: 增量打包器和构建系统，针对 JavaScript 和 TypeScript 进行了优化，用 Rust 编写，包括 Turbopack 和 Turborepo。
+    - name: webpackjs
+      link: https://www.webpackjs.com/
+      icon: i-cib-webpack
+      desc: 用于构建 JavaScript 应用程序的模块化打包器和构建工具。
+    - name: babeljs
+      link: https://www.babeljs.cn/
+      icon: i-nonicons-babel-16
+      desc: 用于将 ES6 代码转换为浏览器可理解的代码。
+    - name: esbuild
+      link: https://esbuild.github.io/
+      icon: i-simple-icons-esbuild
+      desc: 一个 JavaScript 代码构建工具和模块打包器。
+    - name: swc
+      link: https://swc.rs/
+      icon: i-simple-icons-swc
+      desc: SWC 是一个可扩展的基于 Rust 的平台，适用于下一代快速开发人员工具。
+    - name: tsup
+      link: https://github.com/egoist/tsup
+      icon: i-material-symbols-tsv-outline
+      desc: 捆绑 TypeScript 库的最简单、最快捷的方法。
+    - name: unbuild
+      link: https://github.com/unjs/unbuild
+      icon: i-material-symbols-build-outline-sharp
+      desc: 统一的 javascript 构建系统
+    - name: unplugin
+      link: https://github.com/unjs/unplugin
+      icon: i-clarity-plugin-outline-badged
+      desc: 适用于 Vite、Rollup、Webpack、esbuild、rolldown 等的统一插件系统
 #   自动化工具集:
 #   代码风格检查（linting）:
 #   命令行界面（CLI）: 

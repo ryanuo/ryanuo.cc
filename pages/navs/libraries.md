@@ -307,7 +307,54 @@ projects:
       link: https://github.com/twikoojs/twikoo
       desc: A concise, secure, and free static website comment system.
       icon: i-mdi-comment-quote-outline
-#   Compile Build Package:
+
+  Compiling & Building & Packaging:
+    - name: esno
+      link: https://github.com/antfu/esno
+      icon: i-arcticons-esp
+      desc: Node.js runtime enhanced with esbuild for loading TypeScript and ESM.
+    - name: vite
+      link: https://github.com/vitejs/vite
+      icon: i-file-icons-vite
+      desc: A modern frontend build tool focused on development speed and experience.
+    - name: rollup
+      link: https://github.com/rollup/rollup
+      icon: i-teenyicons-rollupjs-outline
+      desc: The next-generation ES module bundler.
+    - name: turbo
+      link: https://github.com/vercel/turbo
+      icon: i-simple-icons-turborepo
+      desc: Incremental packager and build system optimized for JavaScript and TypeScript, written in Rust, including Turbopack and Turborepo.
+    - name: webpackjs
+      link: https://www.webpackjs.com/
+      icon: i-cib-webpack
+      desc: Modular bundler and build tool for JavaScript applications.
+    - name: babeljs
+      link: https://www.babeljs.cn/
+      icon: i-nonicons-babel-16
+      desc: Transpiles ES6 code into browser-understandable code.
+    - name: esbuild
+      link: https://esbuild.github.io/
+      icon: i-simple-icons-esbuild
+      desc: A JavaScript build tool and module bundler.
+    - name: swc
+      link: https://swc.rs/
+      icon: i-simple-icons-swc
+      desc: SWC is an extensible Rust-based platform for fast developer tools of the next generation.
+    - name: tsup
+      link: https://github.com/egoist/tsup
+      icon: i-material-symbols-tsv-outline
+      desc: The simplest and fastest way to bundle TypeScript libraries.
+    - name: unbuild
+      link: https://github.com/unjs/unbuild
+      icon: i-material-symbols-build-outline-sharp
+      desc: Unified javascript build system.
+    - name: unplugin
+      link: https://github.com/unjs/unplugin
+      icon: i-clarity-plugin-outline-badged
+      desc: Unified plugin system for Vite, Rollup, Webpack, esbuild, rolldown, and more.
+
+
 #   Automation Tools:
 #   lint:
 #   CLI:
