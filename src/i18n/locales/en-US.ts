@@ -9,4 +9,5 @@ export default {
   "tabs.used": "Recently Used",
   "tabs.issues":
     "If you have any additional navigation sites to add, please raise an",
+  "lang.change": "English To Chinese",
 };

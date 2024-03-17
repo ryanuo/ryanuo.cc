@@ -1,9 +1,11 @@
+import FloatingVue from "floating-vue";
 import NProgress from "nprogress";
 import autoRoutes from "pages-generated";
 import { ViteSSG, ViteSSGContext } from "vite-ssg";
 import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@unocss/reset/tailwind.css";
+import "floating-vue/dist/style.css";
 import "vue-final-modal/style.css";
 import "./styles/markdown.css";
 import "./styles/prose.css";
@@ -29,6 +31,8 @@ export const createApp = ViteSSG(
   },
   ({ router, isClient, app }: ViteSSGContext) => {
     app.use(i18n);
+    app.use(FloatingVue);
+
     if (isClient) {
       const html = document.querySelector("html")!;
       setupRouterScroller(router, {

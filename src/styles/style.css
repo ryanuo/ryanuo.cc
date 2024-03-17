@@ -252,3 +252,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: rgba(121, 119, 119, 0.5) #f1f1f1;
 }
+
+.v-popper__inner {
+  font-size: .80rem !important;
+}

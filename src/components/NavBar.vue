@@ -106,7 +106,11 @@ const { y: scroll } = useWindowScroll();
           />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
-          <div @click="handleLangChange" :class="langIcon"></div>
+          <div
+            @click="handleLangChange"
+            :class="langIcon"
+            v-tooltip="$t('lang.change', 'English To Chinese')"
+          ></div>
         </a>
         <ToggleTheme />
       </div>

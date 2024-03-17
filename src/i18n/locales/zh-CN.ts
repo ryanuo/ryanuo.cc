@@ -8,4 +8,5 @@ export default {
   "tabs.tools": "工具",
   "tabs.used": "最近使用",
   "tabs.issues": "如果你有任何额外的导航站点需要添加，请提",
+  "lang.change": "Chinese To English",
 };
