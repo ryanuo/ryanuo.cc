@@ -8,12 +8,12 @@ projects:
   Quick Look:
     - name: Quick Reference
       link: https://wangchujiang.com/reference/index.html
-      description: Share quick reference cheat sheet for developers.
+      desc: Share quick reference cheat sheet for developers.
       icon: i-ri-tools-fill
       tags: ['Chinese']
     - name: reference
       link: https://github.com/Fechin/reference
-      description: Share quick reference cheat sheet for developers.
+      desc: Share quick reference cheat sheet for developers.
       icon: i-ri-pencil-ruler-2-line
       tags: ['English']
 ---
