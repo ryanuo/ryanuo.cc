@@ -104,7 +104,7 @@ const handleNav = (obj: Project) => {
         </ul>
       </div>
       <hr />
-      <div>
+      <div class="slide-enter animate-delay-800!">
         {{
           $t(
             "tabs.issues",
