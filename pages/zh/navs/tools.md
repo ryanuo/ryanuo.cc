@@ -8,12 +8,12 @@ projects:
   Quick Look:
     - name: Quick Reference
       link: https://wangchujiang.com/reference/index.html
-      description: 为开发人员分享快速参考备忘单
+      desc: 为开发人员分享快速参考备忘单
       icon: i-ri-tools-fill
       tags: ['中文']
     - name: reference
       link: https://github.com/Fechin/reference
-      description: 为开发人员分享快速参考备忘单
+      desc: 为开发人员分享快速参考备忘单
       icon: i-ri-pencil-ruler-2-line
       tags: ['英文']
 ---
