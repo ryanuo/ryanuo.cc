@@ -63,33 +63,33 @@ projects:
       desc: 'React scroll parallax effect library'
       tags: ['React']
     - name: 'Lenis'
-      link: 'https://lenis.darkroom.engineering/'
-      image: 'https://lenis.darkroom.engineering/favicon-32x32.png'
+      link: https://github.com/darkroomengineering/lenis
+      icon: i-ri-scroll-to-bottom-line
       desc: 'Smooth scroll library'
 
   Event Handling:
     - name: 'hotkeys-js'
-      link: 'https://wangchujiang.com/hotkeys-js/'
+      link: https://github.com/jaywcjlove/hotkeys-js/
       icon: i-codicon-record-keys
       desc: 'A robust JavaScript library for capturing keyboard inputs'
   
   Individual Components:
     - name: 'Vue Final Modal'
-      link: 'https://vue-final-modal.org/'
-      image: 'https://vue-final-modal.org/favicon.ico'
+      link: https://github.com/vue-final/vue-final-modal
+      icon: i-websymbol-popup
       desc: 'Vue Final Modal is the most powerful yet most light-weight modal library for Vue 3'
     - name: 'Floating Vue'
-      link: 'https://floating-vue.starpad.dev/'
-      image: 'https://floating-vue.starpad.dev/favicon.png'
+      link: https://github.com/Akryum/floating-vue
+      icon: i-material-symbols-houseboat-outline-sharp
       desc: 'Tooltips & dropdowns made easy'
   Image Processing:
     - name: 'Medium Zoom'
-      link: 'https://medium-zoom.francoischalifour.com/'
-      image: 'https://medium-zoom.francoischalifour.com/favicon.e36d4567.ico'
+      link: https://github.com/francoischalifour/medium-zoom
+      icon: i-material-symbols-light-zoom-in-map
       desc: 'A JavaScript library for zooming images like Medium'
     - name: 'react-image-crop'
-      link: 'https://pqina.nl/pintura/'
-      image: 'https://pqina.nl/pintura/favicon-32x32.png'
+      link: https://github.com/pqina/filepond
+      icon: i-material-symbols-file-copy-outline-sharp
       desc: 'A powerful JavaScript Image Editor that integrates with every stack'
     - name: 'html2canvas'
       link: 'https://github.com/niklasvh/html2canvas'

@@ -63,34 +63,34 @@ projects:
       desc: 'React滚动视差效果库'
       tags: ['React']
     - name: 'Lenis'
-      link: 'https://lenis.darkroom.engineering/'
-      image: 'https://lenis.darkroom.engineering/favicon-32x32.png'
+      link: https://github.com/darkroomengineering/lenis
+      icon: i-ri-scroll-to-bottom-line
       desc: '平滑滚动库'
     
   事件处理:
     - name: 'hotkeys-js'
-      link: 'https://wangchujiang.com/hotkeys-js/'
+      link: https://github.com/jaywcjlove/hotkeys-js/
       icon: i-codicon-record-keys
       desc: '一个用于捕获键盘输入的健壮的 Javascript 库'
 
   单一组件:
     - name: 'Vue Final Modal'
-      link: 'https://vue-final-modal.org/'
-      image: 'https://vue-final-modal.org/favicon.ico'
+      link: https://github.com/vue-final/vue-final-modal
+      icon: i-websymbol-popup
       desc: 'Vue Final Modal 是一款适用于 Vue 3 的功能强大且体积小巧的模态对话框组件库'
     - name: 'Floating Vue'
-      link: 'https://floating-vue.starpad.dev/'
-      image: 'https://floating-vue.starpad.dev/favicon.png'
+      link: https://github.com/Akryum/floating-vue
+      icon: i-material-symbols-houseboat-outline-sharp
       desc: '轻松实现工具提示与下拉菜单'
 
   图片处理:
     - name: 'Medium Zoom'
-      link: 'https://medium-zoom.francoischalifour.com/'
-      image: 'https://medium-zoom.francoischalifour.com/favicon.e36d4567.ico'
+      link: https://github.com/francoischalifour/medium-zoom
+      icon: i-material-symbols-light-zoom-in-map
       desc: 一个类似 Medium 风格的 JavaScript 图片缩放库
     - name: 'react-image-crop'
-      link: 'https://pqina.nl/pintura/'
-      image: 'https://pqina.nl/pintura/favicon-32x32.png'
+      link: https://github.com/pqina/filepond
+      icon: i-material-symbols-file-copy-outline-sharp
       desc: 一个强大的 JavaScript 图片编辑器，可与各种技术栈集成
     - name: 'html2canvas'
       link: 'https://github.com/niklasvh/html2canvas'
