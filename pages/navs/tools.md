@@ -42,6 +42,17 @@ projects:
       link: https://chromewebstore.google.com/detail/沉浸式翻译-双语对照网页翻译-pdf文档翻译/bpoadfkcbjbfhfodiogcnhhhpibjhbnh
       image: https://lh3.googleusercontent.com/FCCjGNQ3JhLebMSOBdTRV7UP5yMNa9lF5rsJxQ1B4gVcZy5V3vJIdIOh3DO7fCih1JfzIRbAHrxhhXjEUTMKtwdBDA=s60
       desc: Immersive translation, supports translating PDF files, can convert text in PDF files into speech for playback, and allows you to choose whether to read aloud.
+  
+  Other:
+    - name: Worm Tribe
+      link: https://search.chongbuluo.com/
+      icon: i-ri-search-line
+      desc: Quick search worm tribe exclusive debut products on the whole network for you to aggregate google baidu bing and other domestic and foreign comprehensive search and academic resource professional field knowledge and other vertical search accurate search convenient interaction it is your first stop for internet search
+    - name: Navs Summary
+      link: https://github.com/rr210/navs
+      icon: i-ri-opera-line
+      desc: Front End Navigation Backlink Summary
+
 ---
 <!-- @layout-full-width -->
 

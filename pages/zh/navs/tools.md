@@ -42,6 +42,16 @@ projects:
       link: https://chromewebstore.google.com/detail/%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91-%E5%8F%8C%E8%AF%AD%E5%AF%B9%E7%85%A7%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91-pdf%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91/bpoadfkcbjbfhfodiogcnhhhpibjhbnh
       image: https://lh3.googleusercontent.com/FCCjGNQ3JhLebMSOBdTRV7UP5yMNa9lF5rsJxQ1B4gVcZy5V3vJIdIOh3DO7fCih1JfzIRbAHrxhhXjEUTMKtwdBDA=s60
       desc: 沉浸式翻译，支持PDF文件翻译，可将PDF文件中的文字转换成语音播报，并可选择是否朗读。
+
+  其它:
+    - name: 虫部落
+      link: https://search.chongbuluo.com/
+      icon: i-ri-search-line
+      desc: 快搜！虫部落全网独家首发出品！为你聚合Google,百度,必应等国内外综合搜索和学术,资源,专业领域知识等垂直搜索。精准搜索,便捷交互！是你的网络搜索第一站！
+    - name: 导航汇总
+      link: https://github.com/rr210/navs
+      icon: i-ri-opera-line
+      desc: 前端导航外链汇总
 ---
 <!-- @layout-full-width -->
 
