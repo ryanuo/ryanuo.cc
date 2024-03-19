@@ -88,7 +88,7 @@ const options = ref(getInitialValues()) as any;
 
 .card_t1 {
   position: relative;
-  height: 200px;
+  height: 180px;
   background-color: var(--c-demo-card-bg);
   border-radius: 10px;
   display: flex;
@@ -96,10 +96,10 @@ const options = ref(getInitialValues()) as any;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 1px #ffffff80;
+  /* box-shadow: 0 0 0 2px #ffffff80; */
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-  border: 0.1px solid #dadada;
+  border: 0.1px solid #dadada8e;
 }
 
 .card_t1 iframe {
@@ -108,8 +108,7 @@ const options = ref(getInitialValues()) as any;
 
 .card_t1:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  border: none;
+  border: 0.1px solid #dadada8e;
 }
 
 .card__content {
@@ -129,12 +128,11 @@ const options = ref(getInitialValues()) as any;
 
 .card_t1:hover .card__content {
   transform: rotateX(0deg);
-  box-shadow: 0 0px 1px 0.5px #cccbcbc2;
 }
 
 .card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   position: relative;
 }
