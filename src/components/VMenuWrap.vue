@@ -19,7 +19,7 @@ defineProps<{
       <div :class="['md:hidden', icon, 'cursor-pointer']"></div>
     </a>
     <template #popper>
-      <ul :class="['w-auto', width, 'p-1.6']">
+      <ul :class="['w-auto', width, 'p-2']">
         <li v-for="item in menus" :key="slug(item.name)" class="li_wrap">
           <a
             v-if="item.link.startsWith('http')"
@@ -43,7 +43,7 @@ defineProps<{
     background-color 0.25s,
     color 0.25s;
   padding: 0.18rem 0.4rem;
-  border-radius: 0.41rem;
+  border-radius: 0.3rem;
   white-space: nowrap;
   cursor: pointer;
 }
