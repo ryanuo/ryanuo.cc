@@ -63,16 +63,6 @@ const { y: scroll } = useWindowScroll();
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <VMenuWrap
-          :title="$t('nav.learning', 'Learning')"
-          icon="i-streamline-ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy"
-          :menus="[
-            {
-              link: '/interview',
-              name: $t('nav.learn.interview', 'Interview tips'),
-            },
-          ]"
-        />
         <RouterLink to="/navs" :title="$t('nav.navs', 'Navs')">
           <span class="lt-md:hidden">{{ $t("nav.navs", "Navs") }}</span>
           <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
@@ -99,6 +89,16 @@ const { y: scroll } = useWindowScroll();
           <span class="lt-md:hidden">{{ $t("nav.Demos", "Demos") }}</span>
           <div i-ri-screenshot-line class="md:hidden" />
         </RouterLink>
+        <VMenuWrap
+          :title="$t('nav.learning', 'Learning')"
+          icon="i-streamline-ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy"
+          :menus="[
+            {
+              link: '/interview',
+              name: $t('nav.learn.interview', 'Interview tips'),
+            },
+          ]"
+        />
         <!-- <a
           href="https://twitter.com/ryanoaco"
           target="_blank"
