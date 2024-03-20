@@ -10,4 +10,8 @@ export default {
   "tabs.issues":
     "If you have any additional navigation sites to add, please raise an",
   "lang.change": "English To Chinese",
+  "nav.learning": "Learning",
+  "nav.article": "Personal Notes",
+  "nav.blog.old": "Blog [deprecated]",
+  "nav.learn.interview": "Interview tips",
 };

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { slug } from "@/utils";
 import { omit } from "lodash-es";
 import { useI18n } from "vue-i18n";
 interface Project {
@@ -24,10 +25,6 @@ watch([x, y], ([newX, newY]) => {
   tocPosition.value.x = newX;
   tocPosition.value.y = newY;
 });
-
-function slug(name: string) {
-  return name.toLowerCase().replace(/[\s\\\/]+/g, "-");
-}
 
 const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
   if (usedNavs.value.length === 0) {

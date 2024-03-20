@@ -9,4 +9,8 @@ export default {
   "tabs.used": "最近使用",
   "tabs.issues": "如果你有任何额外的导航站点需要添加，请提",
   "lang.change": "Chinese To English",
+  "nav.learning": "学习",
+  "nav.article": "个人小记",
+  "nav.blog.old": "博客 [废弃]",
+  "nav.learn.interview": "面试宝典",
 };

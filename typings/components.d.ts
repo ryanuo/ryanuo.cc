@@ -27,6 +27,7 @@ declare module 'vue' {
     T6Card: typeof import('./../src/components/Demos/T6Card.vue')['default']
     TechStack: typeof import('./../src/components/TechStack.vue')['default']
     ToggleTheme: typeof import('./../src/components/ToggleTheme.vue')['default']
+    VMenuWrap: typeof import('./../src/components/VMenuWrap.vue')['default']
     WordYear: typeof import('./../src/components/WordYear.vue')['default']
     WrapPost: typeof import('./../src/components/WrapPost.vue')['default']
   }

@@ -63,18 +63,34 @@ const { y: scroll } = useWindowScroll();
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
+        <VMenuWrap
+          :title="$t('nav.learning', 'Learning')"
+          icon="i-streamline-ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy"
+          :menus="[
+            {
+              link: '/interview',
+              name: $t('nav.learn.interview', 'Interview tips'),
+            },
+          ]"
+        />
         <RouterLink to="/navs" :title="$t('nav.navs', 'Navs')">
           <span class="lt-md:hidden">{{ $t("nav.navs", "Navs") }}</span>
           <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
         </RouterLink>
-        <a
-          href="https://m.ziliao88.top/"
-          target="_blank"
+        <VMenuWrap
           :title="$t('nav.Blog', 'Blog')"
-        >
-          <span class="lt-md:hidden">{{ $t("nav.Blog", "Blog") }}</span>
-          <div i-ri-article-line md:hidden />
-        </a>
+          icon="i-ri-article-line"
+          :menus="[
+            {
+              link: '/posts',
+              name: `${$t('nav.article', 'Notes')}`,
+            },
+            {
+              link: 'https://m.ziliao88.top',
+              name: $t('nav.blog.old', 'Blog [deprecated]'),
+            },
+          ]"
+        />
         <RouterLink to="/projects" :title="$t('nav.Projects', 'Projects')">
           <span class="lt-md:hidden">{{ $t("nav.Projects", "Projects") }}</span>
           <div i-ri-lightbulb-line class="md:hidden" />
@@ -145,7 +161,7 @@ const { y: scroll } = useWindowScroll();
   margin-bottom: 0;
 }
 
-.nav a {
+.nav :deep(a) {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -154,7 +170,7 @@ const { y: scroll } = useWindowScroll();
   outline: none;
 }
 
-.nav a:hover {
+.nav :deep(a):hover {
   opacity: 1;
   text-decoration-color: inherit;
 }

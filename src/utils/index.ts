@@ -62,3 +62,7 @@ export function calculateWorkYears(startYear: number, startMonth: number) {
     return Math.round(years);
   }
 }
+
+export function slug(name: string) {
+  return name.toLowerCase().replace(/[\s\\\/]+/g, "-");
+}

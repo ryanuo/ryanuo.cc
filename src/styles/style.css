@@ -256,3 +256,19 @@ html {
 .v-popper__inner {
   font-size: .80rem !important;
 }
+
+.dark .v-popper--theme-dropdown .v-popper__inner {
+  background: #2c2d2ce4;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #dddddd2a;
+  box-shadow: 0 6px 30px #0000001a;
+}
+
+.dark .v-popper__arrow-inner {
+  display: none;
+}
+
+.dark .v-popper__arrow-outer {
+  border-color: #999;
+}
