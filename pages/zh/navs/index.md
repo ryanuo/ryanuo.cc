@@ -163,6 +163,22 @@ projects:
       link: 'https://qishaoxuan.github.io/css_tricks/'
       image: 'https://qishaoxuan.github.io/css_tricks/images/favicon.png'
       desc: '常见的css样式技巧汇总'
+    - name: 纸屑动画
+      link: https://github.com/catdad/canvas-confetti
+      icon: i-icon-park-outline-blossom
+      desc: '基于canvas的纸屑动画'
+    - name: Hover Animation
+      link: 'https://github.com/IanLunn/Hover'
+      icon: i-fluent-cursor-hover-32-regular
+      desc: CSS3 驱动的悬停效果集合，可应用于链接、按钮、徽标、SVG、特色图像等。轻松应用于您自己的元素，修改或只是用于灵感。在 CSS、Sass 和 LESS 中可用。
+    - name: 手绘动画
+      link: https://github.com/rough-stuff/rough-notation
+      icon: i-mdi-brush-outline
+      desc: 在网页上创建手绘批注并为其添加动画效果
+    - name: 颜色选择
+      link: https://github.com/casesandberg/react-color
+      icon: i-mdi-palette
+      desc: 来自 Sketch、Photoshop、Chrome、Github、Twitter 等的颜色选择器
 
   图标库:
     - name: 'Icônes'

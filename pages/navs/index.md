@@ -163,7 +163,22 @@ projects:
       link: 'https://qishaoxuan.github.io/css_tricks/'
       image: 'https://qishaoxuan.github.io/css_tricks/images/favicon.png'
       desc: 'A Summary Of Common Css Styling Tips'
-
+    - name: Confetti Animation
+      link: https://github.com/catdad/canvas-confetti
+      icon: i-icon-park-outline-blossom
+      desc: 'Confetti animation based on canvas.'
+    - name: Hover Animation
+      link: 'https://github.com/IanLunn/Hover'
+      icon: i-fluent-cursor-hover-32-regular
+      desc: Collection of CSS3-driven hover effects that can be applied to links, buttons, logos, SVG, featured images, and more. Easily apply to your own elements, modify, or just use for inspiration. Available in CSS, Sass, and LESS.
+    - name: Hand-drawn Animation
+      link: https://github.com/rough-stuff/rough-notation
+      icon: i-mdi-brush-outline
+      desc: Create hand-drawn annotations on the web and animate them.
+    - name: color picker
+      link: https://github.com/casesandberg/react-color
+      icon: i-mdi-palette
+      desc: color pickers from sketch photoshop chrome github twitter and more
   Icon library:
     - name: 'Icônes'
       link: 'https://icones.js.org/'
