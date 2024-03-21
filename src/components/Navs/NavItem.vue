@@ -32,14 +32,14 @@ const handleImageError = () => {
   <a
     :href="project.link"
     target="_blank"
-    class="flex flex-col bg-gray-100 rounded-md text-gray-400 p2 h-full nav_a_wrap"
+    class="flex flex-col bg-[#f7f7f7b5] rounded-md text-gray-400 p2 h-full nav_a_wrap"
     hover="bg-white border border-gray-800! shadow-md"
     dark="bg-zinc-900 hover:bg-black hover:border-slate-800!"
   >
     <div class="w-full flex relative">
       <div
         v-if="project.image ?? project.icon"
-        class="flex justify-center items-center bg-gray-200 dark:bg-zinc-700 rounded-md w-10 h-10"
+        class="flex justify-center items-center bg-[#e5e7eb9e] dark:bg-zinc-700 rounded-md w-10 h-10"
       >
         <span v-if="project.icon" :class="`${project.icon} flex-1`" />
         <div v-if="project.image" class="w-6 grayscale image-icon">
@@ -61,7 +61,7 @@ const handleImageError = () => {
       <div
         v-for="tag in project.tags"
         :key="tag"
-        class="absolute hidden md:inline-flex md:right-1 bg-gray-200 dark:bg-gray-800 rounded-lg px-1"
+        class="absolute hidden md:inline-flex md:right-1 bg-[#e5e7eb9e] dark:bg-gray-800 rounded-lg px-1"
         style="font-size: 13px"
       >
         {{ tag }}

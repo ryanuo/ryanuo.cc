@@ -101,7 +101,7 @@ const handleNav = (obj: Project) => {
         </ul>
       </div>
       <hr />
-      <div class="slide-enter animate-delay-800!">
+      <div class="slide-enter animate-delay-800! font-size-3.6">
         {{
           $t(
             "tabs.issues",
