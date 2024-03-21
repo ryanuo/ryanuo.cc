@@ -11,6 +11,12 @@ demos:
       img: '/demos/page-dark.png'
       readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
+    - name: 自动检查链接
+      link: https://github.com/rr210/navs
+      desc: 前端导航外部链接汇总，支持自动链接状态检查
+      img: '/demos/navs.png'
+      readme: 'https://github.com/rr210/navs/blob/master/README.md'
+      tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'tv-data-ana'
       link: 'https://github.com/rr210/tv-data-ana'

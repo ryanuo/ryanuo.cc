@@ -4,7 +4,17 @@ display: 前端导航
 description: 前端在线工具正在整理中，并持续更新。
 plum: true
 isHidenTitle: true
-projects: 
+projects:
+  常用小工具:
+    - name: 带壳截屏
+      link: https://deviceshots.com/app
+      desc: 一种在真实设备模型中展示应用截图的功能，使得开发者或营销人员能够获得更专业、更具吸引力的应用展示效果。
+      icon: i-ri-screenshot-2-line
+    - name: 在线PS
+      link: https://www.photopea.com/
+      desc: 一个功能强大的在线替代品，提供与Adobe Photoshop相似的图片处理体验。用户无需下载安装即可在浏览器中打开并使用它来编辑照片、应用特效、滤镜、添加文本、裁剪或调整图片大小等。支持多种格式如PSD、XD、Sketch、XCF和RAW等，并具备实时链接状态检查，确保用户可以无缝访问此在线PS服务。
+      icon: i-ri-mental-health-line
+
   快速查阅:
     - name: Quick Reference
       link: https://wangchujiang.com/reference/index.html

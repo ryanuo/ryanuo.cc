@@ -11,6 +11,12 @@ demos:
       img: '/demos/page-dark.png'
       readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
+    - name: Auto Navs
+      link: https://github.com/rr210/navs
+      desc: Summary of front-end navigation external links,automatic link status check is supported
+      img: '/demos/navs.png'
+      readme: 'https://github.com/rr210/navs/blob/master/README.md'
+      tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'tv-data-ana'
       link: 'https://github.com/rr210/tv-data-ana'
