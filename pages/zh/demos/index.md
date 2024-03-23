@@ -1,8 +1,8 @@
 ---
-title: '演示 - Ryan CO'
-description: '演示 - Ryan CO'
+title: '演示 - Ryan Co'
+description: '演示 - Ryan Co'
 plum: true
-display: 演示
+isHidenTitle: true
 demos:
   2024:
     - name: '个人主页'

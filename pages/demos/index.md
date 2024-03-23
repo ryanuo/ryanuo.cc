@@ -1,8 +1,8 @@
 ---
-title: 'Demos - Ryan CO'
-description: 'Demos - Ryan CO'
+title: 'Demos - Ryan Co'
+description: 'Demos - Ryan Co'
 plum: true
-display: Demos
+isHidenTitle: true
 demos:
   2024:
     - name: 'My Website'

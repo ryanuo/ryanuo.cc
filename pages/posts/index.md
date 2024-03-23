@@ -1,5 +1,5 @@
 ---
-title: POST LIST - Ryan C.
+title: Posts List - Ryan Co
 description: This is a post list page.
 display: ''
 plum: true
