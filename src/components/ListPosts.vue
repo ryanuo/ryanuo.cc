@@ -53,7 +53,9 @@ const isYearGroup = (date?: string, preDate?: string) => {
           >{{ dayjs(post.date).format("YYYY") }}</span
         >
       </div>
-      <a :href="post.path" class="font-normal">{{ post.title }}</a>
+      <a :href="post.path" class="font-normal" style="border-style: dashed">{{
+        post.title
+      }}</a>
       <span class="text-gray-500 dark:text-gray-400 ml-2 inline-flex text-sm">{{
         formatDateToMarDD(post.date)
       }}</span>

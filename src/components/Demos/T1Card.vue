@@ -23,9 +23,16 @@ const options = ref(getInitialValues()) as any;
 
 <template>
   <div
+    class="relative"
     v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))"
   >
-    <h2>{{ index }}</h2>
+    <div class="text-left">
+      <span
+        class="text-4em color-transparent font-bold text-stroke-2 border-b-1.5 border-dashed text-stroke-hex-aaa op30"
+      >
+        {{ index }}
+      </span>
+    </div>
     <div flex="~ wrap gap-4 justify-between">
       <div
         class="card_t1 w-full md:w-8/17"
