@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { DemosTypes } from "./type";
 
-const props = defineProps<{ demos: Record<number, DemosTypes[]> }>();
-console.log(props.demos);
+defineProps<{ demos: Record<number, DemosTypes[]> }>();
 const getInitialValues = () => ({
   teleportTo: "body",
   displayDirective: "if",
@@ -24,15 +23,13 @@ const options = ref(getInitialValues()) as any;
 
 <template>
   <div
-    v-for="index in Object.keys(props.demos)?.sort(
-      (a, b) => Number(b) - Number(a)
-    )"
+    v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))"
   >
     <h2>{{ index }}</h2>
     <div flex="~ wrap gap-4 justify-between">
       <div
         class="card_t1 w-full md:w-8/17"
-        v-for="demo in props.demos[Number(index)]"
+        v-for="demo in demos[Number(index)]"
         :key="demo.name"
       >
         <iframe

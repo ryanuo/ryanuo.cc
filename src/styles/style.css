@@ -232,8 +232,7 @@ button:focus-visible {
   margin-top: .2em;
 }
 
-
-/* Webkit浏览器 */
+/* Chrome浏览器 */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -248,7 +247,9 @@ button:focus-visible {
 }
 
 /* Firefox浏览器 */
-html {
+html,
+div,
+pre {
   scrollbar-width: thin;
   scrollbar-color: rgba(121, 119, 119, 0.5) #f1f1f1;
 }
@@ -271,4 +272,8 @@ html {
 
 .dark .v-popper__arrow-outer {
   border-color: #999;
+}
+
+.table-of-contents {
+  cursor: pointer;
 }

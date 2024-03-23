@@ -66,3 +66,11 @@ export function calculateWorkYears(startYear: number, startMonth: number) {
 export function slug(name: string) {
   return name.toLowerCase().replace(/[\s\\\/]+/g, "-");
 }
+
+export function formatDateToMarDD(dateString?: string, year = false): string {
+  if (!dateString) return "";
+  const date = dayjs(dateString);
+  const month = date.format("MMM"); // 获取月份的缩写形式，比如 "Mar"
+  const day = date.format("DD"); // 获取日期的格式，比如 "16"
+  return `${month} ${day}${year ? ". " + date.format("YYYY") : ""}`;
+}

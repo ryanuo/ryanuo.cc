@@ -1,6 +1,9 @@
+import MarkdownItShiki from "@shikijs/markdown-it";
+import { rendererRich, transformerTwoslash } from "@shikijs/twoslash";
 import Vue from "@vitejs/plugin-vue";
 import fs from "fs-extra";
 import matter from "gray-matter";
+import anchor from "markdown-it-anchor";
 import LinkAttributes from "markdown-it-link-attributes";
 import TOC from "markdown-it-table-of-contents";
 import { resolve } from "node:path";
@@ -68,11 +71,36 @@ export default defineConfig({
           },
         });
 
+        md.use(
+          await MarkdownItShiki({
+            themes: {
+              dark: "vitesse-dark",
+              light: "vitesse-light",
+            },
+            defaultColor: false,
+            cssVariablePrefix: "--s-",
+            transformers: [
+              transformerTwoslash({
+                explicitTrigger: true,
+                renderer: rendererRich(),
+              }),
+            ],
+          })
+        );
+
         md.use(TOC, {
           includeLevel: [1, 2, 3, 4],
           slugify,
           containerHeaderHtml:
             '<div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>',
+        });
+
+        md.use(anchor, {
+          slugify,
+          permalink: anchor.permalink.linkInsideHeader({
+            symbol: "#",
+            renderAttrs: () => ({ "aria-hidden": "true" }),
+          }),
         });
 
         // md.use(MdItReplace, "foo_replace", "text", (tokens, formter, idx) => {

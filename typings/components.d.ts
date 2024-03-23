@@ -10,6 +10,7 @@ declare module 'vue' {
     Company: typeof import('./../src/components/Projects/Company.vue')['default']
     Demos: typeof import('./../src/components/Demos/index.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
+    ListPosts: typeof import('./../src/components/ListPosts.vue')['default']
     Logo: typeof import('./../src/components/Logo.vue')['default']
     ModalCard: typeof import('./../src/components/Demos/ModalCard.vue')['default']
     NavBar: typeof import('./../src/components/NavBar.vue')['default']

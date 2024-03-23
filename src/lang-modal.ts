@@ -215,7 +215,15 @@
         localStorage.setItem("lang", "zh-CN");
       }
       const originUrl = window.location.origin;
-      window.location.href = originUrl + "/zh"; // 跳转到新的URL
+      const pathArray = window.location.pathname.split("/");
+      let newUrl = originUrl;
+      // 判断域名后面的第一个不是 'zh' 的话则加上 '/zh'
+      if (pathArray.length > 1 && pathArray[1] !== "zh") {
+        newUrl += "/zh" + window.location.pathname;
+      } else {
+        newUrl += window.location.pathname;
+      }
+      window.location.href = newUrl;
     });
     confirmBtn.innerText = "🐲 立刻前往";
     btnWrapper.append(confirmBtn);

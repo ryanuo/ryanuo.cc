@@ -62,7 +62,7 @@
 
 .prose ol>li {
   position: relative;
-  padding-left: 1.75em;
+  padding-left: 1.55em;
 }
 
 .prose ol>li::before {
@@ -75,7 +75,7 @@
 
 .prose ul>li {
   position: relative;
-  padding-left: 1.75em;
+  padding-left: 1.55em;
 }
 
 .prose ul>li::before {

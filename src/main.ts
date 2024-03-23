@@ -4,6 +4,7 @@ import autoRoutes from "pages-generated";
 import { ViteSSG, ViteSSGContext } from "vite-ssg";
 import { setupRouterScroller } from "vue-router-better-scroller";
 
+import "@shikijs/twoslash/style-rich.css";
 import "@unocss/reset/tailwind.css";
 import "floating-vue/dist/style.css";
 import "vue-final-modal/style.css";

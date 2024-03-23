@@ -67,7 +67,11 @@ const { y: scroll } = useWindowScroll();
           <span class="lt-md:hidden">{{ $t("nav.navs", "Navs") }}</span>
           <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
         </RouterLink>
-        <VMenuWrap
+        <RouterLink to="/posts" :title="$t('nav.Blog', 'Blog')">
+          <span class="lt-md:hidden">{{ $t("nav.Blog", "Blog") }}</span>
+          <div i-ri-lightbulb-line class="md:hidden" />
+        </RouterLink>
+        <!-- <VMenuWrap
           :title="$t('nav.Blog', 'Blog')"
           icon="i-ri-article-line"
           :menus="[
@@ -80,7 +84,7 @@ const { y: scroll } = useWindowScroll();
               name: $t('nav.blog.old', 'Blog [deprecated]'),
             },
           ]"
-        />
+        /> -->
         <RouterLink to="/projects" :title="$t('nav.Projects', 'Projects')">
           <span class="lt-md:hidden">{{ $t("nav.Projects", "Projects") }}</span>
           <div i-ri-lightbulb-line class="md:hidden" />

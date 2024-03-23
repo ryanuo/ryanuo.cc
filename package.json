@@ -13,6 +13,8 @@
     "get-ico": "python scripts/ico-get.py"
   },
   "dependencies": {
+    "@shikijs/markdown-it": "^1.2.0",
+    "@shikijs/twoslash": "^1.2.0",
     "@vueuse/core": "^10.9.0",
     "dayjs": "^1.11.10",
     "floating-vue": "^5.2.2",
@@ -45,6 +47,7 @@
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-table-of-contents": "^0.6.0",
     "typescript": "^5.2.2",
