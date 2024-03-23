@@ -69,7 +69,7 @@ const { y: scroll } = useWindowScroll();
         </RouterLink>
         <RouterLink to="/posts" :title="$t('nav.Blog', 'Blog')">
           <span class="lt-md:hidden">{{ $t("nav.Blog", "Blog") }}</span>
-          <div i-ri-lightbulb-line class="md:hidden" />
+          <div i-ri-article-line class="md:hidden" />
         </RouterLink>
         <!-- <VMenuWrap
           :title="$t('nav.Blog', 'Blog')"
