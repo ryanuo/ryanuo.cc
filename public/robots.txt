@@ -1,2 +1,4 @@
+# Algolia-Crawler-Verif: 1ECF82A94957DD79
 User-agent: *
 Allow: /
+Sitemap: https://mr90.top/sitemap.xml
