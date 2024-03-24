@@ -13,6 +13,8 @@
     "get-ico": "python scripts/ico-get.py"
   },
   "dependencies": {
+    "@docsearch/js": "^3.6.0",
+    "@docsearch/css": "^3.6.0",
     "@shikijs/markdown-it": "^1.2.0",
     "@shikijs/twoslash": "^1.2.0",
     "@vueuse/core": "^10.9.0",

@@ -23,4 +23,4 @@ interface AlgoliaSearchParams {
   selector: string;
 }
 
-declare function algoliasearchNetlify(params: AlgoliaSearchParams): void;
+declare module "@docsearch/js";
