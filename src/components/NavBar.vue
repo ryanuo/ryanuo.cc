@@ -29,6 +29,27 @@ const handleLangChange = () => {
 };
 
 const { y: scroll } = useWindowScroll();
+
+// 创建一个ref来引用搜索元素
+const searchElement = ref(null);
+
+// 在组件挂载后执行
+onMounted(() => {
+  // 确保搜索元素存在
+  if (searchElement.value) {
+    algoliasearchNetlify({
+      appId: "HVRDW8ITJA",
+      apiKey: "f382e5762d3042aef92e51144cd25c14",
+      siteId: "3ff05b53-e5b7-4f5f-9417-6fe524937f5e",
+      branch: "master",
+      selector: "div#search",
+    });
+    // 在这里执行你的方法或逻辑
+    console.log("找到了元素 div#search，可以执行相应的方法");
+  } else {
+    console.error("未找到元素 div#search");
+  }
+});
 </script>
 
 <template>
@@ -103,6 +124,7 @@ const { y: scroll } = useWindowScroll();
             },
           ]"
         />
+        <div id="search" ref="searchElement" />
         <!-- <a
           href="https://twitter.com/ryanoaco"
           target="_blank"

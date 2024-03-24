@@ -14,3 +14,13 @@ declare interface FrontmatterPostType {
   image?: string;
   plum?: boolean;
 }
+
+interface AlgoliaSearchParams {
+  appId: string;
+  apiKey: string;
+  siteId: string;
+  branch: string;
+  selector: string;
+}
+
+declare function algoliasearchNetlify(params: AlgoliaSearchParams): void;

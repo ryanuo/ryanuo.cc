@@ -6,6 +6,10 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
+  <link rel="stylesheet"
+    href="https://unpkg.com/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript"
+    src="https://unpkg.com/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
   <title>Ryan's Home Page</title>
   <script>
     ; (function() {
@@ -23,5 +27,17 @@
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>
+
+<script type="text/javascript">
+  setTimeout(() => {
+    algoliasearchNetlify({
+      appId: "HVRDW8ITJA",
+      apiKey: "f382e5762d3042aef92e51144cd25c14",
+      siteId: "3ff05b53-e5b7-4f5f-9417-6fe524937f5e",
+      branch: "master",
+      selector: "div#search",
+    });
+  })
+</script>
 
 </html>
