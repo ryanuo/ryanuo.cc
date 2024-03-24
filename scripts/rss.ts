@@ -64,7 +64,7 @@ async function buildBlogRSS() {
 
   posts.sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
-  await writeFeed("feed", options, posts);
+  await writeFeed("sitemap", options, posts);
 }
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
