@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import { dirname } from "node:path";
 
-const DOMAIN = "https://mr90.top/";
+const DOMAIN = "https://mr90.top";
 const AUTHOR = {
   name: "Ryan Co",
   email: "iui9@qq.com",
@@ -23,7 +23,7 @@ async function run() {
 }
 
 async function buildBlogRSS() {
-  const files = await fg("pages/posts/*.md");
+  const files = await fg(["pages/posts/*.md", "pages/zh/posts/*.md"]);
 
   const options = {
     title: "Ryan Co",
@@ -32,9 +32,9 @@ async function buildBlogRSS() {
     link: DOMAIN,
     copyright: "CC BY-NC-SA 4.0 2021 © Ryan Co",
     feedLinks: {
-      json: `${DOMAIN}feed.json`,
-      atom: `${DOMAIN}feed.atom`,
-      rss: `${DOMAIN}feed.xml`,
+      json: `${DOMAIN}/sitemap.json`,
+      atom: `${DOMAIN}/sitemap.atom`,
+      rss: `${DOMAIN}/sitemap.xml`,
     },
   };
   const posts: any[] = (
@@ -45,12 +45,8 @@ async function buildBlogRSS() {
           const raw = await fs.readFile(i, "utf-8");
           const { data, content } = matter(raw);
 
-          const html = markdown
-            .render(content)
-            .replace('src="/', `src="${DOMAIN}/`);
-
-          // if (data.image?.startsWith("/")) data.image = DOMAIN + data.image;
-
+          const html = markdown.render(content);
+          console.log(DOMAIN + i.replace(/^pages(.+)\.md$/, "$1"));
           return {
             ...data,
             date: new Date(data.date),
@@ -69,13 +65,12 @@ async function buildBlogRSS() {
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   options.author = AUTHOR;
-  options.image = `${DOMAIN}avatar.png`;
-  options.favicon = `${DOMAIN}logo.png`;
+  options.image = `${DOMAIN}/avatar.png`;
+  options.favicon = `${DOMAIN}/logo.png`;
 
   const feed = new Feed(options);
 
   items.forEach((item) => feed.addItem(item));
-  // items.forEach(i=> console.log(i.title, i.date))
 
   await fs.ensureDir(dirname(`./dist/${name}`));
   await fs.writeFile(`./dist/${name}.xml`, feed.rss2(), "utf-8");
