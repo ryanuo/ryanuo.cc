@@ -102,7 +102,8 @@ const { y: scroll } = useWindowScroll();
             },
           ]"
         />
-        <AlgoliaSearchBox
+
+        <!-- <AlgoliaSearchBox
           :algolia="{
             apiKey: 'db0e9b82d77e75c9fc8aee05b1e14334',
             indexName: 'ryan',
@@ -112,7 +113,7 @@ const { y: scroll } = useWindowScroll();
             //   attributesToSnippet: ['*'],
             // },
           }"
-        />
+        /> -->
         <!-- <a
           href="https://twitter.com/ryanoaco"
           target="_blank"
