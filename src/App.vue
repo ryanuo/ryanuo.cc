@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useImagePreview } from "@/hooks/useImagePreview";
+import mermaid from "mermaid";
 const route = useRoute();
 const { imageModel } = useImagePreview();
 
@@ -13,6 +14,11 @@ window.addEventListener("error", function (event) {
     // 刷新页面
     window.location.reload();
   }
+});
+
+onMounted(async () => {
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run();
 });
 
 onKeyStroke("Escape", (e) => {

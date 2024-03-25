@@ -32,6 +32,7 @@ const postsRoutes = computed(() => {
 });
 
 const isYearGroup = (date?: string, preDate?: string) => {
+  if (!preDate) return true;
   const year = dayjs(date).format("YYYY");
   const preYear = dayjs(preDate).format("YYYY");
   return year !== preYear;

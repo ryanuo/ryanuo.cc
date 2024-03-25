@@ -13,14 +13,16 @@
     "get-ico": "python scripts/ico-get.py"
   },
   "dependencies": {
-    "@docsearch/js": "^3.6.0",
     "@docsearch/css": "^3.6.0",
+    "@docsearch/js": "^3.6.0",
     "@shikijs/markdown-it": "^1.2.0",
     "@shikijs/twoslash": "^1.2.0",
     "@vueuse/core": "^10.9.0",
     "dayjs": "^1.11.10",
     "floating-vue": "^5.2.2",
     "lodash-es": "^4.17.21",
+    "markdown-it-textual-uml": "^0.17.1",
+    "mermaid": "^10.9.0",
     "nprogress": "^0.2.0",
     "vue": "^3.4.19",
     "vue-final-modal": "^4.5.4",

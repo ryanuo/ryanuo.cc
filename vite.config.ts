@@ -6,6 +6,7 @@ import matter from "gray-matter";
 import anchor from "markdown-it-anchor";
 import LinkAttributes from "markdown-it-link-attributes";
 import TOC from "markdown-it-table-of-contents";
+import textualUml from "markdown-it-textual-uml";
 import { resolve } from "node:path";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -87,6 +88,8 @@ export default defineConfig({
             ],
           })
         );
+
+        md.use(textualUml);
 
         md.use(TOC, {
           includeLevel: [1, 2, 3, 4],
