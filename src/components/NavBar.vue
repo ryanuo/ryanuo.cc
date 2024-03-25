@@ -94,7 +94,7 @@ const { y: scroll } = useWindowScroll();
         </RouterLink>
         <VMenuWrap
           :title="$t('nav.learning', 'Learning')"
-          icon="i-streamline-ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy"
+          icon="i-fluent-microscope-20-regular"
           :menus="[
             {
               link: '/interview',
