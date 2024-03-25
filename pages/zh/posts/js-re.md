@@ -4,7 +4,7 @@ date: '2021-7-29 08:50'
 tags: [web,Javascript]
 desscription: JavaScript正则表达式实战：数字提取、变量应用、替换规则、边界界定、字符类、全局搜索
 ---
-
+[[toc]]
 ## 正则字符串提取数字
 
 1. 使用\d将数字匹配出来 /g全局匹配
