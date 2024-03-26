@@ -1,0 +1,31 @@
+:root {
+  /* docsearch */
+  --docsearch-primary-color: #313237 !important;
+  --docsearch-logo-color: #313237 !important;
+  --docsearch-text-color: #9d9fa1 !important;
+}
+
+.cls-1,
+.cls-2 {
+  fill: #060606 !important;
+}
+
+.DocSearch-Button-Placeholder,
+span.DocSearch-Button-Keys {
+  display: none;
+}
+
+button.DocSearch-Button {
+  margin: 0;
+  background: transparent;
+  height: auto;
+  padding: 0;
+}
+
+button.DocSearch-Button:active,
+button.DocSearch-Button:focus,
+button.DocSearch-Button:hover {
+  background: transparent;
+  box-shadow: none;
+  color: var(--c-hover-color)
+}
