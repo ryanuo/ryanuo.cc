@@ -46,7 +46,6 @@ async function buildBlogRSS() {
           const { data, content } = matter(raw);
 
           const html = markdown.render(content);
-          console.log(DOMAIN + i.replace(/^pages(.+)\.md$/, "$1"));
           return {
             ...data,
             date: new Date(data.date),

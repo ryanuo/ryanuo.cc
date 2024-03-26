@@ -1,3 +1,5 @@
+/// <reference types="vite-ssg" />
+
 import MarkdownItShiki from "@shikijs/markdown-it";
 import { rendererRich, transformerTwoslash } from "@shikijs/twoslash";
 import Vue from "@vitejs/plugin-vue";
@@ -8,6 +10,7 @@ import LinkAttributes from "markdown-it-link-attributes";
 import TOC from "markdown-it-table-of-contents";
 import textualUml from "markdown-it-textual-uml";
 import { resolve } from "node:path";
+import { visualizer } from "rollup-plugin-visualizer";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
@@ -25,6 +28,10 @@ export default defineConfig({
     alias: [{ find: "@/", replacement: `${resolve(__dirname, "src")}/` }],
   },
   plugins: [
+    visualizer({
+      // 打包完成后自动打开浏览器，显示产物体积报告
+      open: true,
+    }),
     Vue({
       include: [/\.vue$/, /\.md$/],
       // reactivityTransform: true,
@@ -141,5 +148,15 @@ export default defineConfig({
       "dayjs",
       "dayjs/plugin/localizedFormat",
     ],
+  },
+  build: {
+    rollupOptions: {
+      onwarn(warning, next) {
+        if (warning.code !== "UNUSED_EXTERNAL_IMPORT") next(warning);
+      },
+    },
+  },
+  ssgOptions: {
+    formatting: "minify",
   },
 });

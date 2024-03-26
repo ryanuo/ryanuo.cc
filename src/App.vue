@@ -8,14 +8,6 @@ onBeforeMount(() => {
   import("./lang-modal.ts" as any);
 });
 
-window.addEventListener("error", function (event) {
-  // 检查是否是特定错误，比如 "Failed to load module script"
-  if (event.message.includes("Failed to load module script")) {
-    // 刷新页面
-    window.location.reload();
-  }
-});
-
 onMounted(async () => {
   mermaid.initialize({ startOnLoad: false });
   await mermaid.run();
