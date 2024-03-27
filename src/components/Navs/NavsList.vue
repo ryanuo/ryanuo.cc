@@ -70,7 +70,7 @@ const handleNav = (obj: Project) => {
       :style="{ '--enter-stage': cidx + 1 }"
       class="mb-6"
     >
-      <h4 :id="slug(key)" class="text-2xl font-bold mb-5">
+      <h4 :id="slug(key)" class="text-[1rem] font-bold mb-2 op75">
         {{ key }}
       </h4>
       <ul class="list-disc list-inside flex flex-wrap gap-x-4">

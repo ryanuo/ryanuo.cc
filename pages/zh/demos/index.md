@@ -1,6 +1,6 @@
 ---
-title: '演示 - Ryan Co'
-description: '演示 - Ryan Co'
+title: '演示 | Ryan Co'
+description: '演示 | Ryan Co'
 plum: true
 isHidenTitle: true
 demos:

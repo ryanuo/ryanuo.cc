@@ -71,6 +71,19 @@
     z-index: 9999;
   }
 
+  .dark .mirror-modal-dialog {
+    background: #060606;
+    border: 1px solid #1a1a1a;
+  }
+
+  .dark .mirror-modal-cancel-btn{
+    color: #fff;
+  }
+
+  .dark .mirror-modal-mask{
+    background: #39393966;
+  }
+
   .mirror-modal-title {
     font-size: 16px;
     font-weight: 500;
@@ -113,6 +126,10 @@
     background: #f5f5f5;
   }
 
+  .dark .mirror-modal-confirm-btn:hover {
+    background: #1a1a1a;
+  }
+
   .mirror-modal-confirm-btn:active {
     background: #ededed;
   }
@@ -123,9 +140,18 @@
     margin-right: 8px;
   }
 
+  .dark .mirror-modal-cancel-btn {
+    color: #fff;
+    border: 1px solid #3d4653;
+  }
+
   .mirror-modal-cancel-btn:hover {
     border-color: #3d4653;
     color: #000;
+  }
+
+  .dark .mirror-modal-cancel-btn:hover {
+    color: #fff;
   }
 
   .mirror-modal-cancel-btn:active {

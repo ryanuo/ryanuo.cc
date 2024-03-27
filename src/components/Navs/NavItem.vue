@@ -39,13 +39,13 @@ const handleImageError = () => {
     <div class="w-full flex relative">
       <div
         v-if="project.image ?? project.icon"
-        class="flex justify-center items-center bg-[#e5e7eb9e] dark:bg-zinc-700 rounded-md w-10 h-10"
+        class="flex justify-center items-center bg-[#e5e7eb4d] dark:bg-zinc-700 rounded-md w-10 h-10"
       >
         <span v-if="project.icon" :class="`${project.icon} flex-1`" />
-        <div v-if="project.image" class="w-6 grayscale image-icon">
+        <div v-if="project.image" class="w-6 grayscale image-icon text-center">
           <img class="rounded-lg" :src="loadingImage" v-if="!imageLoaded" />
           <img
-            class="rounded-lg"
+            class="rounded-lg inline-block"
             :src="project.image"
             @load="handleImageLoad"
             @error="handleImageError"
@@ -61,7 +61,7 @@ const handleImageError = () => {
       <div
         v-for="tag in project.tags"
         :key="tag"
-        class="absolute hidden md:inline-flex md:right-1 bg-[#e5e7eb9e] dark:bg-gray-800 rounded-lg px-1"
+        class="absolute hidden md:inline-flex md:right-1 rounded-lg px-1"
         style="font-size: 13px"
       >
         {{ tag }}
@@ -69,7 +69,7 @@ const handleImageError = () => {
     </div>
     <div
       v-if="project.desc"
-      class="text-e pt-1 mt-1 border-t border-gray-200 dark:border-gray-800 text-sm"
+      class="text-e pt-1 mt-1 border-t border-gray-200 dark:border-gray-800 text-sm font-normal op50"
     >
       {{ project.desc }}
     </div>

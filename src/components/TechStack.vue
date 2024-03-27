@@ -13,7 +13,7 @@ defineProps<{
       class="flex flex-row items-center"
     >
       <div
-        dark="bg-gray-900 border-gray-700"
+        dark="bg-[#1a1b1cd9] border-gray-700"
         cursor-pointer
         bg-gray-100
         rounded

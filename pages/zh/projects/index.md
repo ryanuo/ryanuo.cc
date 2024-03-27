@@ -1,5 +1,5 @@
 ---
-title: 项目 - Ryan Co
+title: 项目 | Ryan Co
 display: 项目经历
 description: 项目列表，工作经验积累，前端开发经验分享
 plum: true

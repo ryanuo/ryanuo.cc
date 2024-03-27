@@ -20,7 +20,7 @@ const route = useRoute();
   <div
     class="tabs max-w-300 at-lg:max-w-212 m-auto mb-5 select-none animate-none! op100!"
   >
-    <div mb-0 flex="~ gap-1 sm:row gap-2 sm:gap-3 wrap" text-3xl>
+    <div mb-0 flex="~ gap-1 sm:row gap-2 sm:gap-3 wrap" text-2xl>
       <RouterLink
         to="/navs"
         class="!border-none"
