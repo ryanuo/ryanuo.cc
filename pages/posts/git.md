@@ -159,3 +159,6 @@ git push origin [tagname]
 git push origin --tags
 
 ```
+
+## 参考
+[Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
