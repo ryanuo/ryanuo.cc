@@ -23,7 +23,12 @@ async function run() {
 }
 
 async function buildBlogRSS() {
-  const files = await fg(["pages/posts/*.md", "pages/zh/posts/*.md"]);
+  const files = await fg([
+    "pages/posts/*.md",
+    "pages/zh/posts/*.md",
+    "pages/navs/*.md",
+    "pages/zh/navs/*.md",
+  ]);
 
   const options = {
     title: "Ryan Co",
@@ -48,7 +53,7 @@ async function buildBlogRSS() {
           const html = markdown.render(content);
           return {
             ...data,
-            date: new Date(data.date),
+            date: data?.date ? new Date(data?.date) : new Date(),
             content: html,
             author: [AUTHOR],
             link: DOMAIN + i.replace(/^pages(.+)\.md$/, "$1"),
