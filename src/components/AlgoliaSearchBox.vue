@@ -21,22 +21,14 @@ watch(locale, update);
 async function update() {
   await nextTick();
   const options = props.algolia;
-  // const rawFacetFilters = options.searchParameters?.facetFilters ?? [];
-  // const facetFilters = [
-  //   ...(Array.isArray(rawFacetFilters)
-  //     ? rawFacetFilters
-  //     : [rawFacetFilters]
-  //   ).filter((f) => !f.startsWith("lang:")),
-  //   `lang:${locale.value}`,
-  // ];
   initialize({
     ...options,
     searchParameters: {
       ...options.searchParameters,
-      // facetFilters: [
-      //   ...(options.searchParameters?.facetFilters ?? []),
-      //   `lang:${locale.value}`,
-      // ],
+      facetFilters: [
+        ...(options.searchParameters?.facetFilters ?? []),
+        `tags:${locale.value}`,
+      ],
     },
   });
 }
