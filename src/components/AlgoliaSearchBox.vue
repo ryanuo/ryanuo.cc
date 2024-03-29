@@ -6,9 +6,7 @@ import { useI18n } from "vue-i18n";
 
 import type { DocSearchProps } from "./doc-search";
 type AlgoliaSearchOptions = DocSearchProps;
-//  & {
-//   locales: Record<string, DocSearchProps>;
-// };
+
 const props = defineProps<{
   algolia: AlgoliaSearchOptions;
 }>();
@@ -22,10 +20,7 @@ watch(locale, update);
 
 async function update() {
   await nextTick();
-  const options = {
-    ...props.algolia,
-    // ...props.algolia.locales?.[locale.value],
-  };
+  const options = props.algolia;
   // const rawFacetFilters = options.searchParameters?.facetFilters ?? [];
   // const facetFilters = [
   //   ...(Array.isArray(rawFacetFilters)
@@ -38,7 +33,10 @@ async function update() {
     ...options,
     searchParameters: {
       ...options.searchParameters,
-      // facetFilters,
+      // facetFilters: [
+      //   ...(options.searchParameters?.facetFilters ?? []),
+      //   `lang:${locale.value}`,
+      // ],
     },
   });
 }

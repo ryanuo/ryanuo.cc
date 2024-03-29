@@ -42,10 +42,11 @@ async function buildBlogRSS() {
       rss: `${DOMAIN}/sitemap.xml`,
     },
   };
+
   const posts: any[] = (
     await Promise.all(
       files
-        .filter((i) => !i.includes("index"))
+        .filter((i) => !i.includes("posts/index"))
         .map(async (i) => {
           const raw = await fs.readFile(i, "utf-8");
           const { data, content } = matter(raw);
@@ -56,7 +57,9 @@ async function buildBlogRSS() {
             date: data?.date ? new Date(data?.date) : new Date(),
             content: html,
             author: [AUTHOR],
-            link: DOMAIN + i.replace(/^pages(.+)\.md$/, "$1"),
+            link:
+              DOMAIN +
+              i.replace(/^pages(.+)\.md$/, "$1")?.replace("/index", ""),
           };
         })
     )

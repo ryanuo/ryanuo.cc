@@ -48,7 +48,7 @@ const route = useRoute();
       </RouterLink>
     </div>
     <div class="my-4 p1 rounded-lg text-gray-500!" style="font-size: 14px">
-      - {{ description }}
+      {{ description }}
     </div>
   </div>
 </template>

@@ -22,7 +22,7 @@ defineProps({
     mb-8
   >
     <h1 class="mb-0 slide-enter-50" :style="frontmatter.titleStyle">
-      {{ frontmatter.display ?? frontmatter.title }}
+      <span data-title>{{ frontmatter.display ?? frontmatter.title }}</span>
       <div class="text-sm text-gray-500 mt-2 font-400" v-if="frontmatter.date">
         {{ formatDateToMarDD(frontmatter.date, true) }}
       </div>
