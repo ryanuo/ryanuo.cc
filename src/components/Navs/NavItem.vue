@@ -54,7 +54,10 @@ const handleImageError = () => {
         </div>
       </div>
       <div flex items-center overflow-hidden>
-        <div class="text-base font-size-3.8 pl-2 text-ellipsis line-clamp-1">
+        <div
+          class="text-base font-size-3.8 pl-2 text-ellipsis line-clamp-1"
+          data-name
+        >
           {{ project.name }}
         </div>
       </div>
