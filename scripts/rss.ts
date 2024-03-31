@@ -50,8 +50,19 @@ async function buildBlogRSS() {
         .map(async (i) => {
           const raw = await fs.readFile(i, "utf-8");
           const { data, content } = matter(raw);
+          let html = markdown.render(content);
+          if (i.includes("/navs") && data?.projects) {
+            html = "";
+            Object.entries(data.projects).forEach(
+              ([key, values]: [string, any]) => {
+                html += `<h4>${key}</h4>`;
+                values.forEach((project) => {
+                  html += `<div class="project-item"><div class="project-item-title">${project.name}</div><div class="project-item-desc">${project.desc}</div><div class="project-item-link"><a href="${project.link}" target="_blank">${project.link}</a></div></div>`;
+                });
+              }
+            );
+          }
 
-          const html = markdown.render(content);
           return {
             ...data,
             date: data?.date ? new Date(data?.date) : new Date(),
