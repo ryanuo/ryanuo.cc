@@ -26,7 +26,7 @@ const options = ref(getInitialValues()) as any;
     class="relative"
     v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))"
   >
-    <div class="text-left">
+    <div class="text-center">
       <span
         class="text-4em color-transparent font-bold text-stroke-2 border-b-1.5 border-dashed text-stroke-hex-aaa op30"
       >

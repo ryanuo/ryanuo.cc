@@ -155,6 +155,10 @@ projects:
       link: 'https://www.tailwindcss.cn'
       image: 'https://www.tailwindcss.cn/favicons/favicon-32x32.png?v=3'
       desc: 'Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.'
+    - name: iCSS
+      link: https://github.com/chokcoco/iCSS
+      icon: i-carbon-code
+      desc: CSS tricks here they ve got it all
     - name: You-need-to-know-css
       link: 'https://lhammer.cn'
       image: 'https://lhammer.cn/css/images/favicon.ico'

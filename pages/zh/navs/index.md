@@ -155,6 +155,10 @@ projects:
       link: 'https://www.tailwindcss.cn'
       image: 'https://www.tailwindcss.cn/favicons/favicon-32x32.png?v=3'
       desc: 'Tailwind CSS 是一款以实用工具为主的 CSS 框架，无需离开 HTML 即可快速构建现代网站'
+    - name: iCSS
+      link: https://github.com/chokcoco/iCSS
+      icon: i-carbon-code
+      desc: 各种 CSS 花式技巧
     - name: 'You-need-to-know-css'
       link: 'https://lhammer.cn'
       image: 'https://lhammer.cn/css/images/favicon.ico'
