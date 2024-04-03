@@ -159,4 +159,13 @@ export default defineConfig({
   ssgOptions: {
     formatting: "minify",
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://gpt.mr90.top",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 });
