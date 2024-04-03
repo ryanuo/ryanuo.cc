@@ -224,7 +224,16 @@ projects:
       image: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234'
       desc: 'Based On The Serverless Framework'
       tags: ['Collect fees']
-  
+
+  '"True" Learning':
+    - name: 'Bilibili'
+      link: 'https://www.bilibili.com/'
+      image: 'https://www.bilibili.com/favicon.ico'
+      desc: Bilibili is a video barrage website that provides high-definition videos, audios, live broadcasts, comics, and entertainment news.
+    - name: 'YouTube'
+      link: 'https://www.youtube.com/'
+      image: 'https://www.youtube.com/favicon.ico'
+      desc: YouTube is a global video sharing website, initially founded by Gawker, now owned by Google.
 ---
 <!-- @layout-full-width -->
 

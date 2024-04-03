@@ -225,6 +225,16 @@ projects:
       image: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234'
       desc: '基于无服务器架构'
       tags: ['收费']
+
+  '"真"学习':
+    - name: 'bilibili'
+      link: 'https://www.bilibili.com/'
+      image: 'https://www.bilibili.com/favicon.ico'
+      desc: Bilibili 是一个视频弹幕网站，提供高清视频、音频、直播、漫画以及娱乐资讯等内容
+    - name: 'YouTube'
+      link: 'https://www.youtube.com/'
+      image: 'https://www.youtube.com/favicon.ico'
+      desc: YouTube 是一个全球性的视频分享网站，最初由 Gawker 公司创办，现在属于 Google
 ---
 <!-- @layout-full-width -->
 
