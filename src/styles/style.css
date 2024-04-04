@@ -250,7 +250,8 @@ button:focus-visible {
 /* Firefox浏览器 */
 html,
 div,
-pre {
+pre,
+p {
   scrollbar-width: thin;
   scrollbar-color: rgba(121, 119, 119, 0.5) #f1f1f1;
 }
