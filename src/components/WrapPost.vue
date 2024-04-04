@@ -8,57 +8,9 @@ defineProps({
   },
 });
 
-// 创建一个 ref 来保存插槽内容
-const slotContent = ref<string | undefined>();
-
-// 监听插槽内容变化
-const onSlotChange = () => {
-  slotContent.value = document.querySelector("article")?.innerText.trim();
-};
-
-// 在组件挂载时，监听插槽内容的变化
-onMounted(() => {
-  onSlotChange();
-});
-
-// 智能分析插槽内容
-const analyzeContent = () => {
-  // 使用 fetch 发送数据到后端进行智能分析
-  // fetch("/api/g4f/generate_completion", {
-  fetch("https://gpt.mr90.top/g4f/generate_completion", {
-    method: "POST",
-    body: JSON.stringify({
-      message: [
-        {
-          role: "assistant",
-          content: "概括以下内容,50个字左右",
-        },
-        {
-          role: "user",
-          content: slotContent.value,
-        },
-      ],
-    }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      // 处理分析结果
-      console.log(data);
-    })
-    .catch((error) => {
-      // 处理错误
-      console.error(error);
-    });
-};
-
-// 使用 watch 监听 slotContent 的变化
-watch(slotContent, (newValue, oldVal) => {
-  if (newValue !== oldVal) {
-    analyzeContent();
-  }
+const isShowAIPost = computed(() => {
+  if (route.path === "/zh/posts" || route.path === "/posts") return false;
+  return route.path.indexOf("posts") !== -1;
 });
 </script>
 
@@ -82,6 +34,7 @@ watch(slotContent, (newValue, oldVal) => {
     </h1>
   </div>
   <article>
+    <AIPostChat v-if="isShowAIPost" />
     <slot />
   </article>
   <div
