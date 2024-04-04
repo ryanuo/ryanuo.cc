@@ -1,43 +1,26 @@
 <script setup lang="ts">
-// 创建一个 ref 来保存插槽内容
-const slotContent = ref<string | undefined>();
-const aiPostText = ref("");
 import { useTypewriter } from "./useTypewriter";
 
+const aiPostText = ref("");
 const { typedText } = useTypewriter(aiPostText);
-
-// 在组件挂载时，监听插槽内容的变化
-onMounted(() => {
-  slotContent.value = document.querySelector("article")?.innerText.trim();
-});
+const route = useRoute();
 
 // 智能分析插槽内容
 const analyzeContent = () => {
   let apiUrl;
   if (import.meta.env.DEV) {
     // 在开发环境下使用本地接口
-    apiUrl = "/api/g4f/generate_completion";
+    apiUrl = "/api/ai-post";
   } else {
     // 在生产环境下使用远程接口
-    apiUrl = "https://gpt.mr90.top/g4f/generate_completion";
+    apiUrl = "https://gpt.mr90.top/ai-post";
   }
   // 使用 fetch 发送数据到后端进行智能分析
   fetch(apiUrl, {
     method: "POST",
-    body: JSON.stringify({
-      message: [
-        {
-          role: "assistant",
-          content: "概括以下内容,50个字数左右,不要超出文字字数限制",
-        },
-        {
-          role: "user",
-          content: slotContent.value,
-        },
-      ],
-    }),
     headers: {
       "Content-Type": "application/json",
+      RefererUrl: `https://mr90.top${route.path}`,
     },
   })
     .then((response) => response.json())
@@ -57,15 +40,13 @@ const analyzeContent = () => {
 };
 
 // 使用 watch 监听 slotContent 的变化
-watch(slotContent, (newValue, oldVal) => {
-  if (newValue !== oldVal) {
-    analyzeContent();
-  }
+onMounted(() => {
+  analyzeContent();
 });
 </script>
 <template>
   <div
-    class="prose m-auto slide-enter-content rounded-xl p-3 border border-color-[#e3e8f7]"
+    class="prose m-auto slide-enter-content rounded-xl p-3 border border-color-[#e3e8f7] mb-2"
   >
     <div class="flex justify-between">
       <a href="javascript:void(0)" title="查看详情"

@@ -67,6 +67,9 @@ async function buildBlogRSS() {
             ...data,
             date: data?.date ? new Date(data?.date) : new Date(),
             content: html,
+            extensions: [
+              { name: "text", objects: content.replace(/\r\n/g, "") },
+            ],
             author: [AUTHOR],
             link:
               DOMAIN +
@@ -89,6 +92,8 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   const feed = new Feed(options);
 
   items.forEach((item) => feed.addItem(item));
+
+  console.log(items);
 
   await fs.ensureDir(dirname(`./dist/${name}`));
   await fs.writeFile(`./dist/${name}.xml`, feed.rss2(), "utf-8");
