@@ -93,8 +93,6 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
 
   items.forEach((item) => feed.addItem(item));
 
-  console.log(items);
-
   await fs.ensureDir(dirname(`./dist/${name}`));
   await fs.writeFile(`./dist/${name}.xml`, feed.rss2(), "utf-8");
   await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), "utf-8");

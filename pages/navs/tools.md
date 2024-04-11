@@ -30,6 +30,10 @@ projects:
       desc: Share quick reference cheat sheet for developers.
       icon: i-ri-pencil-ruler-2-line
       tags: ['English']
+    - name: Excel Reference
+      link: https://www.lanrenexcel.com/
+      desc: "Excel Reference, a tool that helps you quickly find the Excel function you need."
+      icon: i-ri-file-excel-2-line
 
   Google plugins:
     - name: react1s

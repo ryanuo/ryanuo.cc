@@ -29,6 +29,10 @@ projects:
       desc: 为开发人员分享快速参考备忘单
       icon: i-ri-pencil-ruler-2-line
       tags: ['英文']
+    - name: Excel 参考
+      link: https://www.lanrenexcel.com/
+      desc: Excel 参考是一款工具，旨在帮助您快速找到所需使用的Excel函数。
+      icon: i-ri-file-excel-2-line
 
   谷歌插件:
     - name: react1s
