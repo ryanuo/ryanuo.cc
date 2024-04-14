@@ -32,6 +32,15 @@ projects:
       desc: '提供JSON解析、验证、格式化、压缩、编辑器以及JSON与XML之间转换的服务。'
       image: 'https://www.json.cn/r/img/favicon/favicon.ico' 
 
+  英文学习:
+    - name: 1000-hours
+      link: https://github.com/xiaolai/everyone-can-use-english
+      icon: i-ri-english-input
+      desc: 1000个小时的英语学习计划。
+    - name: cpwp
+      link: https://github.com/antfu/cpwp
+      desc: 中国程序员发音错误
+      image: https://cpwp.netlify.app/favicon.svg
     
   AI导航:
     - name: 'Chatgpt of mirror'

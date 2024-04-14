@@ -31,6 +31,16 @@ projects:
       link: 'https://www.json.cn/'
       desc: 'Provides services such as JSON parsing, validation, formatting, compression, editors, and the conversion between JSON and XML.'
       image: 'https://www.json.cn/r/img/favicon/favicon.ico'
+
+  English Study:
+    - name: 1000-hours
+      link: https://github.com/xiaolai/everyone-can-use-english
+      icon: i-ri-english-input
+      desc: '1000 hours of learning English'
+    - name: cpwp
+      link: https://github.com/antfu/cpwp
+      desc: 'A collection of 1000+ free English learning resources'
+      image: https://cpwp.netlify.app/favicon.svg
     
   AI Navigation:
     - name: 'Chatgpt of mirror'
