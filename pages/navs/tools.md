@@ -18,7 +18,11 @@ projects:
       link: https://github.com/renzhezhilu/webp2jpg-online
       desc: Online image processing, batch conversion of images, batch compression of images, webp to jpg, video to gif, gif to webp.
       icon: i-ri-image-line
-
+    - name: Cover Image Generator
+      link: https://github.com/gezhaoyou/picprose
+      desc: pic prose is a better cover image generator tool for medium you tube bili bili blog and more
+      icon: i-dashicons-cover-image
+      
   Quick Look:
     - name: Quick Reference
       link: https://wangchujiang.com/reference/index.html
