@@ -19,8 +19,8 @@ projects:
       desc: 在线图片处理,批量转换图片,批量压缩图片,webp转jpg,视频转gif,gif转webp
       icon: i-ri-image-line
     - name: 封面图片生成工具
-      link: https://github.com/gezhaoyou/picprose
-      desc: PicProse 是一款更好的封面图片生成工具，适用于 Medium、YouTube、BiliBili、Blog 等
+      link: https://github.com/rr210/own-cover
+      desc: This is a simple web app that allows you to upload an image and get a cover of your choice.
       icon: i-dashicons-cover-image
 
   快速查阅:

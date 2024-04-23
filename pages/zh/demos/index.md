@@ -5,9 +5,15 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
+    - name: 'Own Cover'
+      link: 'https://github.com/rr210/own-cover'
+      desc: '这是一个简单的网络应用程序，允许您上传图像并获得您选择的封面。'
+      readme: 'https://github.com/rr210/own-cover/blob/master/README.md'
+      img: '/demos/own-cover.png'
+      tags: [nuxt]
     - name: '个人主页'
       link: 'https://github.com/rr210/harry.me'
-      desc: '我的个人网站包括个人简介、各种第三方平台链接、前端通用知识整理、博客文章、项目介绍以及演示展示。'
+      desc: '我的个人网站包括个人简介、各种第三方平台链接、前端通用知识整理、博客文章、项目介绍以及演示展示。由Antfu 大佬设计'
       img: '/demos/page-dark.png'
       readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']

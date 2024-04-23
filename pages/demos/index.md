@@ -5,9 +5,15 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
+    - name: 'Own Cover'
+      link: 'https://github.com/rr210/own-cover'
+      desc: 'This is a simple web app that allows you to upload an image and get a cover of your choice.'
+      readme: 'https://github.com/rr210/own-cover/blob/master/README.md'
+      img: '/demos/own-cover.png'
+      tags: [nuxt]
     - name: 'My Website'
       link: 'https://github.com/rr210/harry.me'
-      desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display.'
+      desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display,designed by Antfu Boss'
       img: '/demos/page-dark.png'
       readme: 'https://github.com/rr210/harry.me/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']

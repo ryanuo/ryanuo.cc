@@ -15,8 +15,8 @@ projects:
       desc: A powerful online alternative that offers an editing experience comparable to Adobe Photoshop. Users can open and use it directly in their web browser without downloading or installing any software, allowing them to edit photos, apply effects, filters, add text, crop, resize images, and more. It supports a variety of formats such as PSD, XD, Sketch, XCF, and RAW, and includes real-time link status checking to ensure seamless access to this online photo editing service.
       icon: i-ri-mental-health-line
     - name: images-tools
-      link: https://github.com/renzhezhilu/webp2jpg-online
-      desc: Online image processing, batch conversion of images, batch compression of images, webp to jpg, video to gif, gif to webp.
+      link: https://github.com/rr210/own-cover
+      desc: This is a simple web app that allows you to upload an image and get a cover of your choice.
       icon: i-ri-image-line
     - name: Cover Image Generator
       link: https://github.com/gezhaoyou/picprose
