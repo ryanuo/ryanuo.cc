@@ -7,6 +7,7 @@
   --c-scrollbar-hover: #bbb;
   --c-hover-color: #000;
   --c-demo-card-bg: #fffdfd;
+  --c-logo-fill-color: #000;
 }
 
 html {
@@ -21,7 +22,7 @@ html.dark {
   --c-scrollbar-hover: #222;
   --c-hover-color: #fff;
   --c-demo-card-bg: #050303;
-
+  --c-logo-fill-color: #fff;
 }
 
 a:hover {

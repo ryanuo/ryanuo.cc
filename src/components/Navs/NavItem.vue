@@ -70,11 +70,13 @@ const handleImageError = () => {
         {{ tag }}
       </div>
     </div>
-    <div
-      v-if="project.desc"
-      class="text-e pt-1 mt-1 border-t border-gray-200 dark:border-gray-800 text-sm font-normal op50"
-    >
-      {{ project.desc }}
+    <div class="peer">
+      <div
+        v-if="project.desc"
+        class="text-e pt-1 mt-1 border-t border-gray-200 dark:border-gray-800 text-sm font-normal op50"
+      >
+        {{ project.desc }}
+      </div>
     </div>
   </a>
 </template>
@@ -89,5 +91,20 @@ const handleImageError = () => {
 
 .nav_a_wrap:hover .image-icon {
   --uno: grayscale-0;
+}
+
+.nav_a_wrap .peer {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.nav_a_wrap:hover .peer {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+  height: auto;
+  transition: all 0.8s ease;
 }
 </style>

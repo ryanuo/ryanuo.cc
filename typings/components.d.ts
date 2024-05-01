@@ -22,6 +22,7 @@ declare module 'vue' {
     Plum: typeof import('./../src/components/Plum.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Sign: typeof import('./../src/components/Sign.vue')['default']
     T1Card: typeof import('./../src/components/Demos/T1Card.vue')['default']
     T2Card: typeof import('./../src/components/Demos/T2Card.vue')['default']
     T3Card: typeof import('./../src/components/Demos/T3Card.vue')['default']

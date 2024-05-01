@@ -41,6 +41,7 @@ const isShowAIPost = computed(() => {
     v-if="route.path.indexOf('posts') !== -1"
     class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden"
   >
+    <div class="w-full flex justify-end"><Sign /></div>
     <span font-mono op50>> </span>
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'"
