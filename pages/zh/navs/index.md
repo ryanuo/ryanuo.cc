@@ -51,12 +51,17 @@ projects:
       link: 'https://chat.openai.com/chat'
       image: '/icons/chatgpt.png'
       tags: ['官方']
+    - name: 'kimi'
+      link: 'https://kimi.moonshot.cn/'
+      image: 'https://statics.moonshot.cn/kimi-chat/favicon.ico'
+      desc: 'AI 聊天机器人'
     - name: '通义千问'
       link: 'https://tongyi.aliyun.com/qianwen/'
       image: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png'
     - name: 'AI工具集'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
+
 
   React生态:
     - name: 'React'

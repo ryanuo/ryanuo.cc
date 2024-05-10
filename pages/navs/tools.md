@@ -74,6 +74,10 @@ projects:
       link: https://github.com/rr210/navs
       icon: i-ri-opera-line
       desc: Front End Navigation Backlink Summary
+    - name: Independent Developer
+      link: https://github.com/1c7/chinese-independent-developer
+      icon: i-ri-github-line
+      desc: A list of independent developers in China, including the number of followers, number of stars, number of repositories, etc.
 
 ---
 <!-- @layout-full-width -->

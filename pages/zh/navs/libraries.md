@@ -192,6 +192,10 @@ projects:
       tags: ['React']
 
   代码高亮:
+    - name: 'shiki'
+      link: https://github.com/shikijs/shiki
+      icon: i-material-symbols-code
+      desc: '一个轻量、可扩展的语法高亮库'
     - name: prismjs
       link: https://github.com/PrismJS/prism
       icon: i-material-symbols-code

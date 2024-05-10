@@ -51,6 +51,10 @@ projects:
       link: 'https://chat.openai.com/chat'
       image: '/icons/chatgpt.png'
       tags: ['Official']
+    - name: 'kimi'
+      link: 'https://kimi.moonshot.cn/'
+      image: 'https://statics.moonshot.cn/kimi-chat/favicon.ico'
+      desc: 'AI Assistant'
     - name: 'Tongyi Qianwen'
       link: 'https://tongyi.aliyun.com/qianwen/'
       image: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png'

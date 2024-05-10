@@ -74,6 +74,10 @@ projects:
       link: https://github.com/rr210/navs
       icon: i-ri-opera-line
       desc: 前端导航外链汇总
+    - name: Independent Developer
+      link: https://github.com/1c7/chinese-independent-developer
+      icon: i-ri-github-line
+      desc: 优秀独立开发者
 ---
 <!-- @layout-full-width -->
 

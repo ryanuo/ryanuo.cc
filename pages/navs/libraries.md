@@ -191,6 +191,10 @@ projects:
       tags: ['React']
 
   Code Highlighting:
+    - name: 'shiki'
+      link: https://github.com/shikijs/shiki
+      icon: i-material-symbols-code
+      desc: 'A fast and extensible syntax highlighting library for code with dark mode support and customizable themes with source maps'
     - name: prismjs
       link: https://github.com/PrismJS/prism
       icon: i-material-symbols-code
