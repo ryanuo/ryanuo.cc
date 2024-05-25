@@ -27,7 +27,7 @@ Find me on
 
 <p flex="~ gap-3 wrap" class="mt--2!">
   <a href="https://github.com/rr210" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
-  <a href="https://www.twitter.com/ryanoaco" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
+  <a href="https://x.com/ryan7co" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
   <a href="https://www.youtube.com/@coRyan" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
   <a href="https://www.instagram.com/ryanco007" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
   <a href="https://space.bilibili.com/417034781" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
