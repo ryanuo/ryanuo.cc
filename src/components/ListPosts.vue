@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { useLanguage } from "@/hooks/useLanguage";
-import { formatDateToMarDD } from "@/utils";
 import dayjs from "dayjs";
+import { useLanguage } from "~/hooks/useLanguage";
+import { formatDateToMarDD } from "~/utils";
 
 const routes = useRouter();
 const { isChinese } = useLanguage();
@@ -15,7 +15,7 @@ const postsRoutes = computed(() => {
       const { path } = route;
       return (
         path.includes("/posts") &&
-        path.startsWith(lang + "/posts") &&
+        path.startsWith(`${lang}/posts`) &&
         !path.endsWith(".html") &&
         !["/zh/posts", "/posts"].includes(path)
       );
@@ -31,28 +31,22 @@ const postsRoutes = computed(() => {
     );
 });
 
-const isYearGroup = (date?: string, preDate?: string) => {
+function isYearGroup(date?: string, preDate?: string) {
   if (!preDate) return true;
   const year = dayjs(date).format("YYYY");
   const preYear = dayjs(preDate).format("YYYY");
   return year !== preYear;
-};
+}
 </script>
+
 <template>
   <ul>
-    <li
-      v-for="(post, index) in postsRoutes"
-      :key="post.path"
-      class="before:content-none!"
-    >
-      <div
-        v-if="isYearGroup(post.date, postsRoutes[index - 1]?.date)"
-        class="select-none relative h20 pointer-events-none slide-enter"
-      >
+    <li v-for="(post, index) in postsRoutes" :key="post.path" class="before:content-none!">
+      <div v-if="isYearGroup(post.date, postsRoutes[index - 1]?.date)"
+        class="select-none relative h20 pointer-events-none slide-enter">
         <span
-          class="text-8em color-transparent absolute left--3rem top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op10"
-          >{{ dayjs(post.date).format("YYYY") }}</span
-        >
+          class="text-8em color-transparent absolute left--3rem top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op10">{{
+            dayjs(post.date).format("YYYY") }}</span>
       </div>
       <a :href="post.path" class="font-normal" style="border-style: dashed">{{
         post.title

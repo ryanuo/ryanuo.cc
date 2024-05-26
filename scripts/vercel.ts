@@ -1,24 +1,25 @@
-export { generateVercelConfig };
+import * as fs from "node:fs";
+import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 
-import * as fs from "fs";
-import * as path from "path";
-import { fileURLToPath } from "url";
+// eslint-disable-next-line ts/no-use-before-define
+export { generateVercelConfig };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const rootPath = path.resolve(__dirname, "../"); // 获取根目录的绝对路径
 const distPath = path.join(rootPath, "dist"); // 'dist'目录的路径
-let rewrites: { source: string; destination: string }[] = [
+const rewrites: { source: string; destination: string }[] = [
   { source: "/(.*)", destination: "/index.html" },
 ]; // 存储重写规则的数组
 
 // 递归遍历'dist'目录
-function readHtmlFiles(dir) {
+function readHtmlFiles(dir: fs.PathLike) {
   const files = fs.readdirSync(dir);
 
   files.forEach((file) => {
-    const filePath = path.join(dir, file);
+    const filePath = path.join(dir as string, file);
     const stat = fs.statSync(filePath);
 
     if (stat.isDirectory()) {
@@ -30,7 +31,7 @@ function readHtmlFiles(dir) {
         .relative(distPath, filePath)
         .replace(/\\/g, "/");
       const source = `/${relativePath.replace(/\.html$/, "")}`;
-      rewrites.push({ source: source, destination: `/${relativePath}` });
+      rewrites.push({ source, destination: `/${relativePath}` });
     }
   });
 }

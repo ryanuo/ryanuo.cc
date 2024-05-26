@@ -1,68 +1,51 @@
 <script setup lang="ts">
-import { DemosTypes } from "./type";
+import type { DemosTypes } from "./type";
 
 defineProps<{ demos: Record<number, DemosTypes[]> }>();
-const getInitialValues = () => ({
-  teleportTo: "body",
-  displayDirective: "if",
-  hideOverlay: false,
-  overlayTransition: "vfm-fade",
-  contentTransition: "vfm-slide-up",
-  clickToClose: true,
-  escToClose: true,
-  background: "non-interactive",
-  lockScroll: true,
-  reserveScrollBarGap: true,
-  swipeToClose: "none",
-  modelValue: false,
-  content: {},
-});
+
+function getInitialValues() {
+  return {
+    teleportTo: "body",
+    displayDirective: "if",
+    hideOverlay: false,
+    overlayTransition: "vfm-fade",
+    contentTransition: "vfm-slide-up",
+    clickToClose: true,
+    escToClose: true,
+    background: "non-interactive",
+    lockScroll: true,
+    reserveScrollBarGap: true,
+    swipeToClose: "none",
+    modelValue: false,
+    content: {},
+  }
+}
 
 const options = ref(getInitialValues()) as any;
 </script>
 
 <template>
-  <div
-    class="relative"
-    v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))"
-  >
+  <div class="relative" v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index">
     <div class="text-center">
       <span
-        class="text-4em color-transparent font-bold text-stroke-2 border-b-1.5 border-dashed text-stroke-hex-aaa op30"
-      >
+        class="text-4em color-transparent font-bold text-stroke-2 border-b-1.5 border-dashed text-stroke-hex-aaa op30">
         {{ index }}
       </span>
     </div>
     <div flex="~ wrap gap-4 justify-between">
-      <div
-        class="card_t1 w-full md:w-8/17"
-        v-for="demo in demos[Number(index)]"
-        :key="demo.name"
-      >
-        <iframe
-          v-if="demo.video"
-          width="100%"
-          height="400px"
-          :src="demo.video"
-          scrolling="no"
-          border="0"
-          frameborder="no"
-          framespacing="0"
-        />
+      <div class="card_t1 w-full md:w-8/17" v-for="demo in demos[Number(index)]" :key="demo.name">
+        <iframe v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
+          frameborder="no" framespacing="0" />
         <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1" />
 
         <div class="card__content">
           <p class="card__title">
             {{ demo.name }}
-            <i
-              class="i-ri-fullscreen-exit-fill full-w"
-              @click="
-                () => {
-                  options.modelValue = true;
-                  options.content = demo;
-                }
-              "
-            />
+            <i class="i-ri-fullscreen-exit-fill full-w" @click="() => {
+              options.modelValue = true;
+              options.content = demo;
+            }
+              " />
           </p>
           <p class="card__description line-clamp-3">
             {{ demo.desc }}
@@ -76,6 +59,7 @@ const options = ref(getInitialValues()) as any;
   </div>
   <ModalCard :options="options" />
 </template>
+
 <style scoped>
 .full-w {
   position: absolute;

@@ -6,7 +6,7 @@ const { typedText } = useTypewriter(aiPostText);
 const route = useRoute();
 
 // 智能分析插槽内容
-const analyzeContent = () => {
+function analyzeContent() {
   let apiUrl;
   if (import.meta.env.DEV) {
     // 在开发环境下使用本地接口
@@ -26,37 +26,36 @@ const analyzeContent = () => {
     .then((response) => response.json())
     .then((res) => {
       // 处理分析结果
-      if (res.status_code === 200) {
+      if (res.status_code === 200)
         aiPostText.value = res.data;
-      } else {
+      else
         aiPostText.value = "分析失败,AI机器人故障请联系管理员！！";
-      }
     })
     .catch((error) => {
       // 处理错误
       aiPostText.value = "分析失败,AI机器人故障请联系管理员！！";
       console.error(error);
     });
-};
+}
 
 // 使用 watch 监听 slotContent 的变化
 onMounted(() => {
   analyzeContent();
 });
 </script>
+
 <template>
-  <div
-    class="prose m-auto slide-enter-content rounded-xl p-3 border border-color-[#e3e8f7] mb-2"
-  >
+  <div class="prose m-auto slide-enter-content rounded-xl p-3 border border-color-[#e3e8f7] mb-2">
     <div class="flex justify-between">
-      <a href="javascript:void(0)" title="查看详情"
-        ><div>
+      <a href="javascript:void(0)" title="查看详情">
+        <div>
           <i class="i-gravity-ui-square-article" />
           <span class="align-middle">摘要</span>
         </div>
         <div class="ai-link">
-          <i class="icon-arrow-right-s-line" /></div
-      ></a>
+          <i class="icon-arrow-right-s-line" />
+        </div>
+      </a>
       <div class="font-size-[.8rem] flex items-center cursor-pointer">
         <i class="i-ri-robot-2-line mr-1 align-middle" />
         RyanAI
@@ -75,18 +74,22 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
 <style>
 /* 省略号动画关键帧 */
 @keyframes ellipsis {
   0% {
     content: ".";
   }
+
   33% {
     content: "..";
   }
+
   66% {
     content: "...";
   }
+
   100% {
     content: "";
   }

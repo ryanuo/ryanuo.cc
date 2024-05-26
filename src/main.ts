@@ -1,7 +1,8 @@
 import FloatingVue from "floating-vue";
 import NProgress from "nprogress";
-import autoRoutes from "pages-generated";
-import { ViteSSG, ViteSSGContext } from "vite-ssg";
+import { routes } from 'vue-router/auto-routes'
+import type { ViteSSGContext } from "vite-ssg";
+import { ViteSSG } from "vite-ssg";
 import { setupRouterScroller } from "vue-router-better-scroller";
 
 import "@shikijs/twoslash/style-rich.css";
@@ -18,12 +19,6 @@ import App from "./App.vue";
 import i18n, { handleLanguageSwitch } from "./i18n";
 
 NProgress.configure({ showSpinner: false });
-const routes = autoRoutes.map((i) => {
-  return {
-    ...i,
-    alias: i.path.endsWith("/") ? `${i.path}index.html` : `${i.path}.html`,
-  };
-});
 
 export const createApp = ViteSSG(
   App,

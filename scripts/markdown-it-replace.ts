@@ -1,6 +1,6 @@
 // 自定义插件
-function MdItReplace(md, ruleName, tokenType, iterator) {
-  function scan(state) {
+function MdItReplace(md: { core: { ruler: any[]; }; }, ruleName: any, tokenType: any, iterator: (arg0: any, arg1: any, arg2: number) => void) {
+  function scan(state: any) {
     for (let blkIdx = state.tokens.length - 1; blkIdx >= 0; blkIdx--) {
       if (state.tokens[blkIdx].type !== "inline") continue;
 

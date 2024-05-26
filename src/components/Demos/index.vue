@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { DemosTypes } from "./type";
+import type { DemosTypes } from "./type";
+
 // 定义组件 props
 defineProps<{ demos: Record<number, DemosTypes[]> }>();
 
@@ -16,6 +17,7 @@ watchEffect(() => {
   // getRadomTheme();
 });
 </script>
+
 <template>
   <T1Card v-if="currentTheme === 't1'" :demos="demos" />
   <!-- <T2Card v-if="currentTheme === 't2'" :demos="demos" />

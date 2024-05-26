@@ -1,5 +1,6 @@
 /// <reference types="vite-ssg" />
 
+import { resolve } from "node:path";
 import MarkdownItShiki from "@shikijs/markdown-it";
 import { rendererRich, transformerTwoslash } from "@shikijs/twoslash";
 import Vue from "@vitejs/plugin-vue";
@@ -8,8 +9,6 @@ import matter from "gray-matter";
 import anchor from "markdown-it-anchor";
 import LinkAttributes from "markdown-it-link-attributes";
 import TOC from "markdown-it-table-of-contents";
-import textualUml from "markdown-it-textual-uml";
-import { resolve } from "node:path";
 import { visualizer } from "rollup-plugin-visualizer";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -17,15 +16,18 @@ import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
 import Markdown from "unplugin-vue-markdown/vite";
-import { defineConfig } from "vite";
-import Pages from "vite-plugin-pages";
+import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import textualUml from "markdown-it-textual-uml";
+import type { UserConfig } from "vite";
+import type { MarkdownIt } from 'markdown-it'
 
 import { slugify } from "./scripts/slugify";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default {
   resolve: {
-    alias: [{ find: "@/", replacement: `${resolve(__dirname, "src")}/` }],
+    alias: [{ find: "~/", replacement: `${resolve(__dirname, "src")}/` }],
   },
   plugins: [
     visualizer({
@@ -40,23 +42,26 @@ export default defineConfig({
       },
     }),
     UnoCSS(),
-    Pages({
-      extensions: ["vue", "md"],
-      dirs: "pages",
+    VueRouter({
+      extensions: ['.vue', '.md'],
+      routesFolder: 'pages',
+      logs: true,
+      dts: 'typings/routes.d.ts',
       extendRoute(route) {
-        const path = resolve(__dirname, route.component.slice(1));
+        const path = route.components.get('default')
+        if (!path)
+          return
 
-        if (path.endsWith(".md")) {
-          const md = fs.readFileSync(path, "utf-8");
-          const { data } = matter(md);
-          route.meta = Object.assign(route.meta || {}, { frontmatter: data });
+        if (path.endsWith('.md')) {
+          const { data } = matter(fs.readFileSync(path, 'utf-8'))
+          route.addToMeta({
+            frontmatter: data,
+          })
         }
-
-        return route;
       },
     }),
     AutoImport({
-      imports: ["vue", "vue-router", "@vueuse/core"],
+      imports: ["vue", VueRouterAutoImports, "@vueuse/core"],
       dts: "typings/auto-imports.d.ts",
     }),
     Markdown({
@@ -71,7 +76,7 @@ export default defineConfig({
       exposeFrontmatter: false,
       exposeExcerpt: false,
       async markdownItSetup(md) {
-        md.use(LinkAttributes, {
+        md.use(LinkAttributes as MarkdownIt, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
             target: "_blank",
@@ -93,7 +98,7 @@ export default defineConfig({
                 renderer: rendererRich(),
               }),
             ],
-          })
+          }) as MarkdownIt
         );
 
         md.use(textualUml);
@@ -168,4 +173,4 @@ export default defineConfig({
       },
     },
   },
-});
+} as UserConfig

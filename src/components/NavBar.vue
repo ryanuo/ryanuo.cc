@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { langIconMap } from "@/i18n";
 import { useI18n } from "vue-i18n";
+import { langIconMap } from "~/i18n";
+
 const lange = useStorage("lang", "en-US");
 const { locale } = useI18n(); // 获取当前语言
 const langIcon = computed(() => {
@@ -14,49 +15,31 @@ function toTop() {
   });
 }
 
-const handleLangChange = () => {
+function handleLangChange() {
   let lang;
-  if (locale.value === "zh-CN") {
+  if (locale.value === "zh-CN")
     lang = "en-US";
-  } else {
+  else
     lang = "zh-CN";
-  }
+
   locale.value = lang;
   lange.value = lang;
   // // 强制刷新页面
   window.location.reload();
-};
+}
 
 const { y: scroll } = useWindowScroll();
 </script>
 
 <template>
   <header class="header z-40">
-    <RouterLink
-      class="w-8 h-8 absolute xl:fixed m-7 mb-0 select-none outline-none flex flex-items-center"
-      to="/"
-      focusable="false"
-    >
+    <RouterLink class="w-8 h-8 absolute xl:fixed m-7 mb-0 select-none outline-none flex flex-items-center" to="/"
+      focusable="false">
       <Logo />
     </RouterLink>
 
-    <button
-      title="Scroll to top"
-      fixed
-      right-3
-      bottom-3
-      w-10
-      h-10
-      hover:op100
-      rounded-full
-      hover-bg-hex-8883
-      transition
-      duration-300
-      z-100
-      print:hidden
-      :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
-      @click="toTop()"
-    >
+    <button title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
+      duration-300 z-100 print:hidden :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()">
       <div i-ri-arrow-up-line />
     </button>
     <nav class="nav">
@@ -106,29 +89,17 @@ const { y: scroll } = useWindowScroll();
 
         <a href="javascript:void(0)" class="relative">
           <div class="i-mynaui-search-square w-1.3em h-1.3em"></div>
-          <AlgoliaSearchBox
-            class="absolute top-0 left-0 w-full h-full op0!"
-            :algolia="{
-              apiKey: 'db0e9b82d77e75c9fc8aee05b1e14334',
-              indexName: 'ryan',
-              appId: 'X0NE0GCGVB',
-            }"
-          />
+          <AlgoliaSearchBox class="absolute top-0 left-0 w-full h-full op0!" :algolia="{
+            apiKey: 'db0e9b82d77e75c9fc8aee05b1e14334',
+            indexName: 'ryan',
+            appId: 'X0NE0GCGVB',
+          }" />
         </a>
-        <a
-          href="https://github.com/rr210"
-          target="_blank"
-          title="GitHub"
-          class="lt-md:hidden"
-        >
+        <a href="https://github.com/rr210" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
-          <div
-            @click="handleLangChange"
-            :class="langIcon"
-            v-tooltip="$t('lang.change', 'English To Chinese')"
-          ></div>
+          <div @click="handleLangChange" :class="langIcon" v-tooltip="$t('lang.change', 'English To Chinese')"></div>
         </a>
         <ToggleTheme />
       </div>
@@ -155,7 +126,7 @@ const { y: scroll } = useWindowScroll();
   box-sizing: border-box;
 }
 
-.nav > * {
+.nav>* {
   margin: auto;
 }
 
@@ -183,7 +154,7 @@ const { y: scroll } = useWindowScroll();
   grid-auto-flow: column;
 }
 
-.nav .right > * {
+.nav .right>* {
   margin: auto;
 }
 </style>

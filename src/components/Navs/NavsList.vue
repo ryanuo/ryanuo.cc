@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { slug } from "@/utils";
 import { omit } from "lodash-es";
 import { useI18n } from "vue-i18n";
+
+import { slug } from "~/utils";
+
 interface Project {
   desc: string;
   name: string;
@@ -37,7 +39,7 @@ const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
   }
 });
 
-const handleNav = (obj: Project) => {
+function handleNav (obj: Project) {
   const newObj = omit(obj, ["desc"]);
   // 查找 obj 在 usedNavs 中的索引
   const index = usedNavs.value.findIndex(
@@ -58,7 +60,7 @@ const handleNav = (obj: Project) => {
     // 将新的 obj 添加到数组的开头
     usedNavs.value.unshift(newObj);
   }
-};
+}
 </script>
 
 <template>

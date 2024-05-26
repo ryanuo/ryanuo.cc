@@ -18,15 +18,16 @@ const loadingImage =
 const imageLoaded = ref(false);
 const project = ref(props.project);
 
-const handleImageLoad = () => {
+function handleImageLoad () {
   imageLoaded.value = true;
-};
+}
 
-const handleImageError = () => {
+function handleImageError () {
   imageLoaded.value = true; // 加载失败也表示图片加载完成
   project.value.image = errorImage; // 加载失败时显示的默认图片
-};
+}
 </script>
+
 <template>
   <!-- 点击跳转外链 -->
   <a

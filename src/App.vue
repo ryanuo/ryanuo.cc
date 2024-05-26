@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useImagePreview } from "@/hooks/useImagePreview";
 import mermaid from "mermaid";
+import { useImagePreview } from "~/hooks/useImagePreview";
+
 const route = useRoute();
 const { imageModel } = useImagePreview();
 

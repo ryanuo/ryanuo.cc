@@ -4,6 +4,9 @@ declare interface Document {
 
 declare module "markdown-it-table-of-contents";
 declare module "lodash-es";
+declare module 'markdown-it-textual-uml';
+declare module 'markdown-it';
+declare module 'diacritics';
 
 declare interface FrontmatterPostType {
   title: string;

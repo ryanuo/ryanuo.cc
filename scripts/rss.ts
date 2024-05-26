@@ -1,10 +1,10 @@
+import { dirname } from "node:path";
 import fg from "fast-glob";
 import type { FeedOptions, Item } from "feed";
 import { Feed } from "feed";
 import fs from "fs-extra";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { dirname } from "node:path";
 
 const DOMAIN = "https://mr90.top";
 const AUTHOR = {
@@ -56,7 +56,7 @@ async function buildBlogRSS() {
             Object.entries(data.projects).forEach(
               ([key, values]: [string, any]) => {
                 html += `<h4>${key}</h4>`;
-                values.forEach((project) => {
+                values.forEach((project: any) => {
                   html += `<div class="project-item"><div class="project-item-title">${project.name}</div><div class="project-item-desc">${project.desc}</div><div class="project-item-link"><a href="${project.link}" target="_blank">${project.link}</a></div></div>`;
                 });
               }

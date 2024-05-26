@@ -5,9 +5,9 @@ export function useLanguage() {
   const { locale } = useI18n();
   const isChinese = ref(false);
 
-  if (locale?.value?.includes("zh")) {
+  if (locale?.value?.includes("zh"))
     isChinese.value = true;
-  }
+
 
   return {
     isChinese,

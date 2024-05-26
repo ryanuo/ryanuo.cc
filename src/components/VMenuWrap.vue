@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { slug } from "@/utils";
+import { slug } from "~/utils";
 
 defineProps<{
   title: string;
@@ -16,17 +16,12 @@ defineProps<{
   <VMenu :delay="200">
     <a href="javascript:void(0)">
       <span class="lt-md:hidden cursor-pointer">{{ title }}</span>
-      <div :class="['md:hidden', icon, 'cursor-pointer']"></div>
+      <div class="md:hidden cursor-pointer" :class="[icon]"></div>
     </a>
     <template #popper>
-      <ul :class="['w-auto', width, 'p-2']">
+      <ul class="w-auto p-2" :class="[width]">
         <li v-for="item in menus" :key="slug(item.name)" class="li_wrap">
-          <a
-            v-if="item.link.startsWith('http')"
-            :href="item.link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a v-if="item.link.startsWith('http')" :href="item.link" target="_blank" rel="noopener noreferrer">
             {{ item.name }}
           </a>
           <RouterLink v-else :to="item.link" :title="item.name">
@@ -37,6 +32,7 @@ defineProps<{
     </template>
   </VMenu>
 </template>
+
 <style scoped>
 .li_wrap {
   transition:

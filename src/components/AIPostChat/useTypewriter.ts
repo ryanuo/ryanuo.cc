@@ -6,11 +6,6 @@ export function useTypewriter(initialText: Ref) {
   let currentIndex = 0; // 当前显示到的字符索引
   let typingInterval: any = null; // 定时器
 
-  const startTyping = () => {
-    // 开始打字机效果
-    typingInterval = setInterval(typeCharacter, typingSpeed);
-  };
-
   const typeCharacter = () => {
     if (!initialText) return;
     // 逐个显示字符
@@ -22,6 +17,11 @@ export function useTypewriter(initialText: Ref) {
       clearInterval(typingInterval);
       typingInterval = null;
     }
+  };
+
+  const startTyping = () => {
+    // 开始打字机效果
+    typingInterval = setInterval(typeCharacter, typingSpeed);
   };
 
   const restartTyping = () => {

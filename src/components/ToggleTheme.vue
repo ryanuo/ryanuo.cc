@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { toggleDark } from "@/utils/";
+import { toggleDark } from "~/utils/";
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { calculateWorkYears } from "@/utils/";
+import { calculateWorkYears } from "~/utils/";
 
 const lang = useStorage("lang", "");
 const workYear = computed(() => {
@@ -38,6 +38,7 @@ function numberToChinese(num: number): string {
   return chineseNumbers[num] || num.toString();
 }
 </script>
+
 <template>
   <span>{{ workYear }}</span>
 </template>
