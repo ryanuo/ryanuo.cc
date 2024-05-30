@@ -30,7 +30,7 @@ projects:
     - name: 'JSON Tool'
       link: 'https://www.json.cn/'
       desc: '提供JSON解析、验证、格式化、压缩、编辑器以及JSON与XML之间转换的服务。'
-      image: 'https://www.json.cn/r/img/favicon/favicon.ico' 
+      image: 'https://www.json.cn/r/img/favicon/favicon.ico'
 
   英文学习:
     - name: 1000-hours
@@ -41,7 +41,7 @@ projects:
       link: https://github.com/antfu/cpwp
       desc: 中国程序员发音错误
       image: https://cpwp.netlify.app/favicon.svg
-    
+
   AI导航:
     - name: 'Chatgpt of mirror'
       link: 'https://github.com/xx025/carrot'
@@ -61,7 +61,6 @@ projects:
     - name: 'AI工具集'
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
-
 
   React生态:
     - name: 'React'
@@ -250,6 +249,7 @@ projects:
       image: 'https://www.youtube.com/favicon.ico'
       desc: YouTube 是一个全球性的视频分享网站，最初由 Gawker 公司创办，现在属于 Google
 ---
+
 <!-- @layout-full-width -->
 
 <NavsTabs :description="frontmatter.description" />

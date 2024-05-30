@@ -1,10 +1,15 @@
 {
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
   "eslint.experimental.useFlatConfig": true,
   "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": true
+    "source.organizeImports": "never"
   },
   "eslint.rules.customizations": [
     {
@@ -55,6 +60,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-  "grammarly.selectors": []
+  ]
 }

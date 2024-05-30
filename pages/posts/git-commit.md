@@ -5,7 +5,9 @@ tags: [git]
 categories: git
 description: The Git commit convention includes types, scopes, etc., facilitating clear collaboration and maintenance, recommended Conventional Commits, AngularJS convention for reference.
 ---
+
 [[toc]]
+
 ## 前言
 
 在任何版本控制软件中，合理的提交（commit）信息对于团队合作和代码维护来说都是至关重要的。Git，作为目前最流行的分布式版本控制系统，其提交信息的规范化可以帮助团队成员更好地了解代码历史，加快代码审查过程，以及自动化生成变更日志。本文将介绍一些常见的 Git 提交信息规范。
@@ -28,7 +30,7 @@ description: The Git commit convention includes types, scopes, etc., facilitatin
 
 例如：
 
-```markdown
+```
 feat(login): add the remember me button
 
 - Add a "remember me" checkbox in the login form

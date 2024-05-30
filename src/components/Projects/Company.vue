@@ -1,12 +1,12 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps } from 'vue'
 
 defineProps({
   title: String,
   link: String,
   imageSrc: String,
   timeRange: String,
-});
+})
 </script>
 
 <template>
@@ -22,7 +22,7 @@ defineProps({
           border-radius: 4px;
         "
         :src="imageSrc"
-      />
+      >
       {{ title }}
     </a>
     <span>{{ timeRange }}</span>

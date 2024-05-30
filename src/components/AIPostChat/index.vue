@@ -1,51 +1,52 @@
 <script setup lang="ts">
-import { useTypewriter } from "./useTypewriter";
+import { useTypewriter } from './useTypewriter'
 
-const aiPostText = ref("");
-const { typedText } = useTypewriter(aiPostText);
-const route = useRoute();
+const aiPostText = ref('')
+const { typedText } = useTypewriter(aiPostText)
+const route = useRoute()
 
 // 智能分析插槽内容
 function analyzeContent() {
-  let apiUrl;
+  let apiUrl
   if (import.meta.env.DEV) {
     // 在开发环境下使用本地接口
-    apiUrl = "/api/ai-post";
-  } else {
+    apiUrl = '/api/ai-post'
+  }
+  else {
     // 在生产环境下使用远程接口
-    apiUrl = "https://gpt.mr90.top/ai-post";
+    apiUrl = 'https://gpt.mr90.top/ai-post'
   }
   // 使用 fetch 发送数据到后端进行智能分析
   fetch(apiUrl, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
-      RefererUrl: `https://mr90.top${route.path}`,
+      'Content-Type': 'application/json',
+      'RefererUrl': `https://mr90.top${route.path}`,
     },
   })
-    .then((response) => response.json())
+    .then(response => response.json())
     .then((res) => {
       // 处理分析结果
       if (res.status_code === 200)
-        aiPostText.value = res.data;
+        aiPostText.value = res.data
       else
-        aiPostText.value = "分析失败,AI机器人故障请联系管理员！！";
+        aiPostText.value = '分析失败,AI机器人故障请联系管理员！！'
     })
     .catch((error) => {
       // 处理错误
-      aiPostText.value = "分析失败,AI机器人故障请联系管理员！！";
-      console.error(error);
-    });
+      aiPostText.value = '分析失败,AI机器人故障请联系管理员！！'
+      console.error(error)
+    })
 }
 
 // 使用 watch 监听 slotContent 的变化
 onMounted(() => {
-  analyzeContent();
-});
+  analyzeContent()
+})
 </script>
 
 <template>
-  <div class="prose m-auto slide-enter-content rounded-xl p-3 border border-color-[#e3e8f7] mb-2">
+  <div class="prose slide-enter-content m-auto mb-2 border border-color-[#e3e8f7] rounded-xl p-3">
     <div class="flex justify-between">
       <a href="javascript:void(0)" title="查看详情">
         <div>
@@ -56,13 +57,13 @@ onMounted(() => {
           <i class="icon-arrow-right-s-line" />
         </div>
       </a>
-      <div class="font-size-[.8rem] flex items-center cursor-pointer">
+      <div class="flex cursor-pointer items-center font-size-[.8rem]">
         <i class="i-ri-robot-2-line mr-1 align-middle" />
         RyanAI
       </div>
     </div>
-    <div class="my-2 indent-8 font-size-[.94rem] break-all">
-      <p v-if="typedText" class="overflow-auto max-h-32 m-0!">
+    <div class="my-2 break-all indent-8 font-size-[.94rem]">
+      <p v-if="typedText" class="max-h-32 overflow-auto m-0!">
         {{ typedText }}
       </p>
       <span v-else class="ellipsis-animation">Loading.</span>
@@ -79,25 +80,25 @@ onMounted(() => {
 /* 省略号动画关键帧 */
 @keyframes ellipsis {
   0% {
-    content: ".";
+    content: '.';
   }
 
   33% {
-    content: "..";
+    content: '..';
   }
 
   66% {
-    content: "...";
+    content: '...';
   }
 
   100% {
-    content: "";
+    content: '';
   }
 }
 
 /* 应用省略号动画到元素 */
 .ellipsis-animation::after {
-  content: ".";
+  content: '.';
   animation: ellipsis 1s infinite steps(1);
 }
 </style>

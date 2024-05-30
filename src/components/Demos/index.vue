@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { DemosTypes } from "./type";
+import type { DemosTypes } from './type'
 
 // 定义组件 props
-defineProps<{ demos: Record<number, DemosTypes[]> }>();
+defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
 // 当前主题
-const currentTheme = ref("t1");
+const currentTheme = ref('t1')
 
 // const getRadomTheme = () => {
 //   const themes = ["t1", "t2", "t3", "t4", "t5", "t6"];
@@ -15,7 +15,7 @@ const currentTheme = ref("t1");
 
 watchEffect(() => {
   // getRadomTheme();
-});
+})
 </script>
 
 <template>

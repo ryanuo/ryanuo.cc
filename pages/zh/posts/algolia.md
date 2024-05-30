@@ -39,6 +39,7 @@ E --> F[在你的文档中添加搜索功能]
 ### 4.集成Algolia到你的文档
 
 集成方法取决于你文档的托管方式，这里我以我的文档为例，我使用了开源的DocSearch插件。
+
 #### 集成DocSearch到Vue 3项目
 
 1.申请DocSearch
@@ -56,18 +57,18 @@ pnpm install @docsearch/css
 ```
 
 编写组件，可自定义也可直接使用DocSearch官方提供的组件。这里我借鉴[vitePress](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/components/VPAlgoliaSearchBox.vue)定义的AlgoliaSearch组件，下面展示为主要的代码
+
 ```vue
 <script setup lang="ts">
-import "@docsearch/css";
-import docsearch from "@docsearch/js";
+import '@docsearch/css'
+import docsearch from '@docsearch/js'
 const props = defineProps<{
-  algolia: AlgoliaSearchOptions;
-}>();
+  algolia: AlgoliaSearchOptions
+}>()
 
 onMounted(() => {
-    docsearch(algolia)
+  docsearch(algolia)
 })
-
 </script>
 
 <template>
@@ -76,20 +77,22 @@ onMounted(() => {
 ```
 
 这里我使用的时候覆盖了原有的样式,如下
+
 ```vue
 <template>
-    <a href=" " class="relative">
-      <div class="i-mynaui-search-square w-1.3em h-1.3em"></div>
-      <AlgoliaSearchBox
-        class="absolute top-0 left-0 w-full h-full op0!"
-        :algolia="{
-          apiKey: 'db0e9b82d77e75c9fc8aee05b1e14334',
-          indexName: 'ryan',
-          appId: 'X0NE0GCGVB',
-        }"
-      />
-    </a >
+  <a href=" " class="relative">
+    <div class="i-mynaui-search-square h-1.3em w-1.3em" />
+    <AlgoliaSearchBox
+      class="absolute left-0 top-0 h-full w-full op0!"
+      :algolia="{
+        apiKey: 'db0e9b82d77e75c9fc8aee05b1e14334',
+        indexName: 'ryan',
+        appId: 'X0NE0GCGVB',
+      }"
+    />
+  </a>
 </template>
+
 <style>
 :root {
   /* docsearch */
@@ -120,7 +123,7 @@ button.DocSearch-Button:focus,
 button.DocSearch-Button:hover {
   background: transparent;
   box-shadow: none;
-  color: var(--c-hover-color)
+  color: var(--c-hover-color);
 }
 </style>
 ```

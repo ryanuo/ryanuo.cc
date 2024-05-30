@@ -6,6 +6,7 @@ description: java method overloading and recursion usage methods and examples
 ---
 
 [[toc]]
+
 ## 方法的重载
 
 ### 好处
@@ -32,8 +33,6 @@ description: java method overloading and recursion usage methods and examples
 
 1. 在调用过程中不断的调用自己
 
-
-
 ```java
 public class text5 {
     public static void main(String[] args){
@@ -46,10 +45,10 @@ public class text5 {
 }
 ```
 
-
 ## 斐波那契
 
 {% folding red, java %}
+
 ```java
 public class text7 {
     public static void main(String[] args) {
@@ -67,7 +66,6 @@ public class text7 {
 }
 ```
 
-
 {% folding red, python %}
 
 ```python
@@ -79,12 +77,9 @@ if __name__ == '__main__':
     print(f(int(num)))
 ```
 
-
 ### 进制转换
 
-1. 思路: 将输入数除2判断 商是否等于0 如果等于0则终止返回，不等于0 返回余数+方法*10 每次执行方法返回的值都要乘10 最后将每次计算的都加起来
-
-
+1. 思路: 将输入数除2判断 商是否等于0 如果等于0则终止返回，不等于0 返回余数+方法\*10 每次执行方法返回的值都要乘10 最后将每次计算的都加起来
 
 ```java
 //十进制准换二进制
@@ -101,7 +96,6 @@ public class text9 {
     }
 }
 ```
-
 
 ## 面向对象
 
@@ -131,7 +125,6 @@ public class text9 {
 
 ![](https://cloud.mr90.top/hexo/api/zhan.png)
 
-
 ## 构造方法Constructor
 
 1. 定义: 构造方法是类中一种特殊的方法，通过构造方法可以完成对象的创建，以及对象属性的初始化操作
@@ -142,37 +135,34 @@ public class text9 {
 1. 创建对象
 2. 初始化对象（方法中必须赋值）
 
-
-
 ```java
 public class text5 {
-	int year;
-	int month;
-	int day;
-	public text5(int y, int m, int d) {
-		// TODO 自动生成的构造函数存根
-		year = y;
-		month = m;
-		day = d;  // 就近原则this
-	}
-	void show() {
-		System.out.println(year + "-" + month + "-" + day);
-	}
+  int year;
+  int month;
+  int day;
+  public text5(int y, int m, int d) {
+    // TODO 自动生成的构造函数存根
+    year = y;
+    month = m;
+    day = d;  // 就近原则this
+  }
+  void show() {
+    System.out.println(year + "-" + month + "-" + day);
+  }
 }
 
 // 构造方法
 public class text6 {
-	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
-//		创建日期对象
-		text5 d5 = new text5(2021,7,22);
-		d5.show();
-		System.out.print("------------");
-	}
+  public static void main(String[] args) {
+    // TODO 自动生成的方法存根
+//    创建日期对象
+    text5 d5 = new text5(2021,7,22);
+    d5.show();
+    System.out.print("------------");
+  }
 }
 
 ```
-
 
 ### 方法的重載
 
@@ -183,86 +173,83 @@ public class text6 {
 1. 引用为空
 2. 引用对象=> 空指针错误 `java.lang.NullPointerException`
 
-
-
-
 ```java
 package demo1;
 public class text10 {
-	public static void main(String[] args) {
-		text8 d = new text8(2000,10,2);
-		text9 t9 = new text9();
-		text8 w = new text8();
-		w.year = 1999;
-		w.month = 5;
-		w.day = 4;
-		t9.name = "张三";
-		t9.id = "001";
-		t9.birth = d;
-		Wife n = new Wife("李四","002",w);
-		System.out.println(n.birth.ShowDate());
-		System.out.println(t9.birth.ShowDate());
-	}
+  public static void main(String[] args) {
+    text8 d = new text8(2000,10,2);
+    text9 t9 = new text9();
+    text8 w = new text8();
+    w.year = 1999;
+    w.month = 5;
+    w.day = 4;
+    t9.name = "张三";
+    t9.id = "001";
+    t9.birth = d;
+    Wife n = new Wife("李四","002",w);
+    System.out.println(n.birth.ShowDate());
+    System.out.println(t9.birth.ShowDate());
+  }
 }
 //
 package demo1;
 
 public class text8 {
-	int year;
-	int month;
-	int day;
-	
-	public text8() {
-		// TODO 自动生成的构造函数存根
-		
-	}
-	text8(int y,int m, int d){
-		year=y;
-		month=m;
-		day=d;
-//		System.out.println(ShowDate());
-	}
-	String ShowDate(){
-		return year+"-"+month+"-"+day;
-	}
+  int year;
+  int month;
+  int day;
+
+  public text8() {
+    // TODO 自动生成的构造函数存根
+
+  }
+  text8(int y,int m, int d){
+    year=y;
+    month=m;
+    day=d;
+//    System.out.println(ShowDate());
+  }
+  String ShowDate(){
+    return year+"-"+month+"-"+day;
+  }
 }
 //
 package demo1;
 
 public class text9 {
-	String name;
-	String id;
-	text8 birth;
-	public text9() {
-		// TODO 自动生成的构造函数存根
-	}
+  String name;
+  String id;
+  text8 birth;
+  public text9() {
+    // TODO 自动生成的构造函数存根
+  }
 }
 //
 package demo1;
 
 public class Wife {
-	String name;
-	String id;
-	text8 birth;
-	public Wife() {
-		// TODO 自动生成的构造函数存根
-	}
-	public Wife(String string, String string2, text8 d) {
-		// TODO 自动生成的构造函数存根
-		name = string;
-		id = string2;
-		birth = d;
-	}
+  String name;
+  String id;
+  text8 birth;
+  public Wife() {
+    // TODO 自动生成的构造函数存根
+  }
+  public Wife(String string, String string2, text8 d) {
+    // TODO 自动生成的构造函数存根
+    name = string;
+    id = string2;
+    birth = d;
+  }
 }
 
 ```
-
 
 ## 封装
 
 在面向对象程式设计方法中，封装（英语：Encapsulation）是指一种将抽象性函式接口的实现细节部份包装、隐藏起来的方法
 
 - 封装的优点
+
 1. 良好的封装能够减少耦合。
 2. 类内部的结构可以自由修改。
 3. 可以对成员变量进行更精确的控制。
@@ -270,59 +257,58 @@ public class Wife {
 
 5. 提供公共的入口 使用`set`修改 和 `get`访问 方法
 
-
 ```java
 public class Product {
-	private int pro_id;
-	private String pro_name;
-	private int pro_price;
-	public Product() {
-		// TODO 自动生成的构造函数存根
-	}
-//	设置
-	public void setId(int i) {
-		pro_id = i;
-	}
-	public void setName(String i) {
-		pro_name = i;
-	}
-	public void setPrice(int i) {
-		pro_price = i;
-	}
-//	查看
-	public int getId() {
-		return pro_id;
-	}
-	public String getName() {
-		return pro_name;
-	}
-	public int getPrice() {
-		return pro_price;
-	}
-//	有参封装
-	Product(int i,String n,int p){
-		pro_id = i;
-		pro_name = n;
-		pro_price = p;
-	}
-//	返回所有的情况
-	String ShowProduct(){
-		return "商品id为："+pro_id+"\n商品名称为："+pro_name+"\n商品价格为"+pro_price;
-	}
+  private int pro_id;
+  private String pro_name;
+  private int pro_price;
+  public Product() {
+    // TODO 自动生成的构造函数存根
+  }
+//  设置
+  public void setId(int i) {
+    pro_id = i;
+  }
+  public void setName(String i) {
+    pro_name = i;
+  }
+  public void setPrice(int i) {
+    pro_price = i;
+  }
+//  查看
+  public int getId() {
+    return pro_id;
+  }
+  public String getName() {
+    return pro_name;
+  }
+  public int getPrice() {
+    return pro_price;
+  }
+//  有参封装
+  Product(int i,String n,int p){
+    pro_id = i;
+    pro_name = n;
+    pro_price = p;
+  }
+//  返回所有的情况
+  String ShowProduct(){
+    return "商品id为："+pro_id+"\n商品名称为："+pro_name+"\n商品价格为"+pro_price;
+  }
 }
 
 // 调用
 public class Build {
-	public static void main(String[] args) {
-		Product p1 = new Product();
-		p1.setId(1);
-		p1.setName("手机");
-		p1.setPrice(12000);
-		Product p2 = new Product(2,"电脑",22222);
-		System.out.println(p2.ShowProduct());
-		System.out.println(p1.getPrice());  // 获取单个商品的信息 使用get方法
-		System.out.println(p2.ShowProduct());
-	}
+  public static void main(String[] args) {
+    Product p1 = new Product();
+    p1.setId(1);
+    p1.setName("手机");
+    p1.setPrice(12000);
+    Product p2 = new Product(2,"电脑",22222);
+    System.out.println(p2.ShowProduct());
+    System.out.println(p1.getPrice());  // 获取单个商品的信息 使用get方法
+    System.out.println(p2.ShowProduct());
+  }
 }
 
 ```
@@ -330,7 +316,7 @@ public class Build {
 ## this 关键字
 
 1. this本质是对象的地址，this关键字指向的是当前对象的引用
-2. this 内容相同 每个this指向对象的地址  都在堆中
+2. this 内容相同 每个this指向对象的地址 都在堆中
 3. 本质就是一个变量或者引用，存储在对象的内部
 4. this本身的内容就是该对象的地址值
 5. this关键字来区分局部变量和实例变量。

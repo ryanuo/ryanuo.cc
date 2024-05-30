@@ -72,7 +72,7 @@ projects:
       link: https://github.com/jaywcjlove/hotkeys-js/
       icon: i-codicon-record-keys
       desc: 'A robust JavaScript library for capturing keyboard inputs'
-  
+
   Individual Components:
     - name: 'Vue Final Modal'
       link: https://github.com/vue-final/vue-final-modal
@@ -208,7 +208,7 @@ projects:
       icon: i-material-symbols-code
       desc: Provides a syntax highlighting component for React using inline styles with Prismjs or Highlightjs AST.
       tags: ['React']
-  
+
   Swiper:
     - name: 'swiper'
       link: https://github.com/nolimits4web/swiper
@@ -358,11 +358,11 @@ projects:
       icon: i-clarity-plugin-outline-badged
       desc: Unified plugin system for Vite, Rollup, Webpack, esbuild, rolldown, and more.
 
-
 #   Automation Tools:
 #   lint:
 #   CLI:
 ---
+
 <!-- @layout-full-width -->
 
 <NavsTabs :description="frontmatter.description" />

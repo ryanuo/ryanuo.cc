@@ -4,17 +4,20 @@ categories: 学习笔记
 date: 2020-09-18 22:57:21
 description: VS Code常用快捷键包括注释、移动行、复制行、删除行、终端显示等。同时推荐了一些常用的插件，如Auto Rename Tag、Auto Close Tag、Beautiful等。
 ---
+
 [[toc]]
+
 ## vs code 的常用快捷键
+
 1. 注释：
 
-　　- 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/
+- 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/
 
-　　- 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)
+- 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)
 
-　　- 多行注释：[alt+shift+A]
+- 多行注释：[alt+shift+A]
 
-　　- 多行注释：/**
+- 多行注释：/\*\*
 
 2. 移动行：alt+up/down
 
@@ -87,73 +90,74 @@ description: VS Code常用快捷键包括注释、移动行、复制行、删除
 36. 打开新的命令窗：ctrl + shift + c
 
 ## vs code 的常用插件
+
 1. Auto Rename Tag 修改html标签，自动帮你完成尾部闭合标签的同步修改，和webstorm一样。
 
 2. Auto Close Tag 自动闭合HTML标签
 
-4. Beautiful 格式化代码的工具
+3. Beautiful 格式化代码的工具
 
-5. Dash Dash是MacOS的API文档浏览器和代码段管理器
+4. Dash Dash是MacOS的API文档浏览器和代码段管理器
 
-6. Ejs Snippets ejs 代码提示
+5. Ejs Snippets ejs 代码提示
 
-7. ESLint 检查javascript语法错误与提示
+6. ESLint 检查javascript语法错误与提示
 
-8. File Navigator 快速查找文件
+7. File Navigator 快速查找文件
 
-9. Git History(git log) 查看git log
+8. Git History(git log) 查看git log
 
-10. Gulp Snippets 写gulp时用到，gulp语法提示。
+9. Gulp Snippets 写gulp时用到，gulp语法提示。
 
-11. HTML CSS Support 在HTML标签上写class智能提示当前项目所支持的样式
+10. HTML CSS Support 在HTML标签上写class智能提示当前项目所支持的样式
 
-12. HTML Snippets 超级好用且初级的H5代码片段以及提示
+11. HTML Snippets 超级好用且初级的H5代码片段以及提示
 
-13. Debug for Chrome 让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试.配饰稍微复杂一点
+12. Debug for Chrome 让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试.配饰稍微复杂一点
 
-14. Document this Js的注释模板
+13. Document this Js的注释模板
 
-15. jQuery Code Snippets jquery提示工具
+14. jQuery Code Snippets jquery提示工具
 
-16. Html2jade html模板转pug模板
+15. Html2jade html模板转pug模板
 
-17. JS-CSS-HTML Formatter 格式化
+16. JS-CSS-HTML Formatter 格式化
 
-18. Npm intellisense require 时的包提示工具
+17. Npm intellisense require 时的包提示工具
 
-19. Open in browser 打开默认浏览器
+18. Open in browser 打开默认浏览器
 
-20. One Dark Theme 一个vs code的主题
+19. One Dark Theme 一个vs code的主题
 
-21. Path Intellisense 自动路径补全.默认不带这个功能
+20. Path Intellisense 自动路径补全.默认不带这个功能
 
-22. Project Manager 多个项目之间快速切换的工具
+21. Project Manager 多个项目之间快速切换的工具
 
-23. Pug(Jade) snippets pug语法提示
+22. Pug(Jade) snippets pug语法提示
 
-24. React Components 根据文件名创建反应组件代码。
+23. React Components 根据文件名创建反应组件代码。
 
-25. React Native Tools reactNative工具类为React Native项目提供了开发环境。
+24. React Native Tools reactNative工具类为React Native项目提供了开发环境。
 
-26. Stylelint css/sass代码审查
+25. Stylelint css/sass代码审查
 
-27. Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的
+26. Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的
 
-28. View In Browser 　默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）
+27. View In Browser 默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）
 
-29. Vscode-icons 让vscode资源目录加上图标.必备
+28. Vscode-icons 让vscode资源目录加上图标.必备
 
-30. VueHelper Vue2代码段（包括Vue2 api.vue-router2.vuex2）
+29. VueHelper Vue2代码段（包括Vue2 api.vue-router2.vuex2）
 
-31. Vue 2 Snippets vue必备vue代码提示
+30. Vue 2 Snippets vue必备vue代码提示
 
-32. Vue-color vue语法高亮主题
+31. Vue-color vue语法高亮主题
 
-33. Auto-Open Markdown Preview markdown文件自动开启预览
+32. Auto-Open Markdown Preview markdown文件自动开启预览
 
-34. EverMonkey 印象笔记
+33. EverMonkey 印象笔记
 
-35. atom one dark atom的一个高亮主题(个人推荐)
+34. atom one dark atom的一个高亮主题(个人推荐)
 
 ## 常用的电脑快捷键
 

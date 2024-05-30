@@ -1,12 +1,13 @@
 ---
 title: Travel diary
 date: 2020-05-19 08:00:00
-description: my travel diary 
+description: my travel diary
 ---
 
-
 [[toc]]
+
 ### 2024-05-18 - 2024-05-19
+
 ```mermaid
 graph TB;
     A(第一天) --> B(西安);

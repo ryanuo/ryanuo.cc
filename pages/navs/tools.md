@@ -22,7 +22,7 @@ projects:
       link: https://github.com/gezhaoyou/picprose
       desc: pic prose is a better cover image generator tool for medium you tube bili bili blog and more
       icon: i-dashicons-cover-image
-      
+
   Quick Look:
     - name: Quick Reference
       link: https://wangchujiang.com/reference/index.html
@@ -64,7 +64,7 @@ projects:
       link: https://chromewebstore.google.com/detail/沉浸式翻译-双语对照网页翻译-pdf文档翻译/bpoadfkcbjbfhfodiogcnhhhpibjhbnh
       image: https://lh3.googleusercontent.com/FCCjGNQ3JhLebMSOBdTRV7UP5yMNa9lF5rsJxQ1B4gVcZy5V3vJIdIOh3DO7fCih1JfzIRbAHrxhhXjEUTMKtwdBDA=s60
       desc: Immersive translation, supports translating PDF files, can convert text in PDF files into speech for playback, and allows you to choose whether to read aloud.
-  
+
   Other:
     - name: Worm Tribe
       link: https://search.chongbuluo.com/
@@ -80,6 +80,7 @@ projects:
       desc: A list of independent developers in China, including the number of followers, number of stars, number of repositories, etc.
 
 ---
+
 <!-- @layout-full-width -->
 
 <NavsTabs :description="frontmatter.description" />

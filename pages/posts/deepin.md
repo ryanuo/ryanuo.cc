@@ -9,6 +9,7 @@ plum: true
 [[toc]]
 
 ## How to Install
+
 ### Preparation
 
 Prepare a USB drive to create a Deepin boot disk. Before installing the system with the Deepin image from the official website, check if there is free disk space on the computer, typically requiring about 25 GB. If not, partition the disk.
@@ -27,6 +28,7 @@ For instructions on creating a bootable USB drive, visit the official [Deepin we
 How to Install? [Click here](https://www.deepin.org/en/installation/)
 
 ## Troubleshooting After Installation
+
 ### No Sound
 
 1.Check if the computer can detect the input and output of the sound card.
@@ -34,20 +36,23 @@ How to Install? [Click here](https://www.deepin.org/en/installation/)
 Method: Settings > Sound > Advanced Settings - Check for available output and input devices.
 
 2.Verify if the sound card is physically damaged, causing the system to be unable to read physical information. Use the following commands to check for similar feedback related to the sound card:
+
 ```bash
-sudo lspci | grep audio 
+sudo lspci | grep audio
 sudo lspci -v
 ```
 
 3.Modify the grub file to add an instruction:
+
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="${your_existing_configuration_here} snd_hda_intel.dmic_detect=0"
 ```
 
 Instruction:
+
 ```bash
 # Enter root mode
-su 
+su
 cd /etc/default/
 vi grub
 # Add the code snd_hda_intel.dmic_detect=0 to the grub file
@@ -57,6 +62,7 @@ reboot # Restart the system
 ```
 
 ### Wi-Fi Issue
+
 Problem with the network card driver, unable to connect to Wi-Fi
 Delete the file iwlwifi.conf (path: /etc/modprobe.d/iwlwifi.conf)
 

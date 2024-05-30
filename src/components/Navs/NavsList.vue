@@ -1,70 +1,72 @@
 <script setup lang="ts">
-import { omit } from "lodash-es";
-import { useI18n } from "vue-i18n";
+import { omit } from 'lodash-es'
+import { useI18n } from 'vue-i18n'
 
-import { slug } from "~/utils";
+import { slug } from '~/utils'
 
 interface Project {
-  desc: string;
-  name: string;
-  link: string;
-  icon: string;
-  image: string;
-  tags: string[];
+  desc: string
+  name: string
+  link: string
+  icon: string
+  image: string
+  tags: string[]
 }
-const props = defineProps<{ projects: Record<string, any[]> }>();
-const usedNavs = useStorage<Project[]>("used-navs", []);
-const { t } = useI18n();
+const props = defineProps<{ projects: Record<string, any[]> }>()
+const usedNavs = useStorage<Project[]>('used-navs', [])
+const { t } = useI18n()
 
-const el = ref<HTMLElement | null>(null);
+const el = ref<HTMLElement | null>(null)
 // 使用 useStorage 保存坐标位置
-const tocPosition = useStorage("draggablePosition", { x: 18, y: 130 });
+const tocPosition = useStorage('draggablePosition', { x: 18, y: 130 })
 const { style, x, y } = useDraggable(el, {
   initialValue: { x: tocPosition.value.x, y: tocPosition.value.y },
-});
+})
 
 watch([x, y], ([newX, newY]) => {
-  tocPosition.value.x = newX;
-  tocPosition.value.y = newY;
-});
+  tocPosition.value.x = newX
+  tocPosition.value.y = newY
+})
 
 const pros: ComputedRef<Record<string, Project[]>> = computed(() => {
   if (usedNavs.value.length === 0) {
-    return props.projects;
-  } else {
-    return {
-      [`${t("tabs.used", "Recently Used")}`]: usedNavs.value,
-      ...props.projects,
-    };
+    return props.projects
   }
-});
+  else {
+    return {
+      [`${t('tabs.used', 'Recently Used')}`]: usedNavs.value,
+      ...props.projects,
+    }
+  }
+})
 
-function handleNav (obj: Project) {
-  const newObj = omit(obj, ["desc"]);
+function handleNav(obj: Project) {
+  const newObj = omit(obj, ['desc'])
   // 查找 obj 在 usedNavs 中的索引
   const index = usedNavs.value.findIndex(
-    (v) => slug(v.name) === slug(newObj.name)
-  );
+    v => slug(v.name) === slug(newObj.name),
+  )
 
   if (index !== -1) {
     // 如果 obj 已存在，先移除它
-    usedNavs.value.splice(index, 1);
+    usedNavs.value.splice(index, 1)
     // 然后将它添加到数组的开头
-    usedNavs.value.unshift(newObj);
-  } else {
+    usedNavs.value.unshift(newObj)
+  }
+  else {
     // 如果 obj 不存在于数组中
     if (usedNavs.value.length === 4) {
       // 如果数组已满（有4个元素），则移除最后一个元素
-      usedNavs.value.pop();
+      usedNavs.value.pop()
     }
     // 将新的 obj 添加到数组的开头
-    usedNavs.value.unshift(newObj);
+    usedNavs.value.unshift(newObj)
   }
 }
 </script>
 
 <template>
-  <div class="max-w-300 at-lg:max-w-212 mx-auto">
+  <div class="mx-auto max-w-300 at-lg:max-w-212">
     <div
       v-for="(key, cidx) in Object.keys(pros)"
       :key="slug(key)"
@@ -72,14 +74,14 @@ function handleNav (obj: Project) {
       :style="{ '--enter-stage': cidx + 1 }"
       class="mb-6"
     >
-      <h4 :id="slug(key)" class="text-[1rem] font-bold mb-2 op75">
+      <h4 :id="slug(key)" class="mb-2 text-[1rem] font-bold op75">
         {{ key }}
       </h4>
-      <ul class="list-disc list-inside flex flex-wrap items-start gap-x-4">
+      <ul class="flex flex-wrap list-disc list-inside items-start gap-x-4">
         <li
           v-for="project in pros[key]"
           :key="project.name"
-          class="mb-2 list-none w-17/36 md:w-68"
+          class="mb-2 w-17/36 list-none md:w-68"
           @click="() => handleNav(project)"
         >
           <NavItem :project="project" />
@@ -88,8 +90,8 @@ function handleNav (obj: Project) {
     </div>
     <div>
       <div
-        class="table-of-contents"
         ref="el"
+        class="table-of-contents"
         :style="style"
         style="position: fixed"
       >
@@ -102,12 +104,12 @@ function handleNav (obj: Project) {
           </li>
         </ul>
       </div>
-      <hr />
-      <div class="slide-enter animate-delay-800! font-size-3.6">
+      <hr>
+      <div class="slide-enter font-size-3.6 animate-delay-800!">
         {{
           $t(
             "tabs.issues",
-            "If you have any additional navigation sites to add, please raise an"
+            "If you have any additional navigation sites to add, please raise an",
           )
         }}
         <a
@@ -115,8 +117,7 @@ function handleNav (obj: Project) {
           href="https://github.com/rr210/harry.me/issues/new?assignees=&labels=add-sites&projects=&template=%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9-add-sites.md&title=Add+Sites"
           target="_blank"
         >
-          <i i-codicon-issues align-mid text-xs></i>issue.</a
-        >
+          <i i-codicon-issues align-mid text-xs />issue.</a>
       </div>
     </div>
   </div>

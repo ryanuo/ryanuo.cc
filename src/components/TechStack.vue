@@ -1,8 +1,8 @@
 <script setup lang="ts">
 defineProps<{
-  techStack: { icon?: string; name: string }[] | string[];
-  uno?: string;
-}>();
+  techStack: { icon?: string, name: string }[] | string[]
+  uno?: string
+}>()
 </script>
 
 <template>
@@ -14,21 +14,14 @@ defineProps<{
     >
       <div
         dark="bg-[#1a1b1cd9] border-gray-700"
-        cursor-pointer
-        bg-gray-100
-        rounded
-        px-1
-        text-sm
-        border
-        border-0.2
-        border-gray-200
-        border-dashed
+
+        cursor-pointer border border-0.2 border-gray-200 rounded border-dashed bg-gray-100 px-1 text-sm
       >
         <i
-          :class="typeof tech !== 'string' && tech.icon"
           v-if="typeof tech !== 'string' && tech.icon"
+          :class="typeof tech !== 'string' && tech.icon"
         />
-        <span class="text-gray-500 dark:text-gray-300 align-middle">{{
+        <span class="align-middle text-gray-500 dark:text-gray-300">{{
           typeof tech === "string" ? tech : tech.name
         }}</span>
       </div>

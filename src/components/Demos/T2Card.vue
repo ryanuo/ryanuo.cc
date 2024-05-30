@@ -1,28 +1,27 @@
 <script setup lang="ts">
-import { DemosTypes } from "./type";
+import type { DemosTypes } from './type'
 
-const props = defineProps<{ demos: DemosTypes[] }>();
-console.log(props.demos);
+defineProps<{ demos: DemosTypes[] }>()
 </script>
 
 <template>
   <div flex="~ wrap gap-4 justify-between">
     <article
-      class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md md:w-8/17 cursor-pointer"
       v-for="demo in demos"
       :key="demo.name"
+      class="relative w-full flex flex-col cursor-pointer rounded-xl bg-white bg-clip-border text-gray-700 shadow-md md:w-8/17"
     >
       <div
-        class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600"
-      ></div>
+        class="relative mx-4 h-40 overflow-hidden rounded-xl bg-blue-gray-500 from-blue-500 to-blue-600 bg-gradient-to-r bg-clip-border text-white shadow-blue-gray-500/40 shadow-lg -mt-6"
+      />
       <div class="p-6">
         <h5
-          class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+          class="mb-2 block text-xl text-blue-gray-900 font-semibold leading-snug tracking-normal font-sans antialiased"
         >
           Tailwind card
         </h5>
         <p
-          class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+          class="block text-base text-inherit font-light leading-relaxed font-sans antialiased"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis
           ligula.
@@ -32,7 +31,7 @@ console.log(props.demos);
         <button
           data-ripple-light="true"
           type="button"
-          class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          class="select-none rounded-lg bg-blue-500 px-6 py-3 text-center align-middle text-xs text-white font-bold font-sans uppercase shadow-blue-500/20 shadow-md transition-all disabled:pointer-events-none active:opacity-[0.85] disabled:opacity-50 focus:opacity-[0.85] active:shadow-none disabled:shadow-none focus:shadow-none hover:shadow-blue-500/40 hover:shadow-lg"
         >
           Read More
         </button>
@@ -40,6 +39,7 @@ console.log(props.demos);
     </article>
   </div>
 </template>
+
 <style scoped>
 .project-info {
   display: flex;

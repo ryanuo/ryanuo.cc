@@ -41,7 +41,7 @@ demos:
     - name: 'Blazeb2'
       link: 'https://github.com/rr210/blazeB2'
       video: '//player.bilibili.com/player.html?bvid=BV1fv4y1T72e&amp;page=1&muted=true'
-      desc: '📷 一款采用 backBlaze B2 API 与 ⚡ Cloudflare 开发的图片床工具，具备 CDN 加速功能' 
+      desc: '📷 一款采用 backBlaze B2 API 与 ⚡ Cloudflare 开发的图片床工具，具备 CDN 加速功能'
       img: './demos.png'
       readme: 'https://github.com/rr210/blazeB2/blob/master/README.md'
       tags: ['Vue2']
@@ -68,7 +68,6 @@ demos:
       readme: 'https://github.com/rr210/hexo-generator-wxapi/blob/master/README_en.md'
       tags: ['Hexo','Npm']
       icon: 'demos'
-
 
   2021:
     - name: '教师评测表单'

@@ -1,57 +1,62 @@
 <script setup lang="ts">
-import type { DemosTypes } from "./type";
+import type { DemosTypes } from './type'
 
-defineProps<{ demos: Record<number, DemosTypes[]> }>();
+defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
 function getInitialValues() {
   return {
-    teleportTo: "body",
-    displayDirective: "if",
+    teleportTo: 'body',
+    displayDirective: 'if',
     hideOverlay: false,
-    overlayTransition: "vfm-fade",
-    contentTransition: "vfm-slide-up",
+    overlayTransition: 'vfm-fade',
+    contentTransition: 'vfm-slide-up',
     clickToClose: true,
     escToClose: true,
-    background: "non-interactive",
+    background: 'non-interactive',
     lockScroll: true,
     reserveScrollBarGap: true,
-    swipeToClose: "none",
+    swipeToClose: 'none',
     modelValue: false,
     content: {},
   }
 }
 
-const options = ref(getInitialValues()) as any;
+const options = ref(getInitialValues()) as any
 </script>
 
 <template>
-  <div class="relative" v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index">
+  <div v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index" class="relative">
     <div class="text-center">
       <span
-        class="text-4em color-transparent font-bold text-stroke-2 border-b-1.5 border-dashed text-stroke-hex-aaa op30">
+        class="border-b-1.5 border-dashed text-4em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op30"
+      >
         {{ index }}
       </span>
     </div>
     <div flex="~ wrap gap-4 justify-between">
-      <div class="card_t1 w-full md:w-8/17" v-for="demo in demos[Number(index)]" :key="demo.name">
-        <iframe v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
-          frameborder="no" framespacing="0" />
-        <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1" />
+      <div v-for="demo in demos[Number(index)]" :key="demo.name" class="card_t1 w-full md:w-8/17">
+        <iframe
+          v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
+          frameborder="no" framespacing="0"
+        />
+        <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1">
 
         <div class="card__content">
           <p class="card__title">
             {{ demo.name }}
-            <i class="i-ri-fullscreen-exit-fill full-w" @click="() => {
-              options.modelValue = true;
-              options.content = demo;
-            }
-              " />
+            <i
+              class="full-w i-ri-fullscreen-exit-fill" @click="() => {
+                options.modelValue = true;
+                options.content = demo;
+              }
+              "
+            />
           </p>
           <p class="card__description line-clamp-3">
             {{ demo.desc }}
           </p>
-          <div class="text-right position-absolute bottom-2 right-2">
-            <TechStack :techStack="demo.tags" uno="justify-end" />
+          <div class="position-absolute bottom-2 right-2 text-right">
+            <TechStack :tech-stack="demo.tags" uno="justify-end" />
           </div>
         </div>
       </div>

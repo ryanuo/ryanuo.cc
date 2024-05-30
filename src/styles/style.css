@@ -1,4 +1,4 @@
-@import "nprogress/nprogress.css";
+@import 'nprogress/nprogress.css';
 @import './docssearch.css';
 
 :root {
@@ -57,7 +57,6 @@ button:focus-visible {
   padding: 2em;
 }
 
-
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
@@ -90,7 +89,9 @@ button:focus-visible {
 
 #nprogress .peg {
   background: #888;
-  box-shadow: 0 0 10px #888, 0 0 5px #888;
+  box-shadow:
+    0 0 10px #888,
+    0 0 5px #888;
 }
 
 @keyframes slide-enter {
@@ -107,94 +108,95 @@ button:focus-visible {
 
 /* 跟随你的系统偏好设置 */
 @media (prefers-reduced-motion: no-preference) {
-
   html:not(.no-sliding) [slide-enter],
   html:not(.no-sliding) .slide-enter,
-  html:not(.no-sliding) .slide-enter-content>*:not(:has(.table-of-contents)) {
+  html:not(.no-sliding) .slide-enter-content > *:not(:has(.table-of-contents)) {
     --enter-stage: 0;
     --enter-step: 90ms;
     --enter-initial: 0ms;
     animation: slide-enter 1s both 1;
-    animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
+    animation-delay: calc(
+      var(--enter-initial) + var(--enter-stage) * var(--enter-step)
+    );
   }
 
-  .slide-enter-content>*:nth-child(1) {
+  .slide-enter-content > *:nth-child(1) {
     --enter-stage: 1 !important;
   }
 
-  .slide-enter-content>*:nth-child(2) {
+  .slide-enter-content > *:nth-child(2) {
     --enter-stage: 2 !important;
   }
 
-  .slide-enter-content>*:nth-child(3) {
+  .slide-enter-content > *:nth-child(3) {
     --enter-stage: 3 !important;
   }
 
-  .slide-enter-content>*:nth-child(4) {
+  .slide-enter-content > *:nth-child(4) {
     --enter-stage: 4 !important;
   }
 
-  .slide-enter-content>*:nth-child(5) {
+  .slide-enter-content > *:nth-child(5) {
     --enter-stage: 5 !important;
   }
 
-  .slide-enter-content>*:nth-child(6) {
+  .slide-enter-content > *:nth-child(6) {
     --enter-stage: 6 !important;
   }
 
-  .slide-enter-content>*:nth-child(7) {
+  .slide-enter-content > *:nth-child(7) {
     --enter-stage: 7 !important;
   }
 
-  .slide-enter-content>*:nth-child(8) {
+  .slide-enter-content > *:nth-child(8) {
     --enter-stage: 8 !important;
   }
 
-  .slide-enter-content>*:nth-child(9) {
+  .slide-enter-content > *:nth-child(9) {
     --enter-stage: 9 !important;
   }
 
-  .slide-enter-content>*:nth-child(10) {
+  .slide-enter-content > *:nth-child(10) {
     --enter-stage: 10 !important;
   }
 
-  .slide-enter-content>*:nth-child(11) {
+  .slide-enter-content > *:nth-child(11) {
     --enter-stage: 11 !important;
   }
 
-  .slide-enter-content>*:nth-child(12) {
+  .slide-enter-content > *:nth-child(12) {
     --enter-stage: 12 !important;
   }
 
-  .slide-enter-content>*:nth-child(13) {
+  .slide-enter-content > *:nth-child(13) {
     --enter-stage: 13 !important;
   }
 
-  .slide-enter-content>*:nth-child(14) {
+  .slide-enter-content > *:nth-child(14) {
     --enter-stage: 14 !important;
   }
 
-  .slide-enter-content>*:nth-child(15) {
+  .slide-enter-content > *:nth-child(15) {
     --enter-stage: 15 !important;
   }
 
-  .slide-enter-content>*:nth-child(16) {
+  .slide-enter-content > *:nth-child(16) {
     --enter-stage: 16 !important;
   }
 
-  .slide-enter-content>*:nth-child(17) {
+  .slide-enter-content > *:nth-child(17) {
     --enter-stage: 17 !important;
   }
 
-  .slide-enter-content>*:nth-child(18) {
+  .slide-enter-content > *:nth-child(18) {
     --enter-stage: 18 !important;
   }
 
-  .slide-enter-content>*:nth-child(19) {
+  .slide-enter-content > *:nth-child(19) {
     --enter-stage: 19 !important;
   }
 
-  .slide-enter-content>*:nth-child(20) {
+  .slide-enter-content > *:nth-child(20) {
     --enter-stage: 20 !important;
   }
 }
@@ -203,7 +205,6 @@ button:focus-visible {
 ::selection {
   background: #8884;
 }
-
 
 .i-icon-park-outline-english {
   --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 48 48' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Crect width='36' height='36' x='6' y='6' rx='3'/%3E%3Cpath d='M13 31V17h8m-8 7h7.5M13 31h7.5m5.5 0V19m0 12v-6.5a4.5 4.5 0 0 1 4.5-4.5v0a4.5 4.5 0 0 1 4.5 4.5V31'/%3E%3C/g%3E%3C/svg%3E");
@@ -216,9 +217,8 @@ button:focus-visible {
   width: 1.2em;
   height: 1.2em;
   vertical-align: middle;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
-
 
 .i-icon-park-outline-chinese {
   --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 48 48' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-width='4'%3E%3Crect width='36' height='36' x='6' y='6' stroke-linejoin='round' rx='3'/%3E%3Cpath stroke-linejoin='round' d='M14 18h20v10H14z'/%3E%3Cpath d='M24 14v21'/%3E%3C/g%3E%3C/svg%3E");
@@ -231,7 +231,7 @@ button:focus-visible {
   width: 1.2em;
   height: 1.2em;
   vertical-align: middle;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
 /* Chrome浏览器 */
@@ -258,7 +258,7 @@ p {
 }
 
 .v-popper__inner {
-  font-size: .80rem !important;
+  font-size: 0.8rem !important;
 }
 
 .dark .v-popper--theme-dropdown .v-popper__inner {
@@ -280,7 +280,6 @@ p {
 .table-of-contents {
   cursor: pointer;
 }
-
 
 .mermaid svg {
   margin: 0 auto;

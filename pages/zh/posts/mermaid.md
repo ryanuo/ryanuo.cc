@@ -16,7 +16,7 @@ description: PlantUML, mermaid的实际应用
           border-radius: 6px;
  }
  .mermaid svg{
-   margin: 20px auto; 
+   margin: 20px auto;
  }
 </style>
 
@@ -33,19 +33,19 @@ PlantUML 是一个多功能组件，可快速、直接地创建图表。[PDF](ht
 [github](https://www.npmjs.com/package/markdown-it-plantuml)
 
 ```ts
-import plantuml from "markdown-it-plantuml";
-import Markdown from "unplugin-vue-markdown/vite";
+import plantuml from 'markdown-it-plantuml'
+import Markdown from 'unplugin-vue-markdown/vite'
 export default defineConfig({
   plugins: [
     Markdown({
       async markdownItSetup(md) {
         md.use(plantuml, {
-          server: "http://www.plantuml.com/plantuml",
-        });
+          server: 'http://www.plantuml.com/plantuml',
+        })
       },
     }),
   ],
-});
+})
 ```
 
 这样就部署好了。
@@ -60,19 +60,18 @@ export default defineConfig({
 Mermaid相对于PlantUML而言，更简单易用且无需服务器，适合快速创建各种图表。
 
 ```ts
-import textualUml from "markdown-it-textual-uml";
-import Markdown from "unplugin-vue-markdown/vite";
+import textualUml from 'markdown-it-textual-uml'
+import Markdown from 'unplugin-vue-markdown/vite'
 export default defineConfig({
   plugins: [
     Markdown({
       async markdownItSetup(md) {
-        md.use(textualUml);
+        md.use(textualUml)
       },
     }),
   ],
-});
+})
 ```
-
 
 ````
 ```plantuml
@@ -86,7 +85,6 @@ Bob -> Alice : hello
 
 使用**mermaid**的注意事项。[Here](https://github.com/manastalukdar/markdown-it-textual-uml?tab=readme-ov-file#additional-steps-for-mermaid)
 
-
 ````
 ```mermaid
 graph TD;
@@ -103,4 +101,4 @@ graph TD;
     A-->C;
     B-->D;
     C-->D;
-````
+```

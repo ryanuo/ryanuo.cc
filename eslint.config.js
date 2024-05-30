@@ -5,9 +5,11 @@ import antfu from '@antfu/eslint-config'
 export default antfu(
   {
     formatters: true,
+    unocss: true,
   },
   {
     rules: {
+      '@stylistic/js/no-multiple-empty-lines': 'off',
       'no-labels': 'off',
       'no-lone-blocks': 'off',
       'no-restricted-syntax': 'off',
@@ -18,7 +20,6 @@ export default antfu(
       'ts/ban-types': 'off',
       'ts/no-invalid-this': 'off',
       'ts/no-unnecessary-type-constraint': 'off',
-      'vue/no-mutating-props': 'off',
       'vue/no-template-shadow': 'off',
       'vue/no-v-text-v-html-on-component': 'off',
     },

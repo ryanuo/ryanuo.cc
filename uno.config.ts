@@ -6,7 +6,7 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
-} from "unocss";
+} from 'unocss'
 
 export default defineConfig({
   // ...UnoCSS options
@@ -15,19 +15,19 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         // sans: "Baloo Thambi 2",
-        sans: ["Inter:400,600,800", "HarmonyOS_Regular", "Pacifico"],
-        mono: "DM Mono:400,600",
+        sans: ['Inter:400,600,800', 'HarmonyOS_Regular', 'Pacifico'],
+        mono: 'DM Mono:400,600',
       },
     }),
     presetAttributify(),
     presetIcons({
       extraProperties: {
-        display: "inline-block",
-        height: "1.2em",
-        width: "1.2em",
-        "vertical-align": "middle",
+        'display': 'inline-block',
+        'height': '1.2em',
+        'width': '1.2em',
+        'vertical-align': 'middle',
       },
     }),
   ],
   transformers: [transformerDirectives()],
-});
+})

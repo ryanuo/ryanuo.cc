@@ -27,5 +27,5 @@ button.DocSearch-Button:focus,
 button.DocSearch-Button:hover {
   background: transparent;
   box-shadow: none;
-  color: var(--c-hover-color)
+  color: var(--c-hover-color);
 }

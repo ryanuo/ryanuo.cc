@@ -1,30 +1,30 @@
 <script setup lang="ts">
-import mermaid from "mermaid";
-import { useImagePreview } from "~/hooks/useImagePreview";
+import mermaid from 'mermaid'
+import { useImagePreview } from '~/hooks/useImagePreview'
 
-const route = useRoute();
-const { imageModel } = useImagePreview();
+const route = useRoute()
+const { imageModel } = useImagePreview()
 
 onBeforeMount(() => {
-  import("./lang-modal.ts" as any);
-});
+  import('./lang-modal.ts' as any)
+})
 
 onMounted(async () => {
-  mermaid.initialize({ startOnLoad: false });
-  await mermaid.run();
-});
+  mermaid.initialize({ startOnLoad: false })
+  await mermaid.run()
+})
 
-onKeyStroke("Escape", (e) => {
+onKeyStroke('Escape', (e) => {
   if (imageModel.value) {
-    imageModel.value = undefined;
-    e.preventDefault();
+    imageModel.value = undefined
+    e.preventDefault()
   }
-});
+})
 </script>
 
 <template>
   <NavBar />
-  <main class="px-7 py-10 of-x-hidden">
+  <main class="of-x-hidden px-7 py-10">
     <RouterView />
     <Footer v-if="route.path" />
   </main>
@@ -32,24 +32,17 @@ onKeyStroke("Escape", (e) => {
   <Transition name="fade">
     <div
       v-if="imageModel"
-      fixed
-      top-0
-      left-0
-      right-0
-      bottom-0
-      z-500
-      p-6
-      backdrop-blur-7
+
+      fixed bottom-0 left-0 right-0 top-0 z-500 p-6 backdrop-blur-7
       @click="imageModel = undefined"
     >
-      <div absolute top-0 left-0 right-0 bottom-0 bg-black:30 z--1 />
+      <div absolute bottom-0 left-0 right-0 top-0 z--1 bg-black:30 />
       <img
         :src="imageModel.src"
         :alt="imageModel.alt"
-        w-full
-        h-full
-        object-contain
-      />
+
+        h-full w-full object-contain
+      >
     </div>
   </Transition>
 </template>

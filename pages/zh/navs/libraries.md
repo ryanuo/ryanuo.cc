@@ -66,7 +66,7 @@ projects:
       link: https://github.com/darkroomengineering/lenis
       icon: i-ri-scroll-to-bottom-line
       desc: '平滑滚动库'
-    
+
   事件处理:
     - name: 'hotkeys-js'
       link: https://github.com/jaywcjlove/hotkeys-js/
@@ -209,7 +209,7 @@ projects:
       icon: i-material-symbols-code
       desc: 通过内联样式使用 Prismjs 或 Highlightjs AST 为 react 提供语法高亮组件。
       tags: ['React']
-  
+
   轮播:
     - name: 'swiper'
       link: https://github.com/nolimits4web/swiper
@@ -229,7 +229,7 @@ projects:
       link: https://github.com/alibaba/formily
       icon: i-mdi-form-dropdown
       desc: '一个强大的表单处理库'
-  
+
   表格:
     - name: 'ag-grid'
       link: https://github.com/ag-grid/ag-grid
@@ -361,8 +361,9 @@ projects:
       desc: 适用于 Vite、Rollup、Webpack、esbuild、rolldown 等的统一插件系统
 #   自动化工具集:
 #   代码风格检查（linting）:
-#   命令行界面（CLI）: 
+#   命令行界面（CLI）:
 ---
+
 <!-- @layout-full-width -->
 
 <NavsTabs :description="frontmatter.description" />

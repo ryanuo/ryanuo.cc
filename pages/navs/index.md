@@ -41,7 +41,7 @@ projects:
       link: https://github.com/antfu/cpwp
       desc: 'A collection of 1000+ free English learning resources'
       image: https://cpwp.netlify.app/favicon.svg
-    
+
   AI Navigation:
     - name: 'Chatgpt of mirror'
       link: 'https://github.com/xx025/carrot'
@@ -214,7 +214,7 @@ projects:
       link: 'https://yesicon.app/'
       image: 'https://yesicon.app/favicon-16x16.png'
       desc: '168 icon sets with 210k+ icons, search across icon sets in multiple languages'
-  
+
   Web Build:
     - name: 'Netlify App'
       link: 'https://app.netlify.com/'
@@ -232,7 +232,7 @@ projects:
     - name: 'Heroku'
       link: 'https://www.heroku.com/'
       image: 'https://www.herokucdn.com/favicon.ico'
-      desc: 'Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.'   
+      desc: 'Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.'
     - name: 'Serverless'
       link: 'https://cloud.tencent.com/product/sls'
       image: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234'
@@ -249,6 +249,7 @@ projects:
       image: 'https://www.youtube.com/favicon.ico'
       desc: YouTube is a global video sharing website, initially founded by Gawker, now owned by Google.
 ---
+
 <!-- @layout-full-width -->
 
 <NavsTabs :description="frontmatter.description" />

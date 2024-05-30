@@ -9,13 +9,12 @@ assignees: ''
 
 请提供以下内容：
 
-- 标题: 
+- 标题:
 - 链接：
 - 图标：
 - 描述：
 
-如
-    - name: 'UnoCSS'
-      link: 'https://unocss.dev'
-      image: 'https://unocss.dev/favicon.svg'
-      desc: 'The instant on-demand Atomic CSS engine'
+如 - name: 'UnoCSS'
+link: 'https://unocss.dev'
+image: 'https://unocss.dev/favicon.svg'
+desc: 'The instant on-demand Atomic CSS engine'

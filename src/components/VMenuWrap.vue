@@ -1,22 +1,22 @@
 <script lang="ts" setup>
-import { slug } from "~/utils";
+import { slug } from '~/utils'
 
 defineProps<{
-  title: string;
+  title: string
   menus: {
-    name: string;
-    link: string;
-  }[];
-  icon?: string;
-  width?: string;
-}>();
+    name: string
+    link: string
+  }[]
+  icon?: string
+  width?: string
+}>()
 </script>
 
 <template>
   <VMenu :delay="200">
     <a href="javascript:void(0)">
-      <span class="lt-md:hidden cursor-pointer">{{ title }}</span>
-      <div class="md:hidden cursor-pointer" :class="[icon]"></div>
+      <span class="cursor-pointer lt-md:hidden">{{ title }}</span>
+      <div class="cursor-pointer md:hidden" :class="[icon]" />
     </a>
     <template #popper>
       <ul class="w-auto p-2" :class="[width]">
