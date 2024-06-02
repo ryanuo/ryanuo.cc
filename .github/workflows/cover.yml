@@ -1,0 +1,33 @@
+name: Generate Cover and Save Result
+
+on:
+  push:
+    branches:
+      - main  # 你可以根据需要更改分支
+
+jobs:
+  generate-cover:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # 选择你的Python版本
+        
+    - name: Install dependencies
+      run: pip install -r scripts/requirements.txt  # 如果有依赖文件，你可以在这里安装它们
+      
+    - name: Generate Cover
+      run: python scripts/cover_generate.py  # 执行你的脚本
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.email "1577791638@qq.com"
+        git config --global user.name "ryanco"
+        git add .
+        git commit -m "Generate cover"
+        git push
