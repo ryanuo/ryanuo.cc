@@ -93,7 +93,7 @@ if __name__ == '__main__':
     print("正在生成封面...")
     json_url = "https://mr90.top/sitemap.json"
     url = "https://oc.mr90.top/auto"
-    out_dir_list = '../public/og'
+    out_dir_list = 'public/og'
     img_format = "png"
     # 判断文件夹是否存在
     if not os.path.exists(out_dir_list):
