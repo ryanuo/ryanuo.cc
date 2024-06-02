@@ -98,6 +98,7 @@ if __name__ == '__main__':
     # 判断文件夹是否存在
     if not os.path.exists(out_dir_list):
         os.makedirs(out_dir_list)
+
     no_exit_img_list = check_local_image()
     if len(no_exit_img_list) != 0:
         print(f"共{len(no_exit_img_list)}个图片不存在，开始生成...")
