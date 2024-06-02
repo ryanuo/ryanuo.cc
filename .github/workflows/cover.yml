@@ -20,7 +20,11 @@ jobs:
         
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt  # 如果有依赖文件，你可以在这里安装它们
-      
+
+    - name: Install Playwright and Chrome
+      run: |
+        playwright install chromium
+
     - name: Generate Cover
       run: python scripts/cover_generate.py  # 执行你的脚本
 
