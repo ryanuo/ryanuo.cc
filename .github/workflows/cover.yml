@@ -33,5 +33,5 @@ jobs:
         git config --global user.email "1577791638@qq.com"
         git config --global user.name "ryanco"
         git add .
-        git commit -m "Generate cover"
+        git diff-index --quiet HEAD || git commit -m "chore: Generate cover"
         git push
