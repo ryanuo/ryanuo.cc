@@ -1,6 +1,6 @@
 /// <reference types="vite-ssg" />
 
-import { resolve } from 'node:path'
+import { basename, resolve } from 'node:path'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import Vue from '@vitejs/plugin-vue'
@@ -44,7 +44,7 @@ export default {
     VueRouter({
       extensions: ['.vue', '.md'],
       routesFolder: 'pages',
-      logs: true,
+      logs: false,
       dts: 'typings/routes.d.ts',
       extendRoute(route) {
         const path = route.components.get('default')
@@ -128,7 +128,22 @@ export default {
         //   }
         // });
       },
+      frontmatterPreprocess(frontmatter, options, id, defaults) {
+        (() => {
+          if (!id.endsWith('.md'))
+            return
+          const route = basename(id, '.md')
+          const key = id.split('pages/')[1].replace('.md', '').replaceAll('/', '-')
+          if (route === 'index' || frontmatter.image || !frontmatter.title)
+            return
+          const path = `og/og-mr90.top-${key}.png`
+          frontmatter.image = `https://mr90.top/${path}`
+        })()
+        const head = defaults(frontmatter, options)
+        return { frontmatter, head }
+      },
     }),
+
     Components({
       extensions: ['vue', 'md'],
       dts: 'typings/components.d.ts',
