@@ -18,8 +18,8 @@ import Components from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import textualUml from 'markdown-it-textual-uml'
 import type { UserConfig } from 'vite'
+import markdownItDiagram from 'markdown-it-diagram'
 
 import { slugify } from './scripts/slugify'
 
@@ -100,7 +100,9 @@ export default {
           }) as any,
         )
 
-        md.use(textualUml)
+        md.use(markdownItDiagram, {
+          framework: 'vue',
+        })
 
         md.use(TOC, {
           includeLevel: [1, 2, 3, 4],
