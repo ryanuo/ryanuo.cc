@@ -39,7 +39,7 @@ export default {
       async load(id) {
         if (id === 'fix-style.css') {
           return await fs.readFile(
-            './node_modules./markdown-it-diagram./dist./dom./style.css',
+            './node_modules/markdown-it-diagram/dist/dom/style.css',
             'utf-8',
           )
         }
