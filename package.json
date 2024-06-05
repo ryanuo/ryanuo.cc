@@ -22,7 +22,7 @@
     "dayjs": "^1.11.11",
     "floating-vue": "^5.2.2",
     "lodash-es": "^4.17.21",
-    "markdown-it-diagram": "^0.1.1",
+    "markdown-it-diagram": "^0.1.2",
     "mermaid": "^10.9.1",
     "nprogress": "^0.2.0",
     "vue": "^3.4.27",
