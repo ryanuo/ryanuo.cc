@@ -29,22 +29,6 @@ export default {
     alias: [{ find: '~/', replacement: `${resolve(__dirname, 'src')}/` }],
   },
   plugins: [
-    {
-      name: 'fix-MarkdownItDiagrams-css',
-      enforce: 'pre',
-      resolveId(id) {
-        if (id === 'style.css')
-          return 'fix-style.css'
-      },
-      async load(id) {
-        if (id === 'fix-style.css') {
-          return await fs.readFile(
-            './node_modules/markdown-it-diagram/dist/dom/style.css',
-            'utf-8',
-          )
-        }
-      },
-    },
     visualizer({
       // 打包完成后自动打开浏览器，显示产物体积报告
       open: true,
@@ -196,6 +180,9 @@ export default {
   },
   ssgOptions: {
     formatting: 'minify',
+  },
+  ssr: {
+    noExternal: ['markdown-it-diagram'],
   },
   server: {
     proxy: {
