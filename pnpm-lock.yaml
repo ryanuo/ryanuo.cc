@@ -32,6 +32,9 @@ importers:
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
+      markdown-it-diagram:
+        specifier: ^0.1.1
+        version: 0.1.1(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       mermaid:
         specifier: ^10.9.1
         version: 10.9.1
@@ -132,9 +135,6 @@ importers:
       markdown-it-anchor:
         specifier: ^9.0.1
         version: 9.0.1(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
-      markdown-it-diagram:
-        specifier: ^0.0.7
-        version: 0.0.7(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       markdown-it-link-attributes:
         specifier: ^4.0.1
         version: 4.0.1
@@ -2596,8 +2596,8 @@ packages:
       '@types/markdown-it': '*'
       markdown-it: '*'
 
-  markdown-it-diagram@0.0.7:
-    resolution: {integrity: sha512-vd0Uv2Tw866rXpKA5JHdP2xNGdpbOPu1YiWDpT0jeZBP1UqX7AehoHJDSJRvBxcaRhhsonmB7y6s8BJbxOfasg==}
+  markdown-it-diagram@0.1.1:
+    resolution: {integrity: sha512-ChXuNufxd1HLJ+y2eidfk63yFhFmZFGg2bwzbqpwCy5D/Z4eoec7Zzouz8Nfc18d7HVQX64O4O+Le00mRcG+ZQ==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: ^14.0.0
@@ -6302,7 +6302,7 @@ snapshots:
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0
 
-  markdown-it-diagram@0.0.7(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
+  markdown-it-diagram@0.1.1(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
     dependencies:
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0

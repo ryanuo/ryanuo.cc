@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import mermaid from 'mermaid'
+import { MarkdownItDiagramDomScript } from 'markdown-it-diagram/dom'
 import { useImagePreview } from '~/hooks/useImagePreview'
 
 const route = useRoute()
@@ -12,6 +13,7 @@ onBeforeMount(() => {
 onMounted(async () => {
   mermaid.initialize({ startOnLoad: false })
   await mermaid.run()
+  await MarkdownItDiagramDomScript()
 })
 
 onKeyStroke('Escape', (e) => {
