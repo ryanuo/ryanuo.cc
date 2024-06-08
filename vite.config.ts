@@ -101,7 +101,7 @@ export default {
         )
 
         md.use(MarkdownItDiagrams, {
-          framework: 'vue',
+          showController: true,
         })
 
         md.use(TOC, {
