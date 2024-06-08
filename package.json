@@ -57,7 +57,7 @@
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
-    "markdown-it-diagram": "^0.4.0",
+    "markdown-it-diagram": "^0.4.3",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-table-of-contents": "^0.6.0",
     "rollup-plugin-visualizer": "^5.12.0",
