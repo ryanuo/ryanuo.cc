@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import mermaid from 'mermaid'
-import { MarkdownItDiagramDomScript } from '../../markdown-it-diagram/src/dom'
-// import { MarkdownItDiagramDomScript } from 'markdown-it-diagram/dom'
+// import { MarkdownItDiagramDomScript } from '../../markdown-it-diagram/src/dom' // test only
+import { MarkdownItDiagramDomScript } from 'markdown-it-diagram/dom'
 import { useImagePreview } from '~/hooks/useImagePreview'
 
 const route = useRoute()
