@@ -24,6 +24,17 @@ jobs:
     - name: Install Playwright and Chrome
       run: |
         playwright install chromium
+    
+    - name: 'Set up Node.js'
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Node Build
+      run: |
+        npm i -g pnpm
+        pnpm i
+        pnpm run build
 
     - name: Generate Cover
       run: python scripts/cover_generate.py  # 执行你的脚本
