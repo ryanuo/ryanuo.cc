@@ -12,11 +12,11 @@ def url_to_key(key):
 
 # 请求xml地址
 def get_json_url():
-    if url.startswith('http'):
-        response = requests.get(url)
+    if json_url.startswith('http'):
+        response = requests.get(json_url)
         return response.json()
     else:
-        with open(url, 'r') as file:
+        with open(json_url, 'r') as file:
             return json.load(file)
 
     results = {}
