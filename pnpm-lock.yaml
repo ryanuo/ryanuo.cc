@@ -133,8 +133,8 @@ importers:
         specifier: ^9.0.1
         version: 9.0.1(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       markdown-it-diagram:
-        specifier: ^0.6.4
-        version: 0.6.4(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
+        specifier: ^0.6.5
+        version: 0.6.5(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       markdown-it-link-attributes:
         specifier: ^4.0.1
         version: 4.0.1
@@ -2561,8 +2561,8 @@ packages:
       '@types/markdown-it': '*'
       markdown-it: '*'
 
-  markdown-it-diagram@0.6.4:
-    resolution: {integrity: sha512-UEq26XCwsnKpPR/U3TpsJi3Rv7RsNmxko2vtl/gR74EZZvs0KeQbHheQXORzzyx2RFg25Doj2fQeRxX5tA0lPQ==}
+  markdown-it-diagram@0.6.5:
+    resolution: {integrity: sha512-VlFB3Zarj5RvCaBeEh30YSaodem/h9/kDaf/+ro84kclxvHoet8s2ggev8DrJBn/d+NDfSEUgbgOhc2N27pk2Q==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: ^14.0.0
@@ -6207,7 +6207,7 @@ snapshots:
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0
 
-  markdown-it-diagram@0.6.4(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
+  markdown-it-diagram@0.6.5(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
     dependencies:
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0
