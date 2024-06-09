@@ -12,8 +12,12 @@ def url_to_key(key):
 
 # 请求xml地址
 def get_json_url():
-    response = requests.get(url=json_url)
-    items = response.json().get('items', [])
+    if url.startswith('http'):
+        response = requests.get(url)
+        return response.json()
+    else:
+        with open(url, 'r') as file:
+            return json.load(file)
 
     results = {}
     for item in items:
@@ -91,7 +95,7 @@ def generate_cover(u_, p_, img_name):
 
 if __name__ == '__main__':
     print("正在生成封面...")
-    json_url = "https://mr90.top/sitemap.json"
+    json_url = "dist/sitemap.json"
     url = "https://oc.mr90.top/auto"
     out_dir_list = 'public/og'
     img_format = "png"
