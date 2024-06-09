@@ -19,8 +19,8 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import type { UserConfig } from 'vite'
-// import MarkdownItDiagrams from 'markdown-it-diagram'
-import MarkdownItDiagrams from '../markdown-it-diagram/src' // test only
+import MarkdownItDiagrams from 'markdown-it-diagram'
+// import MarkdownItDiagrams from '../markdown-it-diagram/src' // test only
 
 import { slugify } from './scripts/slugify'
 
