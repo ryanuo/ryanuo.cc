@@ -604,3 +604,7 @@
 .prose-sm > :last-child {
   margin-bottom: 0;
 }
+
+.prose a img{
+  margin: .5em 0;
+}
