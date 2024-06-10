@@ -13,6 +13,9 @@ const isShowAIPost = computed(() => {
     return false
   return route.path?.indexOf('posts') !== -1
 })
+
+const base = 'https://mr90.top'
+const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComponent(`Reading @ryan7co\'s ${base}${route.path}\n\nI think...`)}`)
 </script>
 
 <template>
@@ -38,6 +41,13 @@ const isShowAIPost = computed(() => {
     <div class="w-full flex justify-end">
       <Sign />
     </div>
+    <template v-if="frontmatter.date">
+      <span font-mono op50>> </span>
+      <span op50>comment on </span>
+      <span op25> / </span>
+      <a :href="tweetUrl" target="_blank" op50>twitter</a>
+    </template>
+    <br>
     <span font-mono op50>> </span>
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'" class="font-mono op50 hover:op75"
