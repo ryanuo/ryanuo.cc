@@ -133,8 +133,8 @@ importers:
         specifier: ^9.0.1
         version: 9.0.1(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       markdown-it-diagram:
-        specifier: ^0.7.0
-        version: 0.7.0(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
+        specifier: ^0.8.0
+        version: 0.8.0(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
       markdown-it-link-attributes:
         specifier: ^4.0.1
         version: 4.0.1
@@ -887,6 +887,9 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@panzoom/panzoom@4.5.1':
+    resolution: {integrity: sha512-QOr/t7314XTwgAUDazR+RDcTAWSbkpjDnZJddd9f56jSUA8ptUsyDblAb+sp/O5O1o5Fiu9KpWxVHKuhGUgp5w==}
 
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
@@ -2564,8 +2567,8 @@ packages:
       '@types/markdown-it': '*'
       markdown-it: '*'
 
-  markdown-it-diagram@0.7.0:
-    resolution: {integrity: sha512-Lnt+jM/wLFjOiRzvIkVqxpC8zjTbSewNFKlosP7eQPrUCqCqi3C+5QPzIPZ3+e+iI3K+SrJVJEZ+9BXOcodE4g==}
+  markdown-it-diagram@0.8.0:
+    resolution: {integrity: sha512-X8mjy2zuGKo9FLsRHnj/p2QQpJ5qcnIwrrjkPED6SxdKbPrl/UX9YHxkG730yj0urUsFQzm/DeEEG7AawNAslg==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: ^14.0.0
@@ -4316,6 +4319,8 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@panzoom/panzoom@4.5.1': {}
 
   '@pkgr/core@0.1.1': {}
 
@@ -6234,8 +6239,9 @@ snapshots:
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0
 
-  markdown-it-diagram@0.7.0(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
+  markdown-it-diagram@0.8.0(@types/markdown-it@14.1.1)(markdown-it@14.1.0):
     dependencies:
+      '@panzoom/panzoom': 4.5.1
       '@types/markdown-it': 14.1.1
       markdown-it: 14.1.0
       svg2roughjs: 3.2.0

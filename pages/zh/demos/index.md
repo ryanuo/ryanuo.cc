@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
+    - name: 'markdown-it-diagram'
+      link: 'https://github.com/rr210/markdown-it-diagram'
+      desc: 'markdown-it-diagram 是一个 markdown-it 图表插件。它支持美人鱼、plantuml。它支持缩放、移动等控制。'
+      img: '/demos/m-it-d.png'
+      tag: ['markdown-it', 'mermaid', 'plantuml']
+      readme: 'https://github.com/rr210/markdown-it-diagram/blob/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/rr210/own-cover'
       desc: '这是一个简单的网络应用程序，允许您上传图像并获得您选择的封面。'

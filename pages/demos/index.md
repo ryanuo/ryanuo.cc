@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
+    - name: 'markdown-it-diagram'
+      link: 'https://github.com/rr210/markdown-it-diagram'
+      desc: 'markdown-it-diagram is a markdown-it plugin for diagram. It supports mermaid, plantuml. It supports contorls like zoom, move.'
+      img: '/demos/m-it-d.png'
+      tag: ['markdown-it', 'mermaid', 'plantuml']
+      readme: 'https://github.com/rr210/markdown-it-diagram/blob/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/rr210/own-cover'
       desc: 'This is a simple web app that allows you to upload an image and get a cover of your choice.'
