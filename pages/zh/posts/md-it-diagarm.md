@@ -18,7 +18,7 @@ description: "markdown语法绘制流程图控件插件"
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/markdown-it-diagram?style=flat&colorA=080f12&colorB=5e5e5e&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=markdown-it-diagram
 [license-src]: https://img.shields.io/github/license/rr210/markdown-it-diagram.svg?style=flat&colorA=080f12&colorB=5e5e5e
-[license-href]: https://github.com/rr210/markdown-it-diagram/blob/main/LICENSE
+[license-href]: https://github.com/ryanuo/markdown-it-diagram/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=5e5e5e
 [jsdocs-href]: https://www.jsdocs.io/package/markdown-it-diagram
 

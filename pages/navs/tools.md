@@ -15,7 +15,7 @@ projects:
       desc: A powerful online alternative that offers an editing experience comparable to Adobe Photoshop. Users can open and use it directly in their web browser without downloading or installing any software, allowing them to edit photos, apply effects, filters, add text, crop, resize images, and more. It supports a variety of formats such as PSD, XD, Sketch, XCF, and RAW, and includes real-time link status checking to ensure seamless access to this online photo editing service.
       icon: i-ri-mental-health-line
     - name: images-tools
-      link: https://github.com/rr210/own-cover
+      link: https://github.com/ryanuo/own-cover
       desc: This is a simple web app that allows you to upload an image and get a cover of your choice.
       icon: i-ri-image-line
     - name: Cover Image Generator
@@ -71,7 +71,7 @@ projects:
       icon: i-ri-search-line
       desc: Quick search worm tribe exclusive debut products on the whole network for you to aggregate google baidu bing and other domestic and foreign comprehensive search and academic resource professional field knowledge and other vertical search accurate search convenient interaction it is your first stop for internet search
     - name: Navs Summary
-      link: https://github.com/rr210/navs
+      link: https://github.com/ryanuo/navs
       icon: i-ri-opera-line
       desc: Front End Navigation Backlink Summary
     - name: Independent Developer

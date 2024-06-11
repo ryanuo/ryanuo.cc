@@ -12,7 +12,7 @@ plum: true
 
 ![部分代码](https://cloud.ryanuo.cc/hexo/0/20210822143150.png)
 
-- 项目部署方法, 已发GitHub, 项目地址[github地址](https://github.com/Rr210/hot_search)
+- 项目部署方法, 已发GitHub, 项目地址[github地址](https://github.com/ryanuo/hot_search)
 
 ## 使用技术
 

@@ -19,7 +19,7 @@ projects:
       desc: 在线图片处理,批量转换图片,批量压缩图片,webp转jpg,视频转gif,gif转webp
       icon: i-ri-image-line
     - name: 封面图片生成工具
-      link: https://github.com/rr210/own-cover
+      link: https://github.com/ryanuo/own-cover
       desc: This is a simple web app that allows you to upload an image and get a cover of your choice.
       icon: i-dashicons-cover-image
 
@@ -71,7 +71,7 @@ projects:
       icon: i-ri-search-line
       desc: 快搜！虫部落全网独家首发出品！为你聚合Google,百度,必应等国内外综合搜索和学术,资源,专业领域知识等垂直搜索。精准搜索,便捷交互！是你的网络搜索第一站！
     - name: 导航汇总
-      link: https://github.com/rr210/navs
+      link: https://github.com/ryanuo/navs
       icon: i-ri-opera-line
       desc: 前端导航外链汇总
     - name: Independent Developer

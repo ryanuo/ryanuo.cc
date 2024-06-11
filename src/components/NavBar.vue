@@ -101,7 +101,7 @@ const { y: scroll } = useWindowScroll()
             }"
           />
         </a>
-        <a href="https://github.com/rr210" target="_blank" title="GitHub" class="lt-md:hidden">
+        <a href="https://github.com/ryanuo" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
