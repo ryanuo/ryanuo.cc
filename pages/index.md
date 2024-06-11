@@ -1,13 +1,13 @@
 ---
-title: Ryan Co
-description: Ryan Co's Introduce
+title: Ryan uo
+description: Ryan uo's Introduce
 plum: true
-id: ryanco
+id: ryanuo
 titleStyle:
   fontFamily: 'Pacifico'
 ---
 
-Hey, I am Ryan Co, a passionate front-end developer.
+Hey, I am Ryanuo, a passionate front-end developer.
 
 Currently, I work in [Zhengzhou](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9) as a front-end development engineer.
 
@@ -26,10 +26,10 @@ Should you have an interest in front-end development, technology-related topics,
 Find me on
 
 <p flex="~ gap-3 wrap" class="mt--2!">
-  <a href="https://github.com/rr210" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
-  <a href="https://x.com/ryan7co" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
-  <a href="https://www.youtube.com/@coRyan" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
-  <a href="https://www.instagram.com/ryanco007" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
+  <a href="https://github.com/ryanuo" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
+  <a href="https://x.com/ryanuo77" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
+  <a href="https://www.youtube.com/@ryanuo7" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
+  <a href="https://www.instagram.com/ryanuo007" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
   <a href="https://space.bilibili.com/417034781" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
   <a href="https://www.zhihu.com/people/iui9" target="_blank"><span op75 i-simple-icons-zhihu /> 知乎</a>
   <a href="https://mp.weixin.qq.com/s/fQlYFI0aCwrow11HMJwkEw" target="_blank"><span op75 i-simple-icons-wechat /> 微信</a>

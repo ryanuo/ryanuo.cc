@@ -10,7 +10,7 @@ plum: true
 
 ## 项目代码展示
 
-![部分代码](https://cloud.mr90.top/hexo/0/20210822143150.png)
+![部分代码](https://cloud.ryanuo.cc/hexo/0/20210822143150.png)
 
 - 项目部署方法, 已发GitHub, 项目地址[github地址](https://github.com/Rr210/hot_search)
 
@@ -98,7 +98,7 @@ plum: true
 
 ### 本地展示
 
-![以下代码中用到该实例](https://cloud.mr90.top/hexo/0/20210822191052.png)
+![以下代码中用到该实例](https://cloud.ryanuo.cc/hexo/0/20210822191052.png)
 
 <!-- 两种方法解析本地文件 -->
 
@@ -143,7 +143,7 @@ print(selector)
 
 - xPath内置了100多种函数方法, 具体参考【[xPath函数](http://www.w3school.com.cn/xpath/xpath_functions.asp)】
 
-![按序](https://cloud.mr90.top/hexo/0/20210822182351.png)
+![按序](https://cloud.ryanuo.cc/hexo/0/20210822182351.png)
 
 ### 节点轴选择
 
@@ -158,7 +158,7 @@ print(selector)
 [xPath轴](https://www.w3school.com.cn/xpath/xpath_axes.asp)
 [xPath避坑指南](https://blog.csdn.net/Ryan_lee9410/article/details/107144213)
 
-![xPath轴](https://cloud.mr90.top/hexo/0/20210822185037.png)
+![xPath轴](https://cloud.ryanuo.cc/hexo/0/20210822185037.png)
 
 ### 演示代码
 
@@ -176,7 +176,7 @@ html = etree.parse('./index.html',etree.HTMLParser())
 all_node = html.xpath('//*')  # 所有节点的获取 //*
 part_node = html.xpath('//li')  # 部分节点 格式：//节点名
 child_node = html.xpath('//li/a')  # 匹配子节点
-parent_node = html.xpath('//a[@href="//mr90.top"]/../@class')  # 获取父节点属性值的方法 ../@属性名
+parent_node = html.xpath('//a[@href="//ryanuo.cc"]/../@class')  # 获取父节点属性值的方法 ../@属性名
 attrs_node = html.xpath('//a[contains(@class,"a")]/text()')   # 获取属性中包含多个值的情况 属性多值匹配 contains()方法
 # 按序获取
 first_node = html.xpath('//li[1]/a/text()')  # 获取第一个

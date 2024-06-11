@@ -1,13 +1,13 @@
 ---
-title: Ryan Co
-description: Ryan Co's Introduce
+title: Ryan uo
+description: Ryan uo's Introduce
 plum: true
-id: ryanco
+id: ryanuo
 titleStyle:
   fontFamily: 'Pacifico'
 ---
 
-嘿，我是Ryan Co，一名热爱前端开发的工程师。
+嘿，我是Ryanuo，一名热爱前端开发的工程师。
 
 目前，我在[郑州](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9)工作，担任前端开发工程师一职。
 
@@ -29,7 +29,7 @@ Find me on
   <a href="https://github.com/rr210" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
   <a href="https://x.com/ryan7co" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
   <a href="https://www.youtube.com/@coRyan" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
-  <a href="https://www.instagram.com/ryanco007" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
+  <a href="https://www.instagram.com/ryanuo007" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
   <a href="https://space.bilibili.com/417034781" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
   <a href="https://www.zhihu.com/people/iui9" target="_blank"><span op75 i-simple-icons-zhihu /> 知乎</a>
   <a href="https://mp.weixin.qq.com/s/fQlYFI0aCwrow11HMJwkEw" target="_blank"><span op75 i-simple-icons-wechat /> 微信</a>

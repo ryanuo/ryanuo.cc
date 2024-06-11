@@ -123,7 +123,7 @@ public class text9 {
 3. 堆: 虚拟机启动的时候,创建堆;存放对象;地址可以不连续
 4. c语言中指针是操作存储空间 java不可以操作堆地址 只能使用堆中的信息，栈中引用是指是对象的地址;打印出来的不是地址，这个变量是基本类型局部变量
 
-![](https://cloud.mr90.top/hexo/api/zhan.png)
+![](https://cloud.ryanuo.cc/hexo/api/zhan.png)
 
 ## 构造方法Constructor
 

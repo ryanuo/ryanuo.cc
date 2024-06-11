@@ -40,7 +40,7 @@ console.log(news)
 1. 替换字符串中匹配到的字符
 
 ```
-<div class="content">mr90.top</div>
+<div class="content">ryanuo.cc</div>
 <script>
   let div = document.querySelector('.content')
   let a = prompt('输入字符')
@@ -80,7 +80,7 @@ let reg = new RegExp('\\d+\\.\\d+')
 console.log(reg.test(price)) // false
 
 // 网址
-const url = 'https://u.mr90.top'
+const url = 'https://u.ryanuo.cc'
 let reg = new RegExp(/https?:\/\/\w+\.\w+\.\w+/)
 console.log(reg.test(url)) // true
 console.log(/https?:\/\/\w+\.\w+/.test(url)) // true
@@ -145,7 +145,7 @@ console.log(hd.match(/.+/g)) // [wad,awd]
 const hd = `
 #1 js,200元 #
 #2 php,300元 #
-#9 mr90.top # 你好
+#9 ryanuo.cc # 你好
 #3 node.js,180元 #
 `
 const lessons = hd.match(/^\s*#\d+\s+(?:\S.*|[\t\v\f \xA0\u1680\u2000-\u200A\u202F\u205F\u3000\uFEFF])\s+#$/gm).map((v) => {
@@ -188,7 +188,7 @@ while (res = reg.exec(hd))
 
 ```
 const hd = `你好世界大王大大:11111111,1111231,213123212,
-达瓦达,网站:u.mr90.top`
+达瓦达,网站:u.ryanuo.cc`
 const reg = /(\d+),?/y
 reg.lastIndex = 9
 const qq = []
@@ -220,7 +220,7 @@ console.log(times.match(/^\d{4}([-/])\d{2}\1\d{2}$/)) // 2020/02/21
 2. `\p`表示匹配满足`{}`内的字符
 
 ```
-// let hd = 'u.mr90.top'
+// let hd = 'u.ryanuo.cc'
 // console.log(hd.match(/[^u]/gi)); //[".", "m", "r", "9", "0", ".", "t", "o", "p"]
 const hd = `张三:231-23123123,李四#:123-312313;`
 console.log(hd.match(/[^:\w-,#;]+/g)) // 贪婪模式下的排除匹配
@@ -287,13 +287,13 @@ console.log(hd.match(/\p{sc=Han}+/gu)) // ["张三", "李四"]
 1. 使用不记录分组,就是使用原子组后 无法再去使用函数参数去调用
 
 ```
-const url = `https://u.mr90.top
+const url = `https://u.ryanuo.cc
     http://github.com
-    httpS://mr90.top`
+    httpS://ryanuo.cc`
 // 使用不记录分组,就是使用原子组后 无法再去使用函数参数去调用
 const reg = /https?:\/\/((?:\w+\.)?\w+\.(?:com|top))/gi
 console.log(reg.test(url)) // true // 有满足条件的内容
-console.log(url.match(reg)) // ["https://u.mr90.top", "http://github.com", "httpS://mr90.top"]
+console.log(url.match(reg)) // ["https://u.ryanuo.cc", "http://github.com", "httpS://ryanuo.cc"]
 //    console.log(reg.exec(url)); // 返回满足条件的第一个内容
 //    console.log(reg.lastIndex); // 记录下次开始时的索引位置
 const urlA = []
@@ -333,9 +333,9 @@ document.querySelector('[name=pwd')
 ```
 <body>
   <main>
-    <span>u.mr90.top1</span>
-    <span>u.mr90.top2</span>
-    <span>u.mr90.top3</span>
+    <span>u.ryanuo.cc1</span>
+    <span>u.ryanuo.cc2</span>
+    <span>u.ryanuo.cc3</span>
   </main>
 </body>
 <script>
@@ -354,9 +354,9 @@ document.querySelector('[name=pwd')
 ```
 <body>
   <main>
-    <span>u.mr90.top1</span>
-    <span>u.mr90.top2</span>
-    <span>u.mr90.top3</span>
+    <span>u.ryanuo.cc1</span>
+    <span>u.ryanuo.cc2</span>
+    <span>u.ryanuo.cc3</span>
   </main>
 </body>
 <script>
@@ -435,7 +435,7 @@ console.log(tel.replace(/\w+/g, '$`$`$&$\'$\'')) // $& 匹配自身
 ```
 <body>
   <main>
-    <a href="http://u.mr90.top">博客</a>
+    <a href="http://u.ryanuo.cc">博客</a>
     <a href="https://baidu.com">百度</a>
     <a href="https://github.com">Github</a>
   </main>
@@ -462,7 +462,7 @@ console.log(tel.replace(/\w+/g, '$`$`$&$\'$\'')) // $& 匹配自身
 ```
 <body>
   <main>
-    <a href="http://u.mr90.top">博客</a>
+    <a href="http://u.ryanuo.cc">博客</a>
     <a href="https://baidu.com">百度</a>
     <a href="https://github.com">Github</a>
   </main>
@@ -470,7 +470,7 @@ console.log(tel.replace(/\w+/g, '$`$`$&$\'$\'')) // $& 匹配自身
 <script>
   let main = document.querySelector('main')
   let reg = /(?<=href=(['"]))(.*?)(?=\1>)/gi
-  main.innerHTML = main.innerHTML.replace(reg, 'https://mr90.top')
+  main.innerHTML = main.innerHTML.replace(reg, 'https://ryanuo.cc')
 </script>
 
 ```

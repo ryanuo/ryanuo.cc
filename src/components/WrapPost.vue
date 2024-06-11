@@ -14,7 +14,7 @@ const isShowAIPost = computed(() => {
   return route.path?.indexOf('posts') !== -1
 })
 
-const base = 'https://mr90.top'
+const base = 'https://ryanuo.cc'
 const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComponent(`Reading @ryan7co\'s ${base}${route.path}\n\nI think...`)}`)
 </script>
 

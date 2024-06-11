@@ -14,14 +14,14 @@ function analyzeContent() {
   }
   else {
     // 在生产环境下使用远程接口
-    apiUrl = 'https://gpt.mr90.top/ai-post'
+    apiUrl = 'https://gpt.ryanuo.cc/ai-post'
   }
   // 使用 fetch 发送数据到后端进行智能分析
   fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'RefererUrl': `https://mr90.top${route.path}`,
+      'RefererUrl': `https://ryanuo.cc${route.path}`,
     },
   })
     .then(response => response.json())

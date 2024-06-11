@@ -1,6 +1,6 @@
 ---
-title: 'Demos | Ryan Co'
-description: 'Demos | Ryan Co'
+title: 'Demos | Ryan uo'
+description: 'Demos | Ryan uo'
 plum: true
 isHidenTitle: true
 demos:

@@ -1,4 +1,4 @@
-**[ryanco.me](https://mr90.top)**
+**[ryanuo.me](https://ryanuo.cc)**
 
 my personal website
 

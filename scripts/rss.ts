@@ -6,9 +6,9 @@ import fs from 'fs-extra'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 
-const DOMAIN = 'https://mr90.top'
+const DOMAIN = 'https://ryanuo.cc'
 const AUTHOR = {
-  name: 'Ryan Co',
+  name: 'Ryan uo',
   email: 'iui9@qq.com',
   link: DOMAIN,
 }
@@ -31,11 +31,11 @@ async function buildBlogRSS() {
   ])
 
   const options = {
-    title: 'Ryan Co',
-    description: 'Ryan Co\' Blog',
+    title: 'Ryan uo',
+    description: 'Ryan uo\' Blog',
     id: DOMAIN,
     link: DOMAIN,
-    copyright: 'CC BY-NC-SA 4.0 2021 © Ryan Co',
+    copyright: 'CC BY-NC-SA 4.0 2021 © Ryan uo',
     feedLinks: {
       json: `${DOMAIN}/sitemap.json`,
       atom: `${DOMAIN}/sitemap.atom`,

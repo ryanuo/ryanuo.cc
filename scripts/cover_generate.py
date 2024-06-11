@@ -96,7 +96,7 @@ def generate_cover(u_, p_, img_name):
 if __name__ == '__main__':
     print("正在生成封面...")
     json_url = "dist/sitemap.json"
-    url = "https://oc.mr90.top/auto"
+    url = "https://c.ryanuo.cc/auto"
     out_dir_list = 'public/og'
     img_format = "png"
     # 判断文件夹是否存在
@@ -112,7 +112,7 @@ if __name__ == '__main__':
                 "coverMarkColor": "rgba(0, 0, 0, 0.3)",
                 "font": "ADLaM Display",
                 "coverTitle": u[1],
-                "coverAuthor": "@Ryanco",
+                "coverAuthor": "@ryanuo",
                 "iconPosition": 3,
                 "iconName": "material-symbols:adaptive-audio-mic",
                 "previewImg": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTE5MjN8MHwxfHNlYXJjaHw4fHxzaW1wbGV8ZW58MHx8fHwxNzE3MTY2MDQ2fDA&ixlib=rb-4.0.3&q=80&w=1080"

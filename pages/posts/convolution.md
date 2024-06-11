@@ -16,16 +16,16 @@ description: convolutional network learning parameter reduction feature extracti
 
 1. - 表示卷积，使用3x3过滤器
 2. 如图是垂直边缘检测器
-   ![](https://cloud.mr90.top/hexo/4/20220415102757.png)
+   ![](https://cloud.ryanuo.cc/hexo/4/20220415102757.png)
 
 ## 正边缘与负边缘
 
-![](https://cloud.mr90.top/hexo/4/20220415103726.png)
-![](https://cloud.mr90.top/hexo/4/20220415104101.png)
+![](https://cloud.ryanuo.cc/hexo/4/20220415103726.png)
+![](https://cloud.ryanuo.cc/hexo/4/20220415104101.png)
 
 ## 填充降维度
 
-![](https://cloud.mr90.top/hexo/4/20220415104949.png)
+![](https://cloud.ryanuo.cc/hexo/4/20220415104949.png)
 公式：`nxn * fxf = (n-f+1)x(n-f+1)`
 
 1. 缺陷：不希望每一步都缩小维度，使得图片丢失了许多边界的信息
@@ -40,7 +40,7 @@ description: convolutional network learning parameter reduction feature extracti
 ## 三维卷积
 
 1. 使用rgb图片 则是三通道（red,green,blue）
-   ![](https://cloud.mr90.top/hexo/4/20220415111153.png)
+   ![](https://cloud.ryanuo.cc/hexo/4/20220415111153.png)
 
 ## 卷积神经网络结构
 

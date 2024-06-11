@@ -124,7 +124,7 @@ export default {
         })
 
         // md.use(MdItReplace, "foo_replace", "text", (tokens, formter, idx) => {
-        //   if (formter.id === "ryanco") {
+        //   if (formter.id === "ryanuo") {
         //     if (tokens[idx].content.indexOf("[workyears]") !== -1) {
         //       tokens[idx].content = tokens[idx].content.replace(
         //         "[workyears]",
@@ -142,8 +142,8 @@ export default {
           const key = id.split('pages/')[1].replace('.md', '').replaceAll('/', '-')
           if (route === 'index' || frontmatter.image || !frontmatter.title)
             return
-          const path = `og/og-mr90.top-${key}.png`
-          frontmatter.image = `https://mr90.top/${path}`
+          const path = `og/og-ryanuo.cc-${key}.png`
+          frontmatter.image = `https://ryanuo.cc/${path}`
         })()
         const head = defaults(frontmatter, options)
         return { frontmatter, head }

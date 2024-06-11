@@ -42,7 +42,7 @@ jobs:
     - name: Commit and Push Changes
       run: |
         git config --global user.email "1577791638@qq.com"
-        git config --global user.name "ryanco"
+        git config --global user.name "ryanuo"
         git add .
         git diff-index --quiet HEAD || git commit -m "chore:auto generate cover"
         git push
