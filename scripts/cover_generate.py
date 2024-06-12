@@ -115,7 +115,7 @@ if __name__ == '__main__':
                 "coverAuthor": "@ryanuo",
                 "iconPosition": 3,
                 "iconName": "material-symbols:adaptive-audio-mic",
-                "previewImg": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTE5MjN8MHwxfHNlYXJjaHw4fHxzaW1wbGV8ZW58MHx8fHwxNzE3MTY2MDQ2fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                "previewImg": "https://images.unsplash.com/photo-1567497617212-5e69fd896858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTE5MjN8MHwxfHNlYXJjaHw4MzZ8fHNpbXBsZXxlbnwwfHx8fDE3MTgxOTI0Njh8MA&ixlib=rb-4.0.3&q=80&w=1080"
             }
             generate_cover(url, params, u[0])
             print(f"{u[0]} 生成成功")

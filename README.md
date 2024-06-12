@@ -1,4 +1,4 @@
-**[ryanuo.me](https://ryanuo.cc)**
+**[ryanuo.cc](https://ryanuo.cc)**
 
 my personal website
 
