@@ -15,8 +15,9 @@
       lastShowTime
       && lastShowTime !== 'true'
       && Date.now() - new Date(lastShowTime).getTime() < 7 * 24 * 60 * 60 * 1000
-    )
+    ) {
       return
+    }
 
     const style = document.createElement('style')
     style.innerHTML = `
