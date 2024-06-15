@@ -1,5 +1,5 @@
 // src/i18n/index.js
-import { createI18n } from 'vue-i18n'
+import { createI18n, useI18n } from 'vue-i18n'
 import { messages } from './locales'
 
 const lang = useStorage('lang', 'en-US')
@@ -17,23 +17,10 @@ export const langIconMap: Record<string, string> = {
   'en-US': 'i-icon-park-outline-english',
 }
 export function handleLanguageSwitch(to: any, next: any): void {
-  if (!lang.value || typeof lang.value !== 'string') {
-    console.error('Invalid language value')
-    next()
-    return
-  }
+  if (location.pathname.includes('zh'))
+    lang.value = 'zh-CN'
+  else
+    lang.value = 'en-US'
 
-  const targetPath = lang.value === 'zh-CN' ? '/zh' : ''
-
-  if (targetPath && !to.path.startsWith(targetPath)) {
-    const newPath = `${targetPath}${to.fullPath.replace(/^\/?/, '/')}`
-    next(newPath)
-  }
-  else if (!targetPath && to.path.startsWith('/zh')) {
-    const newPath = to.fullPath.replace(/^\/zh/, '')
-    next(newPath)
-  }
-  else {
-    next()
-  }
+  next()
 }

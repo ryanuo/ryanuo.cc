@@ -1,6 +1,9 @@
 ---
 title: Ryan uo
 description: Ryan uo's Introduce
+keywords: Ryanuo, 前端, 工程师, 郑州, React, Vue, TypeScript, Playwright, 组件库, 财务中后台项目, 个人项目, 前端技术, 导航, GitHub, Twitter, YouTube, Instagram, 哔哩哔哩, 知乎, 微信
+image: /home.png
+avatars: /avatar.png
 plum: true
 id: ryanuo
 titleStyle:

@@ -83,8 +83,9 @@ onMounted(async () => {
       || nx > size.width + 100
       || ny < -100
       || ny > size.height + 100
-    )
+    ) {
       return
+    }
 
     const rate = counter.value <= MIN_BRANCH ? 0.8 : 0.5
 

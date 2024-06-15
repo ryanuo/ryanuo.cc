@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router/auto'
+import { useLanguage } from '~/hooks/useLanguage'
 
 defineProps({
   description: {
@@ -8,8 +8,8 @@ defineProps({
     required: true,
   },
 })
-const { locale } = useI18n()
-const alia = computed(() => (locale.value === 'zh-CN' ? '/zh' : ''))
+
+const { aliaRoute } = useLanguage()
 const inactiveStyle = 'opacity-20 hover:opacity-50'
 const activeStyle = 'opacity-100 underline'
 
@@ -19,17 +19,17 @@ const route = useRoute()
 <template>
   <div class="tabs m-auto mb-5 max-w-300 select-none at-lg:max-w-212 animate-none! op100!">
     <div mb-0 flex="~ gap-1 sm:row gap-2 sm:gap-3 wrap" text-2xl>
-      <RouterLink to="/navs" class="!border-none" :class="route.path === `${alia}/navs` ? activeStyle : inactiveStyle">
+      <RouterLink :to="`${aliaRoute}/navs`" class="!border-none" :class="route.path === `${aliaRoute}/navs` ? activeStyle : inactiveStyle">
         {{ $t("tabs.navs", "Navs") }}
       </RouterLink>
       <RouterLink
-        to="/navs/libraries" class="!border-none" :class="route.path === `${alia}/navs/libraries` ? activeStyle : inactiveStyle
+        :to="`${aliaRoute}/navs/libraries`" class="!border-none" :class="route.path === `${aliaRoute}/navs/libraries` ? activeStyle : inactiveStyle
         "
       >
         {{ $t("tabs.libraries", "Libraries") }}
       </RouterLink>
       <RouterLink
-        to="/navs/tools" class="!border-none" :class="route.path === `${alia}/navs/tools` ? activeStyle : inactiveStyle
+        :to="`${aliaRoute}/navs/tools`" class="!border-none" :class="route.path === `${aliaRoute}/navs/tools` ? activeStyle : inactiveStyle
         "
       >
         {{ $t("tabs.tools", "Tools") }}

@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-import { langIconMap } from '~/i18n'
+import { useLanguage } from '~/hooks/useLanguage'
 
-const lange = useStorage('lang', 'en-US')
-const { locale } = useI18n() // 获取当前语言
-const langIcon = computed(() => {
-  return langIconMap[locale.value]
-})
+const { langIcon, switchLanguage } = useLanguage()
+const { aliaRoute } = useLanguage()
 
 function toTop() {
   window.scrollTo({
@@ -15,26 +11,13 @@ function toTop() {
   })
 }
 
-function handleLangChange() {
-  let lang
-  if (locale.value === 'zh-CN')
-    lang = 'en-US'
-  else
-    lang = 'zh-CN'
-
-  locale.value = lang
-  lange.value = lang
-  // // 强制刷新页面
-  window.location.reload()
-}
-
 const { y: scroll } = useWindowScroll()
 </script>
 
 <template>
   <header class="header z-40">
     <RouterLink
-      class="absolute m-7 mb-0 h-8 w-8 flex select-none flex-items-center outline-none xl:fixed" to="/"
+      class="absolute m-7 mb-0 h-8 w-8 flex select-none flex-items-center outline-none xl:fixed" :to="`${aliaRoute}/`"
       focusable="false"
     >
       <Logo />
@@ -49,11 +32,11 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/navs" :title="$t('nav.navs', 'Navs')">
+        <RouterLink :to="`${aliaRoute}/navs`" :title="$t('nav.navs', 'Navs')">
           <span class="lt-md:hidden">{{ $t("nav.navs", "Navs") }}</span>
           <div i-material-symbols-bottom-navigation-outline class="md:hidden" />
         </RouterLink>
-        <RouterLink to="/posts" :title="$t('nav.Blog', 'Blog')">
+        <RouterLink :to="`${aliaRoute}/posts`" :title="$t('nav.Blog', 'Blog')">
           <span class="lt-md:hidden">{{ $t("nav.Blog", "Blog") }}</span>
           <div i-ri-article-line class="md:hidden" />
         </RouterLink>
@@ -71,11 +54,11 @@ const { y: scroll } = useWindowScroll()
             },
           ]"
         /> -->
-        <RouterLink to="/projects" :title="$t('nav.Projects', 'Projects')">
+        <RouterLink :to="`${aliaRoute}/projects`" :title="$t('nav.Projects', 'Projects')">
           <span class="lt-md:hidden">{{ $t("nav.Projects", "Projects") }}</span>
           <div i-ri-lightbulb-line class="md:hidden" />
         </RouterLink>
-        <RouterLink to="/demos" :title="$t('nav.Demos', 'Demos')">
+        <RouterLink :to="`${aliaRoute}/demos`" :title="$t('nav.Demos', 'Demos')">
           <span class="lt-md:hidden">{{ $t("nav.Demos", "Demos") }}</span>
           <div i-ri-screenshot-line class="md:hidden" />
         </RouterLink>
@@ -105,7 +88,7 @@ const { y: scroll } = useWindowScroll()
           <div i-uil-github-alt />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
-          <div v-tooltip="$t('lang.change', 'English To Chinese')" :class="langIcon" @click="handleLangChange" />
+          <div v-tooltip="$t('lang.change', 'English To Chinese')" :class="langIcon" @click="switchLanguage" />
         </a>
         <ToggleTheme />
       </div>

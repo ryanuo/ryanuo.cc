@@ -1,10 +1,11 @@
 <script lang="ts" setup>
+import { useLanguage } from '~/hooks/useLanguage'
 import { calculateWorkYears } from '~/utils/'
 
-const lang = useStorage('lang', '')
+const { isChinese } = useLanguage()
 const workYear = computed(() => {
   const num = calculateWorkYears(2022, 8) as number
-  return lang.value === 'zh-CN' ? numberToChinese(num) : numberToEnglish(num)
+  return isChinese.value ? numberToChinese(num) : numberToEnglish(num)
 })
 function numberToEnglish(num: number): string {
   const englishNumbers = [
