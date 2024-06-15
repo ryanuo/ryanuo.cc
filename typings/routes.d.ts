@@ -53,6 +53,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/tkinter': RouteRecordInfo<'/posts/tkinter', '/posts/tkinter', Record<never, never>, Record<never, never>>,
     '/posts/train': RouteRecordInfo<'/posts/train', '/posts/train', Record<never, never>, Record<never, never>>,
     '/posts/vscode': RouteRecordInfo<'/posts/vscode', '/posts/vscode', Record<never, never>, Record<never, never>>,
+    '/posts/zsh-windows': RouteRecordInfo<'/posts/zsh-windows', '/posts/zsh-windows', Record<never, never>, Record<never, never>>,
     '/projects/': RouteRecordInfo<'/projects/', '/projects', Record<never, never>, Record<never, never>>,
     '/zh/': RouteRecordInfo<'/zh/', '/zh', Record<never, never>, Record<never, never>>,
     '/zh/demos/': RouteRecordInfo<'/zh/demos/', '/zh/demos', Record<never, never>, Record<never, never>>,
@@ -88,6 +89,7 @@ declare module 'vue-router/auto-routes' {
     '/zh/posts/tkinter': RouteRecordInfo<'/zh/posts/tkinter', '/zh/posts/tkinter', Record<never, never>, Record<never, never>>,
     '/zh/posts/train': RouteRecordInfo<'/zh/posts/train', '/zh/posts/train', Record<never, never>, Record<never, never>>,
     '/zh/posts/vscode': RouteRecordInfo<'/zh/posts/vscode', '/zh/posts/vscode', Record<never, never>, Record<never, never>>,
+    '/zh/posts/zsh-windows': RouteRecordInfo<'/zh/posts/zsh-windows', '/zh/posts/zsh-windows', Record<never, never>, Record<never, never>>,
     '/zh/projects/': RouteRecordInfo<'/zh/projects/', '/zh/projects', Record<never, never>, Record<never, never>>,
   }
 }
