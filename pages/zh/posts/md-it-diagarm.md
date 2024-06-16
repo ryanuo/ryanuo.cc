@@ -26,6 +26,14 @@ description: "markdown语法绘制流程图控件插件"
 
 Markdown 支持：[plantuml](https://plantuml.com/)、[mermaid](https://github.com/mermaid-js/mermaid)、[dot](https://graphviz.gitlab.io/doc/info/lang.html)、[ditaa](https://ditaa.sourceforge.net/)
 
+## 功能
+
+- 支持PlantUML、Mermaid、Dot、Ditaa图形语法
+- 包含缩放、移动、粗糙渲染、下载、复制源代码等快捷操作
+- 支持Shift键结合鼠标滚轮进行缩放
+- 集成模态窗口预览模式
+- 实现长按鼠标左键拖动图表功能
+
 ### PlantUML
 
 [在线尝试](https://www.plantuml.com/plantuml/uml/)

@@ -26,6 +26,14 @@ description: "A control plugin for drawing flowcharts in markdown syntax"
 
 Markdown supports：[plantuml](https://plantuml.com/)、[mermaid](https://github.com/mermaid-js/mermaid)、[dot](https://graphviz.gitlab.io/doc/info/lang.html)、[ditaa](https://ditaa.sourceforge.net/)
 
+## Features
+
+- Support PlantUML、Mermaid、Dot、Ditaa syntax;
+- Support zoom、move、rough、download、copy origin code and soon contorls;
+- Support Shift and mouse wheel to zoom in or out;
+- Support modal preview;
+- Support long press mouse click to drag the chart
+
 ### PlantUML
 
 [try it](https://www.plantuml.com/plantuml/uml/)

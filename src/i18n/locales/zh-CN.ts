@@ -13,4 +13,10 @@ export default {
   'nav.article': '个人小记',
   'nav.blog.old': '博客 [废弃]',
   'nav.learn.interview': '面试宝典',
+  'summary': '摘要',
+  'viewDetails': '查看详情',
+  'aiRobot': 'RyanAI',
+  'analysisFailed': '分析失败,AI机器人故障请联系管理员！！',
+  'loading': '加载中。',
+  'generatedContentNote': '此内容根据文章生成，仅用于文章内容的解释与总结',
 }

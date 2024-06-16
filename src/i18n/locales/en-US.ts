@@ -14,4 +14,10 @@ export default {
   'nav.article': 'Personal Notes',
   'nav.blog.old': 'Blog [deprecated]',
   'nav.learn.interview': 'Interview tips',
+  'summary': 'Summary',
+  'viewDetails': 'View Details',
+  'aiRobot': 'RyanAI',
+  'analysisFailed': 'Analysis failed, AI robot malfunction, please contact the administrator!!',
+  'loading': 'Loading.',
+  'generatedContentNote': 'This content is generated based on the article and is only used for explanation and summary of the article content.',
 }

@@ -1,45 +1,49 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useTypewriter } from './useTypewriter'
 
+const { t } = useI18n()
 const aiPostText = ref('')
 const { typedText } = useTypewriter(aiPostText)
 const route = useRoute()
 
-// 智能分析插槽内容
-function analyzeContent() {
+async function analyzeContent() {
   let apiUrl
   if (import.meta.env.DEV) {
-    // 在开发环境下使用本地接口
     apiUrl = '/api/ai-post'
   }
   else {
-    // 在生产环境下使用远程接口
     apiUrl = 'https://gpt.ryanuo.cc/ai-post'
   }
-  // 使用 fetch 发送数据到后端进行智能分析
-  fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'RefererUrl': `https://ryanuo.cc${route.path}`,
-    },
-  })
-    .then(response => response.json())
-    .then((res) => {
-      // 处理分析结果
-      if (res.status_code === 200)
-        aiPostText.value = res.data
-      else
-        aiPostText.value = '分析失败,AI机器人故障请联系管理员！！'
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'RefererUrl': `https://ryanuo.cc${route.path}`,
+      },
+      body: JSON.stringify({
+        content: aiPostText.value,
+      }),
     })
-    .catch((error) => {
-      // 处理错误
-      aiPostText.value = '分析失败,AI机器人故障请联系管理员！！'
-      console.error(error)
-    })
+
+    const res = await response.json()
+    if (res.status_code === 200) {
+      aiPostText.value = res.data
+    }
+    else {
+      aiPostText.value = t('analysisFailed', 'Analysis failed, AI robot malfunction, please contact the administrator!!')
+    }
+  }
+  catch (error) {
+    aiPostText.value = t('analysisFailed', 'Analysis failed, AI robot malfunction, please contact the administrator!!')
+    console.error(error)
+  }
 }
 
-// 使用 watch 监听 slotContent 的变化
 onMounted(() => {
   analyzeContent()
 })
@@ -48,10 +52,10 @@ onMounted(() => {
 <template>
   <div class="prose slide-enter-content m-auto mb-2 border border-color-[#e3e8f7] rounded-xl p-3">
     <div class="flex justify-between">
-      <a href="javascript:void(0)" title="查看详情">
+      <a href="javascript:void(0)" :title="$t('viewDetails', 'View Details')">
         <div>
           <i class="i-gravity-ui-square-article" />
-          <span class="align-middle">摘要</span>
+          <span class="align-middle">{{ $t('summary', 'Summary') }}</span>
         </div>
         <div class="ai-link">
           <i class="icon-arrow-right-s-line" />
@@ -59,18 +63,18 @@ onMounted(() => {
       </a>
       <div class="flex cursor-pointer items-center font-size-[.8rem]">
         <i class="i-ri-robot-2-line mr-1 align-middle" />
-        RyanAI
+        {{ $t('aiRobot', 'RyanAI') }}
       </div>
     </div>
     <div class="my-2 break-all indent-8 font-size-[.94rem]">
       <p v-if="typedText" class="max-h-32 overflow-auto m-0!">
         {{ typedText }}
       </p>
-      <span v-else class="ellipsis-animation">Loading.</span>
+      <span v-else class="ellipsis-animation">{{ $t('loading', 'Loading.') }}</span>
     </div>
     <div>
       <div class="font-size-[.7rem] text-color-[#3c3c43cc]">
-        此内容根据文章生成，仅用于文章内容的解释与总结
+        {{ $t('generatedContentNote', 'This content is generated based on the article and is only used for explanation and summary of the article content.') }}
       </div>
     </div>
   </div>
