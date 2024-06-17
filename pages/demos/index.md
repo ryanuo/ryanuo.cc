@@ -80,11 +80,6 @@ demos:
       img: '/demos/teacher.png'
       tags: ['Vue2', 'Element UI','Private']
       link: https://github.com/ryanuo/web_teacher
-    - name: 'Shop Background'
-      link: https://github.com/ryanuo/vue2-shop
-      desc: 'The frontend is built using the Vue CLI scaffolding tool, and Element UI library is utilized to enhance and structure the project.'
-      img: /demos/admin-shop.png
-      tags: ['Vue2', 'Element UI']
     - name: 'Article Assistant'
       link: https://github.com/ryanuo/de_repeat
       desc: 'An article redundancy reduction assistant based on ECharts, which allows for real-time monitoring of the article plagiarism reduction status.'

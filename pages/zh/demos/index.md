@@ -81,11 +81,6 @@ demos:
       img: '/demos/teacher.png'
       tags: ['Vue2', 'Element UI','私密']
       link: https://github.com/ryanuo/web_teacher
-    - name: 商城后台
-      link: https://github.com/ryanuo/vue2-shop
-      desc: '该项目前端采用Vue CLI脚手架构建，并运用Element UI库来提升和组织项目结构。'
-      img: /demos/admin-shop.png
-      tags: ['Vue2', 'Element UI']
     - name: 文章降重助手
       link: https://github.com/ryanuo/de_repeat
       desc: '基于ECharts实现的文章重复度降低助手，可实时查看文章降重情况。'
