@@ -105,7 +105,6 @@ onMounted(() => {
       </table>
     </div>
     <div>
-      <h4>Provinces List:</h4>
       <ul class="flex flex-wrap cursor-pointer gap-1 underline underline-coolGray">
         <li v-for="(item, index) in provinces" :key="index" @click="() => fetchOilPrice([item])">
           {{ item }}
