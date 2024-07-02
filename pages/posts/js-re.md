@@ -2,7 +2,7 @@
 title: Regular Expressions Js
 date: '2021-7-29 08:50'
 tags: [web,Javascript]
-desscription: java script regular expressions number extraction variable application substitution rules boundary delimiting character classes global search
+description: java script regular expressions number extraction variable application substitution rules boundary delimiting character classes global search
 ---
 
 ## 正则字符串提取数字
