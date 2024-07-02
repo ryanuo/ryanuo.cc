@@ -87,7 +87,7 @@ const total_name = computed(() => {
   <div class="flex gap-2">
     <div
       v-for="(key, item) in Object.keys(nameDataList)"
-      :key="item" class="cursor-pointer rounded-md px-1" :class="{
+      :key="item" class="cursor-pointer rounded-sm px-1" :class="{
         'bg-blue-100': tab === key,
         'text-blue-500': tab === key,
         'text-gray-500': tab !== key,
