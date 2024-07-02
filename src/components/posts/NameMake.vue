@@ -77,6 +77,10 @@ async function copyToClipboard(): Promise<void> {
     console.error('Failed To Copy To Clipboard:', err)
   }
 }
+
+const total_name = computed(() => {
+  return [nameDataList[tab.value]?.[1]?.length, nameDataList?.[tab.value]?.[2]?.length]
+})
 </script>
 
 <template>
@@ -90,6 +94,12 @@ async function copyToClipboard(): Promise<void> {
       }" @click="tab = (key as TabType)"
     >
       {{ key === 'nan' ? "Boy" : 'Girl' }} Name
+    </div>
+    <div class="flex items-end text-sm">
+      Total <span class="mx-1">two:</span>
+      <span class="text-blue">{{ total_name[0] }}</span>
+      <span class="mx-1">three:</span>
+      <span class="text-blue"> {{ total_name[1] }}</span>
     </div>
   </div>
   <table class="gen-name mt-2!">
