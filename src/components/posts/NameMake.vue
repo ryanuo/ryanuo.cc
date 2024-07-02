@@ -93,7 +93,7 @@ const total_name = computed(() => {
         'text-gray-500': tab !== key,
       }" @click="tab = (key as TabType)"
     >
-      {{ key === 'nan' ? "Boy" : 'Girl' }} Name
+      {{ key === 'nan' ? "Boy" : 'Girl' }} name
     </div>
   </div>
   <table class="gen-name mt-2!">
