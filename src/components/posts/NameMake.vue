@@ -95,18 +95,20 @@ const total_name = computed(() => {
     >
       {{ key === 'nan' ? "Boy" : 'Girl' }} Name
     </div>
-    <div class="flex items-end text-sm">
-      Total <span class="mx-1">two:</span>
-      <span class="text-blue">{{ total_name[0] }}</span>
-      <span class="mx-1">three:</span>
-      <span class="text-blue"> {{ total_name[1] }}</span>
-    </div>
   </div>
   <table class="gen-name mt-2!">
     <thead>
       <th>Index</th>
-      <th>Two</th>
-      <th>Three</th>
+      <th>
+        <div flex>
+          Two <span class="mx-1 text-[0.75rem] text-blue">{{ total_name[0] }}</span>
+        </div>
+      </th>
+      <th>
+        <div flex>
+          Three <span class="mx-1 text-[0.75rem] text-blue"> {{ total_name[1] }}</span>
+        </div>
+      </th>
     </thead>
     <tbody overflow-auto>
       <tr v-for="(v, key) in getName(nameDataList[tab])" :key="key">
