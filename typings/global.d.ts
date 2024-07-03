@@ -26,3 +26,5 @@ interface AlgoliaSearchParams {
 }
 
 declare module '@docsearch/js';
+
+declare module 'vue-virtual-scroller'

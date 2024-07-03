@@ -28,7 +28,8 @@
     "vue-final-modal": "^4.5.4",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.2",
-    "vue-router-better-scroller": "^0.0.0"
+    "vue-router-better-scroller": "^0.0.0",
+    "vue-virtual-scroller": "2.0.0-beta.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.20.0",
