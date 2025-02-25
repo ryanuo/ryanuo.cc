@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master  # 你可以根据需要更改分支
+env:
+  CFLAGS: "-DPy_BUILD_CORE"
 
 jobs:
   generate-cover:
