@@ -12,12 +12,13 @@ const postsRoutes = computed(() => {
   return routes
     .getRoutes()
     .filter((route) => {
-      const { path } = route
+      const { path, meta } = route
       return (
         path.includes('/posts')
         && path.startsWith(`${lang}/posts`)
         && !path.endsWith('.html')
         && !['/zh/posts', '/posts'].includes(path)
+        && !(meta.frontmatter as FrontmatterPostType)?.isHidden
       )
     })
     .map((route) => {
