@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master  # 你可以根据需要更改分支
-env:
-  CFLAGS: "-DPy_BUILD_CORE"
 
 jobs:
   generate-cover:
@@ -18,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x  # 选择你的Python版本
+        python-version: 3.10  # 选择你的Python版本
         
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt  # 如果有依赖文件，你可以在这里安装它们
