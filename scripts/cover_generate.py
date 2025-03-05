@@ -107,10 +107,11 @@ if __name__ == '__main__':
     if len(no_exit_img_list) != 0:
         print(f"共{len(no_exit_img_list)}个图片不存在，开始生成...")
         for u in no_exit_img_list:
+            font = 'ZCOOL KuaiLe' if '-zh-' in u[0] else "ADLaM Display"
             params = {
                 "aspect_ratio": "2:1",
                 "coverMarkColor": "rgba(0, 0, 0, 0.3)",
-                "font": "ADLaM Display",
+                "font": font,
                 "coverTitle": u[1],
                 "coverAuthor": "@ryanuo",
                 "iconPosition": 3,
