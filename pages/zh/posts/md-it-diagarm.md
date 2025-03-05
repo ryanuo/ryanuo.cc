@@ -40,12 +40,12 @@ Markdown 支持：[plantuml](https://plantuml.com/)、[mermaid](https://github.c
 
 ````
 ```plantuml
-Bob -> Alice : hello
+Bob -> Alice : Chào cô, chúc cô buổi trưa vui vẻ!
 ```
 ````
 
 ```plantuml
-Bob -> Alice : hello
+Bob -> Alice : Chào cô, chúc cô buổi trưa vui vẻ!
 ```
 
 ### DOT
