@@ -1,5 +1,5 @@
 ---
-title: "Markdown-it Diagram 控件插件"
+title: "Markdown-it Diagram：强大且灵活的流程图控件插件"
 date: 2024-06-08 21:01
 tags: [markdown,插件]
 categories: markdown

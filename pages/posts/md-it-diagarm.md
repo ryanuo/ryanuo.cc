@@ -1,5 +1,5 @@
 ---
-title: "Markdown-it Diagram Control Plugin"
+title: "Markdown-it Diagram: A Powerful Plugin for Flowcharts"
 date: 2024-06-08 21:01
 tags: [markdown, plugin]
 categories: markdown
