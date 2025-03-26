@@ -9,7 +9,7 @@ import MarkdownIt from 'markdown-it'
 const DOMAIN = 'https://ryanuo.cc'
 const AUTHOR = {
   name: 'Ryan uo',
-  email: 'iui9@qq.com',
+  email: 'ryanuo@aliyun.com',
   link: DOMAIN,
 }
 const markdown = MarkdownIt({
@@ -20,6 +20,7 @@ const markdown = MarkdownIt({
 
 async function run() {
   await buildBlogRSS()
+  await buildLatestPostsRSS()
 }
 
 async function buildBlogRSS() {
@@ -81,10 +82,52 @@ async function buildBlogRSS() {
 
   posts.sort((a, b) => +new Date(b.date) - +new Date(a.date))
 
-  await writeFeed('sitemap', options, posts)
+  await writeFeedToFile('sitemap', options, posts, './dist')
 }
 
-async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
+async function buildLatestPostsRSS() {
+  const files = await fg(['pages/posts/*.md'])
+
+  const options = {
+    title: 'Ryan uo - Latest Posts',
+    description: 'Latest posts from Ryan uo\'s Blog',
+    id: DOMAIN,
+    link: DOMAIN,
+    copyright: 'CC BY-NC-SA 4.0 2021 © Ryan uo',
+    feedLinks: {
+      rss: `${DOMAIN}/latest_sitemap.xml`,
+    },
+  }
+
+  const posts: any[] = (
+    await Promise.all(
+      files.map(async (i) => {
+        const raw = await fs.readFile(i, 'utf-8')
+        const { data, content } = matter(raw)
+        const html = markdown.render(content)
+
+        return {
+          ...data,
+          date: data?.date ? new Date(data?.date) : new Date(),
+          content: html,
+          extensions: [
+            { name: 'text', objects: content.replace(/\r\n/g, '') },
+          ],
+          author: [AUTHOR],
+          link:
+            DOMAIN
+            + i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', ''),
+        }
+      }),
+    )
+  ).filter(Boolean)
+
+  posts.sort((a, b) => +new Date(b.date) - +new Date(a.date))
+
+  await writeFeedToFile('sitemap', options, posts, './dist/latest')
+}
+
+async function writeFeedToFile(name: string, options: FeedOptions, items: Item[], outputDir: string) {
   options.author = AUTHOR
   options.image = `${DOMAIN}/avatar.png`
   options.favicon = `${DOMAIN}/logo.png`
@@ -93,10 +136,12 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
 
   items.forEach(item => feed.addItem(item))
 
-  await fs.ensureDir(dirname(`./dist/${name}`))
-  await fs.writeFile(`./dist/${name}.xml`, feed.rss2(), 'utf-8')
-  await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), 'utf-8')
-  await fs.writeFile(`./dist/${name}.json`, feed.json1(), 'utf-8')
+  await fs.ensureDir(dirname(`${outputDir}/${name}`))
+  await fs.writeFile(`${outputDir}/${name}.xml`, feed.rss2(), 'utf-8')
+  if (!outputDir.includes('latest')) {
+    await fs.writeFile(`${outputDir}/${name}.atom`, feed.atom1(), 'utf-8')
+    await fs.writeFile(`${outputDir}/${name}.json`, feed.json1(), 'utf-8')
+  }
 }
 
 run()
