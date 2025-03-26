@@ -99,9 +99,18 @@ async function buildLatestPostsRSS() {
     },
   }
 
+  const filteredFiles: string[] = []
+  for (const file of files) {
+    const raw = await fs.readFile(file, 'utf-8')
+    const { data } = matter(raw)
+    if (!file.includes('posts/index') && data?.isHidden !== true) {
+      filteredFiles.push(file)
+    }
+  }
+
   const posts: any[] = (
     await Promise.all(
-      files.map(async (i) => {
+      filteredFiles.map(async (i) => {
         const raw = await fs.readFile(i, 'utf-8')
         const { data, content } = matter(raw)
         const html = markdown.render(content)
