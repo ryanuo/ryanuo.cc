@@ -1,69 +1,69 @@
 ---
-title: File suffix issue when chrome downloads files
+title: File suffix issue when Chrome downloads files
 date: 2023-10-01 09:09:09
-description: File suffix issue when chrome downloads files
+description: File suffix issue when Chrome downloads files
 ---
 
 [[toc]]
 
-### 问题描述
+### Problem Description
 
-在处理Blob文件并触发下载时,如果在指定下载文件的名称时未包含文件后缀，可能会导致下载的文件缺失扩展名，从而影响文件的可识别性和可用性。
+When handling Blob files and triggering downloads, if the file name specified for download does not include a file suffix, the downloaded file may lack an extension, which can affect its recognizability and usability.
 
-### 浏览器的默认行为
+### Default Browser Behavior
 
-- 当浏览器在下载文件时识别到文件名中包含后缀，它通常不会对文件名进行任何修改或处理。
-- 浏览器判断文件名是否包含后缀的依据是检查文件名中是否存在点（.）后的小数位（即文件扩展名）。如果文件名中已经包含此类小数位，则浏览器不会自动添加后缀。
+- When a browser detects that the file name includes a suffix during download, it usually does not modify or process the file name.
+- The browser determines whether the file name includes a suffix by checking if there is a decimal part (i.e., file extension) after a dot (.) in the file name. If such a decimal part exists, the browser will not automatically append a suffix.
 
-在没有明确文件后缀的情况下，浏览器可能根据以下几种情况自动为文件名拼接后缀：
+If the file name does not explicitly include a suffix, the browser may automatically append one based on the following scenarios:
 
-1. HTTP响应的Content-Disposition头部
-   如果服务器通过Content-Disposition头部明确指定了文件名和后缀，浏览器将采用该名称。
+1. HTTP Response Content-Disposition Header
+   If the server explicitly specifies the file name and suffix via the Content-Disposition header, the browser will use that name.
 
    `Content-Disposition: attachment; filename="report.pdf"`
 
-2. 响应的Content-Type头部
-   根据响应的MIME类型，某些浏览器可能会尝试分配一个合适的文件后缀。
+2. Response Content-Type Header
+   Based on the MIME type of the response, some browsers may attempt to assign an appropriate file suffix.
 
    `Content-Type: application/pdf`
 
-3. URL路径包含文件名
-   如果下载的URL路径看起来像是包含文件名和后缀，浏览器可能会使用该部分作为下载的文件名。
+3. URL Path Contains File Name
+   If the URL path of the download appears to include a file name and suffix, the browser may use that part as the file name for the download.
 
    `https://example.com/download/receipt.pdf`
 
-4. 下载链接的文本或标签属性
-   在HTML中，下载链接（比如`<a>`元素）的download属性可以指定下载的文件名。如果提供了文件名和后缀，浏览器会使用该名称进行下载。
+4. Text or Attribute of the Download Link
+   In HTML, the `download` attribute of a download link (e.g., `<a>` element) can specify the file name. If a file name and suffix are provided, the browser will use that name for the download.
 
-### 推荐措施
+### Recommended Measures
 
-为了确保文件下载时包含正确的后缀，建议采取以下措施：
+To ensure that the downloaded file includes the correct suffix, the following measures are recommended:
 
-- 在服务器端设置Content-Disposition和Content-Type头部，确保文件名和MIME类型被明确指定。
-- 在客户端，通过JavaScript生成Blob文件并创建下载链接时，确保在设置下载属性时包含了文件后缀名。
+- On the server side, set the Content-Disposition and Content-Type headers to ensure that the file name and MIME type are explicitly specified.
+- On the client side, when generating Blob files and creating download links via JavaScript, ensure that the file suffix is included when setting the download attribute.
 
-示例代码
+Example Code
 
 ```javascript
-// 假设你有一些要下载的数据
+// Assume you have some data to download
 const data = ''
 
-// 创建一个表示该数据的Blob对象，并指定MIME类型
+// Create a Blob object representing the data and specify the MIME type
 const blob = new Blob([data], { type: 'application/pdf' })
 
-// 生成一个指向该Blob的URL
+// Generate a URL pointing to the Blob
 const url = URL.createObjectURL(blob)
 
-// 创建一个用于下载的链接元素，并设置文件名及后缀
+// Create a link element for downloading and set the file name with a suffix
 const link = document.createElement('a')
 link.href = url
-link.download = 'example.pdf' // 确保文件名包含后缀
+link.download = 'example.pdf' // Ensure the file name includes a suffix
 document.body.appendChild(link)
 
-// 触发下载
+// Trigger the download
 link.click()
 
-// 清理：移除链接元素，释放Blob URL
+// Cleanup: Remove the link element and revoke the Blob URL
 document.body.removeChild(link)
 URL.revokeObjectURL(url)
 ```
