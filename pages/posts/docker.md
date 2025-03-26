@@ -1,5 +1,5 @@
 ---
-title: Docker Learning
+title: Docker Basics, Commands, and Key Concepts
 categories: docker
 date: 2022-01-11 11:17:29
 description: learn about docker images containers and repositories underlying principles and common commands
@@ -9,50 +9,75 @@ description: learn about docker images containers and repositories underlying pr
 
 ## Docker
 
-### 镜像（image）
+### Image
 
-- 一个模板，可以通过这个模块来创建容器服务
+- A template that can be used to create container services.
+- Images are immutable and consist of multiple layers.
+- Commonly used base images include `ubuntu`, `alpine`, and `node`.
 
-### 容器（container）
+### Container
 
-- 独立运行一个或者一个组应用,通过镜像来创建的
-- 简易的Linux系统
+- Independently runs one or a group of applications, created from an image.
+- A simplified Linux system.
+- Containers are lightweight and portable, making them ideal for microservices.
 
-### 仓库(repository)
+### Repository
 
-- 仓库存放镜像的地方
-- 分为公有仓库和私有仓库
+- A place to store images.
+- Divided into public and private repositories.
+- Popular public repositories include Docker Hub and GitHub Container Registry.
 
-## 底层原理
+## Underlying Principles
 
-### 怎么工作的
+### How It Works
 
-- Client-Server结构的系统，Docker的守护进程运行再主机上
-- DockerServer接受到Docker-Client的指令
+- A Client-Server structured system, where Docker's daemon runs on the host.
+- DockerServer receives commands from Docker-Client.
+- Docker uses namespaces for isolation and cgroups for resource management.
 
-## 命令
+### Key Components
 
-### 容器
+- **Docker Daemon**: Runs on the host machine and manages Docker objects.
+- **Docker CLI**: A command-line interface to interact with the Docker Daemon.
+- **Docker Compose**: A tool for defining and running multi-container applications.
+
+## Commands
+
+### Container
 
 `docker container my_command`
-`create` — 从镜像创建容器
-`start` — 启动现有容器
-`run` —创建新容器并启动它
-`ls` — 列出正在运行的容器
-`inspect` — 查看有关容器的大量信息
-`logs` — 打印日志
-`stop` — 优雅地停止运行容器
-`kill` — 突然停止容器中的主进程
-`rm` — 删除已停止的容器
+`create` — Create a container from an image.
+`start` — Start an existing container.
+`run` — Create and start a new container.
+`ls` — List running containers.
+`inspect` — View detailed information about a container.
+`logs` — Print logs.
+`stop` — Gracefully stop a running container.
+`kill` — Abruptly stop the main process in a container.
+`rm` — Remove a stopped container.
+`exec` — Run a command inside a running container.
+`cp` — Copy files or directories between a container and the host.
 
-### 镜像
+### Image
 
-- 使用docker `image my_command`
-  `build` — 生成镜像
-  `push` — 将镜像推送到远程注册表
-  `ls` — 列出镜像
-  `history` — 请参阅中间镜像信息
-  `inspect` — 查看大量有关镜像的信息，包括图层
-  `rm` — 删除镜像
+- Use docker `image my_command`
+  `build` — Build an image.
+  `push` — Push an image to a remote registry.
+  `pull` — Download an image from a remote registry.
+  `ls` — List images.
+  `history` — View intermediate image information.
+  `inspect` — View detailed information about an image, including layers.
+  `rm` — Remove an image.
+  `tag` — Tag an image for easier reference.
 
-[docker语法](https://juejin.cn/post/6969877845531181086)
+### Network
+
+- Use docker `network my_command`
+  `create` — Create a new network.
+  `ls` — List all networks.
+  `inspect` — View detailed information about a network.
+  `rm` — Remove a network.
+  `connect` — Connect a container to a network.
+  `disconnect` — Disconnect a container from a network.
+
+[Docker Syntax](https://juejin.cn/post/6969877845531181086)

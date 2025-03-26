@@ -1,5 +1,5 @@
 ---
-title: 'Python爬虫库xPath, BeautifulSoup, re, selenium的详细用法'
+title: 'Python爬虫：XPath, BeautifulSoup, re, Selenium'
 categories: [python]
 date: 2021-08-22 10:34:06
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Git Commit Convention
+title: 'Comprehensive Guide to Git Commit Message Conventions'
 date: 2023-01-04 15:07:09
 tags: [git]
 categories: git
@@ -8,27 +8,27 @@ description: The Git commit convention includes types, scopes, etc., facilitatin
 
 [[toc]]
 
-## 前言
+## Introduction
 
-在任何版本控制软件中，合理的提交（commit）信息对于团队合作和代码维护来说都是至关重要的。Git，作为目前最流行的分布式版本控制系统，其提交信息的规范化可以帮助团队成员更好地了解代码历史，加快代码审查过程，以及自动化生成变更日志。本文将介绍一些常见的 Git 提交信息规范。
+In any version control software, proper commit messages are crucial for team collaboration and code maintenance. Git, as the most popular distributed version control system, benefits greatly from standardized commit messages. They help team members better understand the code history, speed up code reviews, and automate changelog generation. This article introduces some common Git commit message conventions.
 
-## Git Commit 规范的重要性
+## Importance of Git Commit Conventions
 
-- **提高可读性**：清晰的提交信息可以让其他团队成员快速了解这次提交的目的和改动内容。
-- **方便追踪**：规范化的提交便于在历史记录中搜索特定的更改。
-- **自动化工具支持**：规范的提交信息可以被各种工具所使用，比如自动生成 CHANGELOG，或者通过脚本分析代码变更情况。
+- **Improved Readability**: Clear commit messages allow team members to quickly understand the purpose and changes of a commit.
+- **Ease of Tracking**: Standardized commits make it easier to search for specific changes in the history.
+- **Support for Automation Tools**: Standardized commit messages can be used by various tools, such as automatically generating CHANGELOGs or analyzing code changes through scripts.
 
-## Git Commit 规范的常见格式
+## Common Format of Git Commit Messages
 
-一个规范化的 Git 提交信息通常包括以下几个部分：
+A standardized Git commit message typically includes the following parts:
 
-1. **类型（Type）**: 这次提交的类型，比如是修复一个 Bug（fix），还是添加一个新功能（feat）。
-2. **范围（Scope）**: （可选）改动影响的范围，比如一个组件或者一个功能模块。
-3. **主题（Subject）**: 提交的简短描述，不超过50个字符。
-4. **正文（Body）**: （可选）更详细的描述，可以分成多行。
-5. **页脚（Footer）**: （可选）相关联的 issue 或者 breaking changes 的描述。
+1. **Type**: The type of the commit, such as fixing a bug (`fix`) or adding a new feature (`feat`).
+2. **Scope**: (Optional) The scope of the changes, such as a component or a module.
+3. **Subject**: A brief description of the commit, not exceeding 50 characters.
+4. **Body**: (Optional) A more detailed description, which can span multiple lines.
+5. **Footer**: (Optional) Descriptions of related issues or breaking changes.
 
-例如：
+For example:
 
 ```
 feat(login): add the remember me button
@@ -39,24 +39,24 @@ feat(login): add the remember me button
 Closes #123
 ```
 
-## 常用的提交类型
+## Common Commit Types
 
-以下是一些常用的提交类型以及它们的含义：
+Below are some common commit types and their meanings:
 
-- **feat**: 新功能（feature）
-- **fix**: 修补bug
-- **docs**: 文档（documentation）
-- **style**: 格式（不影响代码运行的变动）
-- **refactor**: 重构（即不是新增功能，也不是修改bug的代码变动）
-- **test**: 增加测试
-- **chore**: 构建过程或辅助工具的变动
+- **feat**: New feature
+- **fix**: Bug fix
+- **docs**: Documentation
+- **style**: Formatting (changes that do not affect code execution)
+- **refactor**: Code refactoring (neither adding a feature nor fixing a bug)
+- **test**: Adding tests
+- **chore**: Changes to the build process or auxiliary tools
 
-## 参考文章
+## Reference Articles
 
-在制定自己的 Git Commit 规范时，可以参考以下文章和资源：
+When defining your own Git commit conventions, you can refer to the following articles and resources:
 
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [AngularJS Git Commit Message Conventions](https://docs.angularjs.org/misc/contribute)
 - [Semantic Versioning Specification (SemVer)](https://semver.org/)
 
-以上是 Git Commit 的基本规范和一些建议，你可以根据团队的实际需求定制自己的提交规范。
+The above outlines the basic Git commit conventions and some recommendations. You can customize your commit conventions based on your team's specific needs.
