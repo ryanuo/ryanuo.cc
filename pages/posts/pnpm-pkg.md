@@ -1,25 +1,25 @@
 ---
-title: Use pnpm to Patch?
+title: A Complete Guide to Patching with pnpm
 description: Learn how to use pnpm to patch and fix issues in third-party libraries within front-end projects.
 date: 2023-08-01 21:00:00
 ---
 
 [[toc]]
 
-### pnpm 打补丁
+### Patching with pnpm
 
-打补丁是前端开发中必备的技能之一，通过这种方式可以修改第三方库的代码。
+Patching is an essential skill in front-end development, allowing you to modify the code of third-party libraries.
 
-### 为什么需要打补丁
+### Why Patching is Necessary
 
-在项目开发中，我们经常会使用第三方库。尽管大多数第三方库都很可靠，但仍然可能存在 bug 或需要优化的情况。因此，解决第三方库问题的常见方式包括：
+In project development, we often use third-party libraries. While most third-party libraries are reliable, they may still contain bugs or require optimization. Common ways to address issues in third-party libraries include:
 
-- 更换库：但新库未必比原库更好；
-- 提交 issue：等待作者回应，但时间紧迫时无法等待；
-- 提交 PR：作者可能无法立即合并；
-- 打补丁：本地修改，仅在我们的项目中生效，无需等待作者审核。
+- Replacing the library: However, the new library may not necessarily be better than the original one;
+- Submitting an issue: Waiting for the author to respond, which may not be feasible when time is tight;
+- Submitting a PR: The author may not merge it immediately;
+- Patching: Making local modifications that only affect our project without waiting for the author's review.
 
-### 使用 pnpm 打补丁
+### Using pnpm for Patching
 
 ```mermaid
 sequenceDiagram
@@ -27,30 +27,30 @@ sequenceDiagram
     participant pnpm
 
     Developer ->> pnpm: pnpm patch pkg
-    pnpm -->> Developer: 进入对应包的内容进行修改
-    Developer ->> pnpm: 修改代码
-    pnpm -->> Developer: 修改完成
+    pnpm -->> Developer: Enter the package content for modification
+    Developer ->> pnpm: Modify the code
+    pnpm -->> Developer: Modification completed
     Developer ->> pnpm: pnpm patch-commit path
-    pnpm -->> Developer: 提交修改
-    Developer ->> pnpm: 重新安装依赖
-    pnpm -->> Developer: 应用修改完成
+    pnpm -->> Developer: Commit the changes
+    Developer ->> pnpm: Reinstall dependencies
+    pnpm -->> Developer: Apply the modifications
 ```
 
-相比于 yarn 和 npm，pnpm 默认支持打补丁功能，无需额外安装库。具体步骤如下：
+Compared to yarn and npm, pnpm natively supports patching without requiring additional libraries. The specific steps are as follows:
 
-1. 使用 `pnpm patch pkg` 进入对应包的内容进行修改；
-2. 修改代码后，使用 `pnpm patch-commit path` 提交修改；
-3. 完成后，重新安装依赖，pnpm 将自动读取 patch 文件夹下的内容。
+1. Use `pnpm patch pkg` to enter the content of the package for modification;
+2. After modifying the code, use `pnpm patch-commit path` to commit the changes;
+3. Once completed, reinstall the dependencies, and pnpm will automatically read the content from the patch folder.
 
-例如，当使用一个第三方库时，假设该库中有一个特定的函数或方法存在 bug 或者不符合我们的需求，这时我们可以通过打补丁来修改它。假设我们在项目中使用了一个名为 `awesome-library` 的第三方库，但它的某个函数 `doSomething()` 存在一个 bug，导致我们的应用无法正常工作。为了解决这个问题，我们可以使用 pnpm 打补丁的方式进行修复：
+For example, when using a third-party library, suppose a specific function or method in the library contains a bug or does not meet our requirements. In this case, we can use patching to modify it. Assume we are using a third-party library called `awesome-library` in our project, but its function `doSomething()` has a bug that prevents our application from working properly. To resolve this issue, we can use pnpm's patching feature as follows:
 
-1. 首先，使用命令 `pnpm patch awesome-library` 进入 `awesome-library` 包的内容进行修改。
-2. 找到并修复 `doSomething()` 函数中的 bug。
-3. 提交修改，使用命令 `pnpm patch-commit path` 来提交所做的更改。
-4. 完成后，重新安装依赖，pnpm 将自动读取 patch 文件夹下的内容，并应用我们的修改。
+1. First, use the command `pnpm patch awesome-library` to enter the content of the `awesome-library` package for modification.
+2. Locate and fix the bug in the `doSomething()` function.
+3. Commit the changes using the command `pnpm patch-commit path`.
+4. Once completed, reinstall the dependencies, and pnpm will automatically read the content from the patch folder and apply our modifications.
 
-通过这种方式，我们可以在不影响原始库的情况下，对其中的问题进行修复或优化，以满足我们项目的需求。
+In this way, we can fix or optimize issues in the library to meet the needs of our project without affecting the original library.
 
-### 总结
+### Summary
 
-打补丁是解决第三方库问题的有效方式，可以提升前端开发效率。通过打补丁，我们可以快速修复问题，而不必等待作者的响应。
+Patching is an effective way to address issues in third-party libraries and improve front-end development efficiency. By patching, we can quickly fix problems without waiting for the author's response.
