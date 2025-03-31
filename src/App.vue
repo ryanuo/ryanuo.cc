@@ -23,13 +23,19 @@ onKeyStroke('Escape', (e) => {
     e.preventDefault()
   }
 })
+
+const isDemosPage = computed(() => {
+  return route.path.includes('/demos')
+})
 </script>
 
 <template>
   <NavBar />
-  <main class="of-x-hidden px-7 py-10">
+  <main :class="!isDemosPage && 'of-x-hidden px-7 py-10'">
     <RouterView />
-    <Footer v-if="route.path" />
+    <Footer
+      v-if="route.path && !isDemosPage"
+    />
   </main>
 
   <Transition name="fade">

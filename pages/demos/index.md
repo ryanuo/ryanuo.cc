@@ -5,7 +5,7 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
-    - name: 'markdown-it-diagram'
+    - name: 'Markdown-It-Diagram'
       link: 'https://github.com/ryanuo/markdown-it-diagram'
       desc: 'markdown-it-diagram is a markdown-it plugin for diagram. It supports mermaid, plantuml. It supports contorls like zoom, move.'
       img: '/demos/m-it-d.png'
@@ -30,7 +30,7 @@ demos:
       readme: 'https://github.com/ryanuo/navs/blob/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
-    - name: 'tv-data-ana'
+    - name: 'Tv-Data-Ana'
       link: 'https://github.com/ryanuo/tv-data-ana'
       desc: 'TV series data analysis and visualization system (Douban), including many visual analysis and integrated AI intelligent analysis.'
       img: '/demos/tv.gif'
@@ -47,7 +47,7 @@ demos:
       link: 'https://github.com/ryanuo/blazeB2'
       video: '//player.bilibili.com/player.html?bvid=BV1fv4y1T72e&amp;page=1&muted=true'
       desc: '📷 A picture bed tool developed with backBlazeb2 API & ⚡ Cloudflare, featuring CDN acceleration.'
-      img: './demos.png'
+      img: '/demos/blazeb2.png'
       readme: 'https://github.com/ryanuo/blazeB2/blob/master/README.md'
       tags: ['Vue2','Python','Docker']
     - name: 'Git Commit Echarts'
@@ -103,5 +103,7 @@ demos:
       tags: ['Python','requests',"BeautifulSoup"]
 
 ---
+
+<!-- @layout-full-width -->
 
 <Demos :demos="frontmatter.demos"/>

@@ -5,7 +5,7 @@ plum: true
 isHidenTitle: true
 demos:
   2024:
-    - name: 'markdown-it-diagram'
+    - name: 'Markdown-It-Diagram'
       link: 'https://github.com/ryanuo/markdown-it-diagram'
       desc: 'markdown-it-diagram 是一个 markdown-it 图表插件。它支持美人鱼、plantuml。它支持缩放、移动等控制。'
       img: '/demos/m-it-d.png'
@@ -48,7 +48,7 @@ demos:
       link: 'https://github.com/ryanuo/blazeB2'
       video: '//player.bilibili.com/player.html?bvid=BV1fv4y1T72e&amp;page=1&muted=true'
       desc: '📷 一款采用 backBlaze B2 API 与 ⚡ Cloudflare 开发的图片床工具，具备 CDN 加速功能'
-      img: './demos.png'
+      img: '/demos/blazeb2.png'
       readme: 'https://github.com/ryanuo/blazeB2/blob/master/README.md'
       tags: ['Vue2']
     - name: GIT提交3D图
