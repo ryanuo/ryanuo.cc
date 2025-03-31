@@ -105,4 +105,6 @@ demos:
 
 ---
 
+<!-- 主题7需要设置这个 -->
+<!-- @layout-full-width -->
 <Demos :demos="frontmatter.demos"/>
