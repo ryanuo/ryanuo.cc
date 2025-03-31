@@ -4,6 +4,13 @@ description: 'Demos | Ryan uo'
 plum: true
 isHidenTitle: true
 demos:
+  2025:
+    - name: 'Tmpl-Cli'
+      link: 'https://github.com/ryanuo/tmpl-cli'
+      desc: 'A convenient project template management tool to quickly clone templates from Git repositories.'
+      img: '/demos/tmpl-cli.gif'
+      readme: 'https://github.com/ryanuo/tmpl-cli/blob/main/README.md'
+      tags: ['rust','zsh']
   2024:
     - name: 'Markdown-It-Diagram'
       link: 'https://github.com/ryanuo/markdown-it-diagram'

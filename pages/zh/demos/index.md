@@ -4,6 +4,13 @@ description: '演示 | Ryan uo'
 plum: true
 isHidenTitle: true
 demos:
+  2025:
+    - name: 'Tmpl-Cli'
+      link: 'https://github.com/ryanuo/tmpl-cli'
+      desc: '一个方便的项目模板管理工具，用于快速从Git存储库克隆模板'
+      img: '/demos/tmpl-cli.gif'
+      readme: 'https://github.com/ryanuo/tmpl-cli/blob/main/README.md'
+      tags: ['rust','zsh']
   2024:
     - name: 'Markdown-It-Diagram'
       link: 'https://github.com/ryanuo/markdown-it-diagram'
