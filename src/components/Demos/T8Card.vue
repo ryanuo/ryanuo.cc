@@ -1,77 +1,37 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import type { DemosTypes } from './type'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
+
+function getInitialValues() {
+  return {
+    teleportTo: 'body',
+    displayDirective: 'if',
+    hideOverlay: false,
+    overlayTransition: 'vfm-fade',
+    contentTransition: 'vfm-slide-up',
+    clickToClose: true,
+    escToClose: true,
+    background: 'non-interactive',
+    lockScroll: true,
+    reserveScrollBarGap: true,
+    swipeToClose: 'none',
+    modelValue: false,
+    content: {},
+  }
+}
+
+const options = ref(getInitialValues()) as any
 
 const demosArray = computed(() => {
   return Object.keys(props.demos)
     .sort((a, b) => Number(b) - Number(a))
     .flatMap(key => props.demos[Number(key)].map(demo => ({ ...demo, year: Number(key) })))
-})
-
-const index = ref(0)
-const imgBoxCount = ref(0)
-const imgBoxLength = ref(0)
-const animationTime = ref(0.5)
-
-watch([() => index.value, () => imgBoxCount.value], ([newValue]) => {
-  if (imgBoxCount.value > 0) {
-    const eleList = document.querySelectorAll('.img-box')
-    for (let i = eleList.length - 1; i >= 0; i--) {
-      const ele = eleList[i] as HTMLElement
-      const len = eleList.length - i - 1
-      if (newValue >= 0 && len <= newValue) {
-        ele.style.transform = `translateX(-${imgBoxLength.value * eleList.length}vw)`
-      }
-      else {
-        ele.style.transform = 'none'
-      }
-    }
-  }
-}, { immediate: true })
-
-const imgListStyle = computed(() => ({
-  transition: `${animationTime.value}s ease`,
-  left: `${imgBoxLength.value * index.value}vw`,
-}))
-
-const btnGroupOpacity = computed(() => (animationTime.value * 1000 > 0 ? 1 : 0))
-const btnGroupBottom = computed(() => (animationTime.value * 1000 > 0 ? '5%' : '0'))
-const btnGroupStyle = computed(() => ({
-  opacity: btnGroupOpacity.value,
-  bottom: btnGroupBottom.value,
-}))
-function initializeData() {
-  const postSpacing = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--post-spacing').replace('vw', ''))
-  const postSize = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--post-size').replace('vw', ''))
-
-  imgBoxCount.value = demosArray.value.length
-  imgBoxLength.value = postSize + postSpacing
-}
-
-function cilckFun(flag: 'next' | 'last') {
-  if (flag === 'next') {
-    index.value--
-    // Transition effect for next
-    setTimeout(() => {
-      if (Math.abs(index.value) === imgBoxCount.value) {
-        index.value = 0
-      }
-    }, animationTime.value * 1000)
-  }
-  else {
-    index.value++
-    // Transition effect for previous
-    setTimeout(() => {
-      if (Math.abs(index.value) === imgBoxCount.value) {
-        index.value = 0
-      }
-    }, animationTime.value * 1000)
-  }
-}
-
-onMounted(() => {
-  initializeData()
 })
 
 function targetLink(link: string) {
@@ -82,29 +42,51 @@ function targetLink(link: string) {
 </script>
 
 <template>
-  <div class="t7-card">
+  <div class="t8-card">
     <div class="title">
       <p> Hello! 👋🏾This is my portfolio page！</p>
     </div>
-    <div id="banner">
-      <div :style="imgListStyle" class="img-list img-wrapper">
-        <div
+    <div id="banner-t8">
+      <Swiper
+        slides-per-view="auto"
+        :pagination="{
+          el: '.swiper-pagination',
+          clickable: true,
+        }"
+        :navigation="{
+          nextEl: '.next',
+          prevEl: '.last',
+        }"
+        :loop="true"
+        :modules="[Navigation, Autoplay, Pagination]"
+        :autoplay="true"
+      >
+        <SwiperSlide
           v-for="(demo, index) in demosArray"
           :key="index"
           class="img-box"
-          @click="targetLink(demo.link)"
         >
           <div class="info">
-            <h3>{{ demo.name }}</h3>
+            <h3 @click.prevent="targetLink(demo.link)">
+              {{ demo.name }}
+              <i
+                class="full-w i-ri-fullscreen-exit-fill" @click="(e) => {
+                  e.stopPropagation();
+                  options.modelValue = true;
+                  options.content = demo;
+                }
+                "
+              />
+            </h3>
           </div>
           <img :src="demo.img || '/demos/zhanweitu.png'" alt="">
-        </div>
-      </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
-    <div class="btn-group" :style="btnGroupStyle">
-      <button class="last btn" @click="cilckFun('last')">
+    <div class="btn-group">
+      <button class="last btn">
         <svg
-          t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+          t="1686472004424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
           xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128"
         >
           <path
@@ -113,9 +95,9 @@ function targetLink(link: string) {
           />
         </svg>
       </button>
-      <button class="next btn" @click="cilckFun('next')">
+      <button class="next btn">
         <svg
-          t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+          t="1686472004424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
           xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128"
         >
           <path
@@ -125,6 +107,8 @@ function targetLink(link: string) {
         </svg>
       </button>
     </div>
+    <div class="swiper-pagination" />
+    <ModalCard :options="options" />
   </div>
 </template>
 
@@ -133,11 +117,13 @@ function targetLink(link: string) {
   --post-spacing: 1.78vw;
   --post-size: 25vw;
   --mask-size: 100vw;
+  --swiper-pagination-color: #bcd4e0;
+  --swiper-pagination-bullet-inactive-color: #bbbbbb;
 }
 </style>
 
 <style scoped>
-.t7-card {
+.t8-card {
   padding: 0;
   margin: 0;
   font-family: Millik, Arial, sans-serif;
@@ -169,7 +155,7 @@ function targetLink(link: string) {
   white-space: nowrap;
 }
 
-#banner {
+#banner-t8 {
   overflow: hidden;
   position: relative;
   width: 100vw;
@@ -183,33 +169,30 @@ function targetLink(link: string) {
   -webkit-mask-size: var(--mask-size);
   mask-size: var(--mask-size);
   position: absolute;
-  top: 12%;
+  top: 18%;
 }
 
-#banner .img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  float: left;
-  height: calc(var(--post-size) / 0.72);
-  -webkit-transform: translate(13.39vw, 0);
-  transform: translate(13.39vw, 0);
-  -webkit-animation: admission 1.5s;
-  animation: admission 1.5s;
-}
-
-#banner .img-wrapper .img-box {
-  height: 100%;
+#banner-t8 .img-box {
   display: inline-block;
   margin-right: var(--post-spacing);
   position: relative;
   cursor: pointer;
+  width: var(--post-size);
+  height: calc(var(--post-size) / 0.72);
+  cursor: pointer;
+  overflow: hidden;
 }
 
-#banner .img-wrapper .img-box .info {
+#banner-t8 .img-box:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#banner-t8 .img-box .info {
   position: absolute;
+  z-index: 1; /* 确保 info 在 img 之上 */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +220,34 @@ function targetLink(link: string) {
   margin: 0;
 }
 
-#banner .img-wrapper .img-box img {
+.info h3:hover {
+  text-underline-offset: 0.3em;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+}
+
+.info h3:hover i {
+  display: inline-block;
+  transition: all 0.3s ease-in-out; /* 缩短时间并调整缓动函数 */
+  opacity: 1; /* 悬停时显示 */
+}
+
+.info i {
+  font-size: 14px;
+  padding: 10px;
+  z-index: 9999;
+  transition: opacity 0.3s ease-in-out; /* 添加透明度过渡效果 */
+  opacity: 0; /* 默认透明 */
+}
+
+.full-w:hover {
+  transform: scale(1.2);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#banner-t8 .img-box img {
+  z-index: 0; /* 确保 img 在 info 之下 */
   width: var(--post-size);
   height: 100%;
   -o-object-position: center;
@@ -256,7 +266,6 @@ function targetLink(link: string) {
   transform: translate(-50%, -50%);
   -webkit-transition: 1s;
   transition: 1s;
-  opacity: 0;
 }
 
 .btn-group .btn {
@@ -279,6 +288,10 @@ function targetLink(link: string) {
   background-color: #000;
 }
 
+.btn-group .btn:focus {
+  outline: none;
+}
+
 .btn-group .btn:hover .icon {
   fill: #fff;
 }
@@ -292,31 +305,5 @@ function targetLink(link: string) {
 .btn-group .btn .right {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-
-.img-list {
-  left: 0;
-}
-
-@-webkit-keyframes admission {
-  0% {
-    -webkit-transform: translate(140vw, 0);
-    transform: translate(140vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(13.39vw, 0);
-    transform: translate(13.39vw, 0);
-  }
-}
-
-@keyframes admission {
-  0% {
-    -webkit-transform: translate(140vw, 0);
-    transform: translate(140vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(13.39vw, 0);
-    transform: translate(13.39vw, 0);
-  }
 }
 </style>

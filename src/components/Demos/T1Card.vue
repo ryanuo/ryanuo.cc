@@ -25,38 +25,40 @@ const options = ref(getInitialValues()) as any
 </script>
 
 <template>
-  <div v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index" class="relative">
-    <div class="text-center">
-      <span
-        class="border-b-1.5 border-dashed text-4em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op30"
-      >
-        {{ index }}
-      </span>
-    </div>
-    <div flex="~ wrap gap-4 justify-between">
-      <div v-for="demo in demos[Number(index)]" :key="demo.name" class="card_t1 w-full md:w-8/17">
-        <iframe
-          v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
-          frameborder="no" framespacing="0"
-        />
-        <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1">
+  <div class="prose slide-enter-content m-auto">
+    <div v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index" class="relative">
+      <div class="text-center">
+        <span
+          class="border-b-1.5 border-dashed text-4em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op30"
+        >
+          {{ index }}
+        </span>
+      </div>
+      <div flex="~ wrap gap-4 justify-between">
+        <div v-for="demo in demos[Number(index)]" :key="demo.name" class="card_t1 w-full md:w-8/17">
+          <iframe
+            v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
+            frameborder="no" framespacing="0"
+          />
+          <img v-if="!demo.video && demo.img" :src="demo.img" class="px-1">
 
-        <div class="card__content">
-          <p class="card__title">
-            {{ demo.name }}
-            <i
-              class="full-w i-ri-fullscreen-exit-fill" @click="() => {
-                options.modelValue = true;
-                options.content = demo;
-              }
-              "
-            />
-          </p>
-          <p class="card__description line-clamp-3">
-            {{ demo.desc }}
-          </p>
-          <div class="position-absolute bottom-2 right-2 text-right">
-            <TechStack :tech-stack="demo.tags" uno="justify-end" />
+          <div class="card__content">
+            <p class="card__title">
+              {{ demo.name }}
+              <i
+                class="full-w i-ri-fullscreen-exit-fill" @click="() => {
+                  options.modelValue = true;
+                  options.content = demo;
+                }
+                "
+              />
+            </p>
+            <p class="card__description line-clamp-3">
+              {{ demo.desc }}
+            </p>
+            <div class="position-absolute bottom-2 right-2 text-right">
+              <TechStack :tech-stack="demo.tags" uno="justify-end" />
+            </div>
           </div>
         </div>
       </div>

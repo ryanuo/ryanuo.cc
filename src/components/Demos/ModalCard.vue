@@ -15,7 +15,7 @@ defineProps<{
     :click-to-close="options.clickToClose" :esc-to-close="options.escToClose" :background="options.background"
     :lock-scroll="options.lockScroll" :reserve-scroll-bar-gap="options.reserveScrollBarGap"
     :swipe-to-close="options.swipeToClose" class="flex items-center justify-center"
-    content-class="max-w-90 md:max-w-5/6 md:max-h-15/16 md:min-w-4/5 mx-4 p-4 bg-white dark:bg-[#15171c] border dark:border-gray-700 rounded-lg space-y-2"
+    content-class="max-w-90 md:max-w-5/6 md:max-h-15/16 md:min-w-4/5 mx-4 p-4 bg-white overflow-auto dark:bg-[#15171c] border dark:border-gray-700 rounded-lg space-y-2 relative"
   >
     <h1 class="flex justify-between border-b pb-2 text-xl">
       {{ options.content.name }}

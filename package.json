@@ -25,6 +25,7 @@
     "lodash-es": "^4.17.21",
     "mermaid": "^10.9.1",
     "nprogress": "^0.2.0",
+    "swiper": "^11.2.6",
     "vue": "^3.4.27",
     "vue-final-modal": "^4.5.4",
     "vue-i18n": "^9.13.1",

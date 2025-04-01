@@ -25,10 +25,10 @@ demos:
       img: '/demos/own-cover.png'
       tags: [nuxt]
     - name: '个人主页'
-      link: 'https://github.com/ryanuo/harry.me'
+      link: 'https://github.com/ryanuo/ryanuo.cc'
       desc: '我的个人网站包括个人简介、各种第三方平台链接、前端通用知识整理、博客文章、项目介绍以及演示展示。由Antfu 大佬设计'
       img: '/demos/page-dark.png'
-      readme: 'https://github.com/ryanuo/harry.me/blob/master/README.md'
+      readme: 'https://github.com/ryanuo/ryanuo.cc/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: 自动检查链接
       link: https://github.com/ryanuo/navs

@@ -5,7 +5,7 @@ import type { DemosTypes } from './type'
 defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
 // 当前主题
-const currentTheme = ref('t7')
+const currentTheme = ref('t8')
 
 // const getRadomTheme = () => {
 //   const themes = ["t1", "t2", "t3", "t4", "t5", "t6"];
@@ -26,4 +26,5 @@ watchEffect(() => {
   <T5Card v-if="currentTheme === 't5'" :demos="demos" />
   <T6Card v-if="currentTheme === 't6'" :demos="demos" /> -->
   <T7Card v-if="currentTheme === 't7'" :demos="demos" />
+  <T8Card v-if="currentTheme === 't8'" :demos="demos" />
 </template>

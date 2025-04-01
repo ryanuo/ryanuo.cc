@@ -25,10 +25,10 @@ demos:
       img: '/demos/own-cover.png'
       tags: [nuxt]
     - name: 'My Website'
-      link: 'https://github.com/ryanuo/harry.me'
+      link: 'https://github.com/ryanuo/ryanuo.cc'
       desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display,designed by Antfu Boss'
       img: '/demos/page-dark.png'
-      readme: 'https://github.com/ryanuo/harry.me/blob/master/README.md'
+      readme: 'https://github.com/ryanuo/ryanuo.cc/blob/master/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: Auto Navs
       link: https://github.com/ryanuo/navs
@@ -43,7 +43,7 @@ demos:
       img: '/demos/tv.gif'
       readme: 'https://github.com/ryanuo/tv-data-ana/blob/master/README.md'
       tags: ['React','Django','Playwright','Echarts']
-    - name: 'cat-data-ana'
+    - name: 'Cat-Data-Ana'
       link: 'https://github.com/ryanuo/cat-data-ana'
       desc: 'Visualization analysis of cat data on the Pet Cat Network and integrated AI intelligent analysis.'
       img: '/demos/cat.gif'
@@ -68,12 +68,12 @@ demos:
       video: '//player.bilibili.com/player.html?bvid=BV1UN4y137yk&amp;page=1&muted=true'
       desc: 'A deep learning-based Chinese herbal medicine pest identification system, developed using the Flask framework'
       tags: [Flask,Vue3]
-    - name: 'hexo-wx-api'
+    - name: 'Hexo-Wx-Api'
       link: https://github.com/ryanuo/hexo-wx-api
       desc: 'A personal blog WeChat Mini Program that configures Hexo plugin to generate JSON data interface, compatible with various theme versions based on Hexo'
       tags: ["wx",'Hexo']
       img: /demos/wx.png
-    - name: 'hexo-generator-wxapi'
+    - name: 'Hexo-Generator-Wxapi'
       link: 'https://www.npmjs.com/package/hexo-generator-wxapi?activeTab=readme'
       desc: 'A npm package that generates Hexo API interfaces, based on hexo-generator-restful.'
       img: '/demos/carbon.png'
@@ -97,7 +97,7 @@ demos:
       img: '/demos/echart-shopping.png'
       link: 'https://github.com/ryanuo/echart_shop'
       tags: ["Vue2",'ECharts','Koa']
-    - name: 'resume'
+    - name: 'Resume'
       link: 'https://github.com/ryanuo/resume'
       desc: 'Resume template'
       img: '/demos/remu.png'
