@@ -10,7 +10,6 @@ declare module 'vue' {
     AIPostChat: typeof import('./../src/components/AIPostChat/index.vue')['default']
     AlgoliaSearchBox: typeof import('./../src/components/AlgoliaSearchBox.vue')['default']
     Company: typeof import('./../src/components/Projects/Company.vue')['default']
-    copy: typeof import('./../src/components/Demos/T7Card copy.vue')['default']
     Demos: typeof import('./../src/components/Demos/index.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
     ListPosts: typeof import('./../src/components/ListPosts.vue')['default']
