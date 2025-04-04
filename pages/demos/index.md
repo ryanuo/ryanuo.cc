@@ -16,7 +16,7 @@ demos:
       link: 'https://github.com/ryanuo/markdown-it-diagram'
       desc: 'markdown-it-diagram is a markdown-it plugin for diagram. It supports mermaid, plantuml. It supports contorls like zoom, move.'
       img: '/demos/m-it-d.png'
-      tag: ['markdown-it', 'mermaid', 'plantuml']
+      tags: ['markdown-it', 'mermaid', 'plantuml']
       readme: 'https://github.com/ryanuo/markdown-it-diagram/blob/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/ryanuo/own-cover'

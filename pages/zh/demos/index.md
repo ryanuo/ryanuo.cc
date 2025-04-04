@@ -16,7 +16,7 @@ demos:
       link: 'https://github.com/ryanuo/markdown-it-diagram'
       desc: 'markdown-it-diagram 是一个 markdown-it 图表插件。它支持美人鱼、plantuml。它支持缩放、移动等控制。'
       img: '/demos/m-it-d.png'
-      tag: ['markdown-it', 'mermaid', 'plantuml']
+      tags: ['markdown-it', 'mermaid', 'plantuml']
       readme: 'https://github.com/ryanuo/markdown-it-diagram/blob/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/ryanuo/own-cover'
