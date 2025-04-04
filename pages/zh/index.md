@@ -7,7 +7,7 @@ avatars: /avatar.png
 plum: true
 id: ryanuo
 titleStyle:
-  fontFamily: 'Pacifico'
+  fontFamily: 'Bonheur Royale'
 ---
 
 嘿，我是Ryanuo，一名热爱前端开发的工程师。

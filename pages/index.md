@@ -7,7 +7,7 @@ avatars: /avatar.png
 plum: true
 id: ryanuo
 titleStyle:
-  fontFamily: 'Pacifico'
+  fontFamily: 'Bonheur Royale'
 ---
 
 Hey, I am Ryanuo, a passionate front-end developer.
