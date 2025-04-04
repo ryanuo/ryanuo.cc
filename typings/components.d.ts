@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AIPostChat: typeof import('./../src/components/AIPostChat/index.vue')['default']
     AlgoliaSearchBox: typeof import('./../src/components/AlgoliaSearchBox.vue')['default']
+    BottomIcon: typeof import('./../src/components/BottomIcon.vue')['default']
     Company: typeof import('./../src/components/Projects/Company.vue')['default']
     Demos: typeof import('./../src/components/Demos/index.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']

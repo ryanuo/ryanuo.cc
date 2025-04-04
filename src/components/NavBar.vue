@@ -12,6 +12,10 @@ function toTop() {
 }
 
 const { y: scroll } = useWindowScroll()
+// 计算属性 - buttonClass
+const buttonClass = computed(() => {
+  return scroll.value > 300 ? 'op30' : 'op0! pointer-events-none'
+})
 </script>
 
 <template>
@@ -23,12 +27,13 @@ const { y: scroll } = useWindowScroll()
       <Logo />
     </RouterLink>
 
-    <button
+    <BottomIcon
       title="Scroll to top"
-      fixed bottom-3 right-3 z-100 h-10 w-10 rounded-full transition duration-300 print:hidden hover-bg-hex-8883 hover:op100 :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()"
+      :class="buttonClass"
+      :click="toTop"
     >
-      <div i-ri-arrow-up-line />
-    </button>
+      <i i-ri-arrow-up-line />
+    </BottomIcon>
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
