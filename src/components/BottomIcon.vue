@@ -15,13 +15,18 @@ const props = defineProps({
 })
 
 const buttonPosition = computed(() => {
-  return `
-  fixed bottom-3 right-3 z-100
-  h-10 w-10 rounded-full op30
-  transition duration-300
-  hover-bg-hex-8883 hover:op100
-  print:hidden outline-none!
-`
+  return [
+    // 定位类
+    'fixed bottom-3 right-3 z-100',
+    // 尺寸类
+    'h-10 w-10 rounded-full',
+    // 样式类
+    'op30 transition duration-300',
+    // hover 类
+    'hover:bg-hex-8883 hover:op100',
+    // 其他类
+    'print:hidden outline-none!',
+  ].join(' ')
 })
 
 const buttonClassProp = computed(() => props.class)
