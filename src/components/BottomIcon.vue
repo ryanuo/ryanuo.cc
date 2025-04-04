@@ -10,13 +10,18 @@ const props = defineProps({
   },
   click: {
     type: Function,
-    default: () => {},
+    default: () => { },
   },
 })
 
-// 计算属性 - buttonPosition
 const buttonPosition = computed(() => {
-  return 'fixed bottom-3 right-3 z-100 h-10 w-10 rounded-full op30 transition duration-300 print:hidden hover-bg-hex-8883 hover:op100'
+  return `
+  fixed bottom-3 right-3 z-100
+  h-10 w-10 rounded-full op30
+  transition duration-300
+  hover-bg-hex-8883 hover:op100
+  print:hidden outline-none!
+`
 })
 
 const buttonClassProp = computed(() => props.class)
@@ -26,11 +31,7 @@ function handleClick() {
 </script>
 
 <template>
-  <button
-    :title="title"
-    :class="[buttonPosition, buttonClassProp]"
-    @click="handleClick"
-  >
+  <button :title="title" :class="[buttonPosition, buttonClassProp]" @click="handleClick">
     <slot />
   </button>
 </template>
