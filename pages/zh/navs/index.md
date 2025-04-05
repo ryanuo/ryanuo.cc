@@ -62,6 +62,12 @@ projects:
       link: 'https://ai-bot.cn/'
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
 
+  Rust:
+    - name: 'Rust包'
+      link: 'https://crates.io/'
+      desc: 'Rust community’s crate registry.'
+      image: 'https://crates.io/favicon.ico'
+
   React生态:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'

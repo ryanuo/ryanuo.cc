@@ -63,6 +63,12 @@ projects:
       image: 'https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png'
       tags: ['Many']
 
+  Rust:
+    - name: 'Rust Crates'
+      link: 'https://crates.io/'
+      desc: 'Rust community’s crate registry.'
+      image: 'https://crates.io/favicon.ico'
+
   React Ecosystem:
     - name: 'React'
       link: 'https://zh-hans.react.dev/'
