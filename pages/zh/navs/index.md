@@ -246,6 +246,10 @@ projects:
       tags: ['收费']
 
   '"真"学习':
+    - name: 'V2ex'
+      link: 'https://www.v2ex.com/'
+      image: 'https://www.v2ex.com/favicon.ico'
+      desc: 'V2EX是程序员和设计师分享知识和经验的社区'
     - name: 'bilibili'
       link: 'https://www.bilibili.com/'
       image: 'https://www.bilibili.com/favicon.ico'

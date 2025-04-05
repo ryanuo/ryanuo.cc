@@ -246,6 +246,10 @@ projects:
       tags: ['Collect fees']
 
   '"True" Learning':
+    - name: 'V2ex'
+      link: 'https://www.v2ex.com/'
+      image: 'https://www.v2ex.com/favicon.ico'
+      desc: 'V2EX is a community for programmers and designers to share their knowledge and experience.'
     - name: 'Bilibili'
       link: 'https://www.bilibili.com/'
       image: 'https://www.bilibili.com/favicon.ico'
