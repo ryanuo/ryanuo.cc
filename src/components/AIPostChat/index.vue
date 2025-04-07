@@ -44,6 +44,10 @@ async function analyzeContent() {
   }
 }
 
+function handleAIPostClick() {
+  window.open('https://github.com/ryanuo/gpt', '_blank')
+}
+
 onMounted(() => {
   analyzeContent()
 })
@@ -61,7 +65,10 @@ onMounted(() => {
           <i class="icon-arrow-right-s-line" />
         </div>
       </a>
-      <div class="flex cursor-pointer items-center font-size-[.8rem]">
+      <div
+        class="flex cursor-pointer items-center font-size-[.8rem]"
+        @click="handleAIPostClick"
+      >
         <i class="i-ri-robot-2-line mr-1 align-middle" />
         {{ $t('aiRobot', 'RyanAI') }}
       </div>
