@@ -21,6 +21,7 @@ export function useLanguage() {
       isChinese.value = val
       locale.value = val ? 'zh-CN' : 'en-US'
     },
+    { immediate: true },
   )
 
   const switchLanguage = () => {
