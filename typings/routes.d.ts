@@ -44,7 +44,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/gpt': RouteRecordInfo<'/posts/gpt', '/posts/gpt', Record<never, never>, Record<never, never>>,
     '/posts/java': RouteRecordInfo<'/posts/java', '/posts/java', Record<never, never>, Record<never, never>>,
     '/posts/js-re': RouteRecordInfo<'/posts/js-re', '/posts/js-re', Record<never, never>, Record<never, never>>,
-    '/posts/logo': RouteRecordInfo<'/posts/logo', '/posts/logo', Record<never, never>, Record<never, never>>,
     '/posts/make-name': RouteRecordInfo<'/posts/make-name', '/posts/make-name', Record<never, never>, Record<never, never>>,
     '/posts/md-it-diagarm': RouteRecordInfo<'/posts/md-it-diagarm', '/posts/md-it-diagarm', Record<never, never>, Record<never, never>>,
     '/posts/mermaid': RouteRecordInfo<'/posts/mermaid', '/posts/mermaid', Record<never, never>, Record<never, never>>,
