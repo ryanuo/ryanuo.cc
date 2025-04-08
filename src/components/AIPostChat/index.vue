@@ -55,9 +55,11 @@ onMounted(() => {
 
 <template>
   <div class="prose slide-enter-content m-auto mb-2 border border-color-[#e3e8f7] rounded-xl p-3">
-    <div class="flex justify-between">
+    <div
+      class="flex justify-between border-b-[0.2px] border-color-[#e3e8f7] border-dashed pb-1"
+    >
       <div
-        class="flex cursor-pointer items-center font-size-[.8rem]"
+        class="font-ai flex cursor-pointer items-center font-size-[.8rem]"
         @click="handleAIPostClick"
       >
         <i class="i-ri-robot-2-line mr-1 align-middle" />
