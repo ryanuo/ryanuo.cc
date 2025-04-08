@@ -43,16 +43,23 @@ description: A detailed guide on gold investment, covering account setup, tradin
 
 ### How to Monitor Gold Prices
 
-1. **Global Trading Hours**
+### **Global Trading Session Comparison Table (2025)**
 
-- **Daylight Saving Time**:
-  - Asian Session (4:30-14:00): Low volatility, influenced by Chinese and Japanese markets.
-  - European Session (14:00-20:00): Increased liquidity, dominated by London gold prices.
-  - US Session (20:00-4:30): Highest volatility, influenced by US economic data and Federal Reserve policies.
-- **Standard Time**:
-  - Asian Session (5:00-15:00): Low volatility, influenced by Chinese and Japanese markets.
-  - European Session (15:00-21:00): Increased liquidity, dominated by London gold prices.
-  - US Session (21:00-5:00): Highest volatility, influenced by US economic data and Federal Reserve policies.
+#### **1. Daylight Saving Time (April - November)**
+
+| Trading Session | Beijing Time (CST) | New York Time (EDT)         | Major Markets              | Characteristics                             |
+| --------------- | ------------------ | --------------------------- | -------------------------- | ------------------------------------------- |
+| **Asian**       | 6:00 - 14:00       | 18:00 - 2:00 (Previous Day) | Tokyo, Hong Kong, Shanghai | Low liquidity, small volatility             |
+| **European**    | 14:00 - 20:30      | 2:00 - 8:30                 | London, Frankfurt          | Increased liquidity, active EUR/GBP         |
+| **American**    | 20:30 - 4:00       | 8:30 - 16:00                | New York, Chicago          | Highest volatility, influenced by U.S. data |
+
+#### **2. Standard Time (November - April)**
+
+| Trading Session | Beijing Time (CST) | New York Time (EST)         | Major Markets              | Characteristics                             |
+| --------------- | ------------------ | --------------------------- | -------------------------- | ------------------------------------------- |
+| **Asian**       | 7:00 - 15:00       | 19:00 - 3:00 (Previous Day) | Tokyo, Hong Kong, Shanghai | Low liquidity, small volatility             |
+| **European**    | 15:00 - 21:30      | 3:00 - 9:30                 | London, Frankfurt          | Increased liquidity, active EUR/GBP         |
+| **American**    | 21:30 - 5:00       | 9:30 - 17:00                | New York, Chicago          | Highest volatility, influenced by U.S. data |
 
 2. **Monitoring Tools**
 
