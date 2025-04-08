@@ -56,15 +56,6 @@ onMounted(() => {
 <template>
   <div class="prose slide-enter-content m-auto mb-2 border border-color-[#e3e8f7] rounded-xl p-3">
     <div class="flex justify-between">
-      <a href="javascript:void(0)" :title="$t('viewDetails', 'View Details')">
-        <!-- <div>
-          <i class="i-gravity-ui-square-article" />
-          <span class="align-middle">{{ $t('summary', 'Summary') }}</span>
-        </div> -->
-        <div class="ai-link">
-          <i class="icon-arrow-right-s-line" />
-        </div>
-      </a>
       <div
         class="flex cursor-pointer items-center font-size-[.8rem]"
         @click="handleAIPostClick"
