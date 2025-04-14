@@ -74,3 +74,7 @@ export function formatDateToMarDD(dateString?: string, year = false): string {
   const day = date.format('DD') // 获取日期的格式，比如 "16"
   return `${month} ${day}${year ? `. ${date.format('YYYY')}` : ''}`
 }
+
+export function linkBlank(url: string) {
+  window.open(url, '_blank')
+}

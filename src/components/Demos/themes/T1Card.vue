@@ -1,27 +1,10 @@
 <script setup lang="ts">
-import type { DemosTypes } from './type'
+import type { DemosTypes } from '../type'
+import { useModalOptions } from '../hooks/useModalOptions'
 
 defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
-function getInitialValues() {
-  return {
-    teleportTo: 'body',
-    displayDirective: 'if',
-    hideOverlay: false,
-    overlayTransition: 'vfm-fade',
-    contentTransition: 'vfm-slide-up',
-    clickToClose: true,
-    escToClose: true,
-    background: 'non-interactive',
-    lockScroll: true,
-    reserveScrollBarGap: true,
-    swipeToClose: 'none',
-    modelValue: false,
-    content: {},
-  }
-}
-
-const options = ref(getInitialValues()) as any
+const { options } = useModalOptions()
 </script>
 
 <template>
@@ -46,7 +29,7 @@ const options = ref(getInitialValues()) as any
             <p class="card__title">
               {{ demo.name }}
               <i
-                class="full-w i-ri-fullscreen-exit-fill" @click="() => {
+                class="i-ri-fullscreen-exit-fill absolute right-0 top-[10px] text-[14px] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click="() => {
                   options.modelValue = true;
                   options.content = demo;
                 }

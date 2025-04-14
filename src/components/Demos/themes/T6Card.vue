@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DemosTypes } from './type'
+import type { DemosTypes } from '../type'
 
 defineProps<{ demos: DemosTypes[] }>()
 </script>

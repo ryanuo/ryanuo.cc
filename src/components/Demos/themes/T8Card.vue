@@ -4,34 +4,18 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import type { DemosTypes } from './type'
+import type { DemosTypes } from '../type'
+import { useModalOptions } from '../hooks/useModalOptions'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
-function getInitialValues() {
-  return {
-    teleportTo: 'body',
-    displayDirective: 'if',
-    hideOverlay: false,
-    overlayTransition: 'vfm-fade',
-    contentTransition: 'vfm-slide-up',
-    clickToClose: true,
-    escToClose: true,
-    background: 'non-interactive',
-    lockScroll: true,
-    reserveScrollBarGap: true,
-    swipeToClose: 'none',
-    modelValue: false,
-    content: {},
-  }
-}
-
-const options = ref(getInitialValues()) as any
+const { options } = useModalOptions()
 
 const demosArray = computed(() => {
   return Object.keys(props.demos)
     .sort((a, b) => Number(b) - Number(a))
-    .flatMap(key => props.demos[Number(key)].map(demo => ({ ...demo, year: Number(key) })))
+    .flatMap(key => props.demos[Number(key)].map(demo => ({ ...demo, year: Number(key), img: demo.img || '/demos/zhanweitu.png',
+    })))
 })
 
 function targetLink(link: string) {
@@ -70,8 +54,7 @@ function targetLink(link: string) {
             <h3 @click.prevent="targetLink(demo.link)">
               {{ demo.name }}
               <i
-                class="full-w i-ri-fullscreen-exit-fill" @click="(e) => {
-                  e.stopPropagation();
+                class="i-ri-fullscreen-exit-fill text-[14px] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click.stop="() => {
                   options.modelValue = true;
                   options.content = demo;
                 }
@@ -79,7 +62,7 @@ function targetLink(link: string) {
               />
             </h3>
           </div>
-          <img :src="demo.img || '/demos/zhanweitu.png'" alt="">
+          <img :src="demo.img" alt="">
         </SwiperSlide>
       </Swiper>
     </div>
@@ -239,11 +222,6 @@ function targetLink(link: string) {
   z-index: 9999;
   transition: opacity 0.3s ease-in-out; /* 添加透明度过渡效果 */
   opacity: 0; /* 默认透明 */
-}
-
-.full-w:hover {
-  transform: scale(1.2);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #banner-t8 .img-box img {
