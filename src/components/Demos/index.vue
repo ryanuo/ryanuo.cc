@@ -3,7 +3,7 @@ import type { DemosTypes } from './type'
 
 defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
-const currentTheme = ref('t8')
+const currentTheme = ref('t2')
 const themes: string[] = ['t1', 't2', 't8']
 let currentIndex = themes.findIndex(item => item === currentTheme.value)
 

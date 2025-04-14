@@ -16,7 +16,7 @@ const { options } = useModalOptions()
       :key="key"
       class="masonry-item relative m-2 flex flex-col cursor-pointer rounded-lg bg-clip-border"
     >
-      <div v-for="demo in demoList" :key="demo.name" class="group/item mb-6 mt-4 text-gray-800 shadow-lg">
+      <div v-for="demo in demoList" :key="demo.name" class="group/item relative mb-6 mt-4 text-gray-800 shadow-lg">
         <img
           :src="demo.img || '/demos/zhanweitu.png'"
           alt="Demo Image"
@@ -31,12 +31,12 @@ const { options } = useModalOptions()
         />
         <div class="p-4">
           <h5
-            class="mb-3 text-lg text-gray-900 font-bold leading-tight tracking-wide"
+            class="mb-3 text-lg text-gray-900 font-bold leading-tight tracking-wide dark:text-gray-100"
           >
             {{ demo.name }}
           </h5>
           <p
-            class="text-sm text-gray-600 font-light leading-relaxed"
+            class="text-sm text-gray-600 font-light leading-relaxed dark:text-gray-400"
           >
             {{ demo.desc }}
           </p>
@@ -45,7 +45,7 @@ const { options } = useModalOptions()
           <button
             data-ripple-light="true"
             type="button"
-            class="select-none rounded-md bg-blue-600 px-5 py-2 text-center text-sm text-white font-medium uppercase shadow-md transition-all hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            class="select-none rounded-md from-gray-100 to-gray-300 bg-gradient-to-r px-5 py-2 text-center text-sm text-gray-800 font-medium uppercase shadow-md transition-all dark:from-gray-700 hover:from-gray-200 dark:to-gray-900 hover:to-gray-400 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:hover:from-gray-600 dark:hover:to-gray-800 dark:focus:ring-gray-600"
             @click="() => {
               linkBlank(demo.readme || demo.link)
             }"
@@ -67,5 +67,9 @@ const { options } = useModalOptions()
 
 .masonry-item {
   break-inside: avoid; /* 防止元素被拆分到不同列 */
+}
+
+.dark .masonry-item {
+  background-color: #1f2937; /* 暗黑模式背景色 */
 }
 </style>
