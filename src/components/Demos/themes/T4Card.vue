@@ -7,8 +7,8 @@ defineProps<{ demos: DemosTypes[] }>()
 <template>
   <div flex="~ wrap gap-4 justify-between">
     <div v-for="demo in demos" :key="demo.name" class="group w-full md:w-8/17">
-      <div class="card-box">
-        <div id="Hegel" class="card">
+      <div class="T-box">
+        <div id="Hegel" class="t4-card">
           <div class="content">
             <p class="some">
               A film – also called a movie, motion picture, moving picture,
@@ -180,8 +180,8 @@ defineProps<{ demos: DemosTypes[] }>()
 </template>
 
 <style scoped>
-.card {
-  --card-width: 20em;
+.t4-card {
+  --t4-card-width: 20em;
   --primer-color: hsl(241, 100%, 70%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-L2: hsl(0, 0%, 60%);
@@ -201,7 +201,7 @@ defineProps<{ demos: DemosTypes[] }>()
   transition: all 0.2s ease-in;
 }
 .detial {
-  width: var(--card-width);
+  width: var(--t4-card-width);
   padding: 01em 1em;
   color: var(--text-color);
   transition: all 0.2s ease-in;
@@ -222,7 +222,7 @@ defineProps<{ demos: DemosTypes[] }>()
 
 .content {
   color: var(--text-color);
-  width: var(--card-width);
+  width: var(--t4-card-width);
   position: absolute;
   transform: rotate3D(0.4, 1, 0.4, 0deg) scale(0.4);
   padding: 2em;
@@ -232,7 +232,7 @@ defineProps<{ demos: DemosTypes[] }>()
 }
 
 .thumb {
-  width: var(--card-width);
+  width: var(--t4-card-width);
   height: 20em;
   overflow: hidden;
   transition: var(--transition);
@@ -247,23 +247,23 @@ defineProps<{ demos: DemosTypes[] }>()
   color: hsla(0, 0%, 100%, 0.2);
 }
 
-.card:hover {
+.t4-card:hover {
   background-color: hsl(0, 0%, 15%);
   box-shadow:
     0px 20px 40px hsl(40, 60%, 0%, 0.4),
     inset 1px 2px 4px rgba(255, 255, 255, 0.1);
   transform: scale(1.1);
 }
-.card:hover .detial {
+.t4-card:hover .detial {
   padding: 1em 2em;
 }
 
-.card:hover .thumb {
+.t4-card:hover .thumb {
   opacity: 0.2;
   filter: blur(20px);
   transform: scale(1.5);
 }
-.card:hover .content {
+.t4-card:hover .content {
   transform: none;
   opacity: 1;
   transition: var(--transition);

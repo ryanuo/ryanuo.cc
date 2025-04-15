@@ -75,6 +75,9 @@ export function formatDateToMarDD(dateString?: string, year = false): string {
   return `${month} ${day}${year ? `. ${date.format('YYYY')}` : ''}`
 }
 
-export function linkBlank(url: string) {
+export function launchInNewWindow(url: string) {
+  if (!url)
+    return
+  // Check if the URL is a valid link
   window.open(url, '_blank')
 }

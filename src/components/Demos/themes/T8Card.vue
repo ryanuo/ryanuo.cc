@@ -6,6 +6,7 @@ import 'swiper/css/pagination'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import type { DemosTypes } from '../type'
 import { useModalOptions } from '../hooks/useModalOptions'
+import { launchInNewWindow } from '~/utils'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
@@ -17,12 +18,6 @@ const demosArray = computed(() => {
     .flatMap(key => props.demos[Number(key)].map(demo => ({ ...demo, year: Number(key), img: demo.img || '/demos/zhanweitu.png',
     })))
 })
-
-function targetLink(link: string) {
-  if (link) {
-    window.open(link, '_blank')
-  }
-}
 </script>
 
 <template>
@@ -51,7 +46,7 @@ function targetLink(link: string) {
           class="img-box"
         >
           <div class="info">
-            <h3 @click.prevent="targetLink(demo.link)">
+            <h3 @click.prevent="launchInNewWindow(demo.link)">
               {{ demo.name }}
               <i
                 class="i-ri-fullscreen-exit-fill text-[14px] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click.stop="() => {
