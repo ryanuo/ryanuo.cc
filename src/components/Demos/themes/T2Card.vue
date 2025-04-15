@@ -16,14 +16,14 @@ const { options } = useModalOptions()
       :key="key"
       class="masonry-item relative m-2 flex flex-col cursor-pointer rounded-lg bg-clip-border"
     >
-      <div v-for="demo in demoList" :key="demo.name" class="group/item relative mb-6 mt-4 text-gray-800 shadow-lg">
+      <div v-for="demo in demoList" :key="demo.name" class="group/item relative mb-6 mt-4 text-gray-800 shadow-lg transition-all dark:shadow-gray-900 hover:shadow-2xl">
         <img
           :src="demo.img || '/demos/zhanweitu.png'"
           alt="Demo Image"
           class="relative w-full rounded-lg bg-clip-border object-cover text-white shadow-md"
         >
         <i
-          class="i-ri-fullscreen-exit-fill absolute right-2 top-6 op-0 transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2] group-hover/item:op-100" @click="() => {
+          class="i-ri-fullscreen-exit-fill absolute right-2 top-2 op-0 transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2] group-hover/item:op-100" @click="() => {
             options.modelValue = true;
             options.content = demo;
           }
@@ -73,9 +73,5 @@ const { options } = useModalOptions()
 
 .masonry-item {
   break-inside: avoid; /* 防止元素被拆分到不同列 */
-}
-
-.dark .masonry-item {
-  background-color: #1f2937; /* 暗黑模式背景色 */
 }
 </style>
