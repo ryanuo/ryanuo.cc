@@ -7,11 +7,33 @@ import { useLanguage } from '~/hooks/useLanguage'
 
 const { t } = useI18n()
 const aiPostText = ref('')
-const seeOtherPost = ref('')
+const postUrls = ref<{
+  url: string
+  title: string
+  date: string
+  description: string
+}[]>()
 
 const { typedText } = useTypewriter(aiPostText)
 const route = useRoute()
 const { isChinese } = useLanguage()
+
+const computedOtherPost = computed(() => {
+  if (!postUrls.value || postUrls.value.length === 0)
+    return
+
+  const filteredPostUrls = postUrls.value.filter(item =>
+    isChinese.value
+      ? item.url.includes('zh/posts')
+      : item.url.includes('/post') && !item.url.includes('zh/posts'),
+  )
+
+  if (filteredPostUrls.length === 0)
+    return
+
+  const randomPost = filteredPostUrls[Math.floor(Math.random() * filteredPostUrls.length)]
+  return randomPost.url
+})
 
 async function fetchSeeOtherPost() {
   try {
@@ -21,23 +43,7 @@ async function fetchSeeOtherPost() {
     }
     // Note: Response body will not be accessible in 'no-cors' mode
     const data = await response.json()
-    const filterPostUrls = data?.items.filter((item: {
-      url: string
-      title: string
-      date: string
-      description: string
-    }) => {
-      if (isChinese) {
-        return item.url.includes('zh/posts')
-      }
-      else {
-        return item.url.includes('/post') && !item.url.includes('zh/posts')
-      }
-    })
-
-    const randomIndex = Math.floor(Math.random() * filterPostUrls.length)
-    const randomPost = filterPostUrls[randomIndex]
-    seeOtherPost.value = randomPost.url
+    postUrls.value = data.items
   }
   catch (error) {
     console.error('Error fetching sitmap.json:', error)
@@ -115,8 +121,8 @@ onMounted(() => {
           <span v-else class="ellipsis-animation">{{ $t('loading', 'Loading.') }}</span>
         </div>
       </div><div class="tool-footer">
-        <div class="core-ai-see-other">
-          <a :href="seeOtherPost" class="other-link" target="_blank" rel="noopener noreferrer">
+        <div v-if="computedOtherPost" class="core-ai-see-other">
+          <a :href="computedOtherPost" class="other-link" target="_blank" rel="noopener noreferrer">
             See more <i class="i-material-symbols-arrow-right-alt-rounded text-white" />
           </a>
         </div>
