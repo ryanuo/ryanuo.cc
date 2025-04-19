@@ -20,7 +20,7 @@ const { options } = useModalOptions()
           <div
             class="t3-card"
             :style="`
-            background-image: url(${demo.img});
+            background-image: url(${demo.img || '/demos/zhanweitu.png'});
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;`"

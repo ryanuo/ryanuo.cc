@@ -18,5 +18,5 @@ export default {
   'aiRobot': 'RyanAI',
   'analysisFailed': '分析失败,AI机器人故障请联系管理员！！',
   'loading': '加载中。',
-  'generatedContentNote': '此内容根据文章生成，仅用于文章内容的解释与总结',
+  'generatedContentNote': '此内容由AI根据文章内容自动生成，并已由人工审核',
 }
