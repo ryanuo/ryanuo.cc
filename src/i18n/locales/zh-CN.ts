@@ -13,7 +13,7 @@ export default {
   'nav.article': '个人小记',
   'nav.blog.old': '博客 [废弃]',
   'nav.learn.interview': '面试宝典',
-  'summary': '摘要',
+  'summary': 'AI文摘',
   'viewDetails': '查看详情',
   'aiRobot': 'RyanAI',
   'analysisFailed': '分析失败,AI机器人故障请联系管理员！！',

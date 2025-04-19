@@ -106,12 +106,12 @@ onMounted(() => {
       </div><div class="tool-header">
         <div class="">
           <div class="tool-title">
-            AI Summary
+            {{ $t('summary', 'AI Summary') }}
           </div><div class="tool-sub-title">
             {{ $t('generatedContentNote', '') }}
           </div>
         </div><div>
-          <a href="https://github.com/ryanuo/gpt" target="_blank" rel="noopener">Core AI</a>
+          <a href="https://github.com/ryanuo/gpt" target="_blank" rel="noopener">Core AI Power</a>
         </div>
       </div><div class="summary-content">
         <div>
@@ -223,7 +223,7 @@ onMounted(() => {
   animation: eyeMovement 2s infinite;
 }
 
-/* 新增 bot-avatar 动销关键帧 */
+/* 新增 bot-avatar 动效关键帧 */
 @keyframes botAvatarBounce {
   0%,
   100% {
@@ -239,6 +239,7 @@ onMounted(() => {
   width: 65px;
   height: 54px;
   animation: botAvatarBounce 2s infinite;
+  cursor: pointer;
 }
 
 #core-ai-summary-tool-main {

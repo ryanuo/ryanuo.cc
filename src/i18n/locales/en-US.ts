@@ -14,7 +14,7 @@ export default {
   'nav.article': 'Personal Notes',
   'nav.blog.old': 'Blog [deprecated]',
   'nav.learn.interview': 'Interview tips',
-  'summary': 'Summary',
+  'summary': 'AI Summary',
   'viewDetails': 'View Details',
   'aiRobot': 'RyanAI',
   'analysisFailed': 'Analysis failed, AI robot malfunction, please contact the administrator!!',
