@@ -83,7 +83,7 @@ function initialize(userOptions: AlgoliaSearchOptions) {
 
 function getRelativePath(url: string) {
   const { pathname, hash } = new URL(url, location.origin)
-  return pathname.replace(/\.html$/, '' ? '' : '.html') + hash
+  return pathname.replace(/\.html$/, '') + hash
 }
 </script>
 

@@ -3,46 +3,46 @@ name: Generate Cover and Save Results
 on:
   push:
     branches:
-      - master  # 你可以根据需要更改分支
+      - master # 你可以根据需要更改分支
 
 jobs:
   generate-cover:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-      
-    - name: Set Up Python Environment
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.12  # 选择你的Python版本
-        
-    - name: Install Python Dependencies
-      run: pip install -r scripts/requirements.txt  # 如果有依赖文件，你可以在这里安装它们
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Install Playwright and Chromium
-      run: |
-        playwright install chromium
-    
-    - name: Set Up Node.js Environment
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Set Up Python Environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12 # 选择你的Python版本
 
-    - name: Build Project with Node.js
-      run: |
-        npm i -g pnpm
-        pnpm i
-        pnpm run build
+      - name: Install Python Dependencies
+        run: pip install -r scripts/requirements.txt # 如果有依赖文件，你可以在这里安装它们
 
-    - name: Generate Cover Image
-      run: python scripts/cover_generate.py  # 执行你的脚本
+      - name: Install Playwright and Chromium
+        run: |
+          playwright install chromium
 
-    - name: Commit and Push Generated Cover
-      run: |
-        git config --global user.email "1577791638@qq.com"
-        git config --global user.name "ryanuo"
-        git add .
-        git diff-index --quiet HEAD || git commit -m "chore:auto generate cover"
-        git push
+      - name: Set Up Node.js Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Build Project with Node.js
+        run: |
+          npm i -g pnpm
+          pnpm i
+          pnpm run build
+
+      - name: Generate Cover Image
+        run: python scripts/cover_generate.py # 执行你的脚本
+
+      - name: Commit and Push Generated Cover
+        run: |
+          git config --global user.email "1577791638@qq.com"
+          git config --global user.name "ryanuo"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "chore:auto generate cover"
+          git push

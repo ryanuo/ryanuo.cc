@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Gold Trades'
+      link: 'https://github.com/ryanuo/aug-calc/'
+      desc: 'A web application for trading gold, developed using Vue3.'
+      img: '/demos/aug.png'
+      readme: 'https://github.com/ryanuo/aug-calc/blob/main/README.md'
+      tags: [nuxt,vue3]
     - name: 'Tmpl-Cli'
       link: 'https://github.com/ryanuo/tmpl-cli'
       desc: 'A convenient project template management tool to quickly clone templates from Git repositories.'

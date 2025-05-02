@@ -1,5 +1,5 @@
 // src/i18n/index.js
-import { createI18n, useI18n } from 'vue-i18n'
+import { createI18n } from 'vue-i18n'
 import { messages } from './locales'
 
 const lang = useStorage('lang', 'en-US')

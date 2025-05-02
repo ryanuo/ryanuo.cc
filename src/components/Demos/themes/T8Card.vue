@@ -73,7 +73,7 @@ const demosArray = computed(() => {
           />
         </svg>
       </button>
-      <button class="next btn">
+      <button class="btn next">
         <svg
           t="1686472004424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
           xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128"

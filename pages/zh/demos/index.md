@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Gold Trades'
+      link: 'https://github.com/ryanuo/aug-calc/'
+      desc: '使用Vue3、Nuxt开发的用于交易黄金的web应用程序'
+      img: '/demos/aug.png'
+      readme: 'https://github.com/ryanuo/aug-calc/blob/main/README.md'
+      tags: [nuxt,vue3]
     - name: 'Tmpl-Cli'
       link: 'https://github.com/ryanuo/tmpl-cli'
       desc: '一个方便的项目模板管理工具，用于快速从Git存储库克隆模板'
