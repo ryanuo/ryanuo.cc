@@ -1,9 +1,22 @@
 <script lang="ts" setup>
 import { ModalsContainer, VueFinalModal } from 'vue-final-modal'
+import { renderRemoteMarkdown } from '~/utils/markdown'
 
-defineProps<{
+const props = defineProps<{
   options: any
 }>()
+
+const content = ref('')
+
+watch(
+  () => props.options.content.readme,
+  async (newVal) => {
+    if (newVal) {
+      const renderedContent = await renderRemoteMarkdown(newVal)
+      content.value = renderedContent
+    }
+  },
+)
 </script>
 
 <template>
@@ -41,6 +54,8 @@ defineProps<{
       >
       <iframe v-if="options.content.video" :src="options.content.video" class="h-80 w-full at-lg:h-70vh md:h-160" />
     </div>
+    <ThemeSwitcher />
+    <div v-if="content" id="write" class="mt-4" v-html="content" />
   </VueFinalModal>
 
   <ModalsContainer />

@@ -35,6 +35,7 @@ declare module 'vue' {
     T7Card: typeof import('./../src/components/Demos/themes/T7Card.vue')['default']
     T8Card: typeof import('./../src/components/Demos/themes/T8Card.vue')['default']
     TechStack: typeof import('./../src/components/TechStack.vue')['default']
+    ThemeSwitcher: typeof import('./../src/components/ThemeSwitcher.vue')['default']
     ToggleTheme: typeof import('./../src/components/ToggleTheme.vue')['default']
     VMenuWrap: typeof import('./../src/components/VMenuWrap.vue')['default']
     WordYear: typeof import('./../src/components/WordYear.vue')['default']
