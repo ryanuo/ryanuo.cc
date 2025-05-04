@@ -9,13 +9,13 @@ demos:
       link: 'https://github.com/ryanuo/aug-calc/'
       desc: 'A web application for trading gold, developed using Vue3.'
       img: '/demos/aug.png'
-      readme: 'https://github.com/ryanuo/aug-calc/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/aug-calc/refs/heads/main/README.md'
       tags: [nuxt,vue3]
     - name: 'Tmpl-Cli'
       link: 'https://github.com/ryanuo/tmpl-cli'
       desc: 'A convenient project template management tool to quickly clone templates from Git repositories.'
       img: '/demos/tmpl-cli.gif'
-      readme: 'https://github.com/ryanuo/tmpl-cli/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/tmpl-cli/refs/heads/main/README.md'
       tags: ['rust','zsh']
   2024:
     - name: 'Markdown-It-Diagram'
@@ -23,7 +23,7 @@ demos:
       desc: 'markdown-it-diagram is a markdown-it plugin for diagram. It supports mermaid, plantuml. It supports contorls like zoom, move.'
       img: '/demos/m-it-d.png'
       tags: ['markdown-it', 'mermaid', 'plantuml']
-      readme: 'https://github.com/ryanuo/markdown-it-diagram/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/markdown-it-diagram/refs/heads/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/ryanuo/own-cover'
       desc: 'This is a simple web app that allows you to upload an image and get a cover of your choice.'
@@ -34,13 +34,13 @@ demos:
       link: 'https://github.com/ryanuo/ryanuo.cc'
       desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display,designed by Antfu Boss'
       img: '/demos/page-dark.png'
-      readme: 'https://github.com/ryanuo/ryanuo.cc/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/own-cover/refs/heads/main/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: Auto Navs
       link: https://github.com/ryanuo/navs
       desc: Summary of front-end navigation external links,automatic link status check is supported
       img: '/demos/navs.png'
-      readme: 'https://github.com/ryanuo/navs/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'Tv-Data-Ana'
@@ -61,7 +61,7 @@ demos:
       video: '//player.bilibili.com/player.html?bvid=BV1fv4y1T72e&amp;page=1&muted=true'
       desc: '📷 A picture bed tool developed with backBlazeb2 API & ⚡ Cloudflare, featuring CDN acceleration.'
       img: '/demos/blazeb2.png'
-      readme: 'https://github.com/ryanuo/blazeB2/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/blazeB2/refs/heads/master/README.md'
       tags: ['Vue2','Python','Docker']
     - name: 'Git Commit Echarts'
       link: https://github.com/ryanuo/github_commit_echarts
@@ -107,7 +107,7 @@ demos:
       link: 'https://github.com/ryanuo/resume'
       desc: 'Resume template'
       img: '/demos/remu.png'
-      readme: 'https://github.com/ryanuo/resume/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/resume/refs/heads/master/README.md'
       tags: ['Vue2','Less']
     - name: Hot Search
       link: 'https://github.com/ryanuo/hot_search'

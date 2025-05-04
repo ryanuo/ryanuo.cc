@@ -3,19 +3,8 @@ import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import { themes } from '../../public/demos/typora-themes'
 
-function handleReadmeUrl(url: string) {
-  const urlObj = new URL(url)
-  const pathParts = urlObj.pathname.split('/')
-  const repoName = pathParts[1]
-  const ownerName = pathParts[2]
-  const branchName = pathParts[4]
-  const fileName = pathParts[pathParts.length - 1]
-  return `https://raw.githubusercontent.com/${repoName}/${ownerName}/refs/heads/${branchName}/${fileName}`
-}
-
 export async function fetchRemoteMarkdown(url: string) {
-  const resultUrl = handleReadmeUrl(url)
-  const response = await fetch(resultUrl)
+  const response = await fetch(url)
   if (!response.ok) {
     throw new Error(`Failed to fetch markdown: ${response.statusText}`)
   }
@@ -34,12 +23,6 @@ export async function renderRemoteMarkdown(url: string) {
         },
         defaultColor: false,
         cssVariablePrefix: '--s-',
-        transformers: [
-          transformerTwoslash({
-            explicitTrigger: true,
-            renderer: rendererRich(),
-          }),
-        ],
       }) as any,
     )
     return md.render(markdownContent)

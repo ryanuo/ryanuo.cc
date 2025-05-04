@@ -9,13 +9,13 @@ demos:
       link: 'https://github.com/ryanuo/aug-calc/'
       desc: '使用Vue3、Nuxt开发的用于交易黄金的web应用程序'
       img: '/demos/aug.png'
-      readme: 'https://github.com/ryanuo/aug-calc/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/aug-calc/refs/heads/main/README.md'
       tags: [nuxt,vue3]
     - name: 'Tmpl-Cli'
       link: 'https://github.com/ryanuo/tmpl-cli'
       desc: '一个方便的项目模板管理工具，用于快速从Git存储库克隆模板'
       img: '/demos/tmpl-cli.gif'
-      readme: 'https://github.com/ryanuo/tmpl-cli/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/tmpl-cli/refs/heads/main/README.md'
       tags: ['rust','zsh']
   2024:
     - name: 'Markdown-It-Diagram'
@@ -23,7 +23,7 @@ demos:
       desc: 'markdown-it-diagram 是一个 markdown-it 图表插件。它支持美人鱼、plantuml。它支持缩放、移动等控制。'
       img: '/demos/m-it-d.png'
       tags: ['markdown-it', 'mermaid', 'plantuml']
-      readme: 'https://github.com/ryanuo/markdown-it-diagram/blob/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/markdown-it-diagram/refs/heads/main/README.md'
     - name: 'Own Cover'
       link: 'https://github.com/ryanuo/own-cover'
       desc: '这是一个简单的网络应用程序，允许您上传图像并获得您选择的封面。'
@@ -34,13 +34,13 @@ demos:
       link: 'https://github.com/ryanuo/ryanuo.cc'
       desc: '我的个人网站包括个人简介、各种第三方平台链接、前端通用知识整理、博客文章、项目介绍以及演示展示。由Antfu 大佬设计'
       img: '/demos/page-dark.png'
-      readme: 'https://github.com/ryanuo/ryanuo.cc/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/own-cover/refs/heads/main/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: 自动检查链接
       link: https://github.com/ryanuo/navs
       desc: 前端导航外部链接汇总，支持自动链接状态检查
       img: '/demos/navs.png'
-      readme: 'https://github.com/ryanuo/navs/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'tv-data-ana'
@@ -62,7 +62,7 @@ demos:
       video: '//player.bilibili.com/player.html?bvid=BV1fv4y1T72e&amp;page=1&muted=true'
       desc: '📷 一款采用 backBlaze B2 API 与 ⚡ Cloudflare 开发的图片床工具，具备 CDN 加速功能'
       img: '/demos/blazeb2.png'
-      readme: 'https://github.com/ryanuo/blazeB2/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/blazeB2/refs/heads/master/README.md'
       tags: ['Vue2']
     - name: GIT提交3D图
       link: https://github.com/ryanuo/github_commit_echarts
@@ -108,7 +108,7 @@ demos:
       link: 'https://github.com/ryanuo/resume'
       desc: '个人简历模板【待重构】'
       img: '/demos/remu.png'
-      readme: 'https://github.com/ryanuo/resume/blob/master/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/resume/refs/heads/master/README.md'
       tags: ['Vue2','Less']
     - name: 热搜-爬虫
       link: 'https://github.com/ryanuo/hot_search'
