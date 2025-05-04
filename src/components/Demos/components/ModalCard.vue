@@ -60,3 +60,9 @@ watch(
 
   <ModalsContainer />
 </template>
+
+<style>
+#write img {
+  display: inline-block !important;
+}
+</style>
