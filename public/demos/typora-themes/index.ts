@@ -11,6 +11,7 @@ const nord = '/demos/typora-themes/dark/typora-nord.css'
 const panic = '/demos/typora-themes/dark/typora-panic.css'
 const solarizedDark = '/demos/typora-themes/dark/typora-solarized-dark.css'
 const toothpaste = '/demos/typora-themes/dark/typora-toothpaste.css'
+const githubDark = '/demos/typora-themes/dark/github-dark.css'
 
 // light themes
 const ayu = '/demos/typora-themes/light/typora-ayu.css'
@@ -25,11 +26,13 @@ const lark = '/demos/typora-themes/light/typora-lark.css'
 const oliveDunk = '/demos/typora-themes/light/typora-olive-dunk.css'
 const redGraphite = '/demos/typora-themes/light/typora-red-graphite.css'
 const solarizedLight = '/demos/typora-themes/light/typora-solarized-light.css'
+const githubLight = '/demos/typora-themes/light/github-light.css'
 
 export const themes: Record<string, {
   [key: string]: any
 }> = {
   dark: {
+    githubDark,
     ayuMirage,
     charcoal,
     cobalt,
@@ -44,6 +47,7 @@ export const themes: Record<string, {
     toothpaste,
   },
   light: {
+    githubLight,
     ayu,
     contrast,
     dBoring,

@@ -1,6 +1,5 @@
 import markdownit from 'markdown-it'
 import MarkdownItShiki from '@shikijs/markdown-it'
-import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import { themes } from '../../public/demos/typora-themes'
 
 export async function fetchRemoteMarkdown(url: string) {
