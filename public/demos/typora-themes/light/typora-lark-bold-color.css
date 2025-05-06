@@ -348,10 +348,7 @@
     PingFangSC-Regular,
     PingFang SC;
 }
-#write
-  ul
-  > li:not([class*='task-list-item'])
-  li:not([class*='task-list-item'])::before {
+#write ul > li:not([class*='task-list-item']) li:not([class*='task-list-item'])::before {
   content: '◦';
   transform: scale(1);
   font-weight: 700;

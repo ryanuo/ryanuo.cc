@@ -3,7 +3,7 @@
   const storedLang = window.localStorage.getItem('lang')
   if (
     (navigator.languages.includes('zh')
-    || navigator.languages.includes('zh-CN'))
+      || navigator.languages.includes('zh-CN'))
     && storedLang !== 'zh-CN'
   ) {
     const ANTD_DOT_NOT_SHOW_MIRROR_MODAL = 'DO_NOT_OPEN_LANGUAGE_MODAL'

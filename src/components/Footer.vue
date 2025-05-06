@@ -1,5 +1,5 @@
 <template>
-  <div class="slide-enter prose m-auto mb-6 mt-10 flex animate-delay-1200!">
+  <div class="prose slide-enter m-auto mb-6 mt-10 flex animate-delay-1200!">
     <span class="text-sm op50"><a
       target="_blank"
       href="https://creativecommons.org/licenses/by-nc-sa/4.0/"

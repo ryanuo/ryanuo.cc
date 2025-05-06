@@ -38,8 +38,8 @@ export function useTypewriter(initialText: Ref) {
   watch(initialText, restartTyping)
 
   onMounted(() => {
-    // 组件挂载时开始打字机效果
-    initialText.value && restartTyping()
+    if (initialText.value)
+      restartTyping()
   })
 
   onUnmounted(() => {

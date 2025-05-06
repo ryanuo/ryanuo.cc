@@ -27,11 +27,11 @@ function initCanvas(
   const dpr = window.devicePixelRatio || 1
   const bsr
     = ctx.webkitBackingStorePixelRatio
-    || ctx.mozBackingStorePixelRatio
-    || ctx.msBackingStorePixelRatio
-    || ctx.oBackingStorePixelRatio
-    || ctx.backingStorePixelRatio
-    || 1
+      || ctx.mozBackingStorePixelRatio
+      || ctx.msBackingStorePixelRatio
+      || ctx.oBackingStorePixelRatio
+      || ctx.backingStorePixelRatio
+      || 1
 
   const dpi = _dpi || dpr / bsr
 

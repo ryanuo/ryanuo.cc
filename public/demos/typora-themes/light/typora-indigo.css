@@ -12,11 +12,8 @@
     Apple Color Emoji,
     Segoe UI Emoji;
   line-height: 1.8em;
-  background-image: linear-gradient(
-      90deg,
-      rgba(60, 10, 30, 0.05) 3%,
-      transparent 0
-    ),
+  background-image:
+    linear-gradient(90deg, rgba(60, 10, 30, 0.05) 3%, transparent 0),
     linear-gradient(1turn, rgba(60, 10, 30, 0.05) 3%, transparent 0);
   background-size: 20px 20px;
   background-position: 50%;
@@ -138,8 +135,7 @@
   border-width: 0px;
 }
 #write code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 #write pre > code {
   font-weight: 400;
@@ -265,9 +261,7 @@
 }
 #write pre.md-fences::before,
 #write pre.md-meta-block::before,
-#write
-  .md-rawblock-control:not(.md-rawblock-tooltip)
-  .md-rawblock-input::before {
+#write .md-rawblock-control:not(.md-rawblock-tooltip) .md-rawblock-input::before {
   content: '';
   display: block;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPgogICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSIvPgogICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiLz4KICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ii8+CiAgPC9nPgo8L3N2Zz4K');

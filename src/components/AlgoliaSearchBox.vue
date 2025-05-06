@@ -37,7 +37,7 @@ async function update() {
 type DocSearchProps1 = Parameters<typeof docsearch>[0]
 function initialize(userOptions: AlgoliaSearchOptions) {
   const options = Object.assign<
-    {},
+    object, // 修改此处，将 {} 替换为 object
     AlgoliaSearchOptions,
     Partial<DocSearchProps1>
   >({}, userOptions, {

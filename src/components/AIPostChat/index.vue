@@ -96,7 +96,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="core-ai-summary-tool" class="prose slide-enter-content m-auto">
+  <div id="core-ai-summary-tool" class="slide-enter-content prose m-auto">
     <div id="core-ai-summary-tool-main">
       <div class="tool-avatar">
         <div class="avatar-main">
