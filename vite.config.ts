@@ -172,6 +172,7 @@ export default {
       '@vueuse/core',
       'dayjs',
       'dayjs/plugin/localizedFormat',
+      '@unhead/vue',
     ],
   },
   build: {
@@ -181,6 +182,7 @@ export default {
           next(warning)
       },
     },
+    chunkSizeWarningLimit: 1000,
   },
   ssgOptions: {
     formatting: 'minify',

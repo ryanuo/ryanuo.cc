@@ -17,7 +17,8 @@
     "resolveJsonModule": true,
     "types": [
       "vite/client",
-      "unplugin-vue-router/client"
+      "unplugin-vue-router/client",
+      "node"
     ],
     "strict": true,
     "esModuleInterop": true,
