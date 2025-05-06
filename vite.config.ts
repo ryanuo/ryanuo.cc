@@ -24,6 +24,21 @@ import MarkdownItDiagrams from 'markdown-it-diagram'
 
 import { slugify } from './scripts/slugify'
 
+const highlighter = await MarkdownItShiki({
+  themes: {
+    dark: 'vitesse-dark',
+    light: 'vitesse-light',
+  },
+  defaultColor: false,
+  cssVariablePrefix: '--s-',
+  transformers: [
+    transformerTwoslash({
+      explicitTrigger: true,
+      renderer: rendererRich(),
+    }),
+  ],
+}) as any
+
 // https://vitejs.dev/config/
 export default {
   resolve: {
@@ -85,20 +100,7 @@ export default {
         })
 
         md.use(
-          await MarkdownItShiki({
-            themes: {
-              dark: 'vitesse-dark',
-              light: 'vitesse-light',
-            },
-            defaultColor: false,
-            cssVariablePrefix: '--s-',
-            transformers: [
-              transformerTwoslash({
-                explicitTrigger: true,
-                renderer: rendererRich(),
-              }),
-            ],
-          }) as any,
+          highlighter,
         )
 
         md.use(MarkdownItDiagrams, {
@@ -173,6 +175,7 @@ export default {
       'dayjs',
       'dayjs/plugin/localizedFormat',
       '@unhead/vue',
+      'lodash-es',
     ],
   },
   build: {
