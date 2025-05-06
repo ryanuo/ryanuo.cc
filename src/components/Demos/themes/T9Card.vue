@@ -46,7 +46,7 @@ function deselectAllYears() {
 <template>
   <div class="mx-auto p-2 container sm:p-4 dark:text-gray-800">
     <h2 class="mb-4 text-2xl font-semibold leading-tight">
-      <p> Hello! 👋🏾This is my portfolio page！</p>
+      <span> Hello! 👋🏾This is my portfolio page！</span>
       <div class="checkbox-wrapper-30 inline-block">
         <span class="checkbox">
           <input
@@ -177,6 +177,7 @@ function deselectAllYears() {
 }
 
 .checkbox-wrapper-30 .checkbox input {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-tap-highlight-color: transparent;
