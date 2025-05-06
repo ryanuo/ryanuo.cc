@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { themes } from '../../public/demos/typora-themes'
+import { themes } from '~/utils/theme'
 import { loadTheme } from '~/utils/markdown'
 
 const isDark = useDark()

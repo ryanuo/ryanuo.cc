@@ -1,6 +1,6 @@
 import markdownit from 'markdown-it'
 import MarkdownItShiki from '@shikijs/markdown-it'
-import { themes } from '../../public/demos/typora-themes'
+import { themes } from './theme'
 
 export async function fetchRemoteMarkdown(url: string) {
   const response = await fetch(url)
