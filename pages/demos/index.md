@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: '@ryanuo/utils'
+      link: 'https://github.com/ryanuo/utils'
+      desc: 'A collection of useful tools for developers.'
+      img: '/demos/utils.png'
+      readme: 'https://github.com/ryanuo/utils/blob/main/README.md'
+      tags: ['vite', 'ts']
     - name: 'Gold Trades'
       link: 'https://github.com/ryanuo/aug-calc/'
       desc: 'A web application for trading gold, developed using Vue3.'

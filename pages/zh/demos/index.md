@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: '@ryanuo/utils'
+      link: 'https://github.com/ryanuo/utils'
+      desc: '对开发人员有用的工具的集合'
+      img: '/demos/utils.png'
+      readme: 'https://github.com/ryanuo/utils/blob/main/README.md'
+      tags: ['vite', 'ts']
     - name: 'Gold Trades'
       link: 'https://github.com/ryanuo/aug-calc/'
       desc: '使用Vue3、Nuxt开发的用于交易黄金的web应用程序'
