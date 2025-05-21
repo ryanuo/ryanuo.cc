@@ -15,7 +15,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         // sans: "Baloo Thambi 2",
-        sans: ['Inter:400,600,800', 'HarmonyOS_Regular', 'Bonheur Royale'],
+        sans: ['Work Sans', 'Inter:400,600,800', 'HarmonyOS_Regular', 'Bonheur Royale'],
         mono: 'DM Mono:400,600',
         ai: 'Kaushan Script',
       },
