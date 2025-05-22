@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'STATUS'
+      link: 'https://github.com/ryanuo/status'
+      desc: '面向开发人员的简单状态页面'
+      img: '/demos/status.png'
+      readme: 'https://github.com/ryanuo/status/blob/main/README.md'
+      tags: [nuxt]
     - name: '@ryanuo/utils'
       link: 'https://github.com/ryanuo/utils'
       desc: '对开发人员有用的工具的集合'

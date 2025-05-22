@@ -93,7 +93,7 @@ const buttonClass = computed(() => {
           <div i-uil-github-alt />
         </a>
         <a href="https://status.ryanuo.cc" target="_blank" title="status" class="lt-m">
-          <div class="i-cib-statuspage" />
+          <div class="i-hugeicons-status" />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
           <div v-tooltip="$t('lang.change', 'English To Chinese')" :class="langIcon" @click="switchLanguage" />

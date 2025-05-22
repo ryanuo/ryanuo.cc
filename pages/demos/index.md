@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'STATUS'
+      link: 'https://github.com/ryanuo/status'
+      desc: 'A simple status page for developers.'
+      img: '/demos/status.png'
+      readme: 'https://github.com/ryanuo/status/blob/main/README.md'
+      tags: [nuxt]
     - name: '@ryanuo/utils'
       link: 'https://github.com/ryanuo/utils'
       desc: 'A collection of useful tools for developers.'
