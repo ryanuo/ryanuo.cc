@@ -5,6 +5,18 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Tab Extension'
+      link: 'https://github.com/ryanuo/tab-ext'
+      desc: 'A tab extension for Chrome.'
+      img: '/demos/tab-ext.png'
+      readme: 'https://github.com/ryanuo/tab-ext/blob/main/README.md'
+      tags: ['Chrome', 'Extension', 'Vue3']
+    - name: 'API-Hub'
+      link: 'https://github.com/ryanuo/api-hub'
+      desc: 'A collection of useful APIs for developers.'
+      img: '/demos/api-hub.png'
+      readme: 'https://github.com/ryanuo/api-hub/blob/main/README.md'
+      tags: [hono, jsx, vite]
     - name: 'STATUS'
       link: 'https://github.com/ryanuo/status'
       desc: 'A simple status page for developers.'

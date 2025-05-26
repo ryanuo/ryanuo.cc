@@ -5,6 +5,18 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Tab Extension（标签页扩展）'
+      link: 'https://github.com/ryanuo/tab-ext'
+      desc: '一个适用于 Chrome 浏览器的标签页扩展。'
+      img: '/demos/tab-ext.png'
+      readme: 'https://github.com/ryanuo/tab-ext/blob/main/README.md'
+      tags: ['Chrome', 'Extension（扩展）', 'Vue3']
+    - name: 'API-Hub（API中心）'
+      link: 'https://github.com/ryanuo/api-hub'
+      desc: '为开发者提供的常用 API 集合。'
+      img: '/demos/api-hub.png'
+      readme: 'https://github.com/ryanuo/api-hub/blob/main/README.md'
+      tags: [hono, jsx, vite]
     - name: 'STATUS'
       link: 'https://github.com/ryanuo/status'
       desc: '面向开发人员的简单状态页面'
