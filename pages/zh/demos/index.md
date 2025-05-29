@@ -1,6 +1,6 @@
 ---
-title: '演示 | Ryan uo'
-description: '演示 | Ryan uo'
+title: '演示 | RYANUO'
+description: '演示 | RYANUO'
 plum: true
 isHidenTitle: true
 demos:

@@ -1,5 +1,5 @@
 ---
-title: Posts List | Ryan uo
+title: Posts List | RYANUO
 description: This is a post list page.
 display: ''
 plum: true

@@ -1,5 +1,5 @@
 ---
-title: Project - Ryan uo
+title: Project - RYANUO
 display: Project Experience
 description: List of projects, accumulation of work experience, sharing of front-end development expertise
 plum: true

@@ -5,7 +5,7 @@
       href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
       style="color: inherit"
     >CC BY-NC-SA 4.0</a>
-      2021-PRESENT © Ryan uo
+      2021-PRESENT © RYANUO
       <a
         class="hidden md:inline-block"
         target="_blank"

@@ -8,7 +8,7 @@ const { options } = useModalOptions()
 </script>
 
 <template>
-  <div class="prose slide-enter-content m-auto">
+  <div class="slide-enter-content prose m-auto">
     <div v-for="index in Object.keys(demos)?.sort((a, b) => Number(b) - Number(a))" :key="index" class="relative">
       <div class="text-center">
         <span

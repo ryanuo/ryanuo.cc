@@ -1,5 +1,5 @@
 ---
-title: 导航 | Ryan uo
+title: 导航 | RYANUO
 display: 前端导航
 description: 前端导航包括常用的前端第三方网站、前端知识以及与前端相关的内容。
 plum: true

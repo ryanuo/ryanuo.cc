@@ -8,7 +8,7 @@ import MarkdownIt from 'markdown-it'
 
 const DOMAIN = 'https://ryanuo.cc'
 const AUTHOR = {
-  name: 'Ryan uo',
+  name: 'ryanuo',
   email: 'ryanuo@aliyun.com',
   link: DOMAIN,
 }
@@ -32,11 +32,11 @@ async function buildBlogRSS() {
   ])
 
   const options = {
-    title: 'Ryan uo',
-    description: 'Ryan uo\' Blog',
+    title: 'RYANUO',
+    description: 'RYANUO\' Blog',
     id: DOMAIN,
     link: DOMAIN,
-    copyright: 'CC BY-NC-SA 4.0 2021 © Ryan uo',
+    copyright: 'CC BY-NC-SA 4.0 2021 © RYANUO',
     feedLinks: {
       json: `${DOMAIN}/sitemap.json`,
       atom: `${DOMAIN}/sitemap.atom`,
@@ -89,11 +89,11 @@ async function buildLatestPostsRSS() {
   const files = await fg(['pages/posts/*.md'])
 
   const options = {
-    title: 'Ryan uo - Latest Posts',
-    description: 'Latest posts from Ryan uo\'s Blog',
+    title: 'RYANUO - Latest Posts',
+    description: 'Latest posts from RYANUO\'s Blog',
     id: DOMAIN,
     link: DOMAIN,
-    copyright: 'CC BY-NC-SA 4.0 2021 © Ryan uo',
+    copyright: 'CC BY-NC-SA 4.0 2021 © RYANUO',
     feedLinks: {
       rss: `${DOMAIN}/latest_sitemap.xml`,
     },

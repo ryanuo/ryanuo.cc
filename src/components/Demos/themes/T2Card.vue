@@ -23,7 +23,7 @@ const { options } = useModalOptions()
           class="relative w-full rounded-lg bg-clip-border object-cover text-white shadow-md"
         >
         <i
-          class="i-ri-fullsccreen-exit-fill group-item absolute right-2 top-2 op-0 transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click="() => {
+          class="group-item i-ri-fullsccreen-exit-fill absolute right-2 top-2 op-0 transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click="() => {
             options.modelValue = true;
             options.content = demo;
           }

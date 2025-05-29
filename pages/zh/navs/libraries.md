@@ -1,5 +1,5 @@
 ---
-title: 组件库 | Ryan uo
+title: 组件库 | RYANUO
 display: 前端导航
 description: 该前端工具库收录了个人使用或遇到过的各类库，按类别分类便于搜索。
 plum: true
