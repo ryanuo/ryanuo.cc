@@ -11,7 +11,7 @@ titleStyle:
   fontFamily: 'Bonheur Royale'
 ---
 
-Hey, I am Ryanuo, a passionate front-end developer.
+Hey, I am ryanuo（/rweɪ ˈɑn nɔː/）, a passionate front-end developer.
 
 Currently, I work in [Zhengzhou](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9) as a front-end development engineer.
 

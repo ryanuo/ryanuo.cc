@@ -2,7 +2,7 @@
 title: RYANUO - Portfolio
 display: Ryan uo
 description: RYANUO's Introduce
-keywords: Ryanuo, 前端, 工程师, 郑州, React, Vue, TypeScript, Playwright, 组件库, 财务中后台项目, 个人项目, 前端技术, 导航, GitHub, Twitter, YouTube, Instagram, 哔哩哔哩, 知乎, 微信
+keywords: RYANUO, 前端, 工程师, 郑州, React, Vue, TypeScript, Playwright, 组件库, 财务中后台项目, 个人项目, 前端技术, 导航, GitHub, Twitter, YouTube, Instagram, 哔哩哔哩, 知乎, 微信
 image: /home.png
 avatars: /avatar.png
 plum: true
@@ -11,7 +11,7 @@ titleStyle:
   fontFamily: 'Bonheur Royale'
 ---
 
-嘿，我是Ryanuo，一名热爱前端开发的工程师。
+嘿，我是 ryanuo（/rweɪ ˈɑn nɔː/），一名热爱前端开发的工程师。
 
 目前，我在[郑州](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9)工作，担任前端开发工程师一职。
 
