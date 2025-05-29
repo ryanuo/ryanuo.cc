@@ -66,16 +66,16 @@ function initialize(userOptions: AlgoliaSearchOptions) {
       })
     },
 
-    hitComponent({ hit, children }: any) {
-      return {
-        __v: null,
-        type: 'a',
-        ref: undefined,
-        constructor: undefined,
-        key: undefined,
-        props: { href: hit.url, children },
-      }
-    },
+    // hitComponent({ hit, children }: any) {
+    //   return {
+    //     __v: null,
+    //     type: 'a',
+    //     ref: undefined,
+    //     constructor: undefined,
+    //     key: undefined,
+    //     props: { href: hit.url, children },
+    //   }
+    // },
   }) as DocSearchProps
 
   docsearch(options)
