@@ -222,6 +222,10 @@ projects:
       desc: '拥有168个图标集和超过21万个图标，支持多种语言跨图标集搜索'
 
   网站部署:
+    - name: 'NuxtHub'
+      link: 'https://admin.hub.nuxt.com/'
+      image: 'https://admin.hub.nuxt.com/favicon.ico'
+      desc: 'NuxtHub是一个用于部署Nuxt应用程序的云平台。它允许您使用Nuxt应用程序和第三方服务，如Netlify、Vercel和GitHub Pages。'
     - name: 'Netlify App'
       link: 'https://app.netlify.com/'
       icon: 'i-devicon-plain-netlify-wordmark'

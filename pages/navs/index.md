@@ -222,6 +222,10 @@ projects:
       desc: '168 icon sets with 210k+ icons, search across icon sets in multiple languages'
 
   Web Build:
+    - name: 'NuxtHub'
+      link: 'https://admin.hub.nuxt.com/'
+      image: 'https://admin.hub.nuxt.com/favicon.ico'
+      desc: 'The best place to find and deploy static sites'
     - name: 'Netlify App'
       link: 'https://app.netlify.com/'
       icon: 'i-devicon-plain-netlify-wordmark'

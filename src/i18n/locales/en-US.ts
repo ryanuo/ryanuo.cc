@@ -19,5 +19,5 @@ export default {
   'aiRobot': 'RyanAI',
   'analysisFailed': 'Analysis failed, AI robot malfunction, please contact the administrator!!',
   'loading': 'Loading.',
-  'generatedContentNote': 'This AI-generated content is derived from the source article and has been manually verified.',
+  'generatedContentNote': 'This AI-generated content is derived from the source article.',
 }
