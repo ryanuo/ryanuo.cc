@@ -38,9 +38,8 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     v-if="route.path.indexOf('posts') !== -1"
     class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden"
   >
-    <div class="w-full flex justify-end">
-      <Sign />
-    </div>
+    <!-- <div class="w-full flex justify-end">
+    </div> -->
     <template v-if="frontmatter.date">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
