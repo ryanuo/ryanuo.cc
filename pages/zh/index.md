@@ -9,6 +9,7 @@ plum: true
 id: ryanuo
 titleStyle:
   fontFamily: 'Bonheur Royale'
+  opacity: 0.65
 ---
 
 嘿，我是 ryanuo（/rweɪ ˈɑn nɔː/），一名热爱前端开发的工程师。

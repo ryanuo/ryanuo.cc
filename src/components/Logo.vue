@@ -11,7 +11,7 @@ export default {
 <template>
   <div>
     <transition name="fade">
-      <img v-if="showLogo" src="/logo.png" alt="" srcset="">
+      <img v-if="showLogo" src="/logo.png" class="opacity-75" alt="" srcset="">
       <!-- <Sign
         :svg-tyl="{
           w: '30',
