@@ -9,6 +9,7 @@ plum: true
 id: ryanuo
 titleStyle:
   fontFamily: 'Bonheur Royale'
+  opacity: 0.55
 ---
 
 Hey, I am ryanuo（/rweɪ ˈɑn nɔː/）, a passionate front-end developer.
