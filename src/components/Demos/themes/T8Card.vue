@@ -6,7 +6,7 @@ import 'swiper/css/pagination'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import type { DemosTypes } from '../type'
 import { useModalOptions } from '../hooks/useModalOptions'
-import { launchInNewWindow } from '~/utils'
+import { openLinkInPopup } from '~/utils'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
@@ -46,7 +46,7 @@ const demosArray = computed(() => {
           class="img-box"
         >
           <div class="info">
-            <h3 @click.prevent="launchInNewWindow(demo.link)">
+            <h3 @click.prevent="openLinkInPopup(demo.link)">
               {{ demo.name }}
               <i
                 class="i-ri-fullscreen-exit-fill text-[14px] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-[1.2]" @click.stop="() => {

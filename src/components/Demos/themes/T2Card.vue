@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useModalOptions } from '../hooks/useModalOptions'
 import type { DemosTypes } from '../type'
-import { launchInNewWindow } from '~/utils'
+import { openLinkInPopup } from '~/utils'
 
 defineProps<{ demos: {
   [key: number]: DemosTypes[]
@@ -41,23 +41,12 @@ const { options } = useModalOptions()
             {{ demo.desc }}
           </p>
         </div>
-        <div class="p-4 pt-0">
-          <button
-            data-ripple-light="true"
-            type="button"
-            class="group select-none rounded-md from-gray-100 to-gray-300 bg-gradient-to-r px-5 py-2 text-center text-sm text-gray-800 font-medium uppercase shadow-md transition-all dark:from-gray-700 hover:from-gray-200 dark:to-gray-900 hover:to-gray-400 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:hover:from-gray-600 dark:hover:to-gray-800 dark:focus:ring-gray-600"
-            @click="() => {
-              launchInNewWindow(demo.readme || demo.link)
-            }"
-          >
-            Read More
-            <span
-              aria-hidden="true"
-              class="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-            >
-              →
-            </span>
-          </button>
+        <div
+          class="p-4 pt-0 text-right text-xs hover:underline" @click="() => {
+            openLinkInPopup(demo.readme || demo.link)
+          }"
+        >
+          Read More
         </div>
       </div>
     </article>
