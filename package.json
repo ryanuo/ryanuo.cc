@@ -2,7 +2,7 @@
   "name": "harry.me",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "dev": "vite",
     "vercel:build": "pnpm run build && pnpm run vercel:route",

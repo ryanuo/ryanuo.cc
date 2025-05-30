@@ -32,8 +32,7 @@ export default defineConfig({
   ],
   content: {
     pipeline: {
-      include: ['**/*.{vue,html,js,ts,jsx,tsx,md}'],
-      exclude: ['node_modules', '.git', 'dist', 'public'],
+      include: ['src/**/*.{vue,ts}', 'pages/**/*.{vue,md}'],
     },
   },
   transformers: [transformerDirectives()],
