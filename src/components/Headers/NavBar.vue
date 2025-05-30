@@ -90,10 +90,10 @@ const buttonClass = computed(() => {
           />
         </a>
         <a href="https://github.com/ryanuo" target="_blank" title="GitHub" class="lt-md:hidden">
-          <div i-uil-github-alt />
+          <div i-uil-github-alt cursor-pointer />
         </a>
         <a href="https://status.ryanuo.cc" target="_blank" title="status" class="lt-m">
-          <div class="i-hugeicons-status" />
+          <div class="i-icon-park-close-wifi cursor-pointer" />
         </a>
         <a class="flex items-center" href="javascript:void(0)">
           <div v-tooltip="$t('lang.change', 'English To Chinese')" :class="langIcon" @click="switchLanguage" />

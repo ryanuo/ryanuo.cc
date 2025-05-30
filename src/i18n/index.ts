@@ -13,8 +13,8 @@ const i18n = createI18n({
 export default i18n
 
 export const langIconMap: Record<string, string> = {
-  'zh-CN': 'i-icon-park-outline-chinese',
-  'en-US': 'i-icon-park-outline-english',
+  'zh-CN': 'i-proicons-text-typography',
+  'en-US': 'i-noto-v1-flag-for-flag-china',
 }
 export function handleLanguageSwitch(to: any, next: any): void {
   if (location.pathname.includes('zh'))
