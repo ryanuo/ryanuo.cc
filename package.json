@@ -1,5 +1,5 @@
 {
-  "name": "harry.me",
+  "name": "ryanuo.cc",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.11.0",
@@ -74,5 +74,8 @@
     "vite": "catalog:build",
     "vite-ssg": "catalog:build",
     "vue-tsc": "catalog:dev"
+  },
+  "overrides": {
+    "jiti": "^2.4.2"
   }
 }
