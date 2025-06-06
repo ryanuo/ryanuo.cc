@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'textcss'
+      link: 'https://github.com/ryanuo/textcss'
+      desc: '一个简单的文本CSS样式库-包括插件等'
+      img: '/demos/textcss.png'
+      readme: 'https://github.com/ryanuo/textcss/blob/main/README.md'
+      tags: [monorepo, tailwindcss, vite]
     - name: 'Tab Extension（标签页扩展）'
       link: 'https://github.com/ryanuo/tab-ext'
       desc: '一个适用于 Chrome 浏览器的标签页扩展。'

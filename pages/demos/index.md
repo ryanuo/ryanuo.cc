@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'textcss'
+      link: 'https://github.com/ryanuo/textcss'
+      desc: 'A simple text CSS style library - including plugins, etc.'
+      img: '/demos/textcss.png'
+      readme: 'https://github.com/ryanuo/textcss/blob/main/README.md'
+      tags: [monorepo, tailwindcss, vite]
     - name: 'Tab Extension'
       link: 'https://github.com/ryanuo/tab-ext'
       desc: 'A tab extension for Chrome.'
