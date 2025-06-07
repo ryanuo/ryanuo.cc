@@ -31,7 +31,7 @@ watch(y, (currentVal) => {
   >
     <div
       v-show="isShowTitle"
-      class="fixed left-0 right-0 top-0 z-99 w-full bg-[#fcfcfde6]/50 py-4 text-center font-bold opacity-100 backdrop-blur-md dark:bg-[#050505]/50"
+      class="fixed left-0 right-0 top-0 z-99 w-full bg-[#fcfcfde6]/50 py-4 text-center text-sm font-bold opacity-100 backdrop-blur-md dark:bg-[#050505]/50"
       :class="[
         { 'transform translateY-0': isShowTitle && isScrollDown },
         { 'transform translateY-[-100px]': isShowTitle && !isScrollDown },
