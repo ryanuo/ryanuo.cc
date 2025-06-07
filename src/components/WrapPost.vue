@@ -8,7 +8,7 @@ defineProps({
   },
 })
 const route = useRoute()
-const isShowAIPost = computed(() => {
+const isPost = computed(() => {
   if (route.path === '/zh/posts' || route.path === '/posts')
     return false
   return route.path?.indexOf('posts') !== -1
@@ -22,6 +22,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
   <ClientOnly v-if="typeof frontmatter.plum === 'boolean' ? frontmatter.plum : true">
     <Plum />
   </ClientOnly>
+  <Title v-if="isPost" :title="frontmatter.display ?? frontmatter.title" />
   <div v-if="frontmatter.title && !frontmatter.isHidenTitle" class="prose" m-auto mb-8>
     <h1 class="slide-enter-50 mb-0" :style="frontmatter.titleStyle">
       <span data-title>{{ frontmatter.display ?? frontmatter.title }}</span>
@@ -31,7 +32,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     </h1>
   </div>
   <article>
-    <AIPostChat v-if="isShowAIPost" />
+    <AIPostChat v-if="isPost" />
     <slot />
   </article>
   <div

@@ -402,7 +402,7 @@ onMounted(() => {
 
 /* Dark mode styles */
 .dark #core-ai-summary-tool-main {
-  background: #1e1e2e;
+  background: #131313;
   box-shadow: inset 0 0 4px #0000001a;
   color: #c9d1d9;
 }
@@ -416,7 +416,7 @@ onMounted(() => {
 }
 
 .dark #core-ai-summary-tool-main .summary-content {
-  background: #2c2c3c;
+  background: #08080f;
 }
 
 .dark #core-ai-summary-tool-main .tool-header a {

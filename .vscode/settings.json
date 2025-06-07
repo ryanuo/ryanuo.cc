@@ -5,7 +5,6 @@
     "strings": true
   },
   "eslint.useFlatConfig": true,
-  "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -59,6 +58,8 @@
     "markdown",
     "json",
     "jsonc",
-    "yaml"
+    "yaml",
+    "css",
+    "postcss"
   ]
 }
