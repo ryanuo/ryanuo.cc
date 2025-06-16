@@ -15,7 +15,7 @@ const isPost = computed(() => {
 })
 
 const base = 'https://ryanuo.cc'
-const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComponent(`Reading @ryan7co\'s ${base}${route.path}\n\nI think...`)}`)
+const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComponent(`Reading @ryanuo77\'s ${base}${route.path}\n\nI think...`)}`)
 </script>
 
 <template>

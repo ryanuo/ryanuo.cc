@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Markdown 简历编辑器'
+      link: 'https://github.com/NxResume/nuxt-resume-editor'
+      desc: '一个基于 Nuxt 3 的 Markdown 简历编辑器，支持实时预览和一键导出 PDF。'
+      img: '/demos/nuxt-resume-editor.png'
+      readme: 'https://github.com/NxResume/nuxt-resume-editor/blob/main/README.md'
+      tags: [nuxt3, markdown]
     - name: 'textcss'
       link: 'https://github.com/ryanuo/textcss'
       desc: '一个简单的文本CSS样式库-包括插件等'

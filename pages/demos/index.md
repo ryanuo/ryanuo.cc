@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Resume Editor'
+      link: 'https://github.com/NxResume/nuxt-resume-editor'
+      desc: 'A markdown resume editor based on Nuxt3'
+      img: '/demos/nuxt-resume-editor.png'
+      readme: 'https://github.com/NxResume/nuxt-resume-editor/blob/main/README.md'
+      tags: [nuxt3, markdown]
     - name: 'textcss'
       link: 'https://github.com/ryanuo/textcss'
       desc: 'A simple text CSS style library - including plugins, etc.'
