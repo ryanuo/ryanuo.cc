@@ -61,6 +61,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/tmpl-cli': RouteRecordInfo<'/posts/tmpl-cli', '/posts/tmpl-cli', Record<never, never>, Record<never, never>>,
     '/posts/train': RouteRecordInfo<'/posts/train', '/posts/train', Record<never, never>, Record<never, never>>,
     '/posts/vscode': RouteRecordInfo<'/posts/vscode', '/posts/vscode', Record<never, never>, Record<never, never>>,
+    '/posts/yunshu-uninstall': RouteRecordInfo<'/posts/yunshu-uninstall', '/posts/yunshu-uninstall', Record<never, never>, Record<never, never>>,
     '/posts/zsh-windows': RouteRecordInfo<'/posts/zsh-windows', '/posts/zsh-windows', Record<never, never>, Record<never, never>>,
     '/projects/': RouteRecordInfo<'/projects/', '/projects', Record<never, never>, Record<never, never>>,
     '/zh/': RouteRecordInfo<'/zh/', '/zh', Record<never, never>, Record<never, never>>,
@@ -105,6 +106,7 @@ declare module 'vue-router/auto-routes' {
     '/zh/posts/tmpl-cli': RouteRecordInfo<'/zh/posts/tmpl-cli', '/zh/posts/tmpl-cli', Record<never, never>, Record<never, never>>,
     '/zh/posts/train': RouteRecordInfo<'/zh/posts/train', '/zh/posts/train', Record<never, never>, Record<never, never>>,
     '/zh/posts/vscode': RouteRecordInfo<'/zh/posts/vscode', '/zh/posts/vscode', Record<never, never>, Record<never, never>>,
+    '/zh/posts/yunsuh-uninstall': RouteRecordInfo<'/zh/posts/yunsuh-uninstall', '/zh/posts/yunsuh-uninstall', Record<never, never>, Record<never, never>>,
     '/zh/posts/zsh-windows': RouteRecordInfo<'/zh/posts/zsh-windows', '/zh/posts/zsh-windows', Record<never, never>, Record<never, never>>,
     '/zh/projects/': RouteRecordInfo<'/zh/projects/', '/zh/projects', Record<never, never>, Record<never, never>>,
   }
