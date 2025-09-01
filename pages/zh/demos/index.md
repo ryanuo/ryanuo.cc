@@ -5,6 +5,24 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: '截图api'
+      link: 'https://github.com/ryanuo/screenshot'
+      desc: 截图api，支持部署vercel、netlify
+      tags: [puppeteer, Playwright]
+      img: '/demos/screenshot.png'
+      readme: 'https://github.com/ryanuo/screenshot/blob/main/README.md'
+    - name: '网页多端截图'
+      link: 'https://github.com/ryanuo/mts'
+      desc: 网页多端带壳截图工具，基于nuxt4打造而成，个人自用
+      img: '/demos/mts.png'
+      tags: [nuxt4, vue3, unocss]
+      readme: 'https://github.com/ryanuo/mts/blob/main/README.md'
+    - name: userscripts
+      link: 'https://github.com/ryanuo/userscripts'
+      desc: 'A collection of userscripts for Chrome.'
+      img: '/demos/userscripts.png'
+      tags: [userscripts, chrome]
+      readme: 'https://github.com/ryanuo/userscripts/blob/main/README.md'
     - name: 'Markdown 简历编辑器'
       link: 'https://github.com/NxResume/nuxt-resume-editor'
       desc: '一个基于 Nuxt 3 的 Markdown 简历编辑器，支持实时预览和一键导出 PDF。'

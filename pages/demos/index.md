@@ -5,6 +5,24 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: 'Screenshot API'
+      link: 'https://github.com/ryanuo/screenshot'
+      desc: Screenshot API, deployable on Vercel and Netlify
+      tags: [puppeteer, Playwright]
+      img: '/demos/screenshot.png'
+      readme: 'https://github.com/ryanuo/screenshot/blob/main/README.md'
+    - name: 'Multi-Device Webpage Screenshot'
+      link: 'https://github.com/ryanuo/mts'
+      desc: A multi-device framed webpage screenshot tool, built with Nuxt 4, for personal use
+      img: '/demos/mts.png'
+      tags: [nuxt4, vue3, unocss]
+      readme: 'https://github.com/ryanuo/mts/blob/main/README.md'
+    - name: userscripts
+      link: 'https://github.com/ryanuo/userscripts'
+      desc: 'A collection of userscripts for Chrome.'
+      img: '/demos/userscripts.png'
+      tags: [userscripts, chrome]
+      readme: 'https://github.com/ryanuo/userscripts/blob/main/README.md'
     - name: 'Resume Editor'
       link: 'https://github.com/NxResume/nuxt-resume-editor'
       desc: 'A markdown resume editor based on Nuxt3'
