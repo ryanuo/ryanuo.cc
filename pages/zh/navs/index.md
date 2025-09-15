@@ -202,6 +202,11 @@ projects:
       link: https://github.com/casesandberg/react-color
       icon: i-mdi-palette
       desc: 来自 Sketch、Photoshop、Chrome、Github、Twitter 等的颜色选择器
+    #  https://www.reactbits.dev/text-animations/split-text
+    - name: 'React Components For Creative Developers'
+      link: https://www.reactbits.dev/text-animations/split-text
+      icon: i-mdi-text-box-check-outline
+      desc: 'Highly customizable animated components that make your React projects truly stand out'
 
   图标库:
     - name: 'Icônes'

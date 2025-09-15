@@ -203,6 +203,12 @@ projects:
       link: https://github.com/casesandberg/react-color
       icon: i-mdi-palette
       desc: color pickers from sketch photoshop chrome github twitter and more
+      # https://www.reactbits.dev/text-animations/split-text
+    - name: 'React Components For Creative Developers'
+      link: https://www.reactbits.dev/text-animations/split-text
+      icon: i-mdi-text-box-check-outline
+      desc: 'Highly customizable animated components that make your React projects truly stand out'
+
   Icon library:
     - name: 'Icônes'
       link: 'https://icones.js.org/'
