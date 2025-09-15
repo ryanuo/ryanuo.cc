@@ -15,6 +15,7 @@ import './styles/style.css'
 
 import 'uno.css'
 
+import { useBaiduAnalytics } from '../scripts/baidu-analytics'
 import App from './App.vue'
 import i18n, { handleLanguageSwitch } from './i18n'
 
@@ -28,6 +29,9 @@ export const createApp = ViteSSG(
   ({ router, isClient, app }: ViteSSGContext) => {
     app.use(i18n)
     app.use(FloatingVue)
+
+    // 百度统计
+    useBaiduAnalytics(router, '43eae13e22d50ada33dfbc27d67965fd')
 
     if (isClient) {
       const html = document.querySelector('html')!
