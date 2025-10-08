@@ -5,6 +5,12 @@ plum: true
 isHidenTitle: true
 demos:
   2025:
+    - name: '今天吃什么'
+      link: 'https://github.com/ryanuo/whatToEat'
+      desc: 今天吃什么？的决策工具，帮助你快速选择合适的菜谱。
+      img: '/demos/whatToEat.png'
+      tags: [nuxt, vue3, unocss]
+      readme: 'https://github.com/ryanuo/whatToEat/blob/main/README.md'
     - name: '截图api'
       link: 'https://github.com/ryanuo/screenshot'
       desc: 截图api，支持部署vercel、netlify

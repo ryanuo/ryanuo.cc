@@ -2,7 +2,7 @@
   "name": "ryanuo.cc",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.18.1",
   "scripts": {
     "dev": "vite",
     "vercel:build": "pnpm run build && pnpm run vercel:route",
