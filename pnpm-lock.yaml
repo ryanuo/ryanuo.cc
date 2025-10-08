@@ -83,7 +83,7 @@ catalogs:
       specifier: ^1.11.20
       version: 1.11.20
     cross-env:
-      specifier: ^7.0.3
+      specifier: catalog:dev
       version: 7.0.3
     eslint:
       specifier: ^9.27.0
