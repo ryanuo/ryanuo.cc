@@ -10,6 +10,7 @@ demos:
       desc: What to eat today? decision-making tools to help you quickly choose the right recipe.
       img: '/demos/whatToEat.png'
       tags: [nuxt, vue3, unocss]
+      preview: 'https://eat.ryanuo.cc'
       readme: 'https://github.com/ryanuo/whatToEat/blob/main/README.md'
     - name: 'Screenshot API'
       link: 'https://github.com/ryanuo/screenshot'

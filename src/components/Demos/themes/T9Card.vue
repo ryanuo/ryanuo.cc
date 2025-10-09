@@ -118,9 +118,9 @@ function deselectAllYears() {
               <p>{{ demo.year }}</p>
             </td>
             <td class="p-3">
-              <a :href="demo.link" target="_blank" class="text-blue-500 underline">
+              <LinkPreview :url="demo.preview || demo.link" class="text-blue-500 underline underline-offset-2 underline-dashed">
                 {{ demo.name }}
-              </a>
+              </LinkPreview>
             </td>
             <td class="p-3">
               <p>{{ demo.desc }}</p>

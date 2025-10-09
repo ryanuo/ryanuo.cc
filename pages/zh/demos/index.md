@@ -7,6 +7,7 @@ demos:
   2025:
     - name: '今天吃什么'
       link: 'https://github.com/ryanuo/whatToEat'
+      preview: 'https://eat.ryanuo.cc'
       desc: 今天吃什么？的决策工具，帮助你快速选择合适的菜谱。
       img: '/demos/whatToEat.png'
       tags: [nuxt, vue3, unocss]

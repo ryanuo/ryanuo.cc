@@ -7,4 +7,5 @@ export interface DemosTypes {
   img: string
   readme: string
   tags: string[]
+  preview?: string
 }
