@@ -33,6 +33,8 @@ catalogs:
     eslint-plugin-format: ^0.1.3
     esno: ^4.8.0
     vue-tsc: ^2.2.10
+    '@microlink/mql': ^0.14.0
+
   frontend:
     '@docsearch/css': ^3.9.0
     '@docsearch/js': ^3.9.0

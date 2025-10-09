@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "get-ico": "python scripts/ico-get.py",
     "check": "npx taze",
-    "fix": "npx eslint --fix"
+    "fix": "npx eslint --fix",
+    "cover": "esno scripts/cover_generate.ts"
   },
   "dependencies": {
     "@docsearch/css": "catalog:frontend",
@@ -38,6 +39,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@iconify/json": "catalog:dev",
+    "@microlink/mql": "catalog:dev",
     "@types/fs-extra": "catalog:types",
     "@types/lodash": "catalog:types",
     "@types/lodash-es": "catalog:types",

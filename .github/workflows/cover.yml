@@ -37,7 +37,7 @@ jobs:
           pnpm run build
 
       - name: Generate Cover Image
-        run: python scripts/cover_generate.py # 执行你的脚本
+        run: pnpm run cover # 执行你的脚本
 
       - name: Commit and Push Generated Cover
         run: |
