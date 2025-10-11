@@ -37,8 +37,8 @@ catalogs:
       specifier: ^9.2.0
       version: 9.2.0
     markdown-it-diagram:
-      specifier: ^1.0.3
-      version: 1.0.3
+      specifier: ^1.0.4
+      version: 1.0.4
     markdown-it-link-attributes:
       specifier: ^4.0.1
       version: 4.0.1
@@ -323,7 +323,7 @@ importers:
         version: 9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
       markdown-it-diagram:
         specifier: catalog:build
-        version: 1.0.3(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
+        version: 1.0.4(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
       markdown-it-link-attributes:
         specifier: catalog:build
         version: 4.0.1
@@ -3097,8 +3097,8 @@ packages:
       '@types/markdown-it': '*'
       markdown-it: '*'
 
-  markdown-it-diagram@1.0.3:
-    resolution: {integrity: sha512-WSqlh6mfCjs1+9ED9B/zJTBNfNfT47YAk+myJmQGmrJhTEI8FRKF5PySAVF/sYSk7lyBEiVc/qYCmFv6Jf/oCA==}
+  markdown-it-diagram@1.0.4:
+    resolution: {integrity: sha512-YUM08mcHe49cUpA3l6GdwIdjzKtR9evVvEL+bMSFU0s9WzX9EPqpjuoQzoJhRgRsiYPMDKClZqLwWMTJOXgpNA==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: ^14.0.0
@@ -7203,7 +7203,7 @@ snapshots:
       '@types/markdown-it': 14.1.2
       markdown-it: 14.1.0
 
-  markdown-it-diagram@1.0.3(@types/markdown-it@14.1.2)(markdown-it@14.1.0):
+  markdown-it-diagram@1.0.4(@types/markdown-it@14.1.2)(markdown-it@14.1.0):
     dependencies:
       '@panzoom/panzoom': 4.6.0
       '@types/markdown-it': 14.1.2
