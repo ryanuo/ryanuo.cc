@@ -39,6 +39,7 @@ export default {
 
 ```js
 import m1 from './index.js'
+
 console.log(m1)
 ```
 
@@ -62,6 +63,7 @@ export default {
 ```js
 // 按需导入,info 表示默认导出
 import info, { n1 } from './index.js'
+
 console.log(n1)
 ```
 
@@ -96,6 +98,7 @@ thenfs.readFile('./1.txt', 'utf-8').then((res) => {
 
 ```js
 import thenfs from 'then-fs'
+
 const promiseArr = [
   thenfs.readFile('./1.txt', 'utf-8'),
   thenfs.readFile('./2.txt', 'utf-8'),
@@ -112,6 +115,7 @@ Promise.all(promiseArr).then((res) => {
 
 ```js
 import thenfs from 'then-fs'
+
 const promiseArr = [
   thenfs.readFile('./1.txt', 'utf-8'),
   thenfs.readFile('./2.txt', 'utf-8'),

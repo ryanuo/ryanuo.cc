@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useModalOptions } from '../hooks/useModalOptions'
 import type { DemosTypes } from '../type'
 import { openLinkInPopup } from '~/utils'
+import { useModalOptions } from '../hooks/useModalOptions'
 
 defineProps<{ demos: {
   [key: number]: DemosTypes[]

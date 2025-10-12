@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { type CSSProperties, computed, reactive, ref } from 'vue'
+import type { CSSProperties } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
 interface BaseProps {
   class?: string

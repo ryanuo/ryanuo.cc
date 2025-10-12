@@ -35,6 +35,7 @@ PlantUML 是一个多功能组件，可快速、直接地创建图表。[PDF](ht
 ```ts
 import plantuml from 'markdown-it-plantuml'
 import Markdown from 'unplugin-vue-markdown/vite'
+
 export default defineConfig({
   plugins: [
     Markdown({
@@ -62,6 +63,7 @@ Mermaid相对于PlantUML而言，更简单易用且无需服务器，适合快�
 ```ts
 import textualUml from 'markdown-it-textual-uml'
 import Markdown from 'unplugin-vue-markdown/vite'
+
 export default defineConfig({
   plugins: [
     Markdown({

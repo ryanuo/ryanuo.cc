@@ -1,23 +1,23 @@
+import type { ViteSSGContext } from 'vite-ssg'
 import FloatingVue from 'floating-vue'
 import NProgress from 'nprogress'
-import { routes } from 'vue-router/auto-routes'
-import type { ViteSSGContext } from 'vite-ssg'
 import { ViteSSG } from 'vite-ssg'
 import { setupRouterScroller } from 'vue-router-better-scroller'
+import { routes } from 'vue-router/auto-routes'
 
+import { useBaiduAnalytics } from '../plugins/baidu-analytics'
+import App from './App.vue'
+import i18n, { handleLanguageSwitch } from './i18n'
 import '@shikijs/twoslash/style-rich.css'
 import '@unocss/reset/tailwind.css'
 import 'floating-vue/dist/style.css'
 import 'vue-final-modal/style.css'
+
 import './styles/markdown.css'
+
 import './styles/prose.css'
 import './styles/style.css'
-
 import 'uno.css'
-
-import { useBaiduAnalytics } from '../scripts/baidu-analytics'
-import App from './App.vue'
-import i18n, { handleLanguageSwitch } from './i18n'
 
 NProgress.configure({ showSpinner: false })
 

@@ -7,9 +7,7 @@ export default antfu(
     formatters: {
       css: true,
     },
-    unocss: true,
-  },
-  {
+    pnpm: true,
     rules: {
       '@stylistic/js/no-multiple-empty-lines': 'off',
       'no-labels': 'off',
@@ -25,5 +23,6 @@ export default antfu(
       'vue/no-template-shadow': 'off',
       'vue/no-v-text-v-html-on-component': 'off',
     },
+    unocss: true,
   },
 )

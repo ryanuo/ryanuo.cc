@@ -1,6 +1,6 @@
+import type { FeedOptions, Item } from 'feed'
 import { dirname } from 'node:path'
 import fg from 'fast-glob'
-import type { FeedOptions, Item } from 'feed'
 import { Feed } from 'feed'
 import fs from 'fs-extra'
 import matter from 'gray-matter'

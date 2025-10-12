@@ -130,6 +130,7 @@ npm install markdown-it-diagram --save
 // vite.config.ts
 import MarkdownItDiagrams from 'markdown-it-diagram'
 import Markdown from 'unplugin-vue-markdown/vite'
+
 export default defineConfig({
   plugins: [
     Markdown({
@@ -162,6 +163,7 @@ vue3 example:
 <script setup lang="ts">
 import { markdownItDiagramDom } from 'markdown-it-diagram/dom'
 import { onMounted } from 'vue'
+
 onMounted(async () => {
   // if you want to use mermaid, you need to install mermaid.js
   // npm install mermaid

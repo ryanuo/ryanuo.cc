@@ -1,5 +1,6 @@
 /// <reference types="vite-ssg" />
 
+import type { UserConfig } from 'vite'
 import { basename, resolve } from 'node:path'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
@@ -7,6 +8,7 @@ import Vue from '@vitejs/plugin-vue'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 import anchor from 'markdown-it-anchor'
+import MarkdownItDiagrams from 'markdown-it-diagram'
 import LinkAttributes from 'markdown-it-link-attributes'
 import TOC from 'markdown-it-table-of-contents'
 import { visualizer } from 'rollup-plugin-visualizer'
@@ -16,10 +18,8 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
-import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import type { UserConfig } from 'vite'
-import MarkdownItDiagrams from 'markdown-it-diagram'
+import VueRouter from 'unplugin-vue-router/vite'
 // import MarkdownItDiagrams from '../markdown-it-diagram/src' // test only
 
 import { slugify } from './scripts/slugify'

@@ -60,8 +60,9 @@ pnpm install @docsearch/css
 
 ```vue
 <script setup lang="ts">
-import '@docsearch/css'
 import docsearch from '@docsearch/js'
+import '@docsearch/css'
+
 const props = defineProps<{
   algolia: AlgoliaSearchOptions
 }>()

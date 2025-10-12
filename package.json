@@ -13,7 +13,8 @@
     "get-ico": "python scripts/ico-get.py",
     "check": "npx taze",
     "fix": "npx eslint --fix",
-    "cover": "esno scripts/cover_generate.ts"
+    "cover": "esno scripts/og-cover.ts",
+    "post": "esno scripts/create-post.ts"
   },
   "dependencies": {
     "@docsearch/css": "catalog:frontend",
@@ -60,6 +61,7 @@
     "fast-glob": "catalog:build",
     "fs-extra": "catalog:build",
     "gray-matter": "catalog:build",
+    "inquirer": "catalog:dev",
     "markdown-it": "catalog:build",
     "markdown-it-anchor": "catalog:build",
     "markdown-it-diagram": "catalog:build",

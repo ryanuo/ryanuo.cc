@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import type { DemosTypes } from '../type'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { openLinkInPopup } from '~/utils'
+import { useModalOptions } from '../hooks/useModalOptions'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import type { DemosTypes } from '../type'
-import { useModalOptions } from '../hooks/useModalOptions'
-import { openLinkInPopup } from '~/utils'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 

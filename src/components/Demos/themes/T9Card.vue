@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useModalOptions } from '../hooks/useModalOptions'
 import type { DemosTypes } from '../type'
+import { useModalOptions } from '../hooks/useModalOptions'
 
 const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 

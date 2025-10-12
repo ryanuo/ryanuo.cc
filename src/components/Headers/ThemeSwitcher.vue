@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { themes } from '~/utils/theme'
 import { loadTheme } from '~/utils/markdown'
+import { themes } from '~/utils/theme'
 
 const isDark = useDark()
 

@@ -36,7 +36,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     <slot />
   </article>
   <div
-    v-if="route.path.indexOf('posts') !== -1"
+    v-if="route.path.includes('posts')"
     class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden"
   >
     <!-- <div class="w-full flex justify-end">

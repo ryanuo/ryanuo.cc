@@ -1,5 +1,5 @@
-import markdownit from 'markdown-it'
 import MarkdownItShiki from '@shikijs/markdown-it'
+import markdownit from 'markdown-it'
 import { themes } from './theme'
 
 export async function fetchRemoteMarkdown(url: string) {
