@@ -13,18 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set Up Python Environment
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.12 # 选择你的Python版本
-
-      - name: Install Python Dependencies
-        run: pip install -r scripts/requirements.txt # 如果有依赖文件，你可以在这里安装它们
-
-      - name: Install Playwright and Chromium
-        run: |
-          playwright install chromium
-
       - name: Set Up Node.js Environment
         uses: actions/setup-node@v3
         with:
@@ -40,9 +28,7 @@ jobs:
         run: pnpm run cover # 执行你的脚本
 
       - name: Commit and Push Generated Cover
-        run: |
-          git config --global user.email "1577791638@qq.com"
-          git config --global user.name "ryanuo"
-          git add .
-          git diff-index --quiet HEAD || git commit -m "chore:auto generate cover [ci skip]"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore:auto generate og cover [ci skip]'
+          branch: main
