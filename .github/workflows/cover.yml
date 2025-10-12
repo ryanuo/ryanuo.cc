@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore:auto generate og cover [ci skip]'
-          branch: main
+          branch: master
