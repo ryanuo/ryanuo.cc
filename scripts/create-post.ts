@@ -3,7 +3,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import inquirer from 'inquirer'
 
-const outputDir = path.resolve(process.cwd(), 'pages', 'posts')
+const outputDir = path.resolve(process.cwd(), 'pages', 'zh', 'posts')
+const outputDirEn = path.resolve(process.cwd(), 'pages', 'posts')
 function formatDate(date: Date) {
   const yyyy = date.getFullYear()
   const MM = String(date.getMonth() + 1).padStart(2, '0')
@@ -24,6 +25,19 @@ async function main() {
     },
     {
       type: 'input',
+      name: 'fileName',
+      message: '请输入文件名:',
+      default: answers => answers.title.toLowerCase().replace(/\s+/g, '-'),
+      validate: (input) => {
+        const filePath = path.resolve(outputDir, `${input}.md`)
+        if (fs.existsSync(filePath)) {
+          return '文件已存在，请选择其他文件名'
+        }
+        return input.trim() !== '' || '文件名不能为空'
+      },
+    },
+    {
+      type: 'input',
       name: 'categories',
       message: '请输入分类:',
     },
@@ -41,7 +55,7 @@ async function main() {
   ])
 
   const date = formatDate(new Date())
-  const filename = `${answers.title.toLowerCase().replace(/\s+/g, '-')}.md`
+  const filename = `${answers.fileName}.md`
   const filepath = path.resolve(outputDir, filename)
 
   const content = `---
@@ -54,6 +68,7 @@ plum: ${answers.plum}
 `
 
   fs.writeFileSync(filepath, content)
+  fs.writeFileSync(path.resolve(outputDirEn, filename), content)
   console.log(`✅ 文件已创建: ${filename}`)
 }
 
