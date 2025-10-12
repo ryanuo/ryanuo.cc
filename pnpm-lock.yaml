@@ -97,6 +97,9 @@ catalogs:
     esno:
       specifier: ^4.8.0
       version: 4.8.0
+    inquirer:
+      specifier: ^12.9.6
+      version: 12.9.6
     vue-tsc:
       specifier: ^2.2.10
       version: 2.2.10
@@ -316,7 +319,7 @@ importers:
         specifier: catalog:build
         version: 4.0.3
       inquirer:
-        specifier: ^12.9.6
+        specifier: catalog:dev
         version: 12.9.6(@types/node@20.17.56)
       markdown-it:
         specifier: catalog:build
