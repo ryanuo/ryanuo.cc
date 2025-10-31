@@ -59,7 +59,17 @@ export default {
     UnoCSS(),
     VueRouter({
       extensions: ['.vue', '.md'],
-      routesFolder: 'pages',
+      routesFolder: [
+        {
+          src: 'pages',
+          path: (file) => {
+            let path = file.replace(/^.*\/pages\//, '')
+            // redirect en files to /en paths, eg: pages/en/posts/xxx.md -> posts/xxx
+            path = path.replace(/^en\//, '').replace(/^en/, '')
+            return path
+          },
+        },
+      ],
       logs: false,
       dts: 'typings/routes.d.ts',
       extendRoute(route) {
@@ -72,14 +82,6 @@ export default {
           route.addToMeta({
             frontmatter: data,
           })
-        }
-      },
-      beforeWriteFiles(routes) {
-        for (const r of routes) {
-          if (r.name && r.name.startsWith('/en')) {
-            r.name = r.name.replace('/en', '')
-            r.path = r.path.replace('/en', '/')
-          }
         }
       },
     }),
