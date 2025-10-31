@@ -35,5 +35,6 @@ export default defineConfig({
       include: ['src/**/*.{vue,ts}', 'pages/**/*.{vue,md}'],
     },
   },
+  safelist: ['i-ri-menu-2-fill'],
   transformers: [transformerDirectives()],
 })

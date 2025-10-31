@@ -74,6 +74,14 @@ export default {
           })
         }
       },
+      beforeWriteFiles(routes) {
+        for (const r of routes) {
+          if (r.name && r.name.startsWith('/en')) {
+            r.name = r.name.replace('/en', '')
+            r.path = r.path.replace('/en', '/')
+          }
+        }
+      },
     }),
     AutoImport({
       imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
@@ -141,7 +149,11 @@ export default {
           if (!id.endsWith('.md'))
             return
           const route = basename(id, '.md')
-          const key = id.split('pages/')[1].replace('.md', '').replaceAll('/', '-')
+          let key = id.split('pages/')[1].replace('.md', '').replaceAll('/', '-')
+          if (key.startsWith('en-')) {
+            key = key.replace('en-', '')
+          }
+
           if (route === 'index' || frontmatter.image || !frontmatter.title)
             return
           const path = `og/og-ryanuo.cc-${key}.png`
