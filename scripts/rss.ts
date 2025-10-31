@@ -18,6 +18,14 @@ const markdown = MarkdownIt({
   linkify: true,
 })
 
+function urlReplaceEn(url: string) {
+  if (url.includes('/en/')) {
+    return url.replace('/en', '')
+  }
+
+  return url
+}
+
 async function run() {
   await buildBlogRSS()
   await buildLatestPostsRSS()
@@ -25,9 +33,9 @@ async function run() {
 
 async function buildBlogRSS() {
   const files = await fg([
-    'pages/posts/*.md',
+    'pages/en/posts/*.md',
     'pages/zh/posts/*.md',
-    'pages/navs/*.md',
+    'pages/en/navs/*.md',
     'pages/zh/navs/*.md',
   ])
 
@@ -73,8 +81,8 @@ async function buildBlogRSS() {
             ],
             author: [AUTHOR],
             link:
-              DOMAIN
-              + i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', ''),
+              urlReplaceEn(DOMAIN
+                + i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', '')),
           }
         }),
     )
@@ -86,7 +94,7 @@ async function buildBlogRSS() {
 }
 
 async function buildLatestPostsRSS() {
-  const files = await fg(['pages/posts/*.md'])
+  const files = await fg(['pages/en/posts/*.md'])
 
   const options = {
     title: 'RYANUO - Latest Posts',
@@ -115,6 +123,9 @@ async function buildLatestPostsRSS() {
         const { data, content } = matter(raw)
         const html = markdown.render(content)
 
+        const link = DOMAIN
+          + i.replace(/^pages(.+)\.md$/, '')?.replace('/index', '')
+
         return {
           ...data,
           date: data?.date ? new Date(data?.date) : new Date(),
@@ -123,9 +134,7 @@ async function buildLatestPostsRSS() {
             { name: 'text', objects: content.replace(/\r\n/g, '') },
           ],
           author: [AUTHOR],
-          link:
-            DOMAIN
-            + i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', ''),
+          link: urlReplaceEn(link),
         }
       }),
     )

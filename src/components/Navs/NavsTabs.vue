@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router/auto'
 import { useLanguage } from '~/hooks/useLanguage'
 
 defineProps({
