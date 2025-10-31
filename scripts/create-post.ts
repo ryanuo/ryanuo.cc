@@ -4,7 +4,7 @@ import path from 'node:path'
 import inquirer from 'inquirer'
 
 const outputDir = path.resolve(process.cwd(), 'pages', 'zh', 'posts')
-const outputDirEn = path.resolve(process.cwd(), 'pages', 'posts')
+const outputDirEn = path.resolve(process.cwd(), 'pages', 'en', 'posts')
 function formatDate(date: Date) {
   const yyyy = date.getFullYear()
   const MM = String(date.getMonth() + 1).padStart(2, '0')
