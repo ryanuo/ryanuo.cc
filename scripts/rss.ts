@@ -81,8 +81,7 @@ async function buildBlogRSS() {
             ],
             author: [AUTHOR],
             link:
-              urlReplaceEn(DOMAIN
-                + i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', '')),
+              urlReplaceEn(`${DOMAIN}${i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', '')}`),
           }
         }),
     )
@@ -103,7 +102,7 @@ async function buildLatestPostsRSS() {
     link: DOMAIN,
     copyright: 'CC BY-NC-SA 4.0 2021 © RYANUO',
     feedLinks: {
-      rss: `${DOMAIN}/latest_sitemap.xml`,
+      rss: `${DOMAIN}/latest/sitemap.xml`,
     },
   }
 
@@ -123,8 +122,7 @@ async function buildLatestPostsRSS() {
         const { data, content } = matter(raw)
         const html = markdown.render(content)
 
-        const link = DOMAIN
-          + i.replace(/^pages(.+)\.md$/, '')?.replace('/index', '')
+        const link = `${DOMAIN}${i.replace(/^pages\/en(.+)\.md$/, '$1')}`
 
         return {
           ...data,
