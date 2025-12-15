@@ -3,7 +3,7 @@ name: Generate Cover and Save Results
 on:
   push:
     branches:
-      - master # 你可以根据需要更改分支
+      - main # 你可以根据需要更改分支
 
 jobs:
   generate-cover:
@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore:auto generate og cover [ci skip]'
-          branch: master
+          branch: main
