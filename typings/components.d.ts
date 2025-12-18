@@ -13,6 +13,7 @@ declare module 'vue' {
     Company: typeof import('./../src/components/Projects/Company.vue')['default']
     Demos: typeof import('./../src/components/Demos/index.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
+    GeoMap: typeof import('./../src/components/Post/GeoMap/index.vue')['default']
     LinkPreview: typeof import('./../src/components/Demos/components/LinkPreview.vue')['default']
     ListPosts: typeof import('./../src/components/Post/ListPosts.vue')['default']
     Logo: typeof import('./../src/components/Logo.vue')['default']
