@@ -90,3 +90,33 @@ linux 系统的文件结构:
    -size +10M 显示大于10M的文件
    -type 七个文件类型： d 目录  f 文件  l 链接  p 管道  s 套接字  b 字节设备  c 字符设备
 3. locate hello.txt
+
+vim 模式
+
+1. VIM文本编译（命令模式， 插入模式， 末行模式） [vim命令](https://wangchujiang.com/reference/docs/vim.html#%E5%85%A5%E9%97%A8)
+   vim hello.txt + 表示跳转到第几行
+   光标移动 bfdu
+   G 跳转到最后一行 gg 跳转到第一行
+   set nu 显示行号
+2. 删除行
+   dd 删除当前行
+   :n,nd 删除当前行到第n行
+   dG 删除当前行到末尾
+3. 复制粘贴
+   yy 复制当前行 yG 复制当前行到末尾
+   p 粘贴 P 粘贴到当前行前面
+
+u undo
+r 替换字符 R 替换行
+
+搜索
+
+1. /string 搜索字符串 n 搜索下一个 N 搜索上一个
+2. ?string 反向搜索
+
+### 其他命令
+:set nu  设置行号
+:set nonu  取消行号设置
+:.=  打印当前行的行号
+:=  打印文件中的行数
+ctrl+g  显示文件名、当前的行号、文件的总行数和文件位置的百分比
