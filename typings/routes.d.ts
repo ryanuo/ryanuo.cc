@@ -149,6 +149,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/embedded': RouteRecordInfo<
+      '/posts/embedded',
+      '/posts/embedded',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/es6': RouteRecordInfo<
       '/posts/es6',
       '/posts/es6',
@@ -799,6 +806,12 @@ declare module 'vue-router/auto-routes' {
     'pages/en/posts/docker.md': {
       routes:
         | '/posts/docker'
+      views:
+        | never
+    }
+    'pages/en/posts/embedded.md': {
+      routes:
+        | '/posts/embedded'
       views:
         | never
     }
