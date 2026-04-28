@@ -450,6 +450,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/c': RouteRecordInfo<
+      '/zh/posts/c',
+      '/zh/posts/c',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/convolution': RouteRecordInfo<
       '/zh/posts/convolution',
       '/zh/posts/convolution',
@@ -1064,6 +1071,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/buy-car.md': {
       routes:
         | '/zh/posts/buy-car'
+      views:
+        | never
+    }
+    'pages/zh/posts/c.md': {
+      routes:
+        | '/zh/posts/c'
       views:
         | never
     }
