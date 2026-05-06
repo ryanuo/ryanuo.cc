@@ -415,6 +415,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/5132': RouteRecordInfo<
+      '/zh/posts/5132',
+      '/zh/posts/5132',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/algolia': RouteRecordInfo<
       '/zh/posts/algolia',
       '/zh/posts/algolia',
@@ -481,6 +488,13 @@ declare module 'vue-router/auto-routes' {
     '/zh/posts/docker': RouteRecordInfo<
       '/zh/posts/docker',
       '/zh/posts/docker',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/zh/posts/embd_used_soft': RouteRecordInfo<
+      '/zh/posts/embd_used_soft',
+      '/zh/posts/embd_used_soft',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -1044,6 +1058,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/zh/posts/5132.md': {
+      routes:
+        | '/zh/posts/5132'
+      views:
+        | never
+    }
     'pages/zh/posts/algolia.md': {
       routes:
         | '/zh/posts/algolia'
@@ -1101,6 +1121,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/docker.md': {
       routes:
         | '/zh/posts/docker'
+      views:
+        | never
+    }
+    'pages/zh/posts/embd_used_soft.md': {
+      routes:
+        | '/zh/posts/embd_used_soft'
       views:
         | never
     }

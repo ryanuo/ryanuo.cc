@@ -2,6 +2,7 @@
 title: My Beloved Car-A Journey of Acquisition
 date: 2021-04-01 20:00:00
 description: My Beloved Car-A Journey of Acquisition
+isHidden: true
 ---
 
 [[toc]]
