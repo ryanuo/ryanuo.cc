@@ -53,6 +53,8 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
       :to="route.path.split('/').slice(0, -1).join('/') || '/'" class="font-mono op50 hover:op75"
       text="cd .."
     />
+
+    <div style="border: .1px solid #3c3c3c1f; width: 100%; margin-top: 2rem; margin-bottom: 2rem;" />
     <TwikooComment />
   </div>
 </template>

@@ -214,6 +214,11 @@ export default {
         changeOrigin: true,
         rewrite: (path: string) => path.replace(/^\/api/, ''),
       },
+      '/twikoo': {
+        target: 'https://twi.ryanuo.cc/.netlify/functions/twikoo',
+        changeOrigin: true,
+        rewrite: (path: string) => path.replace(/^\/twikoo/, ''),
+      },
     },
   },
 } as UserConfig

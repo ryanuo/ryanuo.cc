@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useLanguage } from '~/hooks/useLanguage'
+
+const { isChinese } = useLanguage()
 const containerRef = ref<HTMLElement | null>(null)
 const route = useRoute()
 
@@ -22,7 +25,7 @@ function initTwikoo() {
     envId,
     el: containerRef.value,
     path: route.path,
-    lang: 'zh-CN',
+    lang: isChinese.value ? 'zh' : 'en',
   })
 }
 
@@ -33,7 +36,7 @@ onMounted(() => {
     if (!document.getElementById('twikoo')) {
       const script = document.createElement('script')
       script.id = 'twikoo'
-      script.src = 'https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.min.js'
+      script.src = 'https://registry.npmmirror.com/twikoo/1.7.9/files/dist/twikoo.min.js'
       script.crossOrigin = 'anonymous'
       script.onload = initTwikoo
       document.body.appendChild(script)
@@ -44,7 +47,7 @@ onMounted(() => {
   }
 })
 
-watch(() => route.path, () => {
+watch([() => route.path, isChinese.value], () => {
   if (route.path.includes('posts')) {
     setTimeout(() => {
       initTwikoo()
