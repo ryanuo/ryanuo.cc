@@ -283,3 +283,8 @@ tbody {
 .mermaid svg {
   margin: 0 auto;
 }
+
+.tk-avatar .tk-avatar-img {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
