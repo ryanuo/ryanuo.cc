@@ -35,6 +35,7 @@ declare module 'vue' {
     ThemeSwitcher: typeof import('./../src/components/Headers/ThemeSwitcher.vue')['default']
     Title: typeof import('./../src/components/Post/Title.vue')['default']
     ToggleTheme: typeof import('./../src/components/Headers/ToggleTheme.vue')['default']
+    TwikooComment: typeof import('./../src/components/Comment/TwikooComment.vue')['default']
     VMenuWrap: typeof import('./../src/components/Headers/VMenuWrap.vue')['default']
     WordYear: typeof import('./../src/components/Post/WordYear.vue')['default']
     WrapPost: typeof import('./../src/components/WrapPost.vue')['default']
