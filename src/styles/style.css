@@ -288,3 +288,7 @@ tbody {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+.tk-comments .el-loading-mask .el-loading-spinner {
+  left: 50%;
+}

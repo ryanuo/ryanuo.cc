@@ -55,6 +55,8 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     />
 
     <div style="border: .1px solid #3c3c3c1f; width: 100%; margin-top: 2rem; margin-bottom: 2rem;" />
+  </div>
+  <div v-if="route.path.includes('posts')" class="slide-enter m-auto mb-8 mt-8 w-[65ch] animate-delay-500 print:hidden">
     <TwikooComment />
   </div>
 </template>
