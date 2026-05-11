@@ -23,6 +23,10 @@ description: 整理一些工作中常用的软件，用于提升工作效率。
 - [VSCode](https://code.visualstudio.com/)
 
 ### 插件
+
+- [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+- [c/c++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
 ## 截图软件
 
 - [小旺截图](https://www.xiaowang.com/)
