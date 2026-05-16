@@ -13,6 +13,9 @@ const isPost = computed(() => {
     return false
   return route.path?.indexOf('posts') !== -1
 })
+const isShowComments = computed(() => {
+  return route.path.includes('posts') && route.fullPath !== '/posts' && route.fullPath !== '/zh/posts'
+})
 
 const base = 'https://ryanuo.cc'
 const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComponent(`Reading @ryanuo77\'s ${base}${route.path}\n\nI think...`)}`)
@@ -35,10 +38,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     <AIPostChat v-if="isPost" />
     <slot />
   </article>
-  <div
-    v-if="route.path.includes('posts')"
-    class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden"
-  >
+  <div v-if="route.path.includes('posts')" class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden">
     <!-- <div class="w-full flex justify-end">
     </div> -->
     <template v-if="frontmatter.date">
@@ -56,7 +56,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
 
     <div style="border: .1px solid #3c3c3c1f; width: 100%; margin-top: 2rem; margin-bottom: 2rem;" />
   </div>
-  <div v-if="route.path.includes('posts')" class="slide-enter m-auto mb-8 mt-8 w-[65ch] animate-delay-500 print:hidden">
+  <div v-if="isShowComments" class="slide-enter m-auto mb-8 mt-8 w-[65ch] animate-delay-500 print:hidden">
     <TwikooComment />
   </div>
 </template>

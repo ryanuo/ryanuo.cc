@@ -37,8 +37,10 @@ graph TD
 ### 1. 下载 zsh
 
 - [下载 `zsh-5.9-2-x86_64.zip`](https://grr.lanzouo.com/iIgdg21xqqfe) 或从官方渠道下载最新版。
-- [下载 zsh](https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64)
+- [官网下载 zsh](https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64)
 - [下载解压软件](https://peazip.github.io/)
+
+- 参考如何安装zsh[点击这个查看具体操作](https://zhuanlan.zhihu.com/p/625583037)
 
 ### 2. 安装 zsh
 
@@ -61,7 +63,7 @@ fi
 - 执行命令：
 
 ```sh
-curl -# -O https://mirror.ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+curl -# -O https://ghfast.top/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 ```
 
 ### 2. 修改安装源
@@ -78,7 +80,7 @@ BRANCH=${BRANCH:-master}
 
 ```sh
 REPO=${REPO:-ohmyzsh/ohmyzsh}
-REMOTE=${REMOTE:-https://mirror.ghproxy.com/https://github.com/${REPO}.git}
+REMOTE=${REMOTE:-https://ghfast.top/https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
 ```
 
@@ -101,13 +103,13 @@ sh install.sh
 - 语法高亮插件：
 
 ```sh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://ghfast.top/https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 - 自动补全插件：
 
 ```sh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://ghfast.top/https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
 ### 3. 配置插件
