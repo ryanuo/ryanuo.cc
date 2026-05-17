@@ -12,7 +12,7 @@ catalogs:
     gray-matter: ^4.0.3
     markdown-it: ^14.1.0
     markdown-it-anchor: ^9.2.0
-    markdown-it-diagram: ^1.1.4
+    markdown-it-diagram: ^1.1.5
     markdown-it-link-attributes: ^4.0.1
     markdown-it-table-of-contents: ^1.1.0
     rollup-plugin-visualizer: ^5.14.0
@@ -35,7 +35,6 @@ catalogs:
     esno: ^4.8.0
     inquirer: ^12.9.6
     vue-tsc: ^2.2.10
-
   frontend:
     '@docsearch/css': ^3.9.0
     '@docsearch/js': ^3.9.0

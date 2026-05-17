@@ -20,7 +20,7 @@ import Components from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
-// import MarkdownItDiagrams from '../markdown-it-diagram/src' // test only
+// import MarkdownItDiagrams from '../markdown-it-diagram/src/compile' // test only
 
 import { slugify } from './scripts/slugify'
 
@@ -116,6 +116,9 @@ export default {
         md.use(MarkdownItDiagrams, {
           showController: true,
           ditaa: {
+            imageFormat: 'png',
+          },
+          dot: {
             imageFormat: 'png',
           },
         })
