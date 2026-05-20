@@ -520,6 +520,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/fileio': RouteRecordInfo<
+      '/zh/posts/fileio',
+      '/zh/posts/fileio',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/forwardemail': RouteRecordInfo<
       '/zh/posts/forwardemail',
       '/zh/posts/forwardemail',
@@ -1152,6 +1159,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/file-download.md': {
       routes:
         | '/zh/posts/file-download'
+      views:
+        | never
+    }
+    'pages/zh/posts/fileio.md': {
+      routes:
+        | '/zh/posts/fileio'
       views:
         | never
     }
