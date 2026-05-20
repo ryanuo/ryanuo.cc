@@ -16,7 +16,7 @@ jobs:
       - name: Set Up Node.js Environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Build Project with Node.js
         run: |
@@ -32,46 +32,3 @@ jobs:
         with:
           commit_message: 'chore: auto generate og cover [ci skip]'
           branch: main
-
-  build-and-push:
-    needs: generate-cover 
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' 
-
-      - name: Install dependencies and build
-        run: |
-          npm install -g pnpm
-          pnpm install
-          pnpm run build
-
-      - name: Push dist folder to target repo
-        env:
-          GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          TARGET_REPO: ryanuo/ryanuo-build
-          TARGET_BRANCH: main
-        run: |
-          gh auth setup-git 
-          
-          git clone https://github.com/$TARGET_REPO.git target_repo
-          cd target_repo
-          
-          git checkout $TARGET_BRANCH || git checkout -b $TARGET_BRANCH
-          
-          # 清空目标目录内容（可选，确保是干净的构建）
-          rm -rf * .gitignore
-          
-          # 复制构建文件
-          cp -r ../dist/* .     
-          
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Auto update build files from GitHub Actions"
-          git push origin $TARGET_BRANCH
