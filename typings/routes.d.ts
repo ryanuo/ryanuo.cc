@@ -583,6 +583,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/mac_emd': RouteRecordInfo<
+      '/zh/posts/mac_emd',
+      '/zh/posts/mac_emd',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/make-name': RouteRecordInfo<
       '/zh/posts/make-name',
       '/zh/posts/make-name',
@@ -1234,6 +1241,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/linux.md': {
       routes:
         | '/zh/posts/linux'
+      views:
+        | never
+    }
+    'pages/zh/posts/mac_emd.md': {
+      routes:
+        | '/zh/posts/mac_emd'
       views:
         | never
     }
