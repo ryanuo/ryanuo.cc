@@ -2,7 +2,7 @@
 title: RYANUO - Portfolio
 display: Ryan uo
 description: RYANUO's Introduce
-keywords: Ryanuo, 前端, 工程师, 郑州, React, Vue, TypeScript, Playwright, 组件库, 财务中后台项目, 个人项目, 前端技术, 导航, GitHub, Twitter, YouTube, Instagram, 哔哩哔哩, 知乎, 微信
+keywords: Ryanuo, embedded, AI, engineer, Linux, C, C++, ARM, Python, machine learning, system programming, personal projects, technology exploration, GitHub, Twitter, YouTube, Instagram, 哔哩哔哩, 知乎, 微信
 image: /home.png
 avatars: /avatar.png
 plum: true
@@ -12,17 +12,19 @@ titleStyle:
   opacity: 0.65
 ---
 
-Hey, I am ryanuo（/rweɪ ˈɑn nɔː/）, a passionate front-end developer.
+Hey, I am ryanuo（/rweɪ ˈɑn nɔː/）, an engineer transitioning from front-end development to embedded systems and artificial intelligence.
 
-Currently, I work in [Zhengzhou](https://maps.app.goo.gl/5QSUAwVa8WJZyUFX9) as a front-end development engineer.
+Currently, I am in a career transition phase, gradually moving from web front-end development toward lower-level system programming and intelligent systems, with a focus on embedded development and AI technologies.
 
-Used technologies include React, Vue, TypeScript, and Playwright, and I am familiar with a variety of component libraries. In my work, I have participated in the development of multiple complex business finance back-office projects, for more details, please click to [view](/projects). Additionally, I have developed multiple personal projects. If you are interested, please click to [explore](/demos).
+My current learning stack includes Embedded C / C++, Linux system programming, ARM architecture fundamentals, as well as Python for AI applications, machine learning basics, and model deployment workflows.
+
+In the past few years, I mainly worked as a front-end developer (React, Vue, TypeScript), participating in multiple complex financial back-office projects. Through these experiences, I have built strong engineering skills, system thinking, and the ability to break down complex business problems. These capabilities are now being transferred into my embedded systems and AI learning journey.
 
 <!-- MdItReplace workyears dynamically calculate the number of years of service -->
 
-Over the past <WordYear/> years, besides completing my daily work, I have also been using my free time to continuously learn and understand the latest front-end technologies and trends. And I have organized some commonly used tools and frontend libraries that I have used before, please click to take a [look](/navs).
+Over the past <WordYear/> years, besides continuously learning new technologies, I have also been building personal projects to deepen my understanding of system internals and AI application scenarios.
 
-Should you have an interest in front-end development, technology-related topics, or wish to discuss anything else, do not hesitate to reach out to me. We can share insights and foster mutual growth and advancement together.
+If you are interested in embedded systems, AI, or cross-domain technical transitions, feel free to connect and explore the deeper layers of technology together.
 
 <div flex-auto />
 
