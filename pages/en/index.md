@@ -22,8 +22,6 @@ In the past few years, I mainly worked as a front-end developer (React, Vue, Typ
 
 <!-- MdItReplace workyears dynamically calculate the number of years of service -->
 
-Over the past <WordYear/> years, besides continuously learning new technologies, I have also been building personal projects to deepen my understanding of system internals and AI application scenarios.
-
 If you are interested in embedded systems, AI, or cross-domain technical transitions, feel free to connect and explore the deeper layers of technology together.
 
 <div flex-auto />

@@ -22,8 +22,6 @@ titleStyle:
 
 <!-- MdItReplace workyears dynamically calculate the number of years of service -->
 
-在过去的<WordYear/>年里，除了持续学习技术之外，我也在构建一些个人项目，用于加深对底层系统结构与 AI 应用场景的理解。
-
 如果你对嵌入式开发、AI 技术或者跨领域技术转型感兴趣，欢迎交流，一起探索更底层的技术世界。
 
 <div flex-auto />
