@@ -471,6 +471,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/data_struct': RouteRecordInfo<
+      '/zh/posts/data_struct',
+      '/zh/posts/data_struct',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/debug_test': RouteRecordInfo<
       '/zh/posts/debug_test',
       '/zh/posts/debug_test',
@@ -569,9 +576,23 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/zh/posts/linux': RouteRecordInfo<
+      '/zh/posts/linux',
+      '/zh/posts/linux',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/zh/posts/make-name': RouteRecordInfo<
       '/zh/posts/make-name',
       '/zh/posts/make-name',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/zh/posts/makefile': RouteRecordInfo<
+      '/zh/posts/makefile',
+      '/zh/posts/makefile',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -1120,6 +1141,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/zh/posts/data_struct.md': {
+      routes:
+        | '/zh/posts/data_struct'
+      views:
+        | never
+    }
     'pages/zh/posts/debug_test.md': {
       routes:
         | '/zh/posts/debug_test'
@@ -1204,9 +1231,21 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/zh/posts/linux.md': {
+      routes:
+        | '/zh/posts/linux'
+      views:
+        | never
+    }
     'pages/zh/posts/make-name.md': {
       routes:
         | '/zh/posts/make-name'
+      views:
+        | never
+    }
+    'pages/zh/posts/makefile.md': {
+      routes:
+        | '/zh/posts/makefile'
       views:
         | never
     }
