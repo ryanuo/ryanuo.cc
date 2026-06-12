@@ -49,6 +49,15 @@ docker run -it --rm \
   ubuntu:16.04 \
   /bin/bash
 ```
+
+```
+docker ps
+docker start glib-build
+docker exec -it glib-build bash
+pwd
+ls /workspace
+```
+
 - 配置镜像源
 
 ```bash
