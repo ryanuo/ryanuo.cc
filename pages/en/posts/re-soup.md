@@ -2,7 +2,7 @@
 title: "Python Web Crawling: XPath, BeautifulSoup, re, Selenium"
 date: "2021-08-22 10:34:06"
 description: 
-categories: Note
+cate: Note
 plum: true
 ---
 

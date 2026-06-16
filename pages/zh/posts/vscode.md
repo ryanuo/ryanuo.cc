@@ -2,7 +2,7 @@
 title: Vscode常用的快捷键
 date: "2020-09-18 22:57:21"
 description: VS Code常用快捷键包括注释、移动行、复制行、删除行、终端显示等。同时推荐了一些常用的插件，如Auto Rename Tag、Auto Close Tag、Beautiful等。
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

@@ -26,8 +26,8 @@ const postsRoutes = computed(() => {
       )
     })
     .map((route) => {
-      const { title, date, tags = [], categories = '' } = route.meta.frontmatter as FrontmatterPostType
-      return { title, path: route.path, date, tags, category: categories }
+      const { title, date, tags = [], cate = '' } = route.meta.frontmatter as FrontmatterPostType
+      return { title, path: route.path, date, tags, category: cate }
     })
     .sort(
       (a, b) =>
@@ -36,14 +36,14 @@ const postsRoutes = computed(() => {
     )
 })
 
-const CATEGORIES_CONFIG = {
+const CATE_CONFIG = {
   tech: { zh: '技术', en: 'Tech' },
   life: { zh: '生活', en: 'Life' },
   note: { zh: '笔记', en: 'Note' },
   series: { zh: '随笔', en: 'Series' },
 }
 
-const categories = computed(() => Object.entries(CATEGORIES_CONFIG).map(([key, { zh, en }]) => ({
+const cate = computed(() => Object.entries(CATE_CONFIG).map(([key, { zh, en }]) => ({
   key,
   label: isChinese.value ? zh : en,
 })))
@@ -69,7 +69,7 @@ function selectCategory(key: string) {
 
 watch(() => routes.currentRoute.value.hash, (h) => {
   const clean = (h || '').replace('#', '')
-  if (clean && categories.value.some((c: any) => c.key === clean))
+  if (clean && cate.value.some((c: any) => c.key === clean))
     selectedCategory.value = clean
   else if (!clean)
     selectedCategory.value = ''
@@ -80,7 +80,7 @@ const filteredPosts = computed(() => {
   if (!cat)
     return postsRoutes.value
 
-  const conf = (CATEGORIES_CONFIG as any)[cat]
+  const conf = (CATE_CONFIG as any)[cat]
   const label = conf ? String(isChinese.value ? conf.zh : conf.en || '').trim() : ''
 
   return postsRoutes.value.filter((p) => {
@@ -133,7 +133,7 @@ function isYearGroup(date?: string, preDate?: string) {
       </button>
 
       <button
-        v-for="cat in categories" :key="cat.key"
+        v-for="cat in cate" :key="cat.key"
         class="category-pill mb-2 mr-2 border rounded-full px-3 py-1 text-sm transition-colors duration-150" :class="[
           selectedCategory === cat.key
             ? 'bg-gray-900 text-white border-gray-900'

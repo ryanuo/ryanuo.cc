@@ -2,7 +2,7 @@
 title: C语言学习（指针）
 date: "2026-05-15 14:08"
 description: 指针是变量的引用，指针变量保存的是变量的地址。
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

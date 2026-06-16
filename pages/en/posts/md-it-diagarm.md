@@ -3,7 +3,7 @@ title: "Markdown-it Diagram: A Powerful Plugin for Flowcharts"
 date: "2024-06-08 21:01"
 description: A control plugin for drawing flowcharts in markdown syntax
 tags: [markdown, plugin]
-categories: Tech
+cate: Tech
 ---
 
 | [![npm version][npm-version-src]][npm-version-href] | [![npm downloads][npm-downloads-src]][npm-downloads-href] | [![bundle][bundle-src]][bundle-href] | [![JSDocs][jsdocs-src]][jsdocs-href] | [![License][license-src]][license-href] |

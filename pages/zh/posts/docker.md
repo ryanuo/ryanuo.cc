@@ -2,7 +2,7 @@
 title: Docker基础、命令和关键概念
 date: "2022-01-11 11:17:29"
 description: Docker学习：镜像、容器、仓库；底层原理；常用命令。
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

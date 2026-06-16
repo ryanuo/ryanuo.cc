@@ -2,7 +2,7 @@
 title: 全面指南：如何使用 pnpm 打补丁
 date: "2023-08-01 21:00:00"
 description: 学习如何使用 pnpm 在前端项目中打补丁修复第三方库问题
-categories: 技术
+cate: 技术
 ---
 
 [[toc]]

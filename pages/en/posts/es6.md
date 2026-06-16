@@ -3,7 +3,7 @@ title: ES6 Promise Advanced Usage
 date: "2021-9-12 00:00"
 description: ES6 module - Promise - Advanced Usage
 tags: [ESModules]
-categories: Note
+cate: Note
 plum: true
 ---
 

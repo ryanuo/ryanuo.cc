@@ -3,7 +3,7 @@ title: 全面且详细的Pinia学习笔记指南
 date: "2022-06-14 15:22:58"
 description: Pinia学习笔记：Pinia优缺点、使用介绍、初始化store仓库、修改值的几种方式、解构state、getter和actions、pinia插件。
 tags: [学习笔记, pinia]
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

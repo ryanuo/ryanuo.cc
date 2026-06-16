@@ -2,7 +2,7 @@
 title: 记一次使用swiper遇到的问题
 date: "2024-03-01 17:08:00"
 description: Swiper拦截了点击事件，解决方法是调整Swiper的配置，防止Swiper拦截Select组件的点击事件。
-categories: 技术
+cate: 技术
 ---
 
 ## 问题描述

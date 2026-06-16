@@ -1,5 +1,5 @@
 ---
-categories: Tech
+cate: Tech
 title: Remember the problems you encountered when using swiper
 date: "2024-03-01 17:08:00"
 description: swiper intercepts click events and the solution is to adjust the configuration of swiper to prevent swiper from intercepting click events of the select component.

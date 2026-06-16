@@ -2,7 +2,7 @@
 title: About Deep Learning Pytorch
 date: "2021-12-01 11:34:19"
 description: 
-categories: Note
+cate: Note
 plum: true
 ---
 

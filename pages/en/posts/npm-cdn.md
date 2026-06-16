@@ -1,5 +1,5 @@
 ---
-categories: Tech
+cate: Tech
 title: Frontend npm CDN Alternative Solutions Overview
 date: "2024-02-01 15:30:00"
 description: Detailed Overview of Domestic Frontend npm CDN Alternative Solutions, including Classic Established CDN Acceleration, Domestic Available CDNs, and Comparatively Recommended CDNs, to assist developers in better choosing suitable CDN acceleration services.

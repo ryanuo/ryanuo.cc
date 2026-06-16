@@ -2,7 +2,7 @@
 title: 嵌入式学习（C语言基础）
 date: "2026-04-28 09:00:00"
 description: c语言基础、核心、进阶、高级
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

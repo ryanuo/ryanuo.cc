@@ -2,7 +2,7 @@
 title: 如何在Mac(M芯片)上进行嵌入式开发
 date: "2026-06-08 09:05:05"
 description: mac电脑串口开发
-categories: 技术
+cate: 技术
 ---
 
 [[toc]]

@@ -2,7 +2,7 @@
 title: Rewrite BlazeB2 Image Hosting Service using Next.js
 date: "2024-06-25 20:00:00"
 description: Rewrite BlazeB2 Image Hosting Service using Next.js
-categories: Tech
+cate: Tech
 ---
 
 [[toc]]

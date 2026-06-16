@@ -2,7 +2,7 @@
 title: Travel diary
 date: "2020-05-19 08:00:00"
 description: my travel diary
-categories: Life
+cate: Life
 ---
 
 [[toc]]

@@ -2,7 +2,7 @@
 title: Chrome下载文件时文件后缀问题
 date: "2023-10-01 09:09:09"
 description: Chrome下载文件时文件后缀问题
-categories: 技术
+cate: 技术
 ---
 
 [[toc]]

@@ -1,5 +1,5 @@
 ---
-categories: Tech
+cate: Tech
 title: Integrating Text Rendering Flowchart Plugins
 date: "2024-03-01 15:30:00"
 description: Plant Uml Mermaid

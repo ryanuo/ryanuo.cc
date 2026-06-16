@@ -2,7 +2,7 @@
 title: 记一次接入文本渲染流程图插件
 date: "2024-03-01 15:30:00"
 description: PlantUML, mermaid的实际应用
-categories: 技术
+cate: 技术
 ---
 
 [[toc]]

@@ -3,7 +3,7 @@ title: Deepin Related (Linux)
 date: "2020-10-10 20:01"
 description:
 tags: [Linux]
-categories: Tech
+cate: Tech
 plum: true
 ---
 

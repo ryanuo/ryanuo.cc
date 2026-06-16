@@ -2,7 +2,7 @@
 title: 嵌入式学习（linux模块）
 date: "2026-04-21 11:17:29"
 description:
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

@@ -2,7 +2,7 @@
 title: 使用 Next.js 重写 BlazeB2 图像托管服务
 date: "2024-06-25 20:00:00"
 description: 使用 Next.js 重写 BlazeB2 图像托管服务
-categories: 技术
+cate: 技术
 ---
 
 [[toc]]

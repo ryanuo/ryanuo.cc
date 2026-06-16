@@ -2,7 +2,7 @@
 title: Docker Basics, Commands, and Key Concepts
 date: "2022-01-11 11:17:29"
 description: learn about docker images containers and repositories underlying principles and common commands
-categories: Note
+cate: Note
 ---
 
 [[toc]]

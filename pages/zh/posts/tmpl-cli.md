@@ -2,7 +2,7 @@
 title: Template CLI：高效管理项目模板的工具
 date: "2025-03-10 20:00:00"
 description: 一款高效的项目模板管理工具，支持从 Git 仓库快速克隆模板并灵活配置
-categories: 技术
+cate: 技术
 ---
 
 # Template CLI 🚀

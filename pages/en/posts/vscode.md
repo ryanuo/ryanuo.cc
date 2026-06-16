@@ -2,7 +2,7 @@
 title: Shortcuts Commonly Used By Vscode
 date: "2020-09-18 22:57:21"
 description: common shortcut keys for vs code include comment move line copy line delete line and display terminal at the same time some commonly used plug ins are recommended such as auto rename tag auto close tag beautiful etc
-categories: Note
+cate: Note
 ---
 
 [[toc]]

@@ -1,8 +1,8 @@
 ---
 title: Yunshu (EagleYun) Mac 卸载指南
-date: 2024-07-01
+date: "2024-07-01 12:00:00"
 description: 本文详细介绍如何在 Mac 上彻底卸载 Yunshu/EagleYun 客户端，包括检测残留、手动卸载、自动化脚本及注意事项，帮助用户清理系统环境。
-categories: 技术
+cate: 技术
 ---
 
 # Yunshu (EagleYun) Mac 卸载文档

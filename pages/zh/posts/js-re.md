@@ -3,7 +3,7 @@ title: 正则表达式（js）
 date: "2021-7-29 08:50"
 description:
 tags: [web, Javascript]
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

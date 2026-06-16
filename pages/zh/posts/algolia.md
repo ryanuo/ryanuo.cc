@@ -2,7 +2,7 @@
 title: 给文档接入Algolia搜索插件
 date: "2023-05-30 16:47:08"
 description: 将Algolia搜索功能集成到你的文档中。通过Algolia，你可以为你的文档或网站提供强大的搜索能力。
-categories: 技术
+cate: 技术
 ---
 
 ## 开始之前

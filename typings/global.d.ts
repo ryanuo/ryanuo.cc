@@ -11,7 +11,7 @@ declare interface FrontmatterPostType {
   title: string
   description: string
   tags?: string[]
-  categories?: string
+  cate?: string
   date: string
   image?: string
   plum?: boolean

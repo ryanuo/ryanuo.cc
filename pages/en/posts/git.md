@@ -2,7 +2,7 @@
 title: GIT Study Notes
 date: "2020-12-18 14:00"
 description: a git version control learning guide that covers basic instructions such as configuration cloning branching merging tagging and remote repository operations
-categories: Note
+cate: Note
 ---
 
 [[toc]]

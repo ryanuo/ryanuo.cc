@@ -2,7 +2,7 @@
 title: Adaptive large screen web page design solution
 date: "2024-02-15 20:38:09"
 description: in responsive web design there are various ways to ensure that elements are adaptable across different resolutions and devices
-categories: Tech
+cate: Tech
 ---
 
 > 在响应式Web设计中，有多种方法可以确保元素在不同分辨率和设备上的适应性。以下是三种流行的设计方案和它们的实现方法：

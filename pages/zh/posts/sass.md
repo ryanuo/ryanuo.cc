@@ -3,7 +3,7 @@ title: Sass-CSS预处理器
 date: "2021-08-17 10:34:06"
 description: Sass-CSS预处理器：.scss扩展名，npm安装，动态变量、嵌套、mixin混入、extend继承、@import、数据类型判断、数学字符串颜色函数、列表操作、插值、条件循环、自定义函数、警告错误。
 tags: [web, sass]
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

@@ -2,7 +2,7 @@
 title: Build Your First MCP Server in TypeScript in 10 Minutes
 date: "2025-07-12 10:19"
 description: Quickly get started with the Model Context Protocol (MCP) by building your first MCP server in TypeScript, allowing AI hosts like Claude or Cursor Desktop to directly call your tools.
-categories: Tech
+cate: Tech
 plum: true
 ---
 

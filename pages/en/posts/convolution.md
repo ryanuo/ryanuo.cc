@@ -2,7 +2,7 @@
 title: Convolutional Neural Network Learning
 date: "2022-04-15 12:50:59"
 description: convolutional network learning parameter reduction feature extraction edge detection filling step size 3 d convolution rgb processing network structure including convolution re lu pooling and fully connected layers
-categories: Note
+cate: Note
 ---
 
 [[toc]]

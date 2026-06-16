@@ -2,7 +2,7 @@
 title: 用 TypeScript 在 10 分钟内构建你的第一个 MCP 服务器
 date: "2025-07-12 10:19"
 description: 快速上手 Model Context Protocol (MCP)，使用 TypeScript 构建你的第一个 MCP 服务器，让 Claude 等 AI 主机直接调用你的工具。
-categories: 技术
+cate: 技术
 plum: true
 ---
 

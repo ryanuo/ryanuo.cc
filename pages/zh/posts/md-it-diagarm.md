@@ -3,7 +3,7 @@ title: Markdown-it Diagram：强大且灵活的流程图控件插件
 date: "2024-06-08 21:01"
 description: markdown语法绘制流程图控件插件
 tags: [markdown, 插件]
-categories: 技术
+cate: 技术
 ---
 
 | [![npm version][npm-version-src]][npm-version-href] | [![npm downloads][npm-downloads-src]][npm-downloads-href] | [![bundle][bundle-src]][bundle-href] | [![JSDocs][jsdocs-src]][jsdocs-href] | [![License][license-src]][license-href] |

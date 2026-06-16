@@ -38,7 +38,7 @@ async function main() {
     },
     {
       type: 'input',
-      name: 'categories',
+      name: 'cate',
       message: '请输入分类:',
     },
     {
@@ -61,7 +61,7 @@ async function main() {
   const content = `---
 title: ${answers.title}
 date: '${date}'
-categories: ${answers.categories || ''}
+cate: ${answers.cate || ''}
 description: ${answers.description || ''}
 plum: ${answers.plum}
 ---

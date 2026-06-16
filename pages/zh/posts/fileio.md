@@ -2,7 +2,7 @@
 title: C语言学习（文件）
 date: "2026-05-19 14:08"
 description: C语言学习（文件）
-categories: 笔记
+cate: 笔记
 ---
 
 [[toc]]

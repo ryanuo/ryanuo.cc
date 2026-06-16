@@ -1,8 +1,8 @@
 ---
 title: Yunshu (EagleYun) Mac Uninstall Guide
-date: 2024-07-01
+date: "2024-07-01 12:00:00"
 description: This article provides a complete guide to uninstalling Yunshu/EagleYun client on Mac, including residue detection, manual removal, automation script, and important notes.
-categories: Software Uninstall
+cate: Software Uninstall
 ---
 
 # Yunshu (EagleYun) Mac Uninstall Guide

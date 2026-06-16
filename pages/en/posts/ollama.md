@@ -2,7 +2,7 @@
 title: Local Deployment Guide for Ollama and Open-WebUI on Mac
 date: "2025-02-01 15:30:00"
 description: This comprehensive guide details how to deploy large language models locally on Mac systems using Ollama and Open-WebUI, covering installation, model downloads, configuration, and usage workflows to help you quickly set up a local AI interaction environment.
-categories: Tech
+cate: Tech
 ---
 
 ## Why?
