@@ -26,7 +26,7 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     <Plum />
   </ClientOnly>
   <Title v-if="isPost" :title="frontmatter.display ?? frontmatter.title" />
-  <div v-if="frontmatter.title && !frontmatter.isHidenTitle" class="prose" m-auto mb-8>
+  <div v-if="frontmatter.title && !frontmatter.isHiddenTitle" class="prose" m-auto mb-8>
     <h1 class="slide-enter-50 mb-0" :style="frontmatter.titleStyle">
       <span data-title>{{ frontmatter.display ?? frontmatter.title }}</span>
       <div v-if="frontmatter.date" class="mt-2 text-sm text-gray-500 font-400">

@@ -1,9 +1,9 @@
 ---
 title: debug test page
-date: 2019-01-01 21:31
-categories: Techniques And Tutorials
+date: "2019-01-01 21:31"
 description: debug test page
-tags: ['debug']
+tags: [debug]
+categories: Techniques And Tutorials
 plum: true
 ---
 

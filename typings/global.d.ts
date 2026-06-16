@@ -16,6 +16,8 @@ declare interface FrontmatterPostType {
   image?: string
   plum?: boolean
   isHidden?: boolean
+  display?: string
+  isHiddenTitle?: boolean
 }
 
 interface AlgoliaSearchParams {

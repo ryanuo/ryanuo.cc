@@ -1,7 +1,8 @@
 ---
 title: 前端npm CDN替代方案盘点
-date: 2024-02-01 15:30:00
+date: "2024-02-01 15:30:00"
 description: 国内前端npm CDN替代方案的详细盘点，包括经典老牌CDN加速、国内可用的CDN以及比较推荐的CDN，帮助开发者更好地选择合适的CDN加速服务。
+categories: 技术
 ---
 
 [[toc]]

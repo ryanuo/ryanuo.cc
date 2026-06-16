@@ -1,8 +1,8 @@
 ---
 title: 关于深度学习Pytorch
-categories: python
-date: 2021-12-01 11:34:19
-tags:
+date: "2021-12-01 11:34:19"
+description: 机器语言的分支, 对数据进行特征学习, 人工神经网络为基础
+categories: 笔记
 plum: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Connect the document to the algolia search plugin
-date: 2023-05-30 16:47:08
-categories: Front
+date: "2023-05-30 16:47:08"
 description: integrate algolia search into your documents with algolia you can provide powerful search capabilities for your documents or websites
+categories: Tech
 ---
 
 ## 开始之前

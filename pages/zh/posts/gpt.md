@@ -1,7 +1,8 @@
 ---
 title: GPT交互和应用平台综合指南
-date: 2025-04-02 15:00:00
+date: "2025-04-02 15:00:00"
 description: 基于Flask的web应用程序，提供api和用于与GPT模型交互的简单前端，包括聊天、图像生成和内容汇总等功能
+categories: 技术
 ---
 
 - [repo](https://github.com/ryanuo/gpt)

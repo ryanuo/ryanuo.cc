@@ -1,9 +1,9 @@
 ---
 title: Git Commit 规范
-date: 2023-01-04 15:07:09
-tags: [git]
-categories: git
+date: "2023-01-04 15:07:09"
 description: Git提交规范包括类型、范围等，助力清晰协作与维护，推荐Conventional Commits、AngularJS规范参考。
+tags: [git]
+categories: 笔记
 ---
 
 [[toc]]

@@ -1,7 +1,8 @@
 ---
+categories: Tech
 title: A Complete Guide to Patching with pnpm
+date: "2023-08-01 21:00:00"
 description: Learn how to use pnpm to patch and fix issues in third-party libraries within front-end projects.
-date: 2023-08-01 21:00:00
 ---
 
 [[toc]]

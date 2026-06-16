@@ -1,6 +1,7 @@
 ---
+categories: Tech
 title: A Complete Guide to Creating a Custom Email with ForwardEmail
-date: 2025-04-01 09:09:09
+date: "2025-04-01 09:09:09"
 description: Learn how to quickly set up and use your own custom email address with the ForwardEmail service.
 ---
 

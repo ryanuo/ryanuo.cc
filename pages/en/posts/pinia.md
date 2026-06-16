@@ -1,8 +1,9 @@
 ---
 title: Comprehensive and Detailed Study Notes on Pinia
-tags: [Study Notes, Pinia]
-date: 2022-06-14 15:22:58
+date: "2022-06-14 15:22:58"
 description: Pinia study notes, advantages and disadvantages of Pinia, introduction to usage, initializing the store repository, several ways to modify values, destructuring state, getters and actions, Pinia plugins
+tags: [Study Notes, Pinia]
+categories: Note
 ---
 
 [[toc]]

@@ -1,7 +1,8 @@
 ---
 title: 在 Mac 上使用 Ollama 和 Open-WebUI 进行本地化部署指南
-date: 2025-02-01 15:30:00
+date: "2025-02-01 15:30:00"
 description: 本指南详细介绍如何在 Mac 系统上，通过 Ollama 和 Open-WebUI 进行大模型本地化部署，涵盖安装、模型下载、配置及使用全流程，助力你快速搭建本地 AI 交互环境。
+categories: 技术
 ---
 
 ## 为什么？

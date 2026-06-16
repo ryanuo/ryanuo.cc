@@ -1,9 +1,9 @@
 ---
 title: ES6 Promise Advanced Usage
-date: '2021-9-12 00:00'
+date: "2021-9-12 00:00"
 description: ES6 module - Promise - Advanced Usage
-categories: JavaScript
 tags: [ESModules]
+categories: Note
 plum: true
 ---
 

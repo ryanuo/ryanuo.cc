@@ -1,6 +1,7 @@
 ---
+categories: Tech
 title: File suffix issue when Chrome downloads files
-date: 2023-10-01 09:09:09
+date: "2023-10-01 09:09:09"
 description: File suffix issue when Chrome downloads files
 ---
 

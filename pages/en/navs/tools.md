@@ -3,7 +3,7 @@ title: Tools | RYANUO
 display: Front Navigation
 description: Front-end online tools are being organized and are continuously updated.
 plum: true
-isHidenTitle: true
+isHiddenTitle: true
 projects:
   Commonly Used Tools:
     - name: Device Framed Screenshots

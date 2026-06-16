@@ -1,8 +1,9 @@
 ---
 title: Deepin Related (Linux)
-date: 2020-10-10 20:01
-categories: Linux
+date: "2020-10-10 20:01"
+description:
 tags: [Linux]
+categories: Tech
 plum: true
 ---
 

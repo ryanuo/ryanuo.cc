@@ -1,7 +1,8 @@
 ---
 title: 如何使自己的电子邮件使用forwardemail
-date: 2025-04-01 09:09:09
+date: "2025-04-01 09:09:09"
 description: 如何使自己的电子邮件使用forwardemail
+categories: 技术
 ---
 
 如果你想创建自己的电子邮件地址并使用 ForwardEmail 服务进行转发，以下是详细步骤：

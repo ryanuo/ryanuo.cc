@@ -1,8 +1,9 @@
 ---
 title: Deepin 相关（Liunx）
-date: 2020-10-10 20:01
-categories: Liunx
+date: "2020-10-10 20:01"
+description:
 tags: [liunx]
+categories: 技术
 plum: true
 ---
 

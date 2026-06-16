@@ -3,7 +3,7 @@ title: 工具 | RYANUO
 display: 前端导航
 description: 前端在线工具正在整理中，并持续更新。
 plum: true
-isHidenTitle: true
+isHiddenTitle: true
 projects:
   常用小工具:
     - name: 带壳截屏

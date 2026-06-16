@@ -1,8 +1,9 @@
 ---
 title: ES6模块化-Promise-高级用法
-date: '2021-9-12 00:00'
-categories: JavaScript
+date: "2021-9-12 00:00"
+description:
 tags: [ESModules]
+categories: 笔记
 plum: true
 ---
 

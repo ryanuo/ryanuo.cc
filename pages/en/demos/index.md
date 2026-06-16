@@ -2,7 +2,7 @@
 title: 'Demos | RYANUO'
 description: 'Demos | RYANUO'
 plum: true
-isHidenTitle: true
+isHiddenTitle: true
 demos:
   2025:
     - name: 'whatToEat'

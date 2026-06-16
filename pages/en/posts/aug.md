@@ -1,7 +1,8 @@
 ---
 title: Comprehensive Gold Investment Guide
-date: 2025-02-10 10:00:00
+date: "2025-02-10 10:00:00"
 description: A detailed guide on gold investment, covering account setup, trading processes, price conversion, and monitoring techniques.
+categories: tech
 ---
 
 [[toc]]

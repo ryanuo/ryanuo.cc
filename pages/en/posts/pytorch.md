@@ -1,8 +1,8 @@
 ---
 title: About Deep Learning Pytorch
-categories: python
-date: 2021-12-01 11:34:19
-tags:
+date: "2021-12-01 11:34:19"
+description: 
+categories: Note
 plum: true
 ---
 

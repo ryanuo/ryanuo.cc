@@ -1,8 +1,9 @@
 ---
 title: Sass CSS Preprocessor
-tags: ['web','sass']
-date: 2021-08-17 10:34:06
+date: "2021-08-17 10:34:06"
 description: sass css preprocessor scss extension npm installation dynamic variables nesting mixin mixing extend inheritance import data type judgment math string color functions list operations interpolation conditional loops custom functions warning errors
+tags: [web, sass]
+categories: Note
 ---
 
 [[toc]]

@@ -1,7 +1,8 @@
 ---
 title: Embedded Learning (Linux Module)
-categories: embedded, linux
-date: '2026-04-21 11:17:29'
+date: "2026-04-21 11:17:29"
+description: 
+categories: Note
 ---
 
 [[toc]]

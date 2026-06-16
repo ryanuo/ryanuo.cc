@@ -1,7 +1,8 @@
 ---
 title: "Template CLI: A Powerful Tool for Managing Project Templates"
-date: 2025-03-10 20:00:00
+date: "2025-03-10 20:00:00"
 description: A powerful tool for efficiently managing project templates, supporting quick cloning and flexible configuration from Git repositories.
+categories: Tech
 ---
 
 # Template CLI 🚀

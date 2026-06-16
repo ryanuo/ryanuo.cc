@@ -1,7 +1,8 @@
 ---
 title: 数据结构
-date: '2020-05-25 09:00:00'
+date: "2020-05-25 09:00:00"
 description: 数据结构
+categories: 笔记
 ---
 
 [[toc]]

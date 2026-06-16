@@ -19,4 +19,5 @@ export default {
   'analysisFailed': '分析失败,AI机器人故障请联系管理员！！',
   'loading': '加载中。',
   'generatedContentNote': '此内容由AI根据文章内容自动生成.',
+  'post.all': '全部',
 }

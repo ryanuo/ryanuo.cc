@@ -2,7 +2,7 @@
 title: '演示 | RYANUO'
 description: '演示 | RYANUO'
 plum: true
-isHidenTitle: true
+isHiddenTitle: true
 demos:
   2025:
     - name: '今天吃什么'

@@ -1,7 +1,8 @@
 ---
 title: Comprehensive Guide to GPT Interaction and Application Platform
-date: 2025-04-02 15:00:00
+date: "2025-04-02 15:00:00"
 description: A Flask-based web application providing APIs and a simple frontend for interacting with GPT models, including features like chat, image generation, and content summarization.
+categories: Tech
 ---
 
 - [repo](https://github.com/ryanuo/gpt)

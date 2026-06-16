@@ -1,9 +1,9 @@
 ---
-title: 'Comprehensive Guide to Git Commit Message Conventions'
-date: 2023-01-04 15:07:09
-tags: [git]
-categories: git
+title: Comprehensive Guide to Git Commit Message Conventions
+date: "2023-01-04 15:07:09"
 description: The Git commit convention includes types, scopes, etc., facilitating clear collaboration and maintenance, recommended Conventional Commits, AngularJS convention for reference.
+tags: [git]
+categories: Note
 ---
 
 [[toc]]

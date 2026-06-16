@@ -1,8 +1,9 @@
 ---
 title: 正则表达式（js）
-date: '2021-7-29 08:50'
-tags: [web,Javascript]
-desscription: JavaScript正则表达式实战：数字提取、变量应用、替换规则、边界界定、字符类、全局搜索
+date: "2021-7-29 08:50"
+description:
+tags: [web, Javascript]
+categories: 笔记
 ---
 
 [[toc]]

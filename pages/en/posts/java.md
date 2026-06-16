@@ -1,8 +1,8 @@
 ---
 title: Java Knowledge Collation Method Overloading Recursion
-categories: java
-date: 2021-07-20 10:18:18
+date: "2021-07-20 10:18:18"
 description: java method overloading and recursion usage methods and examples
+categories: Note
 ---
 
 [[toc]]

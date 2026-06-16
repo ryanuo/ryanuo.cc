@@ -1,8 +1,9 @@
 ---
 title: Regular Expressions Js
-date: '2021-7-29 08:50'
-tags: [web,Javascript]
+date: "2021-7-29 08:50"
 description: java script regular expressions number extraction variable application substitution rules boundary delimiting character classes global search
+tags: [web, Javascript]
+categories: Note
 ---
 
 ## 正则字符串提取数字

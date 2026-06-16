@@ -1,8 +1,7 @@
 ---
-title: 'Python爬虫：XPath, BeautifulSoup, re, Selenium'
-categories: [python]
-date: 2021-08-22 10:34:06
-tags:
+title: Python爬虫：XPath, BeautifulSoup, re, Selenium
+date: "2021-08-22 10:34:06"
+categories: 笔记
 plum: true
 ---
 

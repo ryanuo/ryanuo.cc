@@ -1,8 +1,8 @@
 ---
 title: Git 学习笔记
-categories: 学习
-date: '2020-12-18 14:00'
+date: "2020-12-18 14:00"
 description: Git版本控制学习指南，涵盖配置、克隆、分支、合并、标签、远程仓库操作等基础指令。
+categories: 笔记
 ---
 
 [[toc]]

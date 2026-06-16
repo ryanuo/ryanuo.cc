@@ -1,7 +1,8 @@
 ---
 title: 我的旅行日记
-date: 2020-05-19 08:00:00
+date: "2020-05-19 08:00:00"
 description: my travel diary
+categories: 生活
 ---
 
 [[toc]]
