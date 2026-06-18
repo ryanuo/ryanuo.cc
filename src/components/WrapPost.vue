@@ -13,8 +13,16 @@ const isPost = computed(() => {
     return false
   return route.path?.indexOf('posts') !== -1
 })
+
 const isShowComments = computed(() => {
-  return route.path.includes('posts') && route.fullPath !== '/posts' && route.fullPath !== '/zh/posts'
+  const cleanPath = route.fullPath.split('#')[0]
+
+  return (
+    cleanPath.startsWith('/posts/')
+
+    || cleanPath.startsWith('/zh/posts/')
+
+  )
 })
 
 const base = 'https://ryanuo.cc'
