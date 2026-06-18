@@ -86,6 +86,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/ai-dev-thoughts': RouteRecordInfo<
+      '/posts/ai-dev-thoughts',
+      '/posts/ai-dev-thoughts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/algolia': RouteRecordInfo<
       '/posts/algolia',
       '/posts/algolia',
@@ -418,6 +425,13 @@ declare module 'vue-router/auto-routes' {
     '/zh/posts/5132': RouteRecordInfo<
       '/zh/posts/5132',
       '/zh/posts/5132',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/zh/posts/ai-dev-thoughts': RouteRecordInfo<
+      '/zh/posts/ai-dev-thoughts',
+      '/zh/posts/ai-dev-thoughts',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -818,6 +832,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/en/posts/ai-dev-thoughts.md': {
+      routes:
+        | '/posts/ai-dev-thoughts'
+      views:
+        | never
+    }
     'pages/en/posts/algolia.md': {
       routes:
         | '/posts/algolia'
@@ -1103,6 +1123,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/5132.md': {
       routes:
         | '/zh/posts/5132'
+      views:
+        | never
+    }
+    'pages/zh/posts/ai-dev-thoughts.md': {
+      routes:
+        | '/zh/posts/ai-dev-thoughts'
       views:
         | never
     }

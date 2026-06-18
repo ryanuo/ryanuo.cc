@@ -49,6 +49,7 @@ cate: 技术
 - [draw桌面版](https://github.com/jgraph/drawio-desktop/releases/tag/v29.7.9)
 - [语雀文档](https://www.yuque.com/docs/share/c0f0c0c7-c7c9-4c0a-b0c5-b0c5b0c5b0c5?#)
 - [mermaid](https://mermaid-live.nodejs.cn/edit)
+- [excalidraw](https://excalidraw.com/)
 
 ## git
 

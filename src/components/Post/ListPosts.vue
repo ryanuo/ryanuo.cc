@@ -40,7 +40,7 @@ const CATE_CONFIG = {
   tech: { zh: '技术', en: 'Tech' },
   life: { zh: '生活', en: 'Life' },
   note: { zh: '笔记', en: 'Note' },
-  series: { zh: '随笔', en: 'Series' },
+  essay: { zh: '随笔', en: 'Essay' },
 }
 
 const cate = computed(() => Object.entries(CATE_CONFIG).map(([key, { zh, en }]) => ({
