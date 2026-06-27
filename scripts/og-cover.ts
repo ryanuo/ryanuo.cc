@@ -122,7 +122,7 @@ async function main() {
   if (noExistImgList.length > 0) {
     console.log(`共 ${noExistImgList.length} 个图片不存在，开始生成...`)
     for (const [key, title] of noExistImgList) {
-      const font = key.includes('-zh-') ? 'ZCOOL KuaiLe' : 'Work Sans'
+      const font = key.includes('-en-') ? 'Work Sans' : 'Ma Shan Zheng'
       const params: RequestParams = {
         aspect_ratio: '2:1',
         coverMarkColor: 'rgba(0, 0, 0, 0.3)',

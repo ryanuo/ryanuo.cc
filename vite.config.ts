@@ -64,8 +64,8 @@ export default {
           src: 'pages',
           path: (file) => {
             let path = file.replace(/^.*\/pages\//, '')
-            // redirect en files to /en paths, eg: pages/en/posts/xxx.md -> posts/xxx
-            path = path.replace(/^en\//, '').replace(/^en/, '')
+            // redirect zh files to /zh paths, eg: pages/zh/posts/xxx.md -> posts/xxx
+            path = path.replace(/^zh\//, '').replace(/^zh/, '')
             return path
           },
         },
@@ -155,8 +155,8 @@ export default {
             return
           const route = basename(id, '.md')
           let key = id.split('pages/')[1].replace('.md', '').replaceAll('/', '-')
-          if (key.startsWith('en-')) {
-            key = key.replace('en-', '')
+          if (key.startsWith('zh-')) {
+            key = key.replace('zh-', '')
           }
 
           if (route === 'index' || frontmatter.image || !frontmatter.title)

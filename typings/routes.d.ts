@@ -44,6 +44,342 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/en/': RouteRecordInfo<
+      '/en/',
+      '/en',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/demos/': RouteRecordInfo<
+      '/en/demos/',
+      '/en/demos',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/interview/': RouteRecordInfo<
+      '/en/interview/',
+      '/en/interview',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/navs/': RouteRecordInfo<
+      '/en/navs/',
+      '/en/navs',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/navs/libraries': RouteRecordInfo<
+      '/en/navs/libraries',
+      '/en/navs/libraries',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/navs/tools': RouteRecordInfo<
+      '/en/navs/tools',
+      '/en/navs/tools',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/': RouteRecordInfo<
+      '/en/posts/',
+      '/en/posts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/2021': RouteRecordInfo<
+      '/en/posts/2021',
+      '/en/posts/2021',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/ai-dev-thoughts': RouteRecordInfo<
+      '/en/posts/ai-dev-thoughts',
+      '/en/posts/ai-dev-thoughts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/algolia': RouteRecordInfo<
+      '/en/posts/algolia',
+      '/en/posts/algolia',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/aug': RouteRecordInfo<
+      '/en/posts/aug',
+      '/en/posts/aug',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/big-screen': RouteRecordInfo<
+      '/en/posts/big-screen',
+      '/en/posts/big-screen',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/bs2022': RouteRecordInfo<
+      '/en/posts/bs2022',
+      '/en/posts/bs2022',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/buy-car': RouteRecordInfo<
+      '/en/posts/buy-car',
+      '/en/posts/buy-car',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/convolution': RouteRecordInfo<
+      '/en/posts/convolution',
+      '/en/posts/convolution',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/debug_test': RouteRecordInfo<
+      '/en/posts/debug_test',
+      '/en/posts/debug_test',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/deepin': RouteRecordInfo<
+      '/en/posts/deepin',
+      '/en/posts/deepin',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/docker': RouteRecordInfo<
+      '/en/posts/docker',
+      '/en/posts/docker',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/embedded': RouteRecordInfo<
+      '/en/posts/embedded',
+      '/en/posts/embedded',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/es6': RouteRecordInfo<
+      '/en/posts/es6',
+      '/en/posts/es6',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/file-download': RouteRecordInfo<
+      '/en/posts/file-download',
+      '/en/posts/file-download',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/forwardemail': RouteRecordInfo<
+      '/en/posts/forwardemail',
+      '/en/posts/forwardemail',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/git': RouteRecordInfo<
+      '/en/posts/git',
+      '/en/posts/git',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/git-commit': RouteRecordInfo<
+      '/en/posts/git-commit',
+      '/en/posts/git-commit',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/gpt': RouteRecordInfo<
+      '/en/posts/gpt',
+      '/en/posts/gpt',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/java': RouteRecordInfo<
+      '/en/posts/java',
+      '/en/posts/java',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/js-re': RouteRecordInfo<
+      '/en/posts/js-re',
+      '/en/posts/js-re',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/make-name': RouteRecordInfo<
+      '/en/posts/make-name',
+      '/en/posts/make-name',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/mcp': RouteRecordInfo<
+      '/en/posts/mcp',
+      '/en/posts/mcp',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/md-it-diagarm': RouteRecordInfo<
+      '/en/posts/md-it-diagarm',
+      '/en/posts/md-it-diagarm',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/mermaid': RouteRecordInfo<
+      '/en/posts/mermaid',
+      '/en/posts/mermaid',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/npm-cdn': RouteRecordInfo<
+      '/en/posts/npm-cdn',
+      '/en/posts/npm-cdn',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/ollama': RouteRecordInfo<
+      '/en/posts/ollama',
+      '/en/posts/ollama',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/own-api': RouteRecordInfo<
+      '/en/posts/own-api',
+      '/en/posts/own-api',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/pinia': RouteRecordInfo<
+      '/en/posts/pinia',
+      '/en/posts/pinia',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/pnpm-pkg': RouteRecordInfo<
+      '/en/posts/pnpm-pkg',
+      '/en/posts/pnpm-pkg',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/pytorch': RouteRecordInfo<
+      '/en/posts/pytorch',
+      '/en/posts/pytorch',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/re-soup': RouteRecordInfo<
+      '/en/posts/re-soup',
+      '/en/posts/re-soup',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/rewrite-blazeb2': RouteRecordInfo<
+      '/en/posts/rewrite-blazeb2',
+      '/en/posts/rewrite-blazeb2',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/sass': RouteRecordInfo<
+      '/en/posts/sass',
+      '/en/posts/sass',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/swiper': RouteRecordInfo<
+      '/en/posts/swiper',
+      '/en/posts/swiper',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/tkinter': RouteRecordInfo<
+      '/en/posts/tkinter',
+      '/en/posts/tkinter',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/tmpl-cli': RouteRecordInfo<
+      '/en/posts/tmpl-cli',
+      '/en/posts/tmpl-cli',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/train': RouteRecordInfo<
+      '/en/posts/train',
+      '/en/posts/train',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/vscode': RouteRecordInfo<
+      '/en/posts/vscode',
+      '/en/posts/vscode',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/yunshu-uninstall': RouteRecordInfo<
+      '/en/posts/yunshu-uninstall',
+      '/en/posts/yunshu-uninstall',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/posts/zsh-windows': RouteRecordInfo<
+      '/en/posts/zsh-windows',
+      '/en/posts/zsh-windows',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/en/projects/': RouteRecordInfo<
+      '/en/projects/',
+      '/en/projects',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/interview/': RouteRecordInfo<
       '/interview/',
       '/interview',
@@ -82,6 +418,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/2021': RouteRecordInfo<
       '/posts/2021',
       '/posts/2021',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/5132': RouteRecordInfo<
+      '/posts/5132',
+      '/posts/5132',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -128,9 +471,23 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/c': RouteRecordInfo<
+      '/posts/c',
+      '/posts/c',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/convolution': RouteRecordInfo<
       '/posts/convolution',
       '/posts/convolution',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/data_struct': RouteRecordInfo<
+      '/posts/data_struct',
+      '/posts/data_struct',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -156,6 +513,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/embd_used_soft': RouteRecordInfo<
+      '/posts/embd_used_soft',
+      '/posts/embd_used_soft',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/embedded': RouteRecordInfo<
       '/posts/embedded',
       '/posts/embedded',
@@ -173,6 +537,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/file-download': RouteRecordInfo<
       '/posts/file-download',
       '/posts/file-download',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/fileio': RouteRecordInfo<
+      '/posts/fileio',
+      '/posts/fileio',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -219,9 +590,30 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/linux': RouteRecordInfo<
+      '/posts/linux',
+      '/posts/linux',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/mac_emd': RouteRecordInfo<
+      '/posts/mac_emd',
+      '/posts/mac_emd',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/make-name': RouteRecordInfo<
       '/posts/make-name',
       '/posts/make-name',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/makefile': RouteRecordInfo<
+      '/posts/makefile',
+      '/posts/makefile',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -278,6 +670,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/pnpm-pkg': RouteRecordInfo<
       '/posts/pnpm-pkg',
       '/posts/pnpm-pkg',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/pointer': RouteRecordInfo<
+      '/posts/pointer',
+      '/posts/pointer',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -345,9 +744,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/yunshu-uninstall': RouteRecordInfo<
-      '/posts/yunshu-uninstall',
-      '/posts/yunshu-uninstall',
+    '/posts/yunsuh-uninstall': RouteRecordInfo<
+      '/posts/yunsuh-uninstall',
+      '/posts/yunsuh-uninstall',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -366,405 +765,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/zh/': RouteRecordInfo<
-      '/zh/',
-      '/zh',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/demos/': RouteRecordInfo<
-      '/zh/demos/',
-      '/zh/demos',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/interview/': RouteRecordInfo<
-      '/zh/interview/',
-      '/zh/interview',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/navs/': RouteRecordInfo<
-      '/zh/navs/',
-      '/zh/navs',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/navs/libraries': RouteRecordInfo<
-      '/zh/navs/libraries',
-      '/zh/navs/libraries',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/navs/tools': RouteRecordInfo<
-      '/zh/navs/tools',
-      '/zh/navs/tools',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/': RouteRecordInfo<
-      '/zh/posts/',
-      '/zh/posts',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/2021': RouteRecordInfo<
-      '/zh/posts/2021',
-      '/zh/posts/2021',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/5132': RouteRecordInfo<
-      '/zh/posts/5132',
-      '/zh/posts/5132',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/ai-dev-thoughts': RouteRecordInfo<
-      '/zh/posts/ai-dev-thoughts',
-      '/zh/posts/ai-dev-thoughts',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/algolia': RouteRecordInfo<
-      '/zh/posts/algolia',
-      '/zh/posts/algolia',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/aug': RouteRecordInfo<
-      '/zh/posts/aug',
-      '/zh/posts/aug',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/big-screen': RouteRecordInfo<
-      '/zh/posts/big-screen',
-      '/zh/posts/big-screen',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/bs2022': RouteRecordInfo<
-      '/zh/posts/bs2022',
-      '/zh/posts/bs2022',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/buy-car': RouteRecordInfo<
-      '/zh/posts/buy-car',
-      '/zh/posts/buy-car',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/c': RouteRecordInfo<
-      '/zh/posts/c',
-      '/zh/posts/c',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/convolution': RouteRecordInfo<
-      '/zh/posts/convolution',
-      '/zh/posts/convolution',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/data_struct': RouteRecordInfo<
-      '/zh/posts/data_struct',
-      '/zh/posts/data_struct',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/debug_test': RouteRecordInfo<
-      '/zh/posts/debug_test',
-      '/zh/posts/debug_test',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/deepin': RouteRecordInfo<
-      '/zh/posts/deepin',
-      '/zh/posts/deepin',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/docker': RouteRecordInfo<
-      '/zh/posts/docker',
-      '/zh/posts/docker',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/embd_used_soft': RouteRecordInfo<
-      '/zh/posts/embd_used_soft',
-      '/zh/posts/embd_used_soft',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/embedded': RouteRecordInfo<
-      '/zh/posts/embedded',
-      '/zh/posts/embedded',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/es6': RouteRecordInfo<
-      '/zh/posts/es6',
-      '/zh/posts/es6',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/file-download': RouteRecordInfo<
-      '/zh/posts/file-download',
-      '/zh/posts/file-download',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/fileio': RouteRecordInfo<
-      '/zh/posts/fileio',
-      '/zh/posts/fileio',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/forwardemail': RouteRecordInfo<
-      '/zh/posts/forwardemail',
-      '/zh/posts/forwardemail',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/git': RouteRecordInfo<
-      '/zh/posts/git',
-      '/zh/posts/git',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/git-commit': RouteRecordInfo<
-      '/zh/posts/git-commit',
-      '/zh/posts/git-commit',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/gpt': RouteRecordInfo<
-      '/zh/posts/gpt',
-      '/zh/posts/gpt',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/java': RouteRecordInfo<
-      '/zh/posts/java',
-      '/zh/posts/java',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/js-re': RouteRecordInfo<
-      '/zh/posts/js-re',
-      '/zh/posts/js-re',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/linux': RouteRecordInfo<
-      '/zh/posts/linux',
-      '/zh/posts/linux',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/mac_emd': RouteRecordInfo<
-      '/zh/posts/mac_emd',
-      '/zh/posts/mac_emd',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/make-name': RouteRecordInfo<
-      '/zh/posts/make-name',
-      '/zh/posts/make-name',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/makefile': RouteRecordInfo<
-      '/zh/posts/makefile',
-      '/zh/posts/makefile',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/mcp': RouteRecordInfo<
-      '/zh/posts/mcp',
-      '/zh/posts/mcp',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/md-it-diagarm': RouteRecordInfo<
-      '/zh/posts/md-it-diagarm',
-      '/zh/posts/md-it-diagarm',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/mermaid': RouteRecordInfo<
-      '/zh/posts/mermaid',
-      '/zh/posts/mermaid',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/npm-cdn': RouteRecordInfo<
-      '/zh/posts/npm-cdn',
-      '/zh/posts/npm-cdn',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/ollama': RouteRecordInfo<
-      '/zh/posts/ollama',
-      '/zh/posts/ollama',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/own-api': RouteRecordInfo<
-      '/zh/posts/own-api',
-      '/zh/posts/own-api',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/pinia': RouteRecordInfo<
-      '/zh/posts/pinia',
-      '/zh/posts/pinia',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/pnpm-pkg': RouteRecordInfo<
-      '/zh/posts/pnpm-pkg',
-      '/zh/posts/pnpm-pkg',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/pointer': RouteRecordInfo<
-      '/zh/posts/pointer',
-      '/zh/posts/pointer',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/pytorch': RouteRecordInfo<
-      '/zh/posts/pytorch',
-      '/zh/posts/pytorch',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/re-soup': RouteRecordInfo<
-      '/zh/posts/re-soup',
-      '/zh/posts/re-soup',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/rewrite-blazeb2': RouteRecordInfo<
-      '/zh/posts/rewrite-blazeb2',
-      '/zh/posts/rewrite-blazeb2',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/sass': RouteRecordInfo<
-      '/zh/posts/sass',
-      '/zh/posts/sass',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/swiper': RouteRecordInfo<
-      '/zh/posts/swiper',
-      '/zh/posts/swiper',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/tkinter': RouteRecordInfo<
-      '/zh/posts/tkinter',
-      '/zh/posts/tkinter',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/tmpl-cli': RouteRecordInfo<
-      '/zh/posts/tmpl-cli',
-      '/zh/posts/tmpl-cli',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/train': RouteRecordInfo<
-      '/zh/posts/train',
-      '/zh/posts/train',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/vscode': RouteRecordInfo<
-      '/zh/posts/vscode',
-      '/zh/posts/vscode',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/yunsuh-uninstall': RouteRecordInfo<
-      '/zh/posts/yunsuh-uninstall',
-      '/zh/posts/yunsuh-uninstall',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/posts/zsh-windows': RouteRecordInfo<
-      '/zh/posts/zsh-windows',
-      '/zh/posts/zsh-windows',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/zh/projects/': RouteRecordInfo<
-      '/zh/projects/',
-      '/zh/projects',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
   }
 
   /**
@@ -778,7 +778,7 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'pages/en/index.md': {
+    'pages/zh/index.md': {
       routes:
         | '/'
       views:
@@ -790,627 +790,627 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'pages/en/demos/index.md': {
+    'pages/zh/demos/index.md': {
       routes:
         | '/demos/'
       views:
         | never
     }
+    'pages/en/index.md': {
+      routes:
+        | '/en/'
+      views:
+        | never
+    }
+    'pages/en/demos/index.md': {
+      routes:
+        | '/en/demos/'
+      views:
+        | never
+    }
     'pages/en/interview/index.md': {
       routes:
-        | '/interview/'
+        | '/en/interview/'
       views:
         | never
     }
     'pages/en/navs/index.md': {
       routes:
-        | '/navs/'
+        | '/en/navs/'
       views:
         | never
     }
     'pages/en/navs/libraries.md': {
       routes:
-        | '/navs/libraries'
+        | '/en/navs/libraries'
       views:
         | never
     }
     'pages/en/navs/tools.md': {
       routes:
-        | '/navs/tools'
+        | '/en/navs/tools'
       views:
         | never
     }
     'pages/en/posts/index.md': {
       routes:
-        | '/posts/'
+        | '/en/posts/'
       views:
         | never
     }
     'pages/en/posts/2021.md': {
       routes:
-        | '/posts/2021'
+        | '/en/posts/2021'
       views:
         | never
     }
     'pages/en/posts/ai-dev-thoughts.md': {
       routes:
-        | '/posts/ai-dev-thoughts'
+        | '/en/posts/ai-dev-thoughts'
       views:
         | never
     }
     'pages/en/posts/algolia.md': {
       routes:
-        | '/posts/algolia'
+        | '/en/posts/algolia'
       views:
         | never
     }
     'pages/en/posts/aug.md': {
       routes:
-        | '/posts/aug'
+        | '/en/posts/aug'
       views:
         | never
     }
     'pages/en/posts/big-screen.md': {
       routes:
-        | '/posts/big-screen'
+        | '/en/posts/big-screen'
       views:
         | never
     }
     'pages/en/posts/bs2022.md': {
       routes:
-        | '/posts/bs2022'
+        | '/en/posts/bs2022'
       views:
         | never
     }
     'pages/en/posts/buy-car.md': {
       routes:
-        | '/posts/buy-car'
+        | '/en/posts/buy-car'
       views:
         | never
     }
     'pages/en/posts/convolution.md': {
       routes:
-        | '/posts/convolution'
+        | '/en/posts/convolution'
       views:
         | never
     }
     'pages/en/posts/debug_test.md': {
       routes:
-        | '/posts/debug_test'
+        | '/en/posts/debug_test'
       views:
         | never
     }
     'pages/en/posts/deepin.md': {
       routes:
-        | '/posts/deepin'
+        | '/en/posts/deepin'
       views:
         | never
     }
     'pages/en/posts/docker.md': {
       routes:
-        | '/posts/docker'
+        | '/en/posts/docker'
       views:
         | never
     }
     'pages/en/posts/embedded.md': {
       routes:
-        | '/posts/embedded'
+        | '/en/posts/embedded'
       views:
         | never
     }
     'pages/en/posts/es6.md': {
       routes:
-        | '/posts/es6'
+        | '/en/posts/es6'
       views:
         | never
     }
     'pages/en/posts/file-download.md': {
       routes:
-        | '/posts/file-download'
+        | '/en/posts/file-download'
       views:
         | never
     }
     'pages/en/posts/forwardemail.md': {
       routes:
-        | '/posts/forwardemail'
+        | '/en/posts/forwardemail'
       views:
         | never
     }
     'pages/en/posts/git.md': {
       routes:
-        | '/posts/git'
+        | '/en/posts/git'
       views:
         | never
     }
     'pages/en/posts/git-commit.md': {
       routes:
-        | '/posts/git-commit'
+        | '/en/posts/git-commit'
       views:
         | never
     }
     'pages/en/posts/gpt.md': {
       routes:
-        | '/posts/gpt'
+        | '/en/posts/gpt'
       views:
         | never
     }
     'pages/en/posts/java.md': {
       routes:
-        | '/posts/java'
+        | '/en/posts/java'
       views:
         | never
     }
     'pages/en/posts/js-re.md': {
       routes:
-        | '/posts/js-re'
+        | '/en/posts/js-re'
       views:
         | never
     }
     'pages/en/posts/make-name.md': {
       routes:
-        | '/posts/make-name'
+        | '/en/posts/make-name'
       views:
         | never
     }
     'pages/en/posts/mcp.md': {
       routes:
-        | '/posts/mcp'
+        | '/en/posts/mcp'
       views:
         | never
     }
     'pages/en/posts/md-it-diagarm.md': {
       routes:
-        | '/posts/md-it-diagarm'
+        | '/en/posts/md-it-diagarm'
       views:
         | never
     }
     'pages/en/posts/mermaid.md': {
       routes:
-        | '/posts/mermaid'
+        | '/en/posts/mermaid'
       views:
         | never
     }
     'pages/en/posts/npm-cdn.md': {
       routes:
-        | '/posts/npm-cdn'
+        | '/en/posts/npm-cdn'
       views:
         | never
     }
     'pages/en/posts/ollama.md': {
       routes:
-        | '/posts/ollama'
+        | '/en/posts/ollama'
       views:
         | never
     }
     'pages/en/posts/own-api.md': {
       routes:
-        | '/posts/own-api'
+        | '/en/posts/own-api'
       views:
         | never
     }
     'pages/en/posts/pinia.md': {
       routes:
-        | '/posts/pinia'
+        | '/en/posts/pinia'
       views:
         | never
     }
     'pages/en/posts/pnpm-pkg.md': {
       routes:
-        | '/posts/pnpm-pkg'
+        | '/en/posts/pnpm-pkg'
       views:
         | never
     }
     'pages/en/posts/pytorch.md': {
       routes:
-        | '/posts/pytorch'
+        | '/en/posts/pytorch'
       views:
         | never
     }
     'pages/en/posts/re-soup.md': {
       routes:
-        | '/posts/re-soup'
+        | '/en/posts/re-soup'
       views:
         | never
     }
     'pages/en/posts/rewrite-blazeb2.md': {
       routes:
-        | '/posts/rewrite-blazeb2'
+        | '/en/posts/rewrite-blazeb2'
       views:
         | never
     }
     'pages/en/posts/sass.md': {
       routes:
-        | '/posts/sass'
+        | '/en/posts/sass'
       views:
         | never
     }
     'pages/en/posts/swiper.md': {
       routes:
-        | '/posts/swiper'
+        | '/en/posts/swiper'
       views:
         | never
     }
     'pages/en/posts/tkinter.md': {
       routes:
-        | '/posts/tkinter'
+        | '/en/posts/tkinter'
       views:
         | never
     }
     'pages/en/posts/tmpl-cli.md': {
       routes:
-        | '/posts/tmpl-cli'
+        | '/en/posts/tmpl-cli'
       views:
         | never
     }
     'pages/en/posts/train.md': {
       routes:
-        | '/posts/train'
+        | '/en/posts/train'
       views:
         | never
     }
     'pages/en/posts/vscode.md': {
       routes:
-        | '/posts/vscode'
+        | '/en/posts/vscode'
       views:
         | never
     }
     'pages/en/posts/yunshu-uninstall.md': {
       routes:
-        | '/posts/yunshu-uninstall'
+        | '/en/posts/yunshu-uninstall'
       views:
         | never
     }
     'pages/en/posts/zsh-windows.md': {
       routes:
-        | '/posts/zsh-windows'
+        | '/en/posts/zsh-windows'
       views:
         | never
     }
     'pages/en/projects/index.md': {
       routes:
-        | '/projects/'
-      views:
-        | never
-    }
-    'pages/zh/index.md': {
-      routes:
-        | '/zh/'
-      views:
-        | never
-    }
-    'pages/zh/demos/index.md': {
-      routes:
-        | '/zh/demos/'
+        | '/en/projects/'
       views:
         | never
     }
     'pages/zh/interview/index.md': {
       routes:
-        | '/zh/interview/'
+        | '/interview/'
       views:
         | never
     }
     'pages/zh/navs/index.md': {
       routes:
-        | '/zh/navs/'
+        | '/navs/'
       views:
         | never
     }
     'pages/zh/navs/libraries.md': {
       routes:
-        | '/zh/navs/libraries'
+        | '/navs/libraries'
       views:
         | never
     }
     'pages/zh/navs/tools.md': {
       routes:
-        | '/zh/navs/tools'
+        | '/navs/tools'
       views:
         | never
     }
     'pages/zh/posts/index.md': {
       routes:
-        | '/zh/posts/'
+        | '/posts/'
       views:
         | never
     }
     'pages/zh/posts/2021.md': {
       routes:
-        | '/zh/posts/2021'
+        | '/posts/2021'
       views:
         | never
     }
     'pages/zh/posts/5132.md': {
       routes:
-        | '/zh/posts/5132'
+        | '/posts/5132'
       views:
         | never
     }
     'pages/zh/posts/ai-dev-thoughts.md': {
       routes:
-        | '/zh/posts/ai-dev-thoughts'
+        | '/posts/ai-dev-thoughts'
       views:
         | never
     }
     'pages/zh/posts/algolia.md': {
       routes:
-        | '/zh/posts/algolia'
+        | '/posts/algolia'
       views:
         | never
     }
     'pages/zh/posts/aug.md': {
       routes:
-        | '/zh/posts/aug'
+        | '/posts/aug'
       views:
         | never
     }
     'pages/zh/posts/big-screen.md': {
       routes:
-        | '/zh/posts/big-screen'
+        | '/posts/big-screen'
       views:
         | never
     }
     'pages/zh/posts/bs2022.md': {
       routes:
-        | '/zh/posts/bs2022'
+        | '/posts/bs2022'
       views:
         | never
     }
     'pages/zh/posts/buy-car.md': {
       routes:
-        | '/zh/posts/buy-car'
+        | '/posts/buy-car'
       views:
         | never
     }
     'pages/zh/posts/c.md': {
       routes:
-        | '/zh/posts/c'
+        | '/posts/c'
       views:
         | never
     }
     'pages/zh/posts/convolution.md': {
       routes:
-        | '/zh/posts/convolution'
+        | '/posts/convolution'
       views:
         | never
     }
     'pages/zh/posts/data_struct.md': {
       routes:
-        | '/zh/posts/data_struct'
+        | '/posts/data_struct'
       views:
         | never
     }
     'pages/zh/posts/debug_test.md': {
       routes:
-        | '/zh/posts/debug_test'
+        | '/posts/debug_test'
       views:
         | never
     }
     'pages/zh/posts/deepin.md': {
       routes:
-        | '/zh/posts/deepin'
+        | '/posts/deepin'
       views:
         | never
     }
     'pages/zh/posts/docker.md': {
       routes:
-        | '/zh/posts/docker'
+        | '/posts/docker'
       views:
         | never
     }
     'pages/zh/posts/embd_used_soft.md': {
       routes:
-        | '/zh/posts/embd_used_soft'
+        | '/posts/embd_used_soft'
       views:
         | never
     }
     'pages/zh/posts/embedded.md': {
       routes:
-        | '/zh/posts/embedded'
+        | '/posts/embedded'
       views:
         | never
     }
     'pages/zh/posts/es6.md': {
       routes:
-        | '/zh/posts/es6'
+        | '/posts/es6'
       views:
         | never
     }
     'pages/zh/posts/file-download.md': {
       routes:
-        | '/zh/posts/file-download'
+        | '/posts/file-download'
       views:
         | never
     }
     'pages/zh/posts/fileio.md': {
       routes:
-        | '/zh/posts/fileio'
+        | '/posts/fileio'
       views:
         | never
     }
     'pages/zh/posts/forwardemail.md': {
       routes:
-        | '/zh/posts/forwardemail'
+        | '/posts/forwardemail'
       views:
         | never
     }
     'pages/zh/posts/git.md': {
       routes:
-        | '/zh/posts/git'
+        | '/posts/git'
       views:
         | never
     }
     'pages/zh/posts/git-commit.md': {
       routes:
-        | '/zh/posts/git-commit'
+        | '/posts/git-commit'
       views:
         | never
     }
     'pages/zh/posts/gpt.md': {
       routes:
-        | '/zh/posts/gpt'
+        | '/posts/gpt'
       views:
         | never
     }
     'pages/zh/posts/java.md': {
       routes:
-        | '/zh/posts/java'
+        | '/posts/java'
       views:
         | never
     }
     'pages/zh/posts/js-re.md': {
       routes:
-        | '/zh/posts/js-re'
+        | '/posts/js-re'
       views:
         | never
     }
     'pages/zh/posts/linux.md': {
       routes:
-        | '/zh/posts/linux'
+        | '/posts/linux'
       views:
         | never
     }
     'pages/zh/posts/mac_emd.md': {
       routes:
-        | '/zh/posts/mac_emd'
+        | '/posts/mac_emd'
       views:
         | never
     }
     'pages/zh/posts/make-name.md': {
       routes:
-        | '/zh/posts/make-name'
+        | '/posts/make-name'
       views:
         | never
     }
     'pages/zh/posts/makefile.md': {
       routes:
-        | '/zh/posts/makefile'
+        | '/posts/makefile'
       views:
         | never
     }
     'pages/zh/posts/mcp.md': {
       routes:
-        | '/zh/posts/mcp'
+        | '/posts/mcp'
       views:
         | never
     }
     'pages/zh/posts/md-it-diagarm.md': {
       routes:
-        | '/zh/posts/md-it-diagarm'
+        | '/posts/md-it-diagarm'
       views:
         | never
     }
     'pages/zh/posts/mermaid.md': {
       routes:
-        | '/zh/posts/mermaid'
+        | '/posts/mermaid'
       views:
         | never
     }
     'pages/zh/posts/npm-cdn.md': {
       routes:
-        | '/zh/posts/npm-cdn'
+        | '/posts/npm-cdn'
       views:
         | never
     }
     'pages/zh/posts/ollama.md': {
       routes:
-        | '/zh/posts/ollama'
+        | '/posts/ollama'
       views:
         | never
     }
     'pages/zh/posts/own-api.md': {
       routes:
-        | '/zh/posts/own-api'
+        | '/posts/own-api'
       views:
         | never
     }
     'pages/zh/posts/pinia.md': {
       routes:
-        | '/zh/posts/pinia'
+        | '/posts/pinia'
       views:
         | never
     }
     'pages/zh/posts/pnpm-pkg.md': {
       routes:
-        | '/zh/posts/pnpm-pkg'
+        | '/posts/pnpm-pkg'
       views:
         | never
     }
     'pages/zh/posts/pointer.md': {
       routes:
-        | '/zh/posts/pointer'
+        | '/posts/pointer'
       views:
         | never
     }
     'pages/zh/posts/pytorch.md': {
       routes:
-        | '/zh/posts/pytorch'
+        | '/posts/pytorch'
       views:
         | never
     }
     'pages/zh/posts/re-soup.md': {
       routes:
-        | '/zh/posts/re-soup'
+        | '/posts/re-soup'
       views:
         | never
     }
     'pages/zh/posts/rewrite-blazeb2.md': {
       routes:
-        | '/zh/posts/rewrite-blazeb2'
+        | '/posts/rewrite-blazeb2'
       views:
         | never
     }
     'pages/zh/posts/sass.md': {
       routes:
-        | '/zh/posts/sass'
+        | '/posts/sass'
       views:
         | never
     }
     'pages/zh/posts/swiper.md': {
       routes:
-        | '/zh/posts/swiper'
+        | '/posts/swiper'
       views:
         | never
     }
     'pages/zh/posts/tkinter.md': {
       routes:
-        | '/zh/posts/tkinter'
+        | '/posts/tkinter'
       views:
         | never
     }
     'pages/zh/posts/tmpl-cli.md': {
       routes:
-        | '/zh/posts/tmpl-cli'
+        | '/posts/tmpl-cli'
       views:
         | never
     }
     'pages/zh/posts/train.md': {
       routes:
-        | '/zh/posts/train'
+        | '/posts/train'
       views:
         | never
     }
     'pages/zh/posts/vscode.md': {
       routes:
-        | '/zh/posts/vscode'
+        | '/posts/vscode'
       views:
         | never
     }
     'pages/zh/posts/yunsuh-uninstall.md': {
       routes:
-        | '/zh/posts/yunsuh-uninstall'
+        | '/posts/yunsuh-uninstall'
       views:
         | never
     }
     'pages/zh/posts/zsh-windows.md': {
       routes:
-        | '/zh/posts/zsh-windows'
+        | '/posts/zsh-windows'
       views:
         | never
     }
     'pages/zh/projects/index.md': {
       routes:
-        | '/zh/projects/'
+        | '/projects/'
       views:
         | never
     }
