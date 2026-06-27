@@ -18,20 +18,26 @@ const route = useRoute()
 const { isChinese } = useLanguage()
 
 const computedOtherPost = computed(() => {
-  if (!postUrls.value || postUrls.value.length === 0)
+  if (!postUrls.value?.length)
     return
 
-  const filteredPostUrls = postUrls.value.filter(item =>
-    isChinese.value
-      ? item.url.includes('/posts')
-      : item.url.includes('/en/posts') && !item.url.includes('/posts'),
-  )
+  const currentPath = route.path
 
-  if (filteredPostUrls.length === 0)
+  const filteredPostUrls = postUrls.value.filter(({ url }) => {
+    if (url === currentPath)
+      return false
+
+    return isChinese.value
+      ? url.startsWith('/posts/')
+      : url.startsWith('/en/posts/')
+  })
+
+  if (!filteredPostUrls.length)
     return
 
-  const randomPost = filteredPostUrls[Math.floor(Math.random() * filteredPostUrls.length)]
-  return randomPost.url
+  return filteredPostUrls[
+    Math.floor(Math.random() * filteredPostUrls.length)
+  ].url
 })
 
 async function fetchSeeOtherPost() {
