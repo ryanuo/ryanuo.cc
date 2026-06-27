@@ -18,9 +18,9 @@ const markdown = MarkdownIt({
   linkify: true,
 })
 
-function urlReplaceEn(url: string) {
-  if (url.includes('/en/')) {
-    return url.replace('/en', '')
+function urlReplaceZh(url: string) {
+  if (url.includes('/zh/')) {
+    return url.replace('/zh', '')
   }
 
   return url
@@ -81,7 +81,7 @@ async function buildBlogRSS() {
             ],
             author: [AUTHOR],
             link:
-              urlReplaceEn(`${DOMAIN}${i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', '')}`),
+              urlReplaceZh(`${DOMAIN}${i.replace(/^pages(.+)\.md$/, '$1')?.replace('/index', '')}`),
           }
         }),
     )
@@ -132,7 +132,7 @@ async function buildLatestPostsRSS() {
             { name: 'text', objects: content.replace(/\r\n/g, '') },
           ],
           author: [AUTHOR],
-          link: urlReplaceEn(link),
+          link: urlReplaceZh(link),
         }
       }),
     )
