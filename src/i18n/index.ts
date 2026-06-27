@@ -2,11 +2,11 @@
 import { createI18n } from 'vue-i18n'
 import { messages } from './locales'
 
-const lang = useStorage('lang', 'en-US')
+const lang = useStorage('lang', 'zh-CN')
 const i18n = createI18n({
   legacy: false,
   locale: lang.value, // 默认语言
-  fallbackLocale: 'en-US',
+  fallbackLocale: 'zh-CN', // 回退语言
   messages,
 })
 
@@ -16,11 +16,12 @@ export const langIconMap: Record<string, string> = {
   'zh-CN': 'i-proicons-text-typography',
   'en-US': 'i-noto-v1-flag-for-flag-china',
 }
+
 export function handleLanguageSwitch(to: any, next: any): void {
-  if (location.pathname.includes('zh'))
-    lang.value = 'zh-CN'
-  else
+  if (location.pathname.includes('en'))
     lang.value = 'en-US'
+  else
+    lang.value = 'zh-CN'
 
   next()
 }

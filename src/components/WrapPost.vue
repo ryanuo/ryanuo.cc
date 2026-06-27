@@ -9,7 +9,7 @@ defineProps({
 })
 const route = useRoute()
 const isPost = computed(() => {
-  if (route.path === '/zh/posts' || route.path === '/posts')
+  if (route.path === '/en/posts' || route.path === '/posts')
     return false
   return route.path?.indexOf('posts') !== -1
 })
@@ -18,9 +18,9 @@ const isShowComments = computed(() => {
   const cleanPath = route.fullPath.split('#')[0]
 
   return (
-    cleanPath.startsWith('/posts/')
+    cleanPath.startsWith('/en/posts/')
 
-    || cleanPath.startsWith('/zh/posts/')
+    || cleanPath.startsWith('/posts/')
 
   )
 })

@@ -61,6 +61,6 @@ cate: 技术
 - [小旺截图](https://www.xiaowang.com/)
 > 截图标注比较方便,AI翻译，AI提取文字，长截图
 
-- [Windows：Oh My Zsh + autosuggestions](https://ryanuo.cc/zh/posts/zsh-windows)
+- [Windows：Oh My Zsh + autosuggestions](https://ryanuo.cc/posts/zsh-windows)
 
 - [Ubuntu：Oh My Zsh 配置](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/)

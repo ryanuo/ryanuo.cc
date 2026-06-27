@@ -23,8 +23,8 @@ const computedOtherPost = computed(() => {
 
   const filteredPostUrls = postUrls.value.filter(item =>
     isChinese.value
-      ? item.url.includes('zh/posts')
-      : item.url.includes('/post') && !item.url.includes('zh/posts'),
+      ? item.url.includes('/posts')
+      : item.url.includes('/en/posts') && !item.url.includes('/posts'),
   )
 
   if (filteredPostUrls.length === 0)

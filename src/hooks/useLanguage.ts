@@ -6,9 +6,9 @@ export function useLanguage() {
   const routes = useRoute()
   const router = useRouter()
 
-  const isChinese = ref(routes.path.includes('/zh'))
+  const isChinese = ref(!routes.path.includes('/en'))
 
-  const aliaRoute = computed(() => (isChinese.value ? '/zh' : ''))
+  const aliaRoute = computed(() => (isChinese.value ? '' : '/en'))
   const langIcon = computed(() => {
     return langIconMap[isChinese.value ? 'en-US' : 'zh-CN']
   })
@@ -17,7 +17,7 @@ export function useLanguage() {
   watch(
     () => routes.path,
     (newPath) => {
-      const val = newPath.includes('/zh')
+      const val = !newPath.includes('/en')
       isChinese.value = val
       locale.value = val ? 'zh-CN' : 'en-US'
     },
@@ -26,7 +26,7 @@ export function useLanguage() {
 
   const switchLanguage = () => {
     const { path } = routes
-    const to = isChinese.value ? path.replace('/zh', '') : `/zh${path}`
+    const to = !isChinese.value ? path.replace('/en', '') : `/en${path}`
     router.push(to)
   }
 

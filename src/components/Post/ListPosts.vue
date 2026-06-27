@@ -11,7 +11,7 @@ const { isChinese } = useLanguage()
 const selectedCategory = ref('')
 
 const postsRoutes = computed(() => {
-  const lang = isChinese.value ? '/zh' : ''
+  const lang = isChinese.value ? '' : '/en'
 
   return routes
     .getRoutes()
@@ -21,7 +21,7 @@ const postsRoutes = computed(() => {
         path.includes('/posts')
         && path.startsWith(`${lang}/posts`)
         && !path.endsWith('.html')
-        && !['/zh/posts', '/posts'].includes(path)
+        && !['/en/posts', '/posts'].includes(path)
         && !(meta.frontmatter as FrontmatterPostType)?.isHidden
       )
     })
