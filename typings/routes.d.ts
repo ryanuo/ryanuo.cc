@@ -107,6 +107,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/en/posts/ai-text': RouteRecordInfo<
+      '/en/posts/ai-text',
+      '/en/posts/ai-text',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/en/posts/algolia': RouteRecordInfo<
       '/en/posts/algolia',
       '/en/posts/algolia',
@@ -229,13 +236,6 @@ declare module 'vue-router/auto-routes' {
     '/en/posts/js-re': RouteRecordInfo<
       '/en/posts/js-re',
       '/en/posts/js-re',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/en/posts/make-name': RouteRecordInfo<
-      '/en/posts/make-name',
-      '/en/posts/make-name',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -436,6 +436,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/ai-text': RouteRecordInfo<
+      '/posts/ai-text',
+      '/posts/ai-text',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/algolia': RouteRecordInfo<
       '/posts/algolia',
       '/posts/algolia',
@@ -600,13 +607,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/mac_emd': RouteRecordInfo<
       '/posts/mac_emd',
       '/posts/mac_emd',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/posts/make-name': RouteRecordInfo<
-      '/posts/make-name',
-      '/posts/make-name',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -850,6 +850,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/en/posts/ai-text.md': {
+      routes:
+        | '/en/posts/ai-text'
+      views:
+        | never
+    }
     'pages/en/posts/algolia.md': {
       routes:
         | '/en/posts/algolia'
@@ -955,12 +961,6 @@ declare module 'vue-router/auto-routes' {
     'pages/en/posts/js-re.md': {
       routes:
         | '/en/posts/js-re'
-      views:
-        | never
-    }
-    'pages/en/posts/make-name.md': {
-      routes:
-        | '/en/posts/make-name'
       views:
         | never
     }
@@ -1132,6 +1132,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/zh/posts/ai-text.md': {
+      routes:
+        | '/posts/ai-text'
+      views:
+        | never
+    }
     'pages/zh/posts/algolia.md': {
       routes:
         | '/posts/algolia'
@@ -1273,12 +1279,6 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/mac_emd.md': {
       routes:
         | '/posts/mac_emd'
-      views:
-        | never
-    }
-    'pages/zh/posts/make-name.md': {
-      routes:
-        | '/posts/make-name'
       views:
         | never
     }
