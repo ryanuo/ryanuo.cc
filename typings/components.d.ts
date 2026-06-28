@@ -18,7 +18,6 @@ declare module 'vue' {
     ListPosts: typeof import('./../src/components/Post/ListPosts.vue')['default']
     Logo: typeof import('./../src/components/Logo.vue')['default']
     ModalCard: typeof import('./../src/components/Demos/components/ModalCard.vue')['default']
-    NameMake: typeof import('./../src/components/Post/NameMake.vue')['default']
     NavBar: typeof import('./../src/components/Headers/NavBar.vue')['default']
     NavItem: typeof import('./../src/components/Navs/NavItem.vue')['default']
     NavsList: typeof import('./../src/components/Navs/NavsList.vue')['default']
