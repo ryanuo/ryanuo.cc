@@ -1,11 +1,7 @@
 name: Run Docker Container
 
 on:
-  push:
-    branches:
-      - main
-  watch:
-    types: [started]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,11 +17,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests beautifulsoup4 lxml
 
       - name: fetch config links
         run: |
-          python read_sitemap.py
+          python scripts/read_sitemap.py
 
       - name: Set up Environment Variables
         env:
