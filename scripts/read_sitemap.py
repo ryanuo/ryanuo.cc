@@ -13,7 +13,7 @@ if response.status_code == 200:
         url = loc.text
         item_map = {"url": url, "tags": ["zh-CN"]}
         if "/en/" in url:
-            item_map["tags"] = ["en-US"]" 
+            item_map["tags"] = ["en-US"]
         if "/navs" in url:
             item_map["selectors_key"] = "navs"
         urls.append(item_map)
