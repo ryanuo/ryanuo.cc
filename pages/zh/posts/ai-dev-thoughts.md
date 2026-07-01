@@ -266,13 +266,21 @@ AI解决问题的能力才值钱。
 ## 参考资料
 
 1. GitHub Octoverse：《The State of Open Source and AI》
+   <a href="https://github.blog/news-insights/research/the-state-of-open-source-and-ai/">
    https://github.blog/news-insights/research/the-state-of-open-source-and-ai/
+   </a>
 
 2. JetBrains Developer Survey：《Which AI Coding Tools Do Developers Actually Use at Work?》
+  <a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">
    https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/
+   </a>
 
 3. METR Research：《Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity》
+  <a href="https://arxiv.org/abs/2507.09089">
    https://arxiv.org/abs/2507.09089
+   </a>
 
 4. AIDev Dataset Research：《Understanding AI Agent Participation in Software Development》
+  <a href="https://arxiv.org/abs/2602.09185">
    https://arxiv.org/abs/2602.09185
+   </a>

@@ -1,5 +1,5 @@
 ---
-title: C语言学习（指针）
+title: 静态变量初始化与字符串存储解析
 date: "2026-05-15 14:08"
 description: 指针是变量的引用，指针变量保存的是变量的地址。
 cate: 笔记
@@ -33,7 +33,7 @@ cate: 笔记
 
 ### 数组指针
 
-- int (*p)[N];
+- int [*p](N);
 - 数组指针是指向数组的指针。
 - 数组指针往往是用于接收二维数组地址的，并且可以间接访问二维数组中的数据。
 
@@ -89,11 +89,11 @@ cate: 笔记
 参数：void *ptr, int value, size_t n
 常用：内存空间清零
 - memcpy()函数将内存块复制到另一个内存块。
-参数：void *dest, const void *src, size_t n
+参数：void *dest, const void*src, size_t n
 - memmove()函数将内存块复制到另一个内存块，但允许内存块重叠。
-参数：void *dest, const void *src, size_t n
+参数：void *dest, const void*src, size_t n
 - memcmp()函数比较内存块。
-参数：const void *ptr1, const void *ptr2, size_t n
+参数：const void *ptr1, const void*ptr2, size_t n
 
 ## 结构体
 

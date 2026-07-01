@@ -583,6 +583,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/ipc': RouteRecordInfo<
+      '/posts/ipc',
+      '/posts/ipc',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/java': RouteRecordInfo<
       '/posts/java',
       '/posts/java',
@@ -1255,6 +1262,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/gpt.md': {
       routes:
         | '/posts/gpt'
+      views:
+        | never
+    }
+    'pages/zh/posts/ipc.md': {
+      routes:
+        | '/posts/ipc'
       views:
         | never
     }

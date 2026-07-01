@@ -1,7 +1,7 @@
 ---
-title: 嵌入式学习（linux模块）
+title: Mac虚拟机避坑与Linux核心命令速查
 date: "2026-04-21 11:17:29"
-description:
+description: 搞定3D硬件加速难题，掌握文件管理、文本搜索与用户权限，快速提升Linux运维效率。
 cate: 笔记
 ---
 
@@ -59,7 +59,7 @@ linux 系统的文件结构:
 2. ls -l 显示文件详细信息
    文件类型：d 目录 l 链接（快捷方式） s 套接字链接 b 块设备 i 索引 p 管道 c 字符设备
 
-<img src='/posts/group.png'/>
+<img src='/posts/group.png' alt='group'/>
 
 3. cd - 退回上一级目录
 4. mkdir -p 创建目录 递归创建
