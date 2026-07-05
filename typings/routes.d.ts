@@ -688,6 +688,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/pthread': RouteRecordInfo<
+      '/posts/pthread',
+      '/posts/pthread',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/pytorch': RouteRecordInfo<
       '/posts/pytorch',
       '/posts/pytorch',
@@ -1352,6 +1359,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/pointer.md': {
       routes:
         | '/posts/pointer'
+      views:
+        | never
+    }
+    'pages/zh/posts/pthread.md': {
+      routes:
+        | '/posts/pthread'
       views:
         | never
     }
