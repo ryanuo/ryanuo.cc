@@ -33,6 +33,8 @@ ls /dev/tty.*  # /dev/tty.wchusbserial1110
 
 ## 交叉编译问题
 
+### 方案一
+
 1. 可能会遇到编译链的版本比较高，开发板的 glibc 版本过低问题
 - 解决方法：
 - M芯片的 内核版本是 aarch64 有些开发板的内核版本是 armv7l，需要我们进行交叉编译的话，需要将交叉编译链的版本改为 armv7l，使用
@@ -88,3 +90,17 @@ apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm
 
 编译好程序后可以使用`strings lib/touch | grep GLIBC` 查看链接的库版本是否符合开发板的要求
 还可以使用 file 命令查看链接的库版本
+
+### 方案二
+
+- 使用 mac container 运行交叉编译
+
+```bash
+container run -it --rm \
+  --dns 8.8.8.8 \
+  --dns 114.114.114.114 \
+  -v $(pwd):/workspace \
+  -w /workspace \
+  ubuntu:16.04 \
+  bash -c "sed -i 's/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && apt-get update && apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm-linux-gnueabihf && /bin/bash"
+  ```

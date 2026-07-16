@@ -1,7 +1,8 @@
 ---
-title: 全面梳理线程相关知识
+title: Linux 并发编程全解析：从线程同步到 I/O 多路复用
 date: "2026-07-05 14:08"
 cate: 笔记
+description: 线程I/O\线程同步I/O 多路复用
 ---
 
 [[toc]]

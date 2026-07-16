@@ -499,6 +499,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/database': RouteRecordInfo<
+      '/posts/database',
+      '/posts/database',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/debug_test': RouteRecordInfo<
       '/posts/debug_test',
       '/posts/debug_test',
@@ -1197,6 +1204,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/data_struct.md': {
       routes:
         | '/posts/data_struct'
+      views:
+        | never
+    }
+    'pages/zh/posts/database.md': {
+      routes:
+        | '/posts/database'
       views:
         | never
     }
