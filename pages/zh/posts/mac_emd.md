@@ -83,7 +83,7 @@ EOF
 - 安装交叉编译工具链
 
 ```bash
-apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm-linux-gnueab
+apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm-linux-gnueabihf
 ```
 
 `arm-linux-gnueabihf-gcc --version` 输出：arm-linux-gnueabihf-gcc (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0
@@ -96,11 +96,16 @@ apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm
 - 使用 mac container 运行交叉编译
 
 ```bash
-container run -it --rm \
+container run -it \
+  --name my-compiler \
   --dns 8.8.8.8 \
   --dns 114.114.114.114 \
   -v $(pwd):/workspace \
   -w /workspace \
   ubuntu:16.04 \
-  bash -c "sed -i 's/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && apt-get update && apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm-linux-gnueabihf && /bin/bash"
+  bash -c "sed -i 's/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && apt-get update && apt-get install -y build-essential wget pkg-config libffi-dev zlib1g-dev gcc-arm-linux-gnueabihf file && echo 'alias algg=\"arm-linux-gnueabihf-gcc\"' >> ~/.bashrc && /bin/bash"
   ```
+- 退出后重新进入
+```
+container start -ai my-compiler
+```
