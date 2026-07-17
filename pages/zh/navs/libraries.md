@@ -1,7 +1,7 @@
 ---
 title: 组件库 | RYANUO
 display: 前端导航
-description: 该前端工具库收录了个人使用或遇到过的各类库，按类别分类便于搜索。
+description: 技术组件与库收录，涵盖各语言的工具库、UI 组件及框架，按类别分类便于查找。
 plum: true
 isHiddenTitle: true
 projects:

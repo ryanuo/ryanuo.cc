@@ -1,7 +1,7 @@
 ---
 title: Tools | RYANUO
 display: Front Navigation
-description: Front-end online tools are being organized and are continuously updated.
+description: Online tools collection — covering development tools and practical resources. Continuously updated.
 plum: true
 isHiddenTitle: true
 projects:

@@ -1,7 +1,7 @@
 ---
 title: 技术导航 | RYANUO
 display: 技术导航
-description: 技术导航汇集了常用的开发工具、技术文档、学习资源以及各类与编程相关的内容。
+description: 技术导航，收录常用开发网站、工具、框架及技术资源，持续更新中。
 plum: true
 isHiddenTitle: true
 projects:

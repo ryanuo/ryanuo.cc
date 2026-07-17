@@ -1,7 +1,7 @@
 ---
 title: Libraries | RYANUO
 display: Front Navigation
-description: The front-end tool library includes libraries that have been used or encountered by individuals, categorized by category for easy searching.
+description: Tech libraries collection — curated toolkits, UI components, and frameworks across languages, categorized for easy discovery.
 plum: true
 isHiddenTitle: true
 projects:

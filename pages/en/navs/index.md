@@ -1,7 +1,7 @@
 ---
 title: Navs | RYANUO
 display: Front Navigation
-description: Front-end navigation includes commonly used front-end third-party websites, front-end knowledge, and front-end related content.
+description: Tech navigation — curated collection of development websites, tools, frameworks, and resources. Continuously updated.
 plum: true
 isHiddenTitle: true
 projects:
