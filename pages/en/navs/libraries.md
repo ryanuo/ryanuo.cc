@@ -1,6 +1,6 @@
 ---
 title: Libraries | RYANUO
-display: Front Navigation
+display: Tech Libraries
 description: Tech libraries collection — curated toolkits, UI components, and frameworks across languages, categorized for easy discovery.
 plum: true
 isHiddenTitle: true

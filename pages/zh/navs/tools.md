@@ -1,6 +1,6 @@
 ---
 title: 工具 | RYANUO
-display: 前端导航
+display: 技术工具
 description: 在线工具收录，涵盖常用开发工具与实用资源，持续更新中。
 plum: true
 isHiddenTitle: true

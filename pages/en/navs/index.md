@@ -1,6 +1,6 @@
 ---
 title: Navs | RYANUO
-display: Front Navigation
+display: 技术导航
 description: Tech navigation — curated collection of development websites, tools, frameworks, and resources. Continuously updated.
 plum: true
 isHiddenTitle: true

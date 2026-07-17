@@ -1,6 +1,6 @@
 ---
 title: Tools | RYANUO
-display: Front Navigation
+display: Tech Tools
 description: Online tools collection — covering development tools and practical resources. Continuously updated.
 plum: true
 isHiddenTitle: true
