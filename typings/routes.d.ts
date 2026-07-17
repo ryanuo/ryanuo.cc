@@ -226,6 +226,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/en/posts/grill-me-vs-superpowers': RouteRecordInfo<
+      '/en/posts/grill-me-vs-superpowers',
+      '/en/posts/grill-me-vs-superpowers',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/en/posts/java': RouteRecordInfo<
       '/en/posts/java',
       '/en/posts/java',
@@ -586,6 +593,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/gpt': RouteRecordInfo<
       '/posts/gpt',
       '/posts/gpt',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/grill-me-vs-superpowers': RouteRecordInfo<
+      '/posts/grill-me-vs-superpowers',
+      '/posts/grill-me-vs-superpowers',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -973,6 +987,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/en/posts/grill-me-vs-superpowers.md': {
+      routes:
+        | '/en/posts/grill-me-vs-superpowers'
+      views:
+        | never
+    }
     'pages/en/posts/java.md': {
       routes:
         | '/en/posts/java'
@@ -1282,6 +1302,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/gpt.md': {
       routes:
         | '/posts/gpt'
+      views:
+        | never
+    }
+    'pages/zh/posts/grill-me-vs-superpowers.md': {
+      routes:
+        | '/posts/grill-me-vs-superpowers'
       views:
         | never
     }
