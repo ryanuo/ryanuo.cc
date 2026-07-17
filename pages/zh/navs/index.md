@@ -1,7 +1,7 @@
 ---
-title: 导航 | RYANUO
-display: 前端导航
-description: 前端导航包括常用的前端第三方网站、前端知识以及与前端相关的内容。
+title: 技术导航 | RYANUO
+display: 技术导航
+description: 技术导航汇集了常用的开发工具、技术文档、学习资源以及各类与编程相关的内容。
 plum: true
 isHiddenTitle: true
 projects:

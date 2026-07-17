@@ -359,9 +359,6 @@ projects:
       link: https://github.com/unjs/unplugin
       icon: i-clarity-plugin-outline-badged
       desc: 适用于 Vite、Rollup、Webpack、esbuild、rolldown 等的统一插件系统
-#   自动化工具集:
-#   代码风格检查（linting）:
-#   命令行界面（CLI）:
 ---
 
 <!-- @layout-full-width -->

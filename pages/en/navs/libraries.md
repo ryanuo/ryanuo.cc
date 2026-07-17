@@ -358,9 +358,6 @@ projects:
       icon: i-clarity-plugin-outline-badged
       desc: Unified plugin system for Vite, Rollup, Webpack, esbuild, rolldown, and more.
 
-#   Automation Tools:
-#   lint:
-#   CLI:
 ---
 
 <!-- @layout-full-width -->
