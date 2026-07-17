@@ -1,5 +1,5 @@
 ---
-title: grill-me vs Superpowers: A Full Comparison of Two Agent-Skill Paths
+title: "grill-me vs Superpowers: A Full Comparison of Two Agent-Skill Paths"
 date: "2026-07-17 18:00"
 description: Positioning, workflows, invocation models, coverage, trade-offs, and when to combine Matt Pocock’s grill-me with Jesse Vincent’s Superpowers.
 cate: Tech
