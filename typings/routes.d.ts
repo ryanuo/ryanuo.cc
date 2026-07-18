@@ -471,6 +471,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/bitwise': RouteRecordInfo<
+      '/posts/bitwise',
+      '/posts/bitwise',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/bs2022': RouteRecordInfo<
       '/posts/bs2022',
       '/posts/bs2022',
@@ -1194,6 +1201,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/big-screen.md': {
       routes:
         | '/posts/big-screen'
+      views:
+        | never
+    }
+    'pages/zh/posts/bitwise.md': {
+      routes:
+        | '/posts/bitwise'
       views:
         | never
     }
