@@ -506,6 +506,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/cplusplus': RouteRecordInfo<
+      '/posts/cplusplus',
+      '/posts/cplusplus',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/data_struct': RouteRecordInfo<
       '/posts/data_struct',
       '/posts/data_struct',
@@ -1231,6 +1238,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/convolution.md': {
       routes:
         | '/posts/convolution'
+      views:
+        | never
+    }
+    'pages/zh/posts/cplusplus.md': {
+      routes:
+        | '/posts/cplusplus'
       views:
         | never
     }
