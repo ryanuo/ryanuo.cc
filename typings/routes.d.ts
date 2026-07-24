@@ -282,13 +282,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/en/posts/own-api': RouteRecordInfo<
-      '/en/posts/own-api',
-      '/en/posts/own-api',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
     '/en/posts/pinia': RouteRecordInfo<
       '/en/posts/pinia',
       '/en/posts/pinia',
@@ -695,13 +688,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/own-api': RouteRecordInfo<
-      '/posts/own-api',
-      '/posts/own-api',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
     '/posts/pinia': RouteRecordInfo<
       '/posts/pinia',
       '/posts/pinia',
@@ -1046,12 +1032,6 @@ declare module 'vue-router/auto-routes' {
     'pages/en/posts/ollama.md': {
       routes:
         | '/en/posts/ollama'
-      views:
-        | never
-    }
-    'pages/en/posts/own-api.md': {
-      routes:
-        | '/en/posts/own-api'
       views:
         | never
     }
@@ -1400,12 +1380,6 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/ollama.md': {
       routes:
         | '/posts/ollama'
-      views:
-        | never
-    }
-    'pages/zh/posts/own-api.md': {
-      routes:
-        | '/posts/own-api'
       views:
         | never
     }
