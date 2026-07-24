@@ -22,7 +22,6 @@ declare module 'vue' {
     NavItem: typeof import('./../src/components/Navs/NavItem.vue')['default']
     NavsList: typeof import('./../src/components/Navs/NavsList.vue')['default']
     NavsTabs: typeof import('./../src/components/Navs/NavsTabs.vue')['default']
-    OilPrice: typeof import('./../src/components/Post/OilPrice.vue')['default']
     Plum: typeof import('./../src/components/Plum.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
