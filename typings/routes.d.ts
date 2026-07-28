@@ -534,6 +534,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/diamond-inheritance': RouteRecordInfo<
+      '/posts/diamond-inheritance',
+      '/posts/diamond-inheritance',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/docker': RouteRecordInfo<
       '/posts/docker',
       '/posts/docker',
@@ -775,6 +782,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/vscode': RouteRecordInfo<
       '/posts/vscode',
       '/posts/vscode',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/vtable': RouteRecordInfo<
+      '/posts/vtable',
+      '/posts/vtable',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -1251,6 +1265,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/zh/posts/diamond-inheritance.md': {
+      routes:
+        | '/posts/diamond-inheritance'
+      views:
+        | never
+    }
     'pages/zh/posts/docker.md': {
       routes:
         | '/posts/docker'
@@ -1458,6 +1478,12 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/vscode.md': {
       routes:
         | '/posts/vscode'
+      views:
+        | never
+    }
+    'pages/zh/posts/vtable.md': {
+      routes:
+        | '/posts/vtable'
       views:
         | never
     }
