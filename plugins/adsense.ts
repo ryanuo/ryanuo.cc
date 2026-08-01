@@ -1,3 +1,5 @@
+import { ADS_CONFIG } from '~/components/Ads/config'
+
 export type AdFormat = 'display' | 'feed' | 'article' | 'multiplex'
 
 export interface AdUnitConfig {
@@ -10,20 +12,11 @@ export interface AdUnitConfig {
   height?: string | number
 }
 
-interface ScriptOptions {
-  id: string
-  src: string
-  async?: boolean
-  defer?: boolean
-  type?: string
-  customElement?: string
-}
-
-export function loadScript(options: ScriptOptions) {
+export function loadScript(options: { id: string, src: string, async?: boolean }) {
   if (typeof document === 'undefined')
     return
 
-  const { id, src, async = true, defer = false, type, customElement } = options
+  const { id, src, async = true } = options
 
   if (document.getElementById(id))
     return
@@ -32,24 +25,26 @@ export function loadScript(options: ScriptOptions) {
   script.id = id
   script.src = src
   script.async = async
-  if (defer)
-    script.defer = true
-  if (type)
-    script.type = type
-  if (customElement)
-    script.setAttribute('custom-element', customElement)
-
   document.head.appendChild(script)
 }
 
-export function useAmpAd() {
+export function useAdSense() {
   loadScript({
-    id: 'amp-ad-script',
-    src: 'https://cdn.ampproject.org/v0/amp-ad-0.1.js',
-    customElement: 'amp-ad',
+    id: 'adsbygoogle-script',
+    src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CONFIG.client}`,
   })
 }
 
 export function isAmpReady() {
   return typeof window !== 'undefined' && typeof document !== 'undefined'
+}
+
+export function pushAd() {
+  try {
+    ;(window as any).adsbygoogle = (window as any).adsbygoogle || []
+    ;(window as any).adsbygoogle.push({})
+  }
+  catch (e) {
+    console.error('AdSense push error:', e)
+  }
 }

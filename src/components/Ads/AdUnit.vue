@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { AdFormat } from '../../../plugins/amp-ad'
-import { useId } from 'vue'
-import { useAmpAd } from '../../../plugins/amp-ad'
+import type { AdFormat } from '../../../plugins/adsense'
+import { pushAd, useAdSense } from '../../../plugins/adsense'
 
 interface Props {
   client: string
@@ -10,63 +9,57 @@ interface Props {
   layout?: string
   width?: string | number
   height?: string | number
-  type?: string
   class?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  type: 'adsense',
   width: '100vw',
   height: '320',
 })
 
-const id = useId()
+const insRef = ref<HTMLElement | null>(null)
 
-const formatAttrs = computed(() => {
+const insAttrs = computed(() => {
+  const base: Record<string, string> = {
+    'data-ad-client': props.client,
+    'data-ad-slot': props.adSlot,
+  }
   switch (props.format) {
     case 'display':
-      return {
-        'data-ad-format': 'auto',
-        'data-full-width-responsive': 'true',
-      }
+      base['data-ad-format'] = 'auto'
+      base['data-full-width-responsive'] = 'true'
+      break
     case 'feed':
-      return {
-        'data-ad-format': 'fluid',
-        ...(props.layout ? { 'data-ad-layout-key': props.layout } : {}),
-      }
+      base['data-ad-format'] = 'fluid'
+      if (props.layout)
+        base['data-ad-layout-key'] = props.layout
+      break
     case 'article':
-      return {
-        'data-ad-format': 'fluid',
-        'data-ad-layout': 'in-article',
-      }
+      base['data-ad-format'] = 'fluid'
+      base['data-ad-layout'] = 'in-article'
+      break
     case 'multiplex':
-      return {
-        'data-ad-format': 'autorelaxed',
-      }
-    default:
-      return {}
+      base['data-ad-format'] = 'autorelaxed'
+      break
   }
+  return base
 })
 
 onMounted(() => {
-  useAmpAd()
+  useAdSense()
+  pushAd()
 })
 </script>
 
 <template>
-  <ClientOnly>
-    <div :class="props.class" class="ad-unit-wrapper">
-      <amp-ad
-        :id="id"
-        :type="type"
-        :width="String(width)"
-        :height="String(height)"
-        :data-ad-client="client"
-        :data-ad-slot="adSlot"
-        v-bind="formatAttrs"
-      />
-    </div>
-  </ClientOnly>
+  <div :class="props.class" class="ad-unit-wrapper">
+    <ins
+      ref="insRef"
+      class="adsbygoogle"
+      style="display: block"
+      v-bind="insAttrs"
+    />
+  </div>
 </template>
 
 <style scoped>
@@ -74,7 +67,7 @@ onMounted(() => {
   min-height: 250px;
 }
 
-amp-ad {
+.adsbygoogle {
   display: block;
   max-width: 100%;
 }

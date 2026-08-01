@@ -9,3 +9,28 @@ export const ADS_CONFIG = {
     multiplex: '6201350337', // 多重
   },
 }
+
+// // Google AdSense 测试配置
+// // 仅用于本地开发测试，不用于线上收益
+
+// export const ADS_CONFIG = {
+//   // Google 官方测试 Publisher ID
+//   client: 'ca-pub-3940256099942544',
+
+//   slots: {
+//     // Display 广告测试
+//     displayFooter: '6300978111',
+
+//     // Display 广告测试
+//     displayNavs: '6300978111',
+
+//     // Feed 信息流测试
+//     feed: '2247696110',
+
+//     // Article 内嵌广告测试
+//     article: '7999868713',
+
+//     // Multiplex 多重广告测试
+//     multiplex: '8533167169',
+//   },
+// }

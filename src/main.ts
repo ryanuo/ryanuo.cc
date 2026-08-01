@@ -5,7 +5,6 @@ import { ViteSSG } from 'vite-ssg'
 import { setupRouterScroller } from 'vue-router-better-scroller'
 import { routes } from 'vue-router/auto-routes'
 
-import { useAmpAd } from '../plugins/amp-ad'
 import { useBaiduAnalytics } from '../plugins/baidu-analytics'
 import App from './App.vue'
 import i18n, { handleLanguageSwitch } from './i18n'
@@ -35,8 +34,6 @@ export const createApp = ViteSSG(
     useBaiduAnalytics(router, '89e0e135662bca408bb8a04498af05ac')
 
     if (isClient) {
-      useAmpAd()
-
       const html = document.querySelector('html')!
       setupRouterScroller(router, {
         selectors: {
