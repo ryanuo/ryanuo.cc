@@ -3,6 +3,7 @@
 import { markdownItDiagramDom } from 'markdown-it-diagram/dom'
 import mermaid from 'mermaid'
 import { useImagePreview } from '~/hooks/useImagePreview'
+import { ADS_CONFIG } from './components/Ads/config'
 
 const route = useRoute()
 const { imageModel } = useImagePreview()
@@ -33,6 +34,14 @@ const isDemosPage = computed(() => {
   <NavBar />
   <main :class="!isDemosPage && 'of-x-hidden px-7 py-10'">
     <RouterView />
+    <AdUnit
+      v-if="route.path && !isDemosPage"
+      class="prose m-auto mt-10"
+      format="display"
+      :client="ADS_CONFIG.client"
+      :ad-slot="ADS_CONFIG.slots.displayFooter"
+      height="250"
+    />
     <Footer
       v-if="route.path && !isDemosPage"
     />

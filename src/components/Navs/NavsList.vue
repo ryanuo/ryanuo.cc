@@ -3,6 +3,7 @@ import { omit } from 'lodash-es'
 import { useI18n } from 'vue-i18n'
 
 import { slug } from '~/utils'
+import { ADS_CONFIG } from '../Ads/config'
 
 interface Project {
   desc: string
@@ -104,6 +105,13 @@ function handleNav(obj: Project) {
           </li>
         </ul>
       </div>
+      <AdUnit
+        :ad-slot="ADS_CONFIG.slots.displayNavs"
+        format="display"
+        :client="ADS_CONFIG.client"
+        height="250"
+        class="my-6"
+      />
       <hr>
       <div class="slide-enter font-size-3.6 animate-delay-800!">
         {{

@@ -4,6 +4,7 @@ import { computed, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLanguage } from '~/hooks/useLanguage'
 import { formatDateToMarDD } from '~/utils'
+import { ADS_CONFIG } from '../Ads/config'
 
 const routes = useRouter()
 const { isChinese } = useLanguage()
@@ -158,6 +159,17 @@ function isYearGroup(date?: string, preDate?: string) {
         <a :href="post.path" class="font-normal" style="border-style: dashed">{{ post.title }}</a>
         <span class="ml-2 inline-flex text-sm text-gray-500 dark:text-gray-400">{{ formatDateToMarDD(post.date)
         }}</span>
+
+        <!-- 信息流广告：每 10 条插入一条 -->
+        <div v-if="(index + 1) % 10 === 0" class="my-4">
+          <AdUnit
+            format="feed"
+            :client="ADS_CONFIG.client"
+            :ad-slot="ADS_CONFIG.slots.feed"
+            layout="image-top"
+            height="320"
+          />
+        </div>
 
         <!-- <div class="mt-1">
           <span

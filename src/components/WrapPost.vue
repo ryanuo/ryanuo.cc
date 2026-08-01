@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { formatDateToMarDD } from '~/utils'
+import { ADS_CONFIG } from './Ads/config'
 
 defineProps({
   frontmatter: {
@@ -44,6 +45,15 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
   </div>
   <article>
     <AIPostChat v-if="isPost" />
+    <AdUnit
+      v-if="isPost"
+      format="article"
+      :client="ADS_CONFIG.client"
+      :ad-slot="ADS_CONFIG.slots.article"
+      layout="in-article"
+      height="320"
+      class="m-auto max-w-[65ch]"
+    />
     <slot />
   </article>
   <div v-if="route.path.includes('posts')" class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden">
@@ -65,6 +75,13 @@ const tweetUrl = computed(() => `https://x.com/intent/tweet?text=${encodeURIComp
     <div style="border: .1px solid #3c3c3c1f; width: 100%; margin-top: 2rem; margin-bottom: 2rem;" />
   </div>
   <div v-if="isShowComments" class="slide-enter m-auto mb-8 mt-8 max-w-[65ch] animate-delay-500 print:hidden">
+    <AdUnit
+      format="multiplex"
+      :client="ADS_CONFIG.client"
+      :ad-slot="ADS_CONFIG.slots.multiplex"
+      height="320"
+      class="mb-8"
+    />
     <TwikooComment />
   </div>
 </template>

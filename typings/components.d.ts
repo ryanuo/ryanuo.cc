@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AdUnit: typeof import('./../src/components/Ads/AdUnit.vue')['default']
     AIPostChat: typeof import('./../src/components/Post/AIPostChat/index.vue')['default']
     AlgoliaSearchBox: typeof import('./../src/components/Headers/Search/AlgoliaSearchBox.vue')['default']
     BottomIcon: typeof import('./../src/components/Demos/components/BottomIcon.vue')['default']
