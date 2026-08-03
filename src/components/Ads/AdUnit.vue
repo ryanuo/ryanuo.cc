@@ -19,6 +19,22 @@ const props = withDefaults(defineProps<Props>(), {
 
 const insRef = ref<HTMLElement | null>(null)
 
+const insStyle = computed(() => {
+  const style: Record<string, string> = {
+    display: 'block',
+    width: typeof props.width === 'number' ? `${props.width}px` : props.width,
+  }
+  if (props.height) {
+    const h = typeof props.height === 'number' ? props.height : parseInt(props.height, 10)
+    if (!Number.isNaN(h))
+      style.minHeight = `${Math.max(h, 50)}px`
+  }
+  else {
+    style.minHeight = '250px'
+  }
+  return style
+})
+
 const insAttrs = computed(() => {
   const base: Record<string, string> = {
     'data-ad-client': props.client,
@@ -56,7 +72,7 @@ onMounted(() => {
     <ins
       ref="insRef"
       class="adsbygoogle"
-      style="display: block"
+      :style="insStyle"
       v-bind="insAttrs"
     />
   </div>
