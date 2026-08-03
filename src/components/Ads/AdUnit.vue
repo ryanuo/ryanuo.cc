@@ -62,19 +62,16 @@ const insAttrs = computed(() => {
 })
 
 onMounted(() => {
+  if (true)
+    return
   useAdSense()
   pushAd()
 })
 </script>
 
 <template>
-  <div :class="props.class" class="ad-unit-wrapper">
-    <ins
-      ref="insRef"
-      class="adsbygoogle"
-      :style="insStyle"
-      v-bind="insAttrs"
-    />
+  <div v-if="false" :class="props.class" class="ad-unit-wrapper">
+    <ins ref="insRef" class="adsbygoogle" :style="insStyle" v-bind="insAttrs" />
   </div>
 </template>
 
