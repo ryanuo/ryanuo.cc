@@ -7,16 +7,22 @@ defineProps<{ demos: {
   [key: number]: DemosTypes[]
 } }>()
 const { options } = useModalOptions()
+
+const expanded = ref(false)
+
+function toggleExpanded() {
+  expanded.value = !expanded.value
+}
 </script>
 
 <template>
   <div class="masonry-container">
     <article
-      v-for="([, demoList], key) in Object.entries(demos)?.sort((a, b) => Number(b[0]) - Number(a[0]))"
+      v-for="([year, demoList], key) in Object.entries(demos)?.sort((a, b) => Number(b[0]) - Number(a[0]))"
       :key="key"
       class="masonry-item relative m-2 flex flex-col cursor-pointer rounded-lg bg-clip-border"
     >
-      <div v-for="demo in demoList" :key="demo.name" class="group relative mb-6 mt-4 text-gray-800 shadow-lg transition-all dark:shadow-gray-900 hover:shadow-2xl">
+      <div v-for="demo in demoList.filter(d => expanded || !d.hidden)" :key="demo.name" class="group relative mb-6 mt-4 text-gray-800 shadow-lg transition-all dark:shadow-gray-900 hover:shadow-2xl">
         <img
           :src="demo.img || '/demos/zhanweitu.png'"
           alt="Demo Image"
@@ -50,6 +56,15 @@ const { options } = useModalOptions()
         </div>
       </div>
     </article>
+  </div>
+  <!-- Show More / Show Less Button -->
+  <div class="mt-6 mb-4 flex justify-center">
+    <button
+      class="cursor-pointer rounded border px-4 py-2 text-sm transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+      @click="toggleExpanded"
+    >
+      {{ expanded ? 'Show Less' : 'Show More' }}
+    </button>
   </div>
   <ModalCard :options="options" />
 </template>

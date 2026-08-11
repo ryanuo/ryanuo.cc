@@ -5,6 +5,12 @@ import { useModalOptions } from '../hooks/useModalOptions'
 defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
 const { options } = useModalOptions()
+
+const expanded = ref(false)
+
+function toggleExpanded() {
+  expanded.value = !expanded.value
+}
 </script>
 
 <template>
@@ -18,7 +24,7 @@ const { options } = useModalOptions()
         </span>
       </div>
       <div flex="~ wrap gap-4 justify-between">
-        <div v-for="demo in demos[Number(index)]" :key="demo.name" class="card_t1 w-full md:w-8/17">
+        <div v-for="demo in demos[Number(index)].filter(d => expanded || !d.hidden)" :key="demo.name" class="card_t1 w-full md:w-8/17">
           <iframe
             v-if="demo.video" width="100%" height="400px" :src="demo.video" scrolling="no" border="0"
             frameborder="no" framespacing="0"
@@ -45,6 +51,15 @@ const { options } = useModalOptions()
           </div>
         </div>
       </div>
+    </div>
+    <!-- Show More / Show Less Button -->
+    <div class="mt-6 flex justify-center">
+      <button
+        class="cursor-pointer rounded border px-4 py-2 text-sm transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+        @click="toggleExpanded"
+      >
+        {{ expanded ? 'Show Less' : 'Show More' }}
+      </button>
     </div>
   </div>
   <ModalCard :options="options" />

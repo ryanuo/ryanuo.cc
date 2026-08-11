@@ -12,11 +12,20 @@ const props = defineProps<{ demos: Record<number, DemosTypes[]> }>()
 
 const { options } = useModalOptions()
 
+const expanded = ref(false)
+
 const demosArray = computed(() => {
-  return Object.keys(props.demos)
+  const raw = Object.keys(props.demos)
     .sort((a, b) => Number(b) - Number(a))
     .flatMap(key => props.demos[Number(key)].map(demo => ({ ...demo, year: Number(key), img: demo.img || '/demos/zhanweitu.png',
     })))
+  // 默认隐藏 hidden:true 的项目；展开后全部显示
+  return expanded.value ? raw : raw.filter(demo => !demo.hidden)
+})
+
+// Check if there are any hidden items to decide whether to show the toggle button
+const hasHidden = computed(() => {
+  return Object.keys(props.demos).some(key => props.demos[Number(key)].some(d => d.hidden))
 })
 </script>
 
@@ -24,6 +33,13 @@ const demosArray = computed(() => {
   <div class="t8-card">
     <div class="title">
       <p> Hello! 👋🏾This is my portfolio page！</p>
+      <button
+        v-if="hasHidden"
+        class="mt-2 cursor-pointer rounded border px-3 py-1 text-xs transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+        @click="expanded = !expanded"
+      >
+        {{ expanded ? 'Show Less' : 'Show More' }}
+      </button>
     </div>
     <div id="banner-t8">
       <Swiper

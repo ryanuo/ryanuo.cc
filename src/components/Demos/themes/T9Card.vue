@@ -9,16 +9,19 @@ const { options } = useModalOptions()
 const allYears = computed(() => Object.keys(props.demos).map(year => Number(year)).sort((a, b) => b - a))
 
 const selectedYears = ref<number[]>(allYears.value)
+const expanded = ref(false)
 
 const demosArray = computed(() => {
-  return Object.keys(props.demos)
+  const raw = Object.keys(props.demos)
     .sort((a, b) => Number(b) - Number(a))
     .flatMap(key => props.demos[Number(key)].map(demo => ({
       ...demo,
       year: Number(key),
       img: demo.img || '/demos/zhanweitu.png',
     })))
-    .filter(demo => selectedYears.value.length === 0 || selectedYears.value.includes(demo.year))
+  // 默认隐藏 hidden:true 的项目；展开后全部显示
+  const filtered = expanded.value ? raw : raw.filter(demo => !demo.hidden)
+  return filtered.filter(demo => selectedYears.value.length === 0 || selectedYears.value.includes(demo.year))
 })
 
 function toggleYear(year: number) {
@@ -69,15 +72,24 @@ function deselectAllYears() {
       </div>
     </h2>
     <div class="mb-4 text-xs">
-      <div class="flex flex-wrap gap-2">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="year in allYears" :key="year" class="cursor-pointer rounded p-1 focus:outline-none" :class="[
+              selectedYears.includes(year)
+                ? 'bg-black text-white'
+                : 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300',
+            ]" @click="toggleYear(year)"
+          >
+            {{ year }}
+          </button>
+        </div>
         <button
-          v-for="year in allYears" :key="year" class="cursor-pointer rounded p-1 focus:outline-none" :class="[
-            selectedYears.includes(year)
-              ? 'bg-black text-white'
-              : 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300',
-          ]" @click="toggleYear(year)"
+          v-if="Object.keys(props.demos).some(key => props.demos[Number(key)].some(d => d.hidden))"
+          class="cursor-pointer rounded border px-3 py-1 transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+          @click="expanded = !expanded"
         >
-          {{ year }}
+          {{ expanded ? 'Show Less' : 'Show More' }}
         </button>
       </div>
     </div>

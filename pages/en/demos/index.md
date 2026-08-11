@@ -24,12 +24,14 @@ demos:
       img: '/demos/mts.png'
       tags: [nuxt4, vue3, unocss]
       readme: 'https://github.com/ryanuo/mts/blob/main/README.md'
+      hidden: true
     - name: userscripts
       link: 'https://github.com/ryanuo/userscripts'
       desc: 'A collection of userscripts for Chrome.'
       img: '/demos/userscripts.png'
       tags: [userscripts, chrome]
       readme: 'https://github.com/ryanuo/userscripts/blob/main/README.md'
+      hidden: true
     - name: 'Resume Editor'
       link: 'https://github.com/NxResume/nuxt-resume-editor'
       desc: 'A markdown resume editor based on Nuxt3'
@@ -42,6 +44,7 @@ demos:
       img: '/demos/textcss.png'
       readme: 'https://github.com/ryanuo/textcss/blob/main/README.md'
       tags: [monorepo, tailwindcss, vite]
+      hidden: true
     - name: 'Tab Extension'
       link: 'https://github.com/ryanuo/tab-ext'
       desc: 'A tab extension for Chrome.'
@@ -54,30 +57,35 @@ demos:
       img: '/demos/api-hub.png'
       readme: 'https://github.com/ryanuo/api-hub/blob/main/README.md'
       tags: [hono, jsx, vite]
+      hidden: true
     - name: 'STATUS'
       link: 'https://github.com/ryanuo/status'
       desc: 'A simple status page for developers.'
       img: '/demos/status.png'
       readme: 'https://github.com/ryanuo/status/blob/main/README.md'
       tags: [nuxt]
+      hidden: true
     - name: '@ryanuo/utils'
       link: 'https://github.com/ryanuo/utils'
       desc: 'A collection of useful tools for developers.'
       img: '/demos/utils.png'
       readme: 'https://github.com/ryanuo/utils/blob/main/README.md'
       tags: ['vite', 'ts']
+      hidden: true
     - name: 'Gold Trades'
       link: 'https://github.com/ryanuo/aug-calc/'
       desc: 'A web application for trading gold, developed using Vue3.'
       img: '/demos/aug.png'
       readme: 'https://raw.githubusercontent.com/ryanuo/aug-calc/refs/heads/main/README.md'
       tags: [nuxt,vue3]
+      hidden: true
     - name: 'Tmpl-Cli'
       link: 'https://github.com/ryanuo/tmpl-cli'
       desc: 'A convenient project template management tool to quickly clone templates from Git repositories.'
       img: '/demos/tmpl-cli.gif'
       readme: 'https://raw.githubusercontent.com/ryanuo/tmpl-cli/refs/heads/main/README.md'
       tags: ['rust','zsh']
+      hidden: true
   2024:
     - name: 'Markdown-It-Diagram'
       link: 'https://github.com/ryanuo/markdown-it-diagram'
@@ -91,11 +99,12 @@ demos:
       readme: 'https://github.com/ryanuo/own-cover/blob/master/README.md'
       img: '/demos/own-cover.png'
       tags: [nuxt]
+      hidden: true
     - name: 'My Website'
       link: 'https://github.com/ryanuo/ryanuo.cc'
       desc: 'My personal website includes personal introduction, various third-party platforms, front-end common knowledge organization, blog, project introduction, and demo display,designed by Antfu Boss'
       img: '/demos/page-dark.png'
-      readme: 'https://raw.githubusercontent.com/ryanuo/own-cover/refs/heads/main/README.md'
+      readme: 'https://raw.githubusercontent.com/own-cover/refs/heads/main/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: Auto Navs
       link: https://github.com/ryanuo/navs
@@ -110,12 +119,14 @@ demos:
       img: '/demos/tv.gif'
       readme: 'https://github.com/ryanuo/tv-data-ana/blob/master/README.md'
       tags: ['React','Django','Playwright','Echarts']
+      hidden: true
     - name: 'Cat-Data-Ana'
       link: 'https://github.com/ryanuo/cat-data-ana'
       desc: 'Visualization analysis of cat data on the Pet Cat Network and integrated AI intelligent analysis.'
       img: '/demos/cat.gif'
       readme: 'https://github.com/ryanuo/cat-data-ana/blob/master/README.md'
       tags: ['React','FastAPI','Echarts']
+      hidden: true
   2022:
     - name: 'Blazeb2'
       link: 'https://github.com/ryanuo/blazeB2'
@@ -124,22 +135,26 @@ demos:
       img: '/demos/blazeb2.png'
       readme: 'https://raw.githubusercontent.com/ryanuo/blazeB2/refs/heads/master/README.md'
       tags: ['Vue2','Python','Docker']
+      hidden: true
     - name: 'Git Commit Echarts'
       link: https://github.com/ryanuo/github_commit_echarts
       video: '//player.bilibili.com/player.html?bvid=BV1QS4y1R7rx&amp;page=1&muted=true'
       desc: 'A 3D visualization chart for the number of commits to open source projects on GitHub'
       img: '/demos/git.gif'
       tags: ['GIT','Echarts3d']
+      hidden: true
     - name: 'Pest Identification'
       link: https://github.com/ryanuo/bs2022
       video: '//player.bilibili.com/player.html?bvid=BV1UN4y137yk&amp;page=1&muted=true'
       desc: 'A deep learning-based Chinese herbal medicine pest identification system, developed using the Flask framework'
       tags: [Flask,Vue3]
+      hidden: true
     - name: 'Hexo-Wx-Api'
       link: https://github.com/ryanuo/hexo-wx-api
       desc: 'A personal blog WeChat Mini Program that configures Hexo plugin to generate JSON data interface, compatible with various theme versions based on Hexo'
       tags: ["wx",'Hexo']
       img: /demos/wx.png
+      hidden: true
     - name: 'Hexo-Generator-Wxapi'
       link: 'https://www.npmjs.com/package/hexo-generator-wxapi?activeTab=readme'
       desc: 'A npm package that generates Hexo API interfaces, based on hexo-generator-restful.'
@@ -147,6 +162,7 @@ demos:
       readme: 'https://github.com/ryanuo/hexo-generator-wxapi/blob/master/README_en.md'
       tags: ['Hexo','Npm']
       icon: 'demos'
+      hidden: true
 
   2021:
     - name: 'Assessment Form'
@@ -154,27 +170,26 @@ demos:
       img: '/demos/teacher.png'
       tags: ['Vue2', 'Element UI','Private']
       link: https://github.com/ryanuo/web_teacher
+      hidden: true
     - name: 'Article Assistant'
       link: https://github.com/ryanuo/de_repeat
       desc: 'An article redundancy reduction assistant based on ECharts, which allows for real-time monitoring of the article plagiarism reduction status.'
       img: /demos/de.png
       tags: ['Vue3', 'Element Plus', 'Python']
+      hidden: true
     - name: 'Echart-Shopping'
       desc: 'The e-commerce visualization platform is built upon ECharts and Vue, with the backend developed using Koa.js.'
       img: '/demos/echart-shopping.png'
       link: 'https://github.com/ryanuo/echart_shop'
       tags: ["Vue2",'ECharts','Koa']
+      hidden: true
     - name: 'Resume'
       link: 'https://github.com/ryanuo/resume'
       desc: 'Resume template'
       img: '/demos/remu.png'
       readme: 'https://raw.githubusercontent.com/ryanuo/resume/refs/heads/master/README.md'
       tags: ['Vue2','Less']
-    - name: Hot Search
-      link: 'https://github.com/ryanuo/hot_search'
-      desc: 'Includes Weibo Hot Search List, parameter wb for Weibo, Baidu Hot Search List with parameter bd, 360 Hot Topics using parameter 360, CSDN Hot Rankings interface to be viewed below, and other hot searches to be added.'
-      img: '/demos/hot.png'
-      tags: ['Python','requests',"BeautifulSoup"]
+      hidden: true
 
 ---
 

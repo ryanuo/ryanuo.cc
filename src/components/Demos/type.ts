@@ -8,4 +8,5 @@ export interface DemosTypes {
   readme: string
   tags: string[]
   preview?: string
+  hidden?: boolean
 }
