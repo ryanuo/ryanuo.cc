@@ -45,7 +45,7 @@ demos:
       readme: 'https://github.com/ryanuo/textcss/blob/main/README.md'
       tags: [monorepo, tailwindcss, vite]
       hidden: true
-    - name: 'Tab Extension（标签页扩展）'
+    - name: 'Tab（标签页扩展）'
       link: 'https://github.com/ryanuo/tab-ext'
       desc: '一个适用于 Chrome 浏览器的标签页扩展。'
       img: '/demos/tab-ext.png'
