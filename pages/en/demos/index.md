@@ -54,18 +54,11 @@ demos:
       tags: [monorepo, tailwindcss, vite]
       hidden: true
     - name: 'Tab Extension'
-      link: 'https://github.com/ryanuo/tab-ext'
+      link: 'https://github.com/ryanuo/N-Tab'
       desc: 'A tab extension for Chrome.'
       img: '/demos/tab-ext.png'
-      readme: 'https://github.com/ryanuo/tab-ext/blob/main/README.md'
+      readme: 'https://github.com/ryanuo/N-Tab/blob/main/README.md'
       tags: ['Chrome', 'Extension', 'Vue3']
-    - name: 'API-Hub'
-      link: 'https://github.com/ryanuo/api-hub'
-      desc: 'A collection of useful APIs for developers.'
-      img: '/demos/api-hub.png'
-      readme: 'https://github.com/ryanuo/api-hub/blob/main/README.md'
-      tags: [hono, jsx, vite]
-      hidden: true
     - name: 'STATUS'
       link: 'https://github.com/ryanuo/status'
       desc: 'A simple status page for developers.'
@@ -81,10 +74,10 @@ demos:
       tags: ['vite', 'ts']
       hidden: true
     - name: 'Gold Trades'
-      link: 'https://github.com/ryanuo/aug-calc/'
+      link: 'https://github.com/ryanuo/aug'
       desc: 'A web application for trading gold, developed using Vue3.'
       img: '/demos/aug.png'
-      readme: 'https://raw.githubusercontent.com/ryanuo/aug-calc/refs/heads/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/aug/refs/heads/main/README.md'
       tags: [nuxt,vue3]
       hidden: true
     - name: 'Tmpl-Cli'
@@ -115,10 +108,10 @@ demos:
       readme: 'https://raw.githubusercontent.com/own-cover/refs/heads/main/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: Auto Navs
-      link: https://github.com/ryanuo/navs
+      link: https://gitee.com/rbozo/navs
       desc: Summary of front-end navigation external links,automatic link status check is supported
       img: '/demos/navs.png'
-      readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
+      readme: 'https://gitee.com/rbozo/navs/blob/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'C++ book'

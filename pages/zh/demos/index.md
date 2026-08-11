@@ -20,7 +20,7 @@ demos:
       img: '/demos/whatToEat.png'
       tags: [nuxt, vue3, unocss]
       readme: 'https://github.com/ryanuo/whatToEat/blob/main/README.md'
-    - name: '截图API'
+    - name: '截图 API'
       link: 'https://github.com/ryanuo/screenshot'
       desc: 截图api，支持部署vercel、netlify
       tags: [puppeteer, Playwright]
@@ -54,18 +54,11 @@ demos:
       tags: [monorepo, tailwindcss, vite]
       hidden: true
     - name: 'Tab（标签页扩展）'
-      link: 'https://github.com/ryanuo/tab-ext'
+      link: 'https://github.com/ryanuo/N-Tab'
       desc: '一个适用于 Chrome 浏览器的标签页扩展。'
       img: '/demos/tab-ext.png'
-      readme: 'https://github.com/ryanuo/tab-ext/blob/main/README.md'
+      readme: 'https://github.com/ryanuo/N-Tab/blob/main/README.md'
       tags: ['Chrome', 'Extension（扩展）', 'Vue3']
-    - name: 'API-Hub（API中心）'
-      link: 'https://github.com/ryanuo/api-hub'
-      desc: '为开发者提供的常用 API 集合。'
-      img: '/demos/api-hub.png'
-      readme: 'https://github.com/ryanuo/api-hub/blob/main/README.md'
-      tags: [hono, jsx, vite]
-      hidden: true
     - name: 'STATUS'
       link: 'https://github.com/ryanuo/status'
       desc: '面向开发人员的简单状态页面'
@@ -81,10 +74,10 @@ demos:
       tags: ['vite', 'ts']
       hidden: true
     - name: 'Gold Trades'
-      link: 'https://github.com/ryanuo/aug-calc/'
+      link: 'https://github.com/ryanuo/aug/'
       desc: '使用Vue3、Nuxt开发的用于交易黄金的web应用程序'
       img: '/demos/aug.png'
-      readme: 'https://raw.githubusercontent.com/ryanuo/aug-calc/refs/heads/main/README.md'
+      readme: 'https://raw.githubusercontent.com/ryanuo/aug/refs/heads/main/README.md'
       tags: [nuxt,vue3]
       hidden: true
     - name: 'Tmpl-Cli'
@@ -115,10 +108,10 @@ demos:
       readme: 'https://raw.githubusercontent.com/own-cover/refs/heads/main/README.md'
       tags: ['Vue3','Markdown','UnoCSS']
     - name: 自动检查链接
-      link: https://github.com/ryanuo/navs
+      link: https://gitee.com/rbozo/navs
       desc: 前端导航外部链接汇总，支持自动链接状态检查
       img: '/demos/navs.png'
-      readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
+      readme: 'https://gitee.com/rbozo/navs/blob/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
     - name: 'C++ 参考手册'
