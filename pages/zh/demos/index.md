@@ -5,6 +5,11 @@ plum: true
 isHiddenTitle: true
 demos:
   2026:
+    - name: 'skills'
+      link: 'https://github.com/ryanuo/skills'
+      desc: 沉淀的技能，持续完善中
+      tags: [md,python]
+      readme: 'https://github.com/ryanuo/skills/blob/main/README.md'
     - name: 'ai-draw-io'
       link: 'https://github.com/ryanuo/draw-io'
       desc: 基于ai-draw-io的在线演示

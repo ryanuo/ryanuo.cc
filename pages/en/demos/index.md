@@ -5,6 +5,11 @@ plum: true
 isHiddenTitle: true
 demos:
   2026:
+    - name: 'skills'
+      link: 'https://github.com/ryanuo/skills'
+      desc:  skills workflow, automation 
+      tags: [md,python]
+      readme: 'https://github.com/ryanuo/skills/blob/main/README.md'
     - name: 'ai-draw-io'
       link: 'https://github.com/ryanuo/draw-io'
       desc: A simple and powerful markdown editor, based on Blazor, with a variety of features.
