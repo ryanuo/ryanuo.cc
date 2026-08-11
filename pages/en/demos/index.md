@@ -4,6 +4,14 @@ description: 'Demos | RYANUO'
 plum: true
 isHiddenTitle: true
 demos:
+  2026:
+    - name: 'ai-draw-io'
+      link: 'https://github.com/ryanuo/draw-io'
+      desc: A simple and powerful markdown editor, based on Blazor, with a variety of features.
+      img: '/demos/ai-draw-io.png'
+      tags: [next, react]
+      preview: 'https://draw.ryanuo.cc'
+      readme: 'https://github.com/ryanuo/draw-io/blob/main/README.md'
   2025:
     - name: 'whatToEat'
       link: 'https://github.com/ryanuo/whatToEat'

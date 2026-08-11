@@ -4,15 +4,23 @@ description: '演示 | RYANUO'
 plum: true
 isHiddenTitle: true
 demos:
+  2026:
+    - name: 'ai-draw-io'
+      link: 'https://github.com/ryanuo/draw-io'
+      desc: 基于ai-draw-io的在线演示
+      img: '/demos/ai-draw-io.png'
+      tags: [next, react]
+      preview: 'https://draw.ryanuo.cc'
+      readme: 'https://github.com/ryanuo/draw-io/blob/main/README.md'
   2025:
-    - name: '今天吃什么'
+    - name: '今天做点什么'
       link: 'https://github.com/ryanuo/whatToEat'
       preview: 'https://eat.ryanuo.cc'
-      desc: 今天吃什么？的决策工具，帮助你快速选择合适的菜谱。
+      desc: 今天做点什么？的决策工具，帮助你快速选择合适的菜谱。
       img: '/demos/whatToEat.png'
       tags: [nuxt, vue3, unocss]
       readme: 'https://github.com/ryanuo/whatToEat/blob/main/README.md'
-    - name: '截图api'
+    - name: '截图API'
       link: 'https://github.com/ryanuo/screenshot'
       desc: 截图api，支持部署vercel、netlify
       tags: [puppeteer, Playwright]
