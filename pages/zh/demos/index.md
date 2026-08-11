@@ -121,6 +121,13 @@ demos:
       readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
+    - name: 'C++ 参考手册'
+      link: 'https://github.com/ryanuo/cpp-docs'
+      desc: 纯前端的C++参考手册，基于github pages
+      img: '/demos/cpp-docs.png'
+      tags: [vitepress,cpp]
+      preview: 'https://cpp.ryanuo.cc'
+      readme: 'https://github.com/ryanuo/cpp-docs/blob/main/README.md'
     - name: 'tv-data-ana'
       link: 'https://github.com/ryanuo/tv-data-ana'
       desc: '电视剧数据分析与可视化系统（基于豆瓣），包含多种可视化分析和集成的AI智能分析功能。'

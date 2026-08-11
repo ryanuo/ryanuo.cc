@@ -121,6 +121,13 @@ demos:
       readme: 'https://raw.githubusercontent.com/ryanuo/navs/refs/heads/master/README.md'
       tags: ['Python','Github Action','Yaml']
   2023:
+    - name: 'C++ book'
+      link: 'https://github.com/ryanuo/cpp-docs'
+      desc: A simple and powerful C++ book, based on VitePress, with a variety of features.
+      img: '/demos/cpp-docs.png'
+      tags: [vitepress,cpp]
+      preview: 'https://cpp.ryanuo.cc'
+      readme: 'https://github.com/ryanuo/cpp-docs/blob/main/README.md'
     - name: 'Tv-Data-Ana'
       link: 'https://github.com/ryanuo/tv-data-ana'
       desc: 'TV series data analysis and visualization system (Douban), including many visual analysis and integrated AI intelligent analysis.'
