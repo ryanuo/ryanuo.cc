@@ -3,10 +3,10 @@ import { dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 /**
- * 两件事，都在构建前跑：
- * 1. 扫描 public/demos 生成图片清单 src/data/demos-images.json —— 演示页按「项目 id / 仓库名 / 旧路径名」
- *    自动匹配截图，所以新增截图只要把文件丢进 public/demos，不用改 oubuild 仓库的数据
- * 2. 把 oubuild/.github 的 profile/projects.json 同步成本仓库快照 src/data/projects.json
+ * 构建前同步演示数据：把 oubuild/.github 的 profile/projects.json 变成 src/data/projects.json 快照。
+ *
+ * 顺便在这里把截图解析进每个项目的 image 字段（扫 public/demos，按「项目 id / 仓库名」匹配），
+ * 所以 oubuild 那边只维护项目数据、不维护图片路径，截图只要按 public/demos/<项目 id>.png 命名即可。
  *
  * 页面在浏览器里还会直接拉远端数据，所以快照只负责 SSG 首屏渲染，
  * 同步失败时保留旧快照即可，不要让构建挂掉。
@@ -14,7 +14,6 @@ import { fileURLToPath } from 'node:url'
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DEST = resolve(ROOT, 'src/data/projects.json')
 const IMAGES_DIR = resolve(ROOT, 'public/demos')
-const IMAGE_MANIFEST = resolve(ROOT, 'src/data/demos-images.json')
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif'])
 // 本地开发优先用隔壁 clone 的 oubuild/.github，省一次网络请求
 const LOCAL = resolve(ROOT, '../.github/profile/projects.json')
@@ -25,27 +24,63 @@ const REMOTE_SOURCES = [
 
 mkdirSync(dirname(DEST), { recursive: true })
 
-function writeImageManifest() {
+function fileStem(path: string) {
+  const file = path.split('/').pop() ?? ''
+  return file.replace(/\.[a-z0-9]+$/i, '')
+}
+
+/** 宽松匹配键：忽略大小写与 - / _ 等分隔符（whatToEat.png ≈ what-to-eat.png） */
+function looseKey(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+/** public/demos 下的可用图片：宽松键 → 真实文件名 */
+function readImageIndex() {
+  const index = new Map<string, string>()
   if (!existsSync(IMAGES_DIR)) {
     console.warn(`图片目录不存在：${IMAGES_DIR}`)
-    return
+    return index
   }
 
   const files = readdirSync(IMAGES_DIR, { withFileTypes: true })
     .filter(entry => entry.isFile() && IMAGE_EXTENSIONS.has(extname(entry.name).toLowerCase()))
     .map(entry => entry.name)
-    .sort()
 
-  writeFileSync(IMAGE_MANIFEST, `${JSON.stringify(files, null, 2)}\n`)
-  console.log(`scanned ${files.length} images from public/demos`)
+  for (const file of files) {
+    index.set(looseKey(file), file)
+    index.set(looseKey(fileStem(file)), file)
+  }
+  return index
 }
 
-writeImageManifest()
+/** 依次按「数据里的路径 → 项目 id → 仓库名」匹配本地截图，都没命中就留空（页面渲染色块占位） */
+function resolveImage(project: any, images: Map<string, string>) {
+  const given = typeof project.image === 'string' ? project.image.trim() : ''
+  if (/^https?:\/\//i.test(given))
+    return given
+
+  const candidates = [fileStem(given), project.id, fileStem(project.repo ?? '')]
+  for (const candidate of candidates) {
+    if (!candidate)
+      continue
+    const hit = images.get(looseKey(candidate))
+    if (hit)
+      return `/demos/${hit}`
+  }
+
+  return null
+}
 
 function writeSnapshot(text: string, from: string) {
   const parsed = JSON.parse(text)
   if (!Array.isArray(parsed?.projects) || parsed.projects.length === 0)
     throw new Error(`${from} 里没有 projects 数据`)
+
+  const images = readImageIndex()
+  parsed.projects = parsed.projects.map((project: any) => ({
+    ...project,
+    image: resolveImage(project, images),
+  }))
 
   // 只有 generatedAt 变了就不重写，避免每次构建都让 CI 提交一次无意义的快照变更
   const contentKey = (value: any) => JSON.stringify({ ...value, generatedAt: null })
@@ -55,7 +90,8 @@ function writeSnapshot(text: string, from: string) {
   }
 
   writeFileSync(DEST, `${JSON.stringify(parsed, null, 2)}\n`)
-  console.log(`synced ${parsed.projects.length} projects from ${from}`)
+  const matched = parsed.projects.filter((project: any) => project.image).length
+  console.log(`synced ${parsed.projects.length} projects (${matched} with screenshot) from ${from}`)
 }
 
 if (existsSync(LOCAL)) {
