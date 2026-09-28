@@ -14,7 +14,9 @@
     "check": "npx taze",
     "fix": "npx eslint --fix",
     "cover": "esno scripts/og-cover.ts",
-    "post": "esno scripts/create-post.ts"
+    "post": "esno scripts/create-post.ts",
+    "prebuild": "esno scripts/sync-projects.ts",
+    "sync:projects": "esno scripts/sync-projects.ts"
   },
   "dependencies": {
     "@docsearch/css": "catalog:frontend",

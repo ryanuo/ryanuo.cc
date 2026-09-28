@@ -1,0 +1,106 @@
+import type { Project, ProjectsData } from '~/components/Demos/type'
+import snapshot from '~/data/projects.json'
+
+/**
+ * 演示数据来自 oubuild 组织仓库的 profile/projects.json（由 data.yaml 生成）。
+ * 页面默认用仓库内的快照渲染（SSG 直出，首屏不空），浏览器端再拉远端覆盖，
+ * 这样在远端新增项目不需要重新构建部署本站。
+ */
+const REMOTE_SOURCES = [
+  'https://raw.githubusercontent.com/oubuild/.github/main/profile/projects.json',
+  'https://fastly.jsdelivr.net/gh/oubuild/.github@main/profile/projects.json',
+]
+
+const FETCH_TIMEOUT = 8000
+
+function isLiveDemo(demo?: string | null) {
+  if (!demo)
+    return false
+  // demo 指向 GitHub 仓库说明没有线上演示，卡片里就不显示「预览」
+  return !/^https?:\/\/(?:www\.)?github\.com\//i.test(demo)
+}
+
+function normalizeProject(project: Project): Project {
+  return {
+    ...project,
+    demo: isLiveDemo(project.demo) ? project.demo : null,
+    description: project.description ?? { zh: '', en: '' },
+    name: project.name ?? { zh: project.id, en: project.id },
+    tags: project.tags ?? [],
+  }
+}
+
+function parseProjects(raw: unknown): ProjectsData | null {
+  const data = raw as ProjectsData | null
+  if (!data || typeof data !== 'object' || !Array.isArray(data.projects))
+    return null
+  const projects = data.projects.filter(project => project && project.id && project.type)
+  if (!projects.length)
+    return null
+  return { ...data, projects: projects.map(normalizeProject) }
+}
+
+async function fetchJson(url: string) {
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT)
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: { accept: 'application/json' },
+    })
+    if (!response.ok)
+      throw new Error(`HTTP ${response.status}`)
+    return await response.json()
+  }
+  finally {
+    clearTimeout(timer)
+  }
+}
+
+// 模块级单例：中英文两个路由共用同一份数据，避免重复请求
+const fallback = snapshot as unknown as ProjectsData
+const data = ref<ProjectsData>(fallback)
+const loading = ref(false)
+const failed = ref(false)
+const live = ref(false)
+const lastSync = ref(fallback.generatedAt ?? '')
+let inflight: Promise<void> | null = null
+
+async function refresh(force = false) {
+  // SSG 阶段没有网络，只渲染快照；浏览器端挂载后再同步
+  if (typeof window === 'undefined' || inflight)
+    return inflight ?? undefined
+
+  loading.value = true
+  inflight = (async () => {
+    for (const base of REMOTE_SOURCES) {
+      try {
+        const url = force ? `${base}${base.includes('?') ? '&' : '?'}t=${Date.now()}` : base
+        const parsed = parseProjects(await fetchJson(url))
+        if (!parsed)
+          continue
+        data.value = parsed
+        lastSync.value = parsed.generatedAt ?? ''
+        live.value = true
+        failed.value = false
+        return
+      }
+      catch (error) {
+        console.warn('[demos] 远端数据同步失败：', base, error)
+      }
+    }
+    failed.value = true
+  })()
+
+  try {
+    await inflight
+  }
+  finally {
+    loading.value = false
+    inflight = null
+  }
+}
+
+export function useProjects() {
+  return { data, loading, failed, live, lastSync, refresh }
+}

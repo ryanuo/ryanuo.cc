@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-28T02:38:45.539Z",
+  "profile": {
+    "name": "oubuild",
+    "title": {
+      "zh": "开源项目与实验室",
+      "en": "Open Source Projects & Labs"
+    }
+  },
+  "projects": [
+    {
+      "id": "pinatlas",
+      "name": {
+        "zh": "通用芯片引脚查询",
+        "en": "Chip Pin Atlas"
+      },
+      "repo": "Lab0x-Embedded/pinatlas",
+      "type": "self",
+      "status": "active",
+      "demo": "https://pinatlas.ryanuo.cc/",
+      "description": {
+        "zh": "面向嵌入式开发者的芯片引脚查询与可视化工具。",
+        "en": "A visual chip pin lookup tool for embedded developers."
+      },
+      "tags": [
+        "STM32",
+        "Embedded",
+        "Vue"
+      ],
+      "year": 2026,
+      "image": null,
+      "featured": true,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/Lab0x-Embedded/pinatlas",
+      "github": "https://github.com/Lab0x-Embedded/pinatlas",
+      "readme": "https://github.com/Lab0x-Embedded/pinatlas#readme"
+    },
+    {
+      "id": "radix-converter",
+      "name": {
+        "zh": "进制转换工具",
+        "en": "Radix Converter"
+      },
+      "repo": "Lab0x-Embedded/utools-radix-converter",
+      "type": "self",
+      "status": "active",
+      "demo": "https://github.com/Lab0x-Embedded/utools-radix-converter",
+      "description": {
+        "zh": "面向嵌入式开发的进制转换工具，可在 uTools 中使用。",
+        "en": "A radix converter for embedded development, available as a uTools plugin."
+      },
+      "tags": [
+        "Embedded",
+        "uTools",
+        "TypeScript"
+      ],
+      "year": 2026,
+      "image": null,
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/Lab0x-Embedded/utools-radix-converter",
+      "github": "https://github.com/Lab0x-Embedded/utools-radix-converter",
+      "readme": "https://github.com/Lab0x-Embedded/utools-radix-converter#readme"
+    },
+    {
+      "id": "skills-manager",
+      "name": {
+        "zh": "Skills Manager",
+        "en": "Skills Manager"
+      },
+      "repo": "oubuild/skills-manager",
+      "type": "self",
+      "status": "active",
+      "demo": "https://github.com/oubuild/skills-manager",
+      "description": {
+        "zh": "管理和发现 AI Agent Skills 的工具。",
+        "en": "A tool for managing and discovering AI agent skills."
+      },
+      "tags": [
+        "Python",
+        "AI",
+        "CLI"
+      ],
+      "year": 2026,
+      "image": null,
+      "featured": true,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/oubuild/skills-manager",
+      "github": "https://github.com/oubuild/skills-manager",
+      "readme": "https://github.com/oubuild/skills-manager#readme"
+    },
+    {
+      "id": "qtshadcn",
+      "name": {
+        "zh": "QtShadcn",
+        "en": "QtShadcn"
+      },
+      "repo": "QtShadcn/qtshadcn",
+      "type": "self",
+      "status": "active",
+      "demo": "https://qtshadcn.ryanuo.cc/",
+      "description": {
+        "zh": "面向 Qt 的 shadcn 风格组件探索。",
+        "en": "A shadcn-inspired component exploration for Qt."
+      },
+      "tags": [
+        "Qt",
+        "C++",
+        "UI"
+      ],
+      "year": 2026,
+      "image": null,
+      "featured": true,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/QtShadcn/qtshadcn",
+      "github": "https://github.com/QtShadcn/qtshadcn",
+      "readme": "https://github.com/QtShadcn/qtshadcn#readme"
+    },
+    {
+      "id": "cpp-docs",
+      "name": {
+        "zh": "C++ 文档查看",
+        "en": "C++ Reference"
+      },
+      "repo": "ryanuo/cpp-docs",
+      "type": "self",
+      "status": "active",
+      "demo": "https://cpp.ryanuo.cc/",
+      "description": {
+        "zh": "纯前端的 C++ 参考手册，基于 VitePress。",
+        "en": "A frontend C++ reference built with VitePress."
+      },
+      "tags": [
+        "VitePress",
+        "C++"
+      ],
+      "year": 2023,
+      "image": "/demos/cpp-docs.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/cpp-docs",
+      "github": "https://github.com/ryanuo/cpp-docs",
+      "readme": "https://github.com/ryanuo/cpp-docs#readme"
+    },
+    {
+      "id": "resume-editor",
+      "name": {
+        "zh": "简历生成器",
+        "en": "Resume Editor"
+      },
+      "repo": "NxResume/DualMode-ResumeEditor",
+      "type": "self",
+      "status": "active",
+      "demo": "https://resume.ryanuo.cc/",
+      "description": {
+        "zh": "支持实时预览与导出的双模式简历编辑器。",
+        "en": "A dual-mode resume editor with live preview and export."
+      },
+      "tags": [
+        "Vue",
+        "Markdown",
+        "Resume"
+      ],
+      "year": 2025,
+      "image": "/demos/nuxt-resume-editor.png",
+      "featured": true,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/NxResume/DualMode-ResumeEditor",
+      "github": "https://github.com/NxResume/DualMode-ResumeEditor",
+      "readme": "https://github.com/NxResume/DualMode-ResumeEditor#readme"
+    },
+    {
+      "id": "blazeb2-next",
+      "name": {
+        "zh": "图床管理器",
+        "en": "BlazeB2"
+      },
+      "repo": "blazeb2/blazeb2-next",
+      "type": "self",
+      "status": "active",
+      "demo": "https://bnd.ryanuo.cc/",
+      "description": {
+        "zh": "基于 Backblaze B2 与 Cloudflare 的图床管理工具。",
+        "en": "An image hosting manager built on Backblaze B2 and Cloudflare."
+      },
+      "tags": [
+        "Vue",
+        "Cloudflare",
+        "B2"
+      ],
+      "year": 2025,
+      "image": "/demos/blazeb2.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/blazeb2/blazeb2-next",
+      "github": "https://github.com/blazeb2/blazeb2-next",
+      "readme": "https://github.com/blazeb2/blazeb2-next#readme"
+    },
+    {
+      "id": "own-cover",
+      "name": {
+        "zh": "封面生成器",
+        "en": "Own Cover"
+      },
+      "repo": "ryanuo/own-cover",
+      "type": "self",
+      "status": "active",
+      "demo": "https://cover.ryanuo.cc/",
+      "description": {
+        "zh": "上传图片并生成封面的简单工具。",
+        "en": "A simple tool for uploading images and generating covers."
+      },
+      "tags": [
+        "Nuxt",
+        "Vue"
+      ],
+      "year": 2024,
+      "image": "/demos/own-cover.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/own-cover",
+      "github": "https://github.com/ryanuo/own-cover",
+      "readme": "https://github.com/ryanuo/own-cover#readme"
+    },
+    {
+      "id": "what-to-eat",
+      "name": {
+        "zh": "今天吃什么",
+        "en": "What To Eat"
+      },
+      "repo": "ryanuo/whatToEat",
+      "type": "self",
+      "status": "active",
+      "demo": "https://eat.ryanuo.cc/",
+      "description": {
+        "zh": "帮助快速选择菜谱的决策工具。",
+        "en": "A decision tool that helps you pick what to eat."
+      },
+      "tags": [
+        "Nuxt",
+        "Vue3",
+        "UnoCSS"
+      ],
+      "year": 2025,
+      "image": "/demos/whatToEat.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/whatToEat",
+      "github": "https://github.com/ryanuo/whatToEat",
+      "readme": "https://github.com/ryanuo/whatToEat#readme"
+    },
+    {
+      "id": "mts",
+      "name": {
+        "zh": "网站截图 Web",
+        "en": "Multi-device Screenshot"
+      },
+      "repo": "ryanuo/mts",
+      "type": "self",
+      "status": "active",
+      "demo": "https://mts.ryanuo.cc/",
+      "description": {
+        "zh": "网页多端带壳截图工具。",
+        "en": "A framed multi-device webpage screenshot tool."
+      },
+      "tags": [
+        "Nuxt",
+        "Vue3",
+        "UnoCSS"
+      ],
+      "year": 2025,
+      "image": "/demos/mts.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/mts",
+      "github": "https://github.com/ryanuo/mts",
+      "readme": "https://github.com/ryanuo/mts#readme"
+    },
+    {
+      "id": "status",
+      "name": {
+        "zh": "网站监控 STATUS",
+        "en": "Status"
+      },
+      "repo": "ryanuo/status",
+      "type": "self",
+      "status": "active",
+      "demo": "https://status.ryanuo.cc/",
+      "description": {
+        "zh": "面向开发者的简单状态页。",
+        "en": "A simple status page for developers."
+      },
+      "tags": [
+        "Nuxt"
+      ],
+      "year": 2025,
+      "image": "/demos/status.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/status",
+      "github": "https://github.com/ryanuo/status",
+      "readme": "https://github.com/ryanuo/status#readme"
+    },
+    {
+      "id": "n-tab",
+      "name": {
+        "zh": "TAB 标签插件",
+        "en": "Tab Extension"
+      },
+      "repo": "ryanuo/n-tab",
+      "type": "self",
+      "status": "active",
+      "demo": "https://tab.ryanuo.cc/",
+      "description": {
+        "zh": "适用于 Chrome 的标签页扩展。",
+        "en": "A Chrome new-tab extension."
+      },
+      "tags": [
+        "Chrome",
+        "Extension",
+        "Vue3"
+      ],
+      "year": 2025,
+      "image": "/demos/tab-ext.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/n-tab",
+      "github": "https://github.com/ryanuo/n-tab",
+      "readme": "https://github.com/ryanuo/n-tab#readme"
+    },
+    {
+      "id": "ryanuo-cc",
+      "name": {
+        "zh": "我的主页",
+        "en": "Personal Site"
+      },
+      "repo": "ryanuo/ryanuo.cc",
+      "type": "self",
+      "status": "active",
+      "demo": "https://ryanuo.cc/",
+      "description": {
+        "zh": "个人网站，包含简介、博客、项目与演示。",
+        "en": "Personal site with profile, blog, projects, and demos."
+      },
+      "tags": [
+        "Vue3",
+        "Markdown",
+        "UnoCSS"
+      ],
+      "year": 2024,
+      "image": "/demos/page-dark.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/ryanuo.cc",
+      "github": "https://github.com/ryanuo/ryanuo.cc",
+      "readme": "https://github.com/ryanuo/ryanuo.cc#readme"
+    },
+    {
+      "id": "skills",
+      "name": {
+        "zh": "个人 SKILLS",
+        "en": "Skills"
+      },
+      "repo": "ryanuo/skills",
+      "type": "self",
+      "status": "active",
+      "demo": "https://github.com/ryanuo/skills",
+      "description": {
+        "zh": "持续沉淀的 AI Agent Skills 与工作流。",
+        "en": "A growing collection of AI agent skills and workflows."
+      },
+      "tags": [
+        "Markdown",
+        "Python",
+        "AI"
+      ],
+      "year": 2026,
+      "image": null,
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/ryanuo/skills",
+      "github": "https://github.com/ryanuo/skills",
+      "readme": "https://github.com/ryanuo/skills#readme"
+    },
+    {
+      "id": "cpp-quiz",
+      "name": {
+        "zh": "C++ AI 面试题",
+        "en": "C++ Interview Quiz"
+      },
+      "repo": "oubuild/cpp-quiz",
+      "type": "adapted",
+      "status": "active",
+      "demo": "https://cpp.ryanuo.cc/cppinterview",
+      "description": {
+        "zh": "基于开源项目改造的 C++ 面试题练习。",
+        "en": "A C++ interview quiz adapted from an open-source project."
+      },
+      "tags": [
+        "C++",
+        "AI"
+      ],
+      "year": 2026,
+      "image": "/demos/cpp-docs.png",
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/oubuild/cpp-quiz",
+      "github": "https://github.com/oubuild/cpp-quiz",
+      "readme": "https://github.com/oubuild/cpp-quiz#readme"
+    },
+    {
+      "id": "md",
+      "name": {
+        "zh": "Markdown 在线编辑器",
+        "en": "Markdown Editor"
+      },
+      "repo": "oubuild/md",
+      "type": "adapted",
+      "status": "active",
+      "demo": "https://md.ryanuo.cc/",
+      "description": {
+        "zh": "基于开源项目改造的在线 Markdown 编辑器。",
+        "en": "An online Markdown editor adapted from an open-source project."
+      },
+      "tags": [
+        "Markdown",
+        "Vue"
+      ],
+      "year": 2025,
+      "image": null,
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/oubuild/md",
+      "github": "https://github.com/oubuild/md",
+      "readme": "https://github.com/oubuild/md#readme"
+    },
+    {
+      "id": "html-tools",
+      "name": {
+        "zh": "tools",
+        "en": "HTML Tools"
+      },
+      "repo": "oubuild/html-tools",
+      "type": "adapted",
+      "status": "active",
+      "demo": "https://tools.ryanuo.cc/",
+      "description": {
+        "zh": "一组实用的前端小工具集合。",
+        "en": "A collection of practical frontend tools."
+      },
+      "tags": [
+        "HTML",
+        "Tools"
+      ],
+      "year": 2025,
+      "image": null,
+      "featured": false,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/oubuild/html-tools",
+      "github": "https://github.com/oubuild/html-tools",
+      "readme": "https://github.com/oubuild/html-tools#readme"
+    },
+    {
+      "id": "draw",
+      "name": {
+        "zh": "在线绘图工具",
+        "en": "AI Drawing Tool"
+      },
+      "repo": "DayuanJiang/next-ai-draw-io",
+      "type": "deployed",
+      "status": "active",
+      "demo": "https://draw.ryanuo.cc/",
+      "description": {
+        "zh": "基于开源项目部署的 AI 绘图工具。",
+        "en": "An AI drawing tool deployed from an open-source project."
+      },
+      "tags": [
+        "Next.js",
+        "AI",
+        "Draw.io"
+      ],
+      "year": 2025,
+      "image": "/demos/ai-draw-io.png",
+      "featured": true,
+      "hidden": false,
+      "video": null,
+      "source": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "github": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "readme": "https://github.com/DayuanJiang/next-ai-draw-io#readme"
+    }
+  ]
+}

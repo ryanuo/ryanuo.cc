@@ -1,53 +1,73 @@
 <script lang="ts" setup>
 import { ModalsContainer, VueFinalModal } from 'vue-final-modal'
+import { useLanguage } from '~/hooks/useLanguage'
 
-defineProps<{
-  options: any
+const props = defineProps<{
+  options: {
+    modelValue: boolean
+    teleportTo?: string
+    displayDirective?: string
+    hideOverlay?: boolean
+    overlayTransition?: string
+    contentTransition?: string
+    clickToClose?: boolean
+    escToClose?: boolean
+    background?: string
+    lockScroll?: boolean
+    reserveScrollBarGap?: boolean
+    swipeToClose?: string
+    content?: { name?: { zh?: string, en?: string } | string } | null
+  }
 }>()
+
+const { isChinese } = useLanguage()
+
+const title = computed(() => {
+  const name = props.options.content?.name
+  if (!name)
+    return ''
+  if (typeof name === 'string')
+    return name
+  return isChinese.value ? name.zh : name.en
+})
+
+function close() {
+  // eslint-disable-next-line vue/no-mutating-props -- options 是页面共享的响应式配置对象
+  props.options.modelValue = false
+}
 </script>
 
 <template>
   <!-- eslint-disable vue/no-mutating-props -->
   <VueFinalModal
-    v-model="options.modelValue" :teleport-to="options.teleportTo"
-    :display-directive="options.displayDirective" :hide-overlay="options.hideOverlay"
-    :overlay-transition="options.overlayTransition" :content-transition="options.contentTransition"
-    :click-to-close="options.clickToClose" :esc-to-close="options.escToClose" :background="options.background"
-    :lock-scroll="options.lockScroll" :reserve-scroll-bar-gap="options.reserveScrollBarGap"
-    :swipe-to-close="options.swipeToClose" class="flex items-center justify-center"
-    content-class="max-w-90 md:max-w-5/6 md:max-h-15/16 md:min-w-4/5 mx-4 p-4 pt-0 bg-white overflow-auto dark:bg-[#15171c] border dark:border-gray-700 rounded-lg space-y-2 relative"
+    v-model="options.modelValue"
+    :teleport-to="options.teleportTo"
+    :display-directive="options.displayDirective"
+    :hide-overlay="options.hideOverlay"
+    :overlay-transition="options.overlayTransition"
+    :content-transition="options.contentTransition"
+    :click-to-close="options.clickToClose"
+    :esc-to-close="options.escToClose"
+    :background="options.background"
+    :lock-scroll="options.lockScroll"
+    :reserve-scroll-bar-gap="options.reserveScrollBarGap"
+    :swipe-to-close="options.swipeToClose"
+    class="flex items-center justify-center"
+    content-class="mx-4 max-h-[90vh] w-full max-w-2xl overflow-auto border border-neutral-200 rounded-xl bg-white p-5 dark:border-neutral-800 dark:bg-neutral-950"
   >
-    <h1 class="sticky top-0 flex justify-between border-b bg-white pb-2 pt-4 text-xl dark:bg-[#15171c]">
-      {{ options.content.name }}
-      <div>
-        <a :href="options.content.link" i-akar-icons-github-fill target="_blank" />
-        <a
-          v-if="options.content.readme" class="i-fluent-more-48-filled m-1" :href="options.content.readme"
-          target="_blank"
-        />
-        <span
-          class="i-material-symbols-close-small-outline cursor-pointer hover:scale-120"
-          @click="options.modelValue = false"
-        />
-      </div>
-    </h1>
-    <p>
-      {{ options.content.desc }}
-    </p>
-    <div class="flex items-center justify-center">
-      <img
-        v-if="options.content.img && !options.content.video" class="w-full rounded at-lg:h-70vh md:h-160"
-        :src="options.content.img"
-      >
-      <iframe v-if="options.content.video" :src="options.content.video" class="h-80 w-full at-lg:h-70vh md:h-160" />
-    </div>
+    <header class="mb-4 flex items-start justify-between gap-4">
+      <h2 class="text-xl text-neutral-950 font-semibold dark:text-neutral-50">
+        {{ title }}
+      </h2>
+      <button
+        type="button"
+        class="i-material-symbols-close-small-outline shrink-0 cursor-pointer text-neutral-500 hover:text-neutral-950 dark:hover:text-neutral-50"
+        :aria-label="$t('demos.close')"
+        @click="close"
+      />
+    </header>
+    <slot />
   </VueFinalModal>
 
   <ModalsContainer />
 </template>
-
-<style>
-#write img {
-  display: inline-block !important;
-}
-</style>
