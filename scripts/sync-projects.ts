@@ -47,6 +47,13 @@ function writeSnapshot(text: string, from: string) {
   if (!Array.isArray(parsed?.projects) || parsed.projects.length === 0)
     throw new Error(`${from} 里没有 projects 数据`)
 
+  // 只有 generatedAt 变了就不重写，避免每次构建都让 CI 提交一次无意义的快照变更
+  const contentKey = (value: any) => JSON.stringify({ ...value, generatedAt: null })
+  if (existsSync(DEST) && contentKey(JSON.parse(readFileSync(DEST, 'utf8'))) === contentKey(parsed)) {
+    console.log('快照内容无变化，跳过写入')
+    return
+  }
+
   writeFileSync(DEST, `${JSON.stringify(parsed, null, 2)}\n`)
   console.log(`synced ${parsed.projects.length} projects from ${from}`)
 }
