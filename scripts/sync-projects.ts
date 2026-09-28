@@ -1,15 +1,21 @@
-import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { dirname, resolve } from 'node:path'
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 /**
- * 把 oubuild/.github 的 profile/projects.json 同步成本仓库快照 src/data/projects.json。
+ * 两件事，都在构建前跑：
+ * 1. 扫描 public/demos 生成图片清单 src/data/demos-images.json —— 演示页按「项目 id / 仓库名 / 旧路径名」
+ *    自动匹配截图，所以新增截图只要把文件丢进 public/demos，不用改 oubuild 仓库的数据
+ * 2. 把 oubuild/.github 的 profile/projects.json 同步成本仓库快照 src/data/projects.json
  *
- * 页面在浏览器里还会直接拉远端数据，所以这个快照只负责 SSG 首屏渲染，
+ * 页面在浏览器里还会直接拉远端数据，所以快照只负责 SSG 首屏渲染，
  * 同步失败时保留旧快照即可，不要让构建挂掉。
  */
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DEST = resolve(ROOT, 'src/data/projects.json')
+const IMAGES_DIR = resolve(ROOT, 'public/demos')
+const IMAGE_MANIFEST = resolve(ROOT, 'src/data/demos-images.json')
+const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif'])
 // 本地开发优先用隔壁 clone 的 oubuild/.github，省一次网络请求
 const LOCAL = resolve(ROOT, '../.github/profile/projects.json')
 const REMOTE_SOURCES = [
@@ -18,6 +24,23 @@ const REMOTE_SOURCES = [
 ]
 
 mkdirSync(dirname(DEST), { recursive: true })
+
+function writeImageManifest() {
+  if (!existsSync(IMAGES_DIR)) {
+    console.warn(`图片目录不存在：${IMAGES_DIR}`)
+    return
+  }
+
+  const files = readdirSync(IMAGES_DIR, { withFileTypes: true })
+    .filter(entry => entry.isFile() && IMAGE_EXTENSIONS.has(extname(entry.name).toLowerCase()))
+    .map(entry => entry.name)
+    .sort()
+
+  writeFileSync(IMAGE_MANIFEST, `${JSON.stringify(files, null, 2)}\n`)
+  console.log(`scanned ${files.length} images from public/demos`)
+}
+
+writeImageManifest()
 
 function writeSnapshot(text: string, from: string) {
   const parsed = JSON.parse(text)

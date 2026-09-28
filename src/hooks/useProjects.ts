@@ -1,4 +1,5 @@
 import type { Project, ProjectsData } from '~/components/Demos/type'
+import imageManifest from '~/data/demos-images.json'
 import snapshot from '~/data/projects.json'
 
 /**
@@ -20,10 +21,51 @@ function isLiveDemo(demo?: string | null) {
   return !/^https?:\/\/(?:www\.)?github\.com\//i.test(demo)
 }
 
+const IMAGE_DIR = '/demos'
+
+function fileStem(path: string) {
+  const file = path.split('/').pop() ?? ''
+  return file.replace(/\.[a-z0-9]+$/i, '')
+}
+
+/** 宽松匹配键：忽略大小写与 - / _ 等分隔符（whatToEat.png ≈ what-to-eat） */
+function looseKey(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+/**
+ * public/demos 下的图片清单，构建前由 scripts/sync-projects.ts 扫描生成。
+ * 所以新增截图只要把 demos/<项目>.png 丢进这个仓库，不需要改 oubuild 的数据。
+ */
+const imageIndex = new Map<string, string>()
+for (const file of imageManifest as string[]) {
+  imageIndex.set(looseKey(file), file)
+  imageIndex.set(looseKey(fileStem(file)), file)
+}
+
+/** 依次按「远端给的路径 → 项目 id → 仓库名」匹配本地图片，都没命中返回 null（页面渲染色块占位） */
+function resolveImage(project: Project): string | null {
+  const remote = project.image?.trim() ?? ''
+  if (/^https?:\/\//i.test(remote))
+    return remote
+
+  const candidates = [fileStem(remote), project.id, fileStem(project.repo ?? '')]
+  for (const candidate of candidates) {
+    if (!candidate)
+      continue
+    const hit = imageIndex.get(looseKey(candidate))
+    if (hit)
+      return `${IMAGE_DIR}/${hit}`
+  }
+
+  return null
+}
+
 function normalizeProject(project: Project): Project {
   return {
     ...project,
     demo: isLiveDemo(project.demo) ? project.demo : null,
+    image: resolveImage(project),
     description: project.description ?? { zh: '', en: '' },
     name: project.name ?? { zh: project.id, en: project.id },
     tags: project.tags ?? [],
@@ -59,7 +101,9 @@ async function fetchJson(url: string) {
 
 // 模块级单例：中英文两个路由共用同一份数据，避免重复请求
 const fallback = snapshot as unknown as ProjectsData
-const data = ref<ProjectsData>(fallback)
+// 快照也要过一遍 normalize，否则首屏（SSG）拿不到按约定匹配到的本地截图
+const initial: ProjectsData = { ...fallback, projects: fallback.projects.map(normalizeProject) }
+const data = ref<ProjectsData>(initial)
 const loading = ref(false)
 const failed = ref(false)
 const live = ref(false)
