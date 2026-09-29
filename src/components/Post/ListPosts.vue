@@ -183,14 +183,6 @@ function isYearGroup(date?: string, preDate?: string) {
 </template>
 
 <style scoped>
-.category-pill:focus {
-  outline: none;
-}
-
-.category-pill:focus-visible {
-  box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.18);
-}
-
 .category-pill:active {
   transform: translateY(0.5px);
 }

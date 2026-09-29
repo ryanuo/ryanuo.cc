@@ -8,6 +8,7 @@
   --c-hover-color: #000;
   --c-demo-card-bg: #fffdfd;
   --c-logo-fill-color: #000;
+  --c-focus-ring: #171717;
 }
 
 html {
@@ -23,6 +24,7 @@ html.dark {
   --c-hover-color: #fff;
   --c-demo-card-bg: #050303;
   --c-logo-fill-color: #fff;
+  --c-focus-ring: #e5e5e5;
 }
 
 a:hover {
@@ -48,9 +50,17 @@ button:hover {
   border-color: var(--c-hover-color);
 }
 
-button:focus,
+/* 焦点环：鼠标点击不画，键盘 Tab 时画 ring-2 + ring-offset-2 双层环（shadcn 机制） */
+button:focus {
+  outline: none;
+}
+
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid transparent; /* 强制色模式下仍可见 */
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 2px var(--c-bg),
+    0 0 0 4px var(--c-focus-ring);
 }
 
 .card {
