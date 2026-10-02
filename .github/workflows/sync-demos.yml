@@ -1,0 +1,45 @@
+name: Sync demos snapshot
+
+# 由 oubuild/.github 的 generate-profile 工作流在数据变更后通过 repository_dispatch 触发，
+# 也可以在本仓库的 Actions 页面手动跑一次。
+on:
+  repository_dispatch:
+    types: [demos-sync]
+  workflow_dispatch:
+
+# 需要把刷新后的快照提交回 main：这一步的 push 会触发部署平台重新构建，
+# 平台构建时 prebuild 还会再同步一次（那时就不用提交了）。
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-demos
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: |
+          npm i -g pnpm
+          pnpm i
+
+      - name: Sync projects snapshot
+        run: pnpm run sync:projects
+
+      # 提交信息不要带 [skip ci]，否则部署平台会跳过这次构建
+      - name: Commit snapshot
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(demos): sync projects snapshot'
+          file_pattern: src/data/projects.json
+          branch: main
