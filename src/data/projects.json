@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T03:21:58.292Z",
+  "generatedAt": "2026-10-02T05:49:00.064Z",
   "profile": {
     "name": "oubuild",
     "title": {
@@ -36,6 +36,34 @@
       "source": "https://github.com/Lab0x-Embedded/pinatlas",
       "github": "https://github.com/Lab0x-Embedded/pinatlas",
       "readme": "https://github.com/Lab0x-Embedded/pinatlas#readme"
+    },
+    {
+      "id": "embedkit",
+      "name": {
+        "zh": "嵌入式工具箱",
+        "en": "EmbedKit"
+      },
+      "repo": "Lab0x-Embedded/embedkit",
+      "type": "self",
+      "status": "active",
+      "demo": "https://embedkit.ryanuo.cc/",
+      "description": {
+        "zh": "面向嵌入式开发的在线工具箱，涵盖寄存器位域、字节流编码、校验算法、协议帧与云平台参数，全部在浏览器本地计算。",
+        "en": "An online toolbox for embedded developers covering register bitfields, byte-stream encoding, checksums, protocol frames, and cloud parameters — all computed locally in the browser."
+      },
+      "tags": [
+        "Next.js",
+        "React",
+        "Embedded"
+      ],
+      "year": 2026,
+      "featured": true,
+      "hidden": false,
+      "image": null,
+      "video": null,
+      "source": "https://github.com/Lab0x-Embedded/embedkit",
+      "github": "https://github.com/Lab0x-Embedded/embedkit",
+      "readme": "https://github.com/Lab0x-Embedded/embedkit#readme"
     },
     {
       "id": "radix-converter",
