@@ -21,23 +21,20 @@ function isLiveDemo(demo?: string | null) {
 }
 
 /**
- * 截图路径在构建时就解析进了快照的 image 字段（scripts/sync-projects.ts 扫 public/demos，
- * 按「项目 id / 仓库名」匹配）。运行时拉的远端数据只带项目信息，所以按 id 沿用快照里的截图。
- * 新增截图 = 把 public/demos/<项目 id>.png 提交上来，下次构建自动带上。
+ * 封面在构建时就解析进了快照的 image 字段（scripts/sync-projects.ts：先扫 public/demos 按
+ * 「项目 id / 仓库名」匹配本地截图，没命中再抓应用页面的 og:image）。运行时拉的远端数据只带
+ * 项目信息，所以按 id 沿用快照里的封面，远端数据里的 image 字段不再使用。
+ * 新增封面 = 给应用页面的 SEO 加 og:image（或提交 public/demos/<项目 id>.png），下次构建自动带上。
  */
 const localImages = new Map<string, string | null>(
   (snapshot as unknown as ProjectsData).projects.map(project => [project.id, project.image] as const),
 )
 
 function normalizeProject(project: Project): Project {
-  const remoteImage = typeof project.image === 'string' && /^https?:\/\//i.test(project.image)
-    ? project.image
-    : null
-
   return {
     ...project,
     demo: isLiveDemo(project.demo) ? project.demo : null,
-    image: localImages.get(project.id) ?? remoteImage,
+    image: localImages.get(project.id) ?? null,
     description: project.description ?? { zh: '', en: '' },
     name: project.name ?? { zh: project.id, en: project.id },
     tags: project.tags ?? [],
