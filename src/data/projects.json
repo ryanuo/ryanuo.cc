@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T05:49:00.064Z",
+  "generatedAt": "2026-10-12T09:35:46.124Z",
   "profile": {
     "name": "oubuild",
     "title": {
@@ -59,11 +59,67 @@
       "year": 2026,
       "featured": true,
       "hidden": false,
-      "image": "https://embedkit.ryanuo.cc/zh/opengraph-image?49cc0692714adb5d",
+      "image": "https://embedkit.ryanuo.cc/zh/opengraph-image?3fdb8b3196781ca5",
       "video": null,
       "source": "https://github.com/Lab0x-Embedded/embedkit",
       "github": "https://github.com/Lab0x-Embedded/embedkit",
       "readme": "https://github.com/Lab0x-Embedded/embedkit#readme"
+    },
+    {
+      "id": "industrial-edge-gateway",
+      "name": {
+        "zh": "工业边缘网关",
+        "en": "Industrial Edge Gateway"
+      },
+      "repo": "Lab0x-Embedded/industrial-edge-gateway",
+      "type": "self",
+      "status": "active",
+      "demo": "https://github.com/Lab0x-Embedded/industrial-edge-gateway",
+      "description": {
+        "zh": "基于 STM32F407 + FreeRTOS + LVGL 的工业边缘网关，Modbus RTU 采集、ESP8266 MQTT 上云（E2/OneNET）、W25Q128 断网缓存、看门狗与触摸界面。",
+        "en": "An industrial edge gateway on STM32F407 + FreeRTOS + LVGL — Modbus RTU acquisition, MQTT cloud sync via ESP8266 (E2/OneNET), offline caching on W25Q128, watchdog, and a touch UI."
+      },
+      "tags": [
+        "STM32",
+        "FreeRTOS",
+        "LVGL"
+      ],
+      "year": 2026,
+      "featured": true,
+      "hidden": false,
+      "image": null,
+      "video": null,
+      "source": "https://github.com/Lab0x-Embedded/industrial-edge-gateway",
+      "github": "https://github.com/Lab0x-Embedded/industrial-edge-gateway",
+      "readme": "https://github.com/Lab0x-Embedded/industrial-edge-gateway#readme"
+    },
+    {
+      "id": "iotsystem",
+      "name": {
+        "zh": "E2 IoT 设备管理平台",
+        "en": "E2 IoT Platform"
+      },
+      "repo": "Lab0x-Embedded/iotsystem",
+      "type": "self",
+      "status": "active",
+      "demo": "https://github.com/Lab0x-Embedded/iotsystem",
+      "description": {
+        "zh": "IoT 设备管理平台，C (libevent + MySQL) 服务端 + Qt6/QML 桌面客户端，支持 MQTT 接入、告警引擎、设备影子与指令下发。",
+        "en": "An IoT device management platform with a C (libevent + MySQL) server and a Qt6/QML desktop client — MQTT access, an alerting engine, device shadows, and command dispatch."
+      },
+      "tags": [
+        "C",
+        "Qt6",
+        "MQTT"
+      ],
+      "year": 2026,
+      "featured": true,
+      "hidden": false,
+      "image": null,
+      "video": null,
+      "source": "https://github.com/Lab0x-Embedded/iotsystem",
+      "github": "https://github.com/Lab0x-Embedded/iotsystem",
+      "readme": "https://github.com/Lab0x-Embedded/iotsystem#readme"
     },
     {
       "id": "radix-converter",
