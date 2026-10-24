@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-12T09:35:46.124Z",
+  "generatedAt": "2026-10-24T06:17:08.750Z",
   "profile": {
     "name": "oubuild",
     "title": {
@@ -9,6 +9,34 @@
     }
   },
   "projects": [
+    {
+      "id": "shutter",
+      "name": {
+        "zh": "Shutter 截图",
+        "en": "Shutter"
+      },
+      "repo": "oubuild/Shutter",
+      "type": "self",
+      "status": "active",
+      "demo": "https://oubuild.github.io/Shutter/",
+      "description": {
+        "zh": "跨平台截图工具，框选截图、就地标注、长截图、贴图置顶，并可调用视觉模型提取文字、翻译与解释。",
+        "en": "A cross-platform screenshot tool with region capture, on-the-spot annotation, scrolling capture, and pin-to-top, plus vision-model OCR, translation, and explanation."
+      },
+      "tags": [
+        "Tauri",
+        "Rust",
+        "Screenshot"
+      ],
+      "year": 2026,
+      "featured": true,
+      "hidden": false,
+      "image": "https://oubuild.github.io/Shutter/assets/hero-ai.webp",
+      "video": null,
+      "source": "https://github.com/oubuild/Shutter",
+      "github": "https://github.com/oubuild/Shutter",
+      "readme": "https://github.com/oubuild/Shutter#readme"
+    },
     {
       "id": "pinatlas",
       "name": {
