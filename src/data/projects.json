@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T06:17:08.750Z",
+  "generatedAt": "2026-10-24T06:20:35.476Z",
   "profile": {
     "name": "oubuild",
     "title": {
@@ -18,7 +18,7 @@
       "repo": "oubuild/Shutter",
       "type": "self",
       "status": "active",
-      "demo": "https://oubuild.github.io/Shutter/",
+      "demo": "https://shutter.ryanuo.cc/",
       "description": {
         "zh": "跨平台截图工具，框选截图、就地标注、长截图、贴图置顶，并可调用视觉模型提取文字、翻译与解释。",
         "en": "A cross-platform screenshot tool with region capture, on-the-spot annotation, scrolling capture, and pin-to-top, plus vision-model OCR, translation, and explanation."
