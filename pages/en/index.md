@@ -35,7 +35,7 @@ Find me on
   <a href="https://x.com/ryanuo77" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
   <a href="https://www.youtube.com/@ryanuo7" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
   <a href="https://space.bilibili.com/417034781" target="_blank"><span op75 i-simple-icons-bilibili /> Bilibili</a>
-  <a href="https://mp.weixin.qq.com/s/ZOAxWkkbgq4irupmCHcdMw target="_blank"><span op75 i-simple-icons-wechat /> Weixin</a>
+  <a href="https://mp.weixin.qq.com/s/ZOAxWkkbgq4irupmCHcdMw" target="_blank"><span op75 i-simple-icons-wechat /> Weixin</a>
 </p>
 
 Or mail me at hi@ryanuo.cc
