@@ -5,7 +5,7 @@ description: 一款高效的项目模板管理工具，支持从 Git 仓库快�
 cate: 技术
 ---
 
-# Template CLI 🚀
+## Template CLI 🚀
 
 便捷的项目模板管理工具，从 Git 仓库快速克隆模板
 

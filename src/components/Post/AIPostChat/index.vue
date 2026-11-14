@@ -106,39 +106,55 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="core-ai-summary-tool" class="slide-enter-content prose m-auto">
+  <div id="core-ai-summary-tool" class="prose slide-enter-content m-auto">
     <div id="core-ai-summary-tool-main">
       <div class="tool-avatar">
         <div class="avatar-main">
           <div class="left-eye" />
           <div class="right-eye" />
-          <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="65" height="54.9205322265625" viewBox="0 0 65 54.9205322265625" fill="none">
+          <svg
+            class="bot-avatar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="65" height="54.9205322265625" viewBox="0 0 65 54.9205322265625" fill="none"
+          >
             <g filter="url(#filter_qfaS4Fm6Zk-Z2zsQpdYKO)">
-              <path fill="url(#linear_fill_qfaS4Fm6Zk-Z2zsQpdYKO_0)"
-                d="M8 17L8 26.557C8 32.0975 11.7931 36.9177 17.1782 38.2205L19.7609 38.8454C20.1857 38.9482 20.598 39.097 20.9904 39.2894L28.4411 42.9408C30.7807 44.0874 33.6066 43.3676 35.1125 41.2414C36.1082 39.8356 37.7239 39 39.4466 39L45 39C51.6274 39 57 33.6274 57 27L57 17C57 10.3726 51.6274 5 45 5L20 5C13.3726 5 8 10.3726 8 17Z" />
+              <path
+                fill="url(#linear_fill_qfaS4Fm6Zk-Z2zsQpdYKO_0)"
+                d="M8 17L8 26.557C8 32.0975 11.7931 36.9177 17.1782 38.2205L19.7609 38.8454C20.1857 38.9482 20.598 39.097 20.9904 39.2894L28.4411 42.9408C30.7807 44.0874 33.6066 43.3676 35.1125 41.2414C36.1082 39.8356 37.7239 39 39.4466 39L45 39C51.6274 39 57 33.6274 57 27L57 17C57 10.3726 51.6274 5 45 5L20 5C13.3726 5 8 10.3726 8 17Z"
+              />
             </g>
             <defs>
-              <linearGradient id="linear_fill_qfaS4Fm6Zk-Z2zsQpdYKO_0" x1="8" y1="24.964996337890625" x2="57"
-                y2="24.964996337890625" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="linear_fill_qfaS4Fm6Zk-Z2zsQpdYKO_0" x1="8" y1="24.964996337890625" x2="57"
+                y2="24.964996337890625" gradientUnits="userSpaceOnUse"
+              >
                 <stop offset="0" stop-color="#505666" />
                 <stop offset="1" stop-color="#272C38" />
               </linearGradient>
-              <filter id="filter_qfaS4Fm6Zk-Z2zsQpdYKO" x="0" y="0" width="65" height="54.9205322265625"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter
+                id="filter_qfaS4Fm6Zk-Z2zsQpdYKO" x="0" y="0" width="65" height="54.9205322265625"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"
+              >
                 <feFlood flood-opacity="0" result="feFloodId_qfaS4Fm6Zk-Z2zsQpdYKO" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha_qfaS4Fm6Zk-Z2zsQpdYKO" />
+                <feColorMatrix
+                  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha_qfaS4Fm6Zk-Z2zsQpdYKO"
+                />
                 <feMorphology radius="2" operator="dilate" in="SourceAlpha" />
                 <feOffset dx="0" dy="3" />
                 <feGaussianBlur stdDeviation="3" />
                 <feComposite in2="hardAlpha_qfaS4Fm6Zk-Z2zsQpdYKO" operator="out" />
-                <feColorMatrix type="matrix"
-                  values="0 0 0 0 0.49411764705882355 0 0 0 0 0.5254901960784314 0 0 0 0 0.6 0 0 0 0.25 0" />
-                <feBlend mode="normal" in2="feFloodId_qfaS4Fm6Zk-Z2zsQpdYKO"
-                  result="dropShadow_1_qfaS4Fm6Zk-Z2zsQpdYKO" />
-                <feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_qfaS4Fm6Zk-Z2zsQpdYKO"
-                  result="shape_qfaS4Fm6Zk-Z2zsQpdYKO" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.49411764705882355 0 0 0 0 0.5254901960784314 0 0 0 0 0.6 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal" in2="feFloodId_qfaS4Fm6Zk-Z2zsQpdYKO"
+                  result="dropShadow_1_qfaS4Fm6Zk-Z2zsQpdYKO"
+                />
+                <feBlend
+                  mode="normal" in="SourceGraphic" in2="dropShadow_1_qfaS4Fm6Zk-Z2zsQpdYKO"
+                  result="shape_qfaS4Fm6Zk-Z2zsQpdYKO"
+                />
               </filter>
             </defs>
           </svg>
@@ -282,7 +298,6 @@ onMounted(() => {
 
 /* 新增 bot-avatar 动效关键帧 */
 @keyframes botAvatarBounce {
-
   0%,
   100% {
     transform: translateY(2px);

@@ -1,4 +1,4 @@
-name: "Full Pipeline: Generate Cover and Deploy"
+name: 'Full Pipeline: Generate Cover and Deploy'
 
 on:
   push:

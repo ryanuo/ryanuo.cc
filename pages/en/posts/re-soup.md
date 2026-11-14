@@ -1,7 +1,7 @@
 ---
 title: "Python Web Crawling: XPath, BeautifulSoup, re, Selenium"
 date: "2021-08-22 10:34:06"
-description: 
+description: Practical notes on scraping web pages with XPath, BeautifulSoup, regex and Selenium
 cate: Note
 plum: true
 ---

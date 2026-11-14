@@ -13,7 +13,7 @@ timeRange="Aug 2022 - Present" />
 
 As a principal front-end developer for a core module in a settlement product project at XX, I have been deeply involved in multiple critical areas of development and optimization, including configuration of settlement rules, automated testing, business migration, and data visualization. My role extended beyond technical implementation to encompass end-to-end management from conceptualization to deployment.
 
-#### Tech Stack
+## Tech Stack
 
 <TechStack :techStack='[
   {icon:"i-ion-logo-react",name:"React"},
@@ -22,7 +22,7 @@ As a principal front-end developer for a core module in a settlement product pro
   {icon:"i-devicon-plain-playwright",name:"Playwright"},
 ]'/>
 
-#### Key Responsibilities
+## Key Responsibilities
 
 **Settlement Platform Development & Optimization**: Implemented features for configuring settlement rules and instances, enhancing the flexibility and efficiency of the settlement process. Integrated front-end automated testing to ensure stability and quality of the project.
 

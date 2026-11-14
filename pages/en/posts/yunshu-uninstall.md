@@ -5,7 +5,7 @@ description: This article provides a complete guide to uninstalling Yunshu/Eagle
 cate: Software Uninstall
 ---
 
-# Yunshu (EagleYun) Mac Uninstall Guide
+## Yunshu (EagleYun) Mac Uninstall Guide
 
 ## 1️⃣ Purpose
 Completely remove the Yunshu/EagleYun client and its background services, clean up residual directories and configuration files, and keep your system clean without affecting other applications.

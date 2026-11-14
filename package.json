@@ -59,6 +59,7 @@
     "cross-env": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
+    "eslint-plugin-markdown-frontmatter": "catalog:dev",
     "esno": "catalog:dev",
     "fast-glob": "catalog:build",
     "fs-extra": "catalog:build",

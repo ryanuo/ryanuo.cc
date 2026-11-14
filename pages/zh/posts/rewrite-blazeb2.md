@@ -9,7 +9,7 @@ cate: 技术
 
 | Old page view                                                                | New page view                                                                |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| ![](https://cloud.ryanuo.cc/hexo/2/7039c267-f161-4cf2-ab4b-754159d8e2e3.png) | ![](https://cloud.ryanuo.cc/hexo/2/7039c267-f161-4cf2-ab4b-754159d8e2e3.png) |
+| ![旧版页面](https://cloud.ryanuo.cc/hexo/2/7039c267-f161-4cf2-ab4b-754159d8e2e3.png) | ![新版页面](https://cloud.ryanuo.cc/hexo/2/7039c267-f161-4cf2-ab4b-754159d8e2e3.png) |
 
 Due to the fact that the frame is older, I decided to rewrite it using Next.js. It also has a lot of features that I want to add, and easy to maintain.
 

@@ -18,6 +18,13 @@ declare interface FrontmatterPostType {
   isHidden?: boolean
   display?: string
   isHiddenTitle?: boolean
+
+  // 以下仅首页 / 导航页（index.md、navs/*.md）使用
+  avatars?: string
+  id?: string
+  keywords?: string
+  projects?: Record<string, { name: string, link: string }[]>
+  titleStyle?: { fontFamily?: string, opacity?: number }
 }
 
 interface AlgoliaSearchParams {

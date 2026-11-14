@@ -7,7 +7,7 @@ cate: tech
 
 [[toc]]
 
-### Gold Buying Process (Using JD Finance as an Example)
+## Gold Buying Process (Using JD Finance as an Example)
 
 1. **Account Setup**
 
@@ -28,7 +28,7 @@ cate: tech
 
 - Funds are credited to the gold account immediately after selling. Withdrawals to a bank account incur a 0.3% fee.
 
-### Gold Conversion Methods
+## Gold Conversion Methods
 
 1. **Unit Conversion**
 
@@ -42,11 +42,11 @@ cate: tech
 
 - [Online Conversion Tool](https://www.jins.gold/tools.html)
 
-### How to Monitor Gold Prices
+## How to Monitor Gold Prices
 
-### **Global Trading Session Comparison Table (2025)**
+## **Global Trading Session Comparison Table (2025)**
 
-<img src="/posts/aug.png"/>
+<img src="/posts/aug.png" alt="Global trading session comparison table (2025)" />
 
 2. **Monitoring Tools**
 
@@ -54,7 +54,7 @@ cate: tech
 - [Jin10 Data](https://www.jin10.com/)
 - [NY Gold CFD](https://finance.sina.com.cn/futures/quotes/GC.shtml)
 
-### Onshore vs Offshore & Domestic Gold Price Rationality
+## Onshore vs Offshore & Domestic Gold Price Rationality
 
 1. **Reasons for Price Differences**
 
@@ -68,7 +68,7 @@ cate: tech
 
 - Platforms may charge spreads or fees (e.g., JD Finance charges a 0.3% selling fee).
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 1. **Can I Place Orders Outside Trading Hours?**
 

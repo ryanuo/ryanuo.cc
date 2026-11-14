@@ -5,8 +5,6 @@ description: 本文详细介绍如何在 Mac 上彻底卸载 Yunshu/EagleYun 客
 cate: 技术
 ---
 
-# Yunshu (EagleYun) Mac 卸载文档
-
 ## 1️⃣ 卸载目的
 彻底移除 Yunshu/EagleYun 客户端及其后台服务，清理残留目录和配置文件，保证系统干净，不影响其他应用。
 

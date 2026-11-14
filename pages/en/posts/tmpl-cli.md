@@ -5,7 +5,7 @@ description: A powerful tool for efficiently managing project templates, support
 cate: Tech
 ---
 
-# Template CLI 🚀
+## Template CLI 🚀
 
 A convenient project template management tool for quickly cloning templates from Git repositories.
 

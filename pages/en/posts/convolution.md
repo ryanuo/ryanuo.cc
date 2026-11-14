@@ -16,16 +16,16 @@ cate: Note
 
 1. - 表示卷积，使用3x3过滤器
 2. 如图是垂直边缘检测器
-   ![](https://cloud.ryanuo.cc/hexo/4/20220415102757.png)
+   ![垂直边缘检测器的 3x3 卷积计算示意](https://cloud.ryanuo.cc/hexo/4/20220415102757.png)
 
 ## 正边缘与负边缘
 
-![](https://cloud.ryanuo.cc/hexo/4/20220415103726.png)
-![](https://cloud.ryanuo.cc/hexo/4/20220415104101.png)
+![正边缘检测结果](https://cloud.ryanuo.cc/hexo/4/20220415103726.png)
+![负边缘检测结果](https://cloud.ryanuo.cc/hexo/4/20220415104101.png)
 
 ## 填充降维度
 
-![](https://cloud.ryanuo.cc/hexo/4/20220415104949.png)
+![填充 padding 后卷积维度的变化](https://cloud.ryanuo.cc/hexo/4/20220415104949.png)
 公式：`nxn * fxf = (n-f+1)x(n-f+1)`
 
 1. 缺陷：不希望每一步都缩小维度，使得图片丢失了许多边界的信息
@@ -40,7 +40,7 @@ cate: Note
 ## 三维卷积
 
 1. 使用rgb图片 则是三通道（red,green,blue）
-   ![](https://cloud.ryanuo.cc/hexo/4/20220415111153.png)
+   ![RGB 三通道卷积示意](https://cloud.ryanuo.cc/hexo/4/20220415111153.png)
 
 ## 卷积神经网络结构
 

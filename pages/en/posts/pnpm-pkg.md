@@ -7,11 +7,11 @@ description: Learn how to use pnpm to patch and fix issues in third-party librar
 
 [[toc]]
 
-### Patching with pnpm
+## Patching with pnpm
 
 Patching is an essential skill in front-end development, allowing you to modify the code of third-party libraries.
 
-### Why Patching is Necessary
+## Why Patching is Necessary
 
 In project development, we often use third-party libraries. While most third-party libraries are reliable, they may still contain bugs or require optimization. Common ways to address issues in third-party libraries include:
 
@@ -20,7 +20,7 @@ In project development, we often use third-party libraries. While most third-par
 - Submitting a PR: The author may not merge it immediately;
 - Patching: Making local modifications that only affect our project without waiting for the author's review.
 
-### Using pnpm for Patching
+## Using pnpm for Patching
 
 ```mermaid
 sequenceDiagram
@@ -52,6 +52,6 @@ For example, when using a third-party library, suppose a specific function or me
 
 In this way, we can fix or optimize issues in the library to meet the needs of our project without affecting the original library.
 
-### Summary
+## Summary
 
 Patching is an effective way to address issues in third-party libraries and improve front-end development efficiency. By patching, we can quickly fix problems without waiting for the author's response.

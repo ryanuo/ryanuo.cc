@@ -59,7 +59,7 @@ Quick Reference: https://wangchujiang.com/reference/docs/linux-command.html
 2. ls -l Show file details
    File types: d directory l link (shortcut) s socket link b block device i index p pipe c character device
 
-<img src='/posts/group.png'/>
+<img src='/posts/group.png' alt="Linux file types and user group listing output" />
 
 3. cd - Go back to previous directory
 4. mkdir -p Create directory recursively

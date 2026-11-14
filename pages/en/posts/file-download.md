@@ -7,11 +7,11 @@ description: File suffix issue when Chrome downloads files
 
 [[toc]]
 
-### Problem Description
+## Problem Description
 
 When handling Blob files and triggering downloads, if the file name specified for download does not include a file suffix, the downloaded file may lack an extension, which can affect its recognizability and usability.
 
-### Default Browser Behavior
+## Default Browser Behavior
 
 - When a browser detects that the file name includes a suffix during download, it usually does not modify or process the file name.
 - The browser determines whether the file name includes a suffix by checking if there is a decimal part (i.e., file extension) after a dot (.) in the file name. If such a decimal part exists, the browser will not automatically append a suffix.
@@ -36,7 +36,7 @@ If the file name does not explicitly include a suffix, the browser may automatic
 4. Text or Attribute of the Download Link
    In HTML, the `download` attribute of a download link (e.g., `<a>` element) can specify the file name. If a file name and suffix are provided, the browser will use that name for the download.
 
-### Recommended Measures
+## Recommended Measures
 
 To ensure that the downloaded file includes the correct suffix, the following measures are recommended:
 
