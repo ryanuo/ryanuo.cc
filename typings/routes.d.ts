@@ -807,13 +807,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/projects/': RouteRecordInfo<
-      '/projects/',
-      '/projects',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
   }
 
   /**
@@ -1496,12 +1489,6 @@ declare module 'vue-router/auto-routes' {
     'pages/zh/posts/zsh-windows.md': {
       routes:
         | '/posts/zsh-windows'
-      views:
-        | never
-    }
-    'pages/zh/projects/index.md': {
-      routes:
-        | '/projects/'
       views:
         | never
     }

@@ -59,10 +59,6 @@ const buttonClass = computed(() => {
             },
           ]"
         /> -->
-        <!-- <RouterLink :to="`${aliaRoute}/projects`" :title="$t('nav.Projects', 'Projects')">
-          <span class="lt-md:hidden">{{ $t("nav.Projects", "Projects") }}</span>
-          <div i-ri-lightbulb-line class="md:hidden" />
-        </RouterLink> -->
         <RouterLink :to="`${aliaRoute}/demos`" :title="$t('nav.Demos', 'Demos')">
           <span class="lt-md:hidden">{{ $t("nav.Demos", "Demos") }}</span>
           <div i-ri-screenshot-line class="md:hidden" />
