@@ -1,0 +1,137 @@
+{
+  // Markdown frontmatter 字段补全
+  // 字段与 typings/global.d.ts 的 FrontmatterPostType 保持一致
+  // 用法：在 md 文件的 `---` 之间输入 prefix，按 Tab 展开
+
+  "Frontmatter 完整模板": {
+    "scope": "markdown",
+    "prefix": ["fm", "frontmatter"],
+    "body": [
+      "---",
+      "title: '${1:标题}'",
+      "description: '${2:描述}'",
+      "date: '${3:2026-01-01 00:00}'",
+      "cate: ${4:笔记}",
+      "tags: []",
+      "plum: true",
+      "---",
+      "",
+      "$0"
+    ],
+    "description": "文章 frontmatter 模板（date 必须加引号，否则 YAML 会解析成 Date 对象）"
+  },
+
+  "title — 页面标题（必填 string）": {
+    "scope": "markdown",
+    "prefix": ["title", "fm-title"],
+    "body": ["title: '${1:标题}'"],
+    "description": "必填。string。会同时作为页面 H1 和 SEO 标题"
+  },
+
+  "description — 描述（必填 string）": {
+    "scope": "markdown",
+    "prefix": ["description", "fm-description"],
+    "body": ["description: '${1:描述}'"],
+    "description": "必填。string。用于 SEO 与列表摘要"
+  },
+
+  "date — 日期（string，必须加引号）": {
+    "scope": "markdown",
+    "prefix": ["date", "fm-date"],
+    "body": ["date: '${1:2026-01-01 00:00}'"],
+    "description": "string。文章必须写（posts 下强制）。务必加引号，否则 YAML 解析成 Date 会触发类型错误"
+  },
+
+  "cate — 分类（string）": {
+    "scope": "markdown",
+    "prefix": ["cate", "fm-cate"],
+    "body": ["cate: ${1:笔记}"],
+    "description": "string。注意是 cate 不是 category/catess"
+  },
+
+  "tags — 标签（string[]）": {
+    "scope": "markdown",
+    "prefix": ["tags", "fm-tags"],
+    "body": ["tags:", "  - ${1:tag}"],
+    "description": "string[]。必须用数组，写 `tags: git` 会报类型错误"
+  },
+
+  "image — 封面图（string）": {
+    "scope": "markdown",
+    "prefix": ["image", "fm-image"],
+    "body": ["image: ${1:/cover.png}"],
+    "description": "string。封面图路径"
+  },
+
+  "plum — 启用 Plum 主题（boolean）": {
+    "scope": "markdown",
+    "prefix": ["plum", "fm-plum"],
+    "body": ["plum: ${1|true,false|}"],
+    "description": "boolean。不加引号"
+  },
+
+  "isHidden — 从列表隐藏（boolean）": {
+    "scope": "markdown",
+    "prefix": ["isHidden", "fm-isHidden"],
+    "body": ["isHidden: ${1|true,false|}"],
+    "description": "boolean。隐藏文章但仍可访问"
+  },
+
+  "isHiddenTitle — 隐藏标题（boolean）": {
+    "scope": "markdown",
+    "prefix": ["isHiddenTitle", "fm-isHiddenTitle"],
+    "body": ["isHiddenTitle: ${1|true,false|}"],
+    "description": "boolean。页面不渲染大标题"
+  },
+
+  "display — 展示名（string）": {
+    "scope": "markdown",
+    "prefix": ["display", "fm-display"],
+    "body": ["display: ${1:显示名}"],
+    "description": "string。导航栏显示的短名"
+  },
+
+  "titleStyle — 标题样式（object）": {
+    "scope": "markdown",
+    "prefix": ["titleStyle", "fm-titleStyle"],
+    "body": [
+      "titleStyle:",
+      "  fontFamily: '${1:Bonheur Royale}'",
+      "  opacity: ${2:0.65}"
+    ],
+    "description": "object。仅首页/导航页使用"
+  },
+
+  "projects — 项目分组（object）": {
+    "scope": "markdown",
+    "prefix": ["projects", "fm-projects"],
+    "body": [
+      "projects:",
+      "  ${1:分组名}:",
+      "    - name: ${2:项目名}",
+      "      link: ${3:https://example.com}"
+    ],
+    "description": "object。分组名 → { name, link }[]，仅 navs/*.md 使用"
+  },
+
+  "keywords — SEO 关键词（string）": {
+    "scope": "markdown",
+    "prefix": ["keywords", "fm-keywords"],
+    "body": ["keywords: ${1:关键词1, 关键词2}"],
+    "description": "string。逗号分隔，不是数组"
+  },
+
+  "avatars — 头像（string）": {
+    "scope": "markdown",
+    "prefix": ["avatars", "fm-avatars"],
+    "body": ["avatars: ${1:/avatar.png}"],
+    "description": "string。仅首页使用"
+  },
+
+  "id — 页面 id（string）": {
+    "scope": "markdown",
+    "prefix": ["id", "fm-id"],
+    "body": ["id: ${1:ryanuo}"],
+    "description": "string。仅首页使用"
+  }
+}
